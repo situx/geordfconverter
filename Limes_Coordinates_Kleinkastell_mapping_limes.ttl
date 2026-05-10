@@ -1041,7 +1041,8 @@ sunid:9_geom a sf:Point ;
 
 geo:Geometry a owl:Class .
 
-<http://www.wikidata.org/entity/Q4165> rdfs:label "Bad Homburg"@en .
+<http://www.wikidata.org/entity/Q4165> rdfs:label "Bad Homburg"@de,
+        "Bad Homburg"@en .
 
 suni:Kleinkastell rdfs:label "Kleinkastell"@en ;
     rdfs:subClassOf <http://archaeoinformatics.link/ontology#MilitaryCamp> .
