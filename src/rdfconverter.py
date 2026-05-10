@@ -294,7 +294,7 @@ class RDFConverter:
                 ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"]=="obj":
             concept=""
-            if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
+            if "valuemapping" in curcol and thevalue in curcol["valuemapping"]:
                 if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
                     g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue]["uri"])))
                     g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, RDFS.Resource))
@@ -336,8 +336,9 @@ class RDFConverter:
                 ownvocabg.add((URIRef(theiri),RDF.type,OWL.AnnotationProperty))
                 ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"] == "subclass":
-            if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
+            if "valuemapping" in curcol and thevalue in curcol["valuemapping"]:
                 if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
+                    print("SUBCLASS WITH MAPPING")
                     g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDFS.subClassOf, thecls))
                     g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, OWL.Class))
                     g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue]["uri"])))
