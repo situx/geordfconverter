@@ -522,9 +522,9 @@ class RDFConverter:
         if "onlyschema" in typemap and typemap["onlyschema"]==True:
             onlyschema=True
         if "epsg" in typemap:
-            self.epsg=typemap["epsg"]
+            epsg=typemap["epsg"]
         if "license" in typemap:
-            self.license=typemap["license"]
+            license=typemap["license"]
         if "geometry" in typemap and isinstance(typemap["geometry"],list):
             geomatts=typemap["geometry"]
         if "prefixes" in typemap:
@@ -581,8 +581,8 @@ class RDFConverter:
                 curid=curid[0:-1]
             else:
                 curid=dns+str(row[idcol])
-            if str(self.license).startswith("http"):
-                g.add((URIRef(curid),DC.license,URIRef(self.license)))
+            if str(license).startswith("http"):
+                g.add((URIRef(curid),DC.license,URIRef(license)))
             subclass=False
             seencols=set()
             if counter%100==0:
