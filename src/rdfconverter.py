@@ -338,7 +338,6 @@ class RDFConverter:
         if curcol["prop"] == "subclass":
             if "valuemapping" in curcol and thevalue in curcol["valuemapping"]:
                 if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
-                    print("SUBCLASS WITH MAPPING")
                     g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDFS.subClassOf, thecls))
                     g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, OWL.Class))
                     g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue]["uri"])))
