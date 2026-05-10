@@ -367,7 +367,7 @@ class RDFConverter:
                 subclass=True
         return [g,subclass]
 
-    def processGeometryColumn(self,g,row,geometrycol,typemap,curid,literaltypes=["KML"]):
+    def processGeometryColumn(self,g,row,geometrycol,typemap,curid,literaltypes=["WKT"]):
         g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
         g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].type))))
