@@ -8,7 +8,7 @@
 
 sunid:1 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Anhausen!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -19,29 +19,29 @@ sunid:1 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:10 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Saalburg 1!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown <https://www.wikidata.org/entity/Q4165> ;
+    suni:limestown <http://www.wikidata.org/entity/Q4165> ;
     suni:limestownpart "???"^^xsd:string ;
     geo:hasGeometry sunid:10_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:11 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Saalburg 2!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown <https://www.wikidata.org/entity/Q4165> ;
+    suni:limestown <http://www.wikidata.org/entity/Q4165> ;
     suni:limestownpart "???"^^xsd:string ;
     geo:hasGeometry sunid:11_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
 sunid:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Lochmühle!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -52,7 +52,7 @@ sunid:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Rittergräber!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -63,7 +63,7 @@ sunid:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Hunnenkirchhof 1!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -74,7 +74,7 @@ sunid:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Hunnenkirchhof 2!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -85,7 +85,7 @@ sunid:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Ockstädter Wald!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -96,7 +96,7 @@ sunid:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Eichkopf!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -107,7 +107,7 @@ sunid:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Kaisergrube!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -118,7 +118,7 @@ sunid:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Schrenzer!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -129,7 +129,7 @@ sunid:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Hillscheid!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -140,7 +140,7 @@ sunid:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Dicker Wald 2!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -151,7 +151,7 @@ sunid:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Dicker Wald 1!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -162,7 +162,7 @@ sunid:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Holzheimer Unterwald!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -173,7 +173,7 @@ sunid:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Feldheimer Wald!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -184,7 +184,7 @@ sunid:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Buchkopf!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -195,7 +195,7 @@ sunid:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Neuwirtshaus!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -206,7 +206,7 @@ sunid:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Haselburg!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -217,7 +217,7 @@ sunid:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Rehberg!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -228,7 +228,7 @@ sunid:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Hintere Kalbe!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -239,7 +239,7 @@ sunid:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Hankertsmühle!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -250,7 +250,7 @@ sunid:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Becheln!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -261,7 +261,7 @@ sunid:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Ebnisee!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -272,7 +272,7 @@ sunid:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Rötelsee!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -283,7 +283,7 @@ sunid:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Kleindeinbach!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -294,7 +294,7 @@ sunid:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Freimühle!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -305,7 +305,7 @@ sunid:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Hinterer Schlossberg!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -316,7 +316,7 @@ sunid:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Gündersbach!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -327,7 +327,7 @@ sunid:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Raitenbuch!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -338,7 +338,7 @@ sunid:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Kaldorf!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -349,7 +349,7 @@ sunid:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Biebig!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -360,7 +360,7 @@ sunid:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Hegelohe!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -371,7 +371,7 @@ sunid:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Pfarrhofen!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -382,7 +382,7 @@ sunid:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Güssgraben!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -393,7 +393,7 @@ sunid:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Hinterer Seeberg!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -404,7 +404,7 @@ sunid:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Rheinbrohl!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -415,7 +415,7 @@ sunid:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Ferbach!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -426,7 +426,7 @@ sunid:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Pohl!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -437,7 +437,7 @@ sunid:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Kemel 2!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -448,7 +448,7 @@ sunid:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Kemel 1!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -459,7 +459,7 @@ sunid:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Adolfseck!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -470,7 +470,7 @@ sunid:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Alteburg-Heftrich 2!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -481,7 +481,7 @@ sunid:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Alteburg-Heftrich 1!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -492,7 +492,7 @@ sunid:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Dörsterberg!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -503,7 +503,7 @@ sunid:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Degerfeld!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -514,7 +514,7 @@ sunid:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Hainhaus!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -525,7 +525,7 @@ sunid:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Langsdorf!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -536,7 +536,7 @@ sunid:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Lochberg!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -547,7 +547,7 @@ sunid:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Haselheck!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -558,7 +558,7 @@ sunid:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Inheiden 1!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -569,7 +569,7 @@ sunid:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Inheiden 2!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -580,7 +580,7 @@ sunid:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Unter-Widdersheim!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -591,7 +591,7 @@ sunid:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Wingertsberg!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -602,7 +602,7 @@ sunid:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Staden!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -613,7 +613,7 @@ sunid:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Eichelgarten!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -624,7 +624,7 @@ sunid:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Massohl!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -635,7 +635,7 @@ sunid:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Stammheim!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -646,7 +646,7 @@ sunid:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Langendiebach!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -657,7 +657,7 @@ sunid:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Altheimer Straße!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -668,7 +668,7 @@ sunid:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Holderbusch!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -679,7 +679,7 @@ sunid:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Salzberg!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -690,7 +690,7 @@ sunid:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Lehnenwiesen!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -701,7 +701,7 @@ sunid:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Sindringen!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -712,7 +712,7 @@ sunid:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Herrenwiesen!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -723,7 +723,7 @@ sunid:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Maisel!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -734,7 +734,7 @@ sunid:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Altes Jagdhaus!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
@@ -745,11 +745,11 @@ sunid:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
 
 sunid:9 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
         suni:Kleinkastell,
-        <https://www.wikidata.org/wiki/Q88205> ;
+        <http://www.wikidata.org/entity/Q88205> ;
     rdfs:label "Kleinkastell Heidenstock!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown <https://www.wikidata.org/entity/Q4165> ;
+    suni:limestown <http://www.wikidata.org/entity/Q4165> ;
     suni:limestownpart "Ober-Eschbach"^^xsd:string ;
     geo:hasGeometry sunid:9_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
@@ -1041,7 +1041,7 @@ sunid:9_geom a sf:Point ;
 
 geo:Geometry a owl:Class .
 
-<https://www.wikidata.org/entity/Q4165> rdfs:label "Bad Homburg"@en .
+<http://www.wikidata.org/entity/Q4165> rdfs:label "Bad Homburg"@en .
 
 suni:Kleinkastell rdfs:label "Kleinkastell"@en ;
     rdfs:subClassOf <http://archaeoinformatics.link/ontology#MilitaryCamp> .
