@@ -297,7 +297,7 @@ class RDFConverter:
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
                 if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
                     g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue]["uri"])))
-                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"], RDF.type, RDFS.Resource))
+                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, RDFS.Resource))
                     if "labels" in curcol["valuemapping"][thevalue]:
                         for lab in curcol["valuemapping"][thevalue]["labels"]:
                             g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
