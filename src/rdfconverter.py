@@ -374,10 +374,9 @@ class RDFConverter:
     def processGeometryColumn(self,g,row,geometrycol,typemap,curid,literaltypes=["WKT"]):
         g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
-        g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].type))))
-        g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].type)), RDF.type, OWL.Class))
-        g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].type)), RDFS.subClassOf,
-            URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+        g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].geom_type))))
+        g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].geom_type)), RDF.type, OWL.Class))
+        g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].geom_type)), RDFS.subClassOf,URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
         g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid[str(curid).rfind("/")+1:]), lang="en")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
