@@ -366,7 +366,7 @@ class RDFConverter:
                 subclass=True
         return [g,subclass]
 
-    def processGeometryColumn(self,g,row,geometrycol,typemap,curid):
+    def processGeometryColumn(self,g,row,geometrycol,typemap,curid,literaltypes=["KML"]):
         g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
         g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].type))))
@@ -383,6 +383,10 @@ class RDFConverter:
         else:
             g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
                 Literal(str(row[geometrycol]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+        if "KML" in literaltypes:
+            data = io.StringIO() 
+            row[geometrycol].to_file(data, driver='KML')
+            g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asKML"),Literal(str(data.getvalue()), datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))
         return g
 
     def processLatLonGeometry(self,g,lat,lon,typemap,curid):
@@ -478,24 +482,6 @@ class RDFConverter:
                     self.processGeometryColumn(g,row,geomatts[0],typemap,curid)
             elif "geometry" in row:
                 self.processGeometryColumn(g,row,"geometry",typemap,curid)
-                """
-                g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
-                g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
-                g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row["geometry"].type))))
-                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row["geometry"].type)), RDF.type, OWL.Class))
-                g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row["geometry"].type)), RDFS.subClassOf,
-                    URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
-                g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
-                g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid[str(curid).rfind("/")+1:]), lang="en")))
-                g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
-                if "epsg" in typemap:
-                    g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
-                        Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(row["geometry"]),
-                                datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
-                else:
-                    g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
-                        Literal(str(row["geometry"]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
-                """
                 processedGeom=True
             else:
                 for pair in self.latlonpairs:
