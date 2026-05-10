@@ -308,7 +308,7 @@ class RDFConverter:
                 else:
                     g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
-                    g.add((URIRef(curcol["valuemapping"][thevalue], RDF.type, RDFS.Resource))
+                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"], RDF.type, RDFS.Resource))
                     if "concept" in curcol:
                         g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
             elif str(thevalue).startswith("http"):
@@ -365,6 +365,7 @@ class RDFConverter:
                 g.add((URIRef(subclsuri), RDFS.subClassOf, thecls))
                 #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
                 g.add((URIRef(curid), RDF.type, URIRef(subclsuri)))
+                g.add((URIRef(subclsuri),RDF.type,OWL.Class))
                 g.add((URIRef(subclsuri),RDFS.label,Literal(thevalue,lang=lang)))
                 subclass=True
         return [g,subclass]
