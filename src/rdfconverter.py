@@ -297,6 +297,7 @@ class RDFConverter:
             if "valuemapping" in curcol and row[x] in curcol["valuemapping"]:
                 if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
                     g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue]["uri"])))
+                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"], RDF.type, RDFS.Resource))
                     if "labels" in curcol["valuemapping"][thevalue]:
                         for lab in curcol["valuemapping"][thevalue]["labels"]:
                             g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
@@ -307,6 +308,7 @@ class RDFConverter:
                 else:
                     g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
+                    g.add((URIRef(curcol["valuemapping"][thevalue], RDF.type, RDFS.Resource))
                     if "concept" in curcol:
                         g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
             elif str(thevalue).startswith("http"):
@@ -395,8 +397,7 @@ class RDFConverter:
         g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
         g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#Point")))
         g.add((URIRef("http://www.opengis.net/ont/sf#Point"), RDF.type, OWL.Class))
-        g.add((URIRef("http://www.opengis.net/ont/sf#Point"), RDFS.subClassOf,
-            URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+        g.add((URIRef("http://www.opengis.net/ont/sf#Point"), RDFS.subClassOf,URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
         g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid[str(curid).rfind("/")+1:]), lang="en")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
