@@ -67,7 +67,7 @@ sunid:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     rdfs:label "Kleinkastell Hunnenkirchhof 1!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown "Butzbach"^^xsd:string ;
+    suni:limestown <http://www.wikidata.org/entity/Q569680> ;
     suni:limestownpart "Nieder-Weisel"^^xsd:string ;
     geo:hasGeometry sunid:14_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
@@ -78,7 +78,7 @@ sunid:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     rdfs:label "Kleinkastell Hunnenkirchhof 2!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown "Butzbach"^^xsd:string ;
+    suni:limestown <http://www.wikidata.org/entity/Q569680> ;
     suni:limestownpart "Nieder-Weisel"^^xsd:string ;
     geo:hasGeometry sunid:15_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
@@ -122,7 +122,7 @@ sunid:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     rdfs:label "Kleinkastell Schrenzer!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown "Butzbach"^^xsd:string ;
+    suni:limestown <http://www.wikidata.org/entity/Q569680> ;
     suni:limestownpart "???"^^xsd:string ;
     geo:hasGeometry sunid:19_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
@@ -507,7 +507,7 @@ sunid:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     rdfs:label "Kleinkastell Degerfeld!"^^xsd:string,
         "Kastell"@de,
         "Castrum"@en ;
-    suni:limestown "Butzbach"^^xsd:string ;
+    suni:limestown <http://www.wikidata.org/entity/Q569680> ;
     suni:limestownpart "???"^^xsd:string ;
     geo:hasGeometry sunid:50_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
@@ -1044,6 +1044,10 @@ geo:Geometry a owl:Class .
 <http://www.wikidata.org/entity/Q4165> a rdfs:Resource ;
     rdfs:label "Bad Homburg"@de,
         "Bad Homburg"@en .
+
+<http://www.wikidata.org/entity/Q569680> a rdfs:Resource ;
+    rdfs:label "Butzbach"@de,
+        "Butzbach"@en .
 
 <http://www.wikidata.org/entity/Q602629> a rdfs:Resource ;
     rdfs:label "Hungen"@de,

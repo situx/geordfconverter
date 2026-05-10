@@ -13,6 +13,7 @@
         }},
         "limestown":{"prop":"obj","valuemapping":{
             "Bad Homburg":{"uri":"http://www.wikidata.org/entity/Q4165","labels":{"de":"Bad Homburg","en":"Bad Homburg"}},
+            "Butzbach":{"uri":"http://www.wikidata.org/entity/Q569680","labels":{"de":"Butzbach","en":"Butzbach"}},          
             "Hungen":{"uri":"http://www.wikidata.org/entity/Q602629","labels":{"de":"Hungen","en":"Hungen"}},
             "Nieder-Weisel":{"uri":"http://www.wikidata.org/entity/Q989808","labels":{"de":"Nieder-Weisel","en":"Nieder-Weisel"}}
             }
