@@ -308,7 +308,7 @@ class RDFConverter:
                 else:
                     g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
                     g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
-                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"], RDF.type, RDFS.Resource))
+                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, RDFS.Resource))
                     if "concept" in curcol:
                         g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
             elif str(thevalue).startswith("http"):
