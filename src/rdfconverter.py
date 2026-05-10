@@ -4,6 +4,7 @@ import bibtexparser
 import pandas as pd
 import geopandas as gpd
 import os
+import io
 import os.path
 import json
 import requests
