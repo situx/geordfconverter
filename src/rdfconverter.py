@@ -1,4 +1,4 @@
-from rdflib import Graph, URIRef, Literal, RDF, RDFS, OWL, XSD
+from rdflib import Graph, URIRef, Literal, RDF, RDFS, OWL, XSD, DC
 import argparse
 import bibtexparser
 import pandas as pd
@@ -523,6 +523,8 @@ class RDFConverter:
             onlyschema=True
         if "epsg" in typemap:
             self.epsg=typemap["epsg"]
+        if "license" in typemap:
+            self.license=typemap["license"]
         if "geometry" in typemap and isinstance(typemap["geometry"],list):
             geomatts=typemap["geometry"]
         if "prefixes" in typemap:
@@ -579,6 +581,8 @@ class RDFConverter:
                 curid=curid[0:-1]
             else:
                 curid=dns+str(row[idcol])
+            if str(self.license).startswith("http"):
+                g.add((URIRef(curid),DC.license,URIRef(self.license)))
             subclass=False
             seencols=set()
             if counter%100==0:
