@@ -492,7 +492,7 @@ class RDFConverter:
                     if pair[0] in row and pair[1] in row:
                         self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
                         processedGeom = True
-        print(str(curid)+" - hasSubClass "+str(subclass))
+        #print(str(curid)+" - hasSubClass "+str(subclass))
         return {"graph":g,"subclass":subclass,"seencols":seencols}
 
     def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},geosparql=True):
@@ -603,7 +603,6 @@ class RDFConverter:
             subclass = False
             intypemap=False
             res=self.processColumns("",seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts)
-            print("ProcessColumns Res: "+str(res))
             seencols=res["seencols"]
             subclass=res["subclass"]
             counter+=1
@@ -626,7 +625,6 @@ class RDFConverter:
                         subclass=True
                 #print(x)
             if subclass==False:
-                print("Has NO SubClass: Add thecls "+str(thecls))
                 g.add((URIRef(curid), RDF.type, thecls))
         return g
 
