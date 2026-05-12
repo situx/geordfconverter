@@ -614,13 +614,13 @@ class RDFConverter:
                         curcol = autotypemap["columns"][x]
                         res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
                         g = res[0]
-                        subclass = res[1]
+                        #subclass = res[1]
             if "addcolumns" in typemap:
                 for addcol in typemap["addcolumns"]:
                     curcol=typemap["addcolumns"][addcol]
                     res = self.addPropertyToGraph(None, addcol, g, attns, curid, thecls, lang, curcol)
                     g = res[0]
-                    subclass = res[1]
+                    #subclass = res[1]
                 #print(x)
             if subclass==False:
                 print("Has NO SubClass: Add thecls "+str(thecls))
