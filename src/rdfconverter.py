@@ -410,7 +410,7 @@ class RDFConverter:
                 Literal("POINT("+str(lon)+" "+str(lat)+")", datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
         return g
     
-    def processColumns(self,prefix,seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts):
+    def processColumns(self,prefix,seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts):
         processedGeom=False
         #print("PROCCOL Graph: "+str(len(g)))
         for x in typemap["columns"]:
@@ -429,13 +429,13 @@ class RDFConverter:
                 else:
                     theiri = URIRef(attns + x)
                 if prefix!="":
-                    res = self.processColumns(str(prefix) + "." + str(x), seencols, x, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x],bibmap,geomatts)
+                    res = self.processColumns(str(prefix) + "." + str(x), seencols, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x],bibmap,geomatts)
                     g.add((URIRef(curid),URIRef(theiri),URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                     if "concept" in typemap["columns"][x]:
                         g.add((URIRef(str(curid) + "_" + str(x)),RDF.type,URIRef(typemap["columns"][x]["concept"])))
                 else:
-                    res=self.processColumns(str(x),seencols,x,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x],bibmap,geomatts)
+                    res=self.processColumns(str(x),seencols,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x],bibmap,geomatts)
                     g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                     if "concept" in typemap["columns"][x]:
@@ -601,7 +601,7 @@ class RDFConverter:
             #for x in typemap["columns"]:
             subclass = False
             intypemap=False
-            res=self.processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts)
+            res=self.processColumns("",seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts)
             seencols=res["seencols"]
             subclass=res["subclass"]
             counter+=1
