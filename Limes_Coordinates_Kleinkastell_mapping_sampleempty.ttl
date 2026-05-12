@@ -1,5 +1,7 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix suni: <http://purl.org/suni/> .
 @prefix sunid: <http://purl.org/suni/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -13,7 +15,8 @@ sunid:0 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Anhausen"^^xsd:string ;
     suni:limestown "Neuwied"^^xsd:string ;
-    suni:limestownpart "Heimbach-Weis"^^xsd:string .
+    suni:limestownpart "Heimbach-Weis"^^xsd:string ;
+    geo:hasGeometry sunid:0_geom .
 
 sunid:1 a <> ;
     suni:ID 64 ;
@@ -21,7 +24,8 @@ sunid:1 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Hillscheid"^^xsd:string ;
     suni:limestown "Hillscheid"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:1_geom .
 
 sunid:10 a <> ;
     suni:ID 73 ;
@@ -29,7 +33,8 @@ sunid:10 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Saalburg 2"^^xsd:string ;
     suni:limestown "Bad Homburg"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:10_geom .
 
 sunid:11 a <> ;
     suni:ID 74 ;
@@ -37,7 +42,8 @@ sunid:11 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Lochmühle"^^xsd:string ;
     suni:limestown "Friedrichsdorf"^^xsd:string ;
-    suni:limestownpart "Köppern"^^xsd:string .
+    suni:limestownpart "Köppern"^^xsd:string ;
+    geo:hasGeometry sunid:11_geom .
 
 sunid:12 a <> ;
     suni:ID 75 ;
@@ -45,7 +51,8 @@ sunid:12 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Rittergräber"^^xsd:string ;
     suni:limestown "Rosbach"^^xsd:string ;
-    suni:limestownpart "Nieder-Rosbach"^^xsd:string .
+    suni:limestownpart "Nieder-Rosbach"^^xsd:string ;
+    geo:hasGeometry sunid:12_geom .
 
 sunid:13 a <> ;
     suni:ID 76 ;
@@ -53,7 +60,8 @@ sunid:13 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Hunnenkirchhof 1"^^xsd:string ;
     suni:limestown "Butzbach"^^xsd:string ;
-    suni:limestownpart "Nieder-Weisel"^^xsd:string .
+    suni:limestownpart "Nieder-Weisel"^^xsd:string ;
+    geo:hasGeometry sunid:13_geom .
 
 sunid:14 a <> ;
     suni:ID 77 ;
@@ -61,7 +69,8 @@ sunid:14 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Hunnenkirchhof 2"^^xsd:string ;
     suni:limestown "Butzbach"^^xsd:string ;
-    suni:limestownpart "Nieder-Weisel"^^xsd:string .
+    suni:limestownpart "Nieder-Weisel"^^xsd:string ;
+    geo:hasGeometry sunid:14_geom .
 
 sunid:15 a <> ;
     suni:ID 78 ;
@@ -69,7 +78,8 @@ sunid:15 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Ockstädter Wald"^^xsd:string ;
     suni:limestown "Friedberg"^^xsd:string ;
-    suni:limestownpart "Ockstadt"^^xsd:string .
+    suni:limestownpart "Ockstadt"^^xsd:string ;
+    geo:hasGeometry sunid:15_geom .
 
 sunid:16 a <> ;
     suni:ID 79 ;
@@ -77,7 +87,8 @@ sunid:16 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Eichkopf"^^xsd:string ;
     suni:limestown "Ober-Mörlen"^^xsd:string ;
-    suni:limestownpart "Langenhain-Ziegenberg"^^xsd:string .
+    suni:limestownpart "Langenhain-Ziegenberg"^^xsd:string ;
+    geo:hasGeometry sunid:16_geom .
 
 sunid:17 a <> ;
     suni:ID 80 ;
@@ -85,7 +96,8 @@ sunid:17 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Kaisergrube"^^xsd:string ;
     suni:limestown "Ober-Mörlen"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:17_geom .
 
 sunid:18 a <> ;
     suni:ID 81 ;
@@ -93,7 +105,8 @@ sunid:18 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Schrenzer"^^xsd:string ;
     suni:limestown "Butzbach"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:18_geom .
 
 sunid:19 a <> ;
     suni:ID 82 ;
@@ -101,7 +114,8 @@ sunid:19 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Dicker Wald 2"^^xsd:string ;
     suni:limestown "Münzenberg"^^xsd:string ;
-    suni:limestownpart "Gambach"^^xsd:string .
+    suni:limestownpart "Gambach"^^xsd:string ;
+    geo:hasGeometry sunid:19_geom .
 
 sunid:2 a <> ;
     suni:ID 65 ;
@@ -109,7 +123,8 @@ sunid:2 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Becheln"^^xsd:string ;
     suni:limestown "Lahnstein"^^xsd:string ;
-    suni:limestownpart "Oberlahnstein/Becheln"^^xsd:string .
+    suni:limestownpart "Oberlahnstein/Becheln"^^xsd:string ;
+    geo:hasGeometry sunid:2_geom .
 
 sunid:20 a <> ;
     suni:ID 83 ;
@@ -117,7 +132,8 @@ sunid:20 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Dicker Wald 1"^^xsd:string ;
     suni:limestown "Münzenberg"^^xsd:string ;
-    suni:limestownpart "Gambach"^^xsd:string .
+    suni:limestownpart "Gambach"^^xsd:string ;
+    geo:hasGeometry sunid:20_geom .
 
 sunid:21 a <> ;
     suni:ID 84 ;
@@ -125,7 +141,8 @@ sunid:21 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Holzheimer Unterwald"^^xsd:string ;
     suni:limestown "Pohlheim"^^xsd:string ;
-    suni:limestownpart "Holzheim"^^xsd:string .
+    suni:limestownpart "Holzheim"^^xsd:string ;
+    geo:hasGeometry sunid:21_geom .
 
 sunid:22 a <> ;
     suni:ID 85 ;
@@ -133,7 +150,8 @@ sunid:22 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Feldheimer Wald"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
-    suni:limestownpart "Inheiden"^^xsd:string .
+    suni:limestownpart "Inheiden"^^xsd:string ;
+    geo:hasGeometry sunid:22_geom .
 
 sunid:23 a <> ;
     suni:ID 86 ;
@@ -141,7 +159,8 @@ sunid:23 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Buchkopf"^^xsd:string ;
     suni:limestown "Altenstadt"^^xsd:string ;
-    suni:limestownpart "Höchst"^^xsd:string .
+    suni:limestownpart "Höchst"^^xsd:string ;
+    geo:hasGeometry sunid:23_geom .
 
 sunid:24 a <> ;
     suni:ID 87 ;
@@ -149,7 +168,8 @@ sunid:24 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Neuwirtshaus"^^xsd:string ;
     suni:limestown "Hanau"^^xsd:string ;
-    suni:limestownpart "Wolfgang"^^xsd:string .
+    suni:limestownpart "Wolfgang"^^xsd:string ;
+    geo:hasGeometry sunid:24_geom .
 
 sunid:25 a <> ;
     suni:ID 88 ;
@@ -157,7 +177,8 @@ sunid:25 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Haselburg"^^xsd:string ;
     suni:limestown "Walldürn"^^xsd:string ;
-    suni:limestownpart "Reinhardsachsen"^^xsd:string .
+    suni:limestownpart "Reinhardsachsen"^^xsd:string ;
+    geo:hasGeometry sunid:25_geom .
 
 sunid:26 a <> ;
     suni:ID 89 ;
@@ -165,7 +186,8 @@ sunid:26 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Rehberg"^^xsd:string ;
     suni:limestown "Buchen"^^xsd:string ;
-    suni:limestownpart "Hettingen"^^xsd:string .
+    suni:limestownpart "Hettingen"^^xsd:string ;
+    geo:hasGeometry sunid:26_geom .
 
 sunid:27 a <> ;
     suni:ID 90 ;
@@ -173,7 +195,8 @@ sunid:27 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Hintere Kalbe"^^xsd:string ;
     suni:limestown "Osterburken"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:27_geom .
 
 sunid:28 a <> ;
     suni:ID 91 ;
@@ -181,7 +204,8 @@ sunid:28 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Hankertsmühle"^^xsd:string ;
     suni:limestown "Mainhardt"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:28_geom .
 
 sunid:29 a <> ;
     suni:ID 92 ;
@@ -189,7 +213,8 @@ sunid:29 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Ebnisee"^^xsd:string ;
     suni:limestown "Kaisersbach"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:29_geom .
 
 sunid:3 a <> ;
     suni:ID 66 ;
@@ -197,7 +222,8 @@ sunid:3 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Pfarrhofen"^^xsd:string ;
     suni:limestown "Miehlen"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:3_geom .
 
 sunid:30 a <> ;
     suni:ID 93 ;
@@ -205,7 +231,8 @@ sunid:30 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Rötelsee"^^xsd:string ;
     suni:limestown "Welzheim"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:30_geom .
 
 sunid:31 a <> ;
     suni:ID 94 ;
@@ -213,7 +240,8 @@ sunid:31 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Kleindeinbach"^^xsd:string ;
     suni:limestown "Schwäbisch Gmünd"^^xsd:string ;
-    suni:limestownpart "Großdeinbach"^^xsd:string .
+    suni:limestownpart "Großdeinbach"^^xsd:string ;
+    geo:hasGeometry sunid:31_geom .
 
 sunid:32 a <> ;
     suni:ID 95 ;
@@ -221,7 +249,8 @@ sunid:32 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Freimühle"^^xsd:string ;
     suni:limestown "Schwäbisch Gmünd"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:32_geom .
 
 sunid:33 a <> ;
     suni:ID 96 ;
@@ -229,7 +258,8 @@ sunid:33 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Hinterer Schlossberg"^^xsd:string ;
     suni:limestown "Gunzenhausen"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:33_geom .
 
 sunid:34 a <> ;
     suni:ID 97 ;
@@ -237,7 +267,8 @@ sunid:34 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Gündersbach"^^xsd:string ;
     suni:limestown "Pfofeld"^^xsd:string ;
-    suni:limestownpart "Sankt Veit, (Gündersbach)"^^xsd:string .
+    suni:limestownpart "Sankt Veit, (Gündersbach)"^^xsd:string ;
+    geo:hasGeometry sunid:34_geom .
 
 sunid:35 a <> ;
     suni:ID 98 ;
@@ -245,7 +276,8 @@ sunid:35 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Raitenbuch"^^xsd:string ;
     suni:limestown "Raitenbuch"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:35_geom .
 
 sunid:36 a <> ;
     suni:ID 99 ;
@@ -253,7 +285,8 @@ sunid:36 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Kaldorf"^^xsd:string ;
     suni:limestown "Titting"^^xsd:string ;
-    suni:limestownpart "Kaldorf"^^xsd:string .
+    suni:limestownpart "Kaldorf"^^xsd:string ;
+    geo:hasGeometry sunid:36_geom .
 
 sunid:37 a <> ;
     suni:ID 100 ;
@@ -261,7 +294,8 @@ sunid:37 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Biebig"^^xsd:string ;
     suni:limestown "Titting"^^xsd:string ;
-    suni:limestownpart "Altdorf"^^xsd:string .
+    suni:limestownpart "Altdorf"^^xsd:string ;
+    geo:hasGeometry sunid:37_geom .
 
 sunid:38 a <> ;
     suni:ID 101 ;
@@ -269,7 +303,8 @@ sunid:38 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Hegelohe"^^xsd:string ;
     suni:limestown "Titting"^^xsd:string ;
-    suni:limestownpart "Altdorf"^^xsd:string .
+    suni:limestownpart "Altdorf"^^xsd:string ;
+    geo:hasGeometry sunid:38_geom .
 
 sunid:39 a <> ;
     suni:ID 102 ;
@@ -277,7 +312,8 @@ sunid:39 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Güssgraben"^^xsd:string ;
     suni:limestown "Altmannstein"^^xsd:string ;
-    suni:limestownpart "Schambach"^^xsd:string .
+    suni:limestownpart "Schambach"^^xsd:string ;
+    geo:hasGeometry sunid:39_geom .
 
 sunid:4 a <> ;
     suni:ID 67 ;
@@ -285,7 +321,8 @@ sunid:4 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Dörsterberg"^^xsd:string ;
     suni:limestown "Heidenrod"^^xsd:string ;
-    suni:limestownpart "Laufenselden"^^xsd:string .
+    suni:limestownpart "Laufenselden"^^xsd:string ;
+    geo:hasGeometry sunid:4_geom .
 
 sunid:40 a <> ;
     suni:ID 103 ;
@@ -293,7 +330,8 @@ sunid:40 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Hinterer Seeberg"^^xsd:string ;
     suni:limestown "Altmannstein"^^xsd:string ;
-    suni:limestownpart "Steinsdorf (i), Schambach"^^xsd:string .
+    suni:limestownpart "Steinsdorf (i), Schambach"^^xsd:string ;
+    geo:hasGeometry sunid:40_geom .
 
 sunid:41 a <> ;
     suni:ID 104 ;
@@ -301,7 +339,8 @@ sunid:41 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Rheinbrohl"^^xsd:string ;
     suni:limestown "Rheinbrohl"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:41_geom .
 
 sunid:42 a <> ;
     suni:ID 105 ;
@@ -309,7 +348,8 @@ sunid:42 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Ferbach"^^xsd:string ;
     suni:limestown "Weitersburg / Höhr-Grenzhausen"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:42_geom .
 
 sunid:43 a <> ;
     suni:ID 106 ;
@@ -317,7 +357,8 @@ sunid:43 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Pohl"^^xsd:string ;
     suni:limestown "Pohl"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:43_geom .
 
 sunid:44 a <> ;
     suni:ID 107 ;
@@ -325,7 +366,8 @@ sunid:44 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Kemel 2"^^xsd:string ;
     suni:limestown "Heidenrod"^^xsd:string ;
-    suni:limestownpart "Kemel"^^xsd:string .
+    suni:limestownpart "Kemel"^^xsd:string ;
+    geo:hasGeometry sunid:44_geom .
 
 sunid:45 a <> ;
     suni:ID 108 ;
@@ -333,7 +375,8 @@ sunid:45 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Kemel 1"^^xsd:string ;
     suni:limestown "Heidenrod"^^xsd:string ;
-    suni:limestownpart "Kemel"^^xsd:string .
+    suni:limestownpart "Kemel"^^xsd:string ;
+    geo:hasGeometry sunid:45_geom .
 
 sunid:46 a <> ;
     suni:ID 109 ;
@@ -341,7 +384,8 @@ sunid:46 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Adolfseck"^^xsd:string ;
     suni:limestown "Bad Schwalbach"^^xsd:string ;
-    suni:limestownpart "Adolfseck"^^xsd:string .
+    suni:limestownpart "Adolfseck"^^xsd:string ;
+    geo:hasGeometry sunid:46_geom .
 
 sunid:47 a <> ;
     suni:ID 110 ;
@@ -349,7 +393,8 @@ sunid:47 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Alteburg-Heftrich 2"^^xsd:string ;
     suni:limestown "Idstein"^^xsd:string ;
-    suni:limestownpart "Heftrich"^^xsd:string .
+    suni:limestownpart "Heftrich"^^xsd:string ;
+    geo:hasGeometry sunid:47_geom .
 
 sunid:48 a <> ;
     suni:ID 111 ;
@@ -357,7 +402,8 @@ sunid:48 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Alteburg-Heftrich 1"^^xsd:string ;
     suni:limestown "Idstein"^^xsd:string ;
-    suni:limestownpart "Heftrich"^^xsd:string .
+    suni:limestownpart "Heftrich"^^xsd:string ;
+    geo:hasGeometry sunid:48_geom .
 
 sunid:49 a <> ;
     suni:ID 112 ;
@@ -365,7 +411,8 @@ sunid:49 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Degerfeld"^^xsd:string ;
     suni:limestown "Butzbach"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:49_geom .
 
 sunid:5 a <> ;
     suni:ID 68 ;
@@ -373,7 +420,8 @@ sunid:5 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Eichelgarten"^^xsd:string ;
     suni:limestown "Idstein"^^xsd:string ;
-    suni:limestownpart "Lenzhahn/Dasbach"^^xsd:string .
+    suni:limestownpart "Lenzhahn/Dasbach"^^xsd:string ;
+    geo:hasGeometry sunid:5_geom .
 
 sunid:50 a <> ;
     suni:ID 113 ;
@@ -381,7 +429,8 @@ sunid:50 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Hainhaus"^^xsd:string ;
     suni:limestown "Pohlheim"^^xsd:string ;
-    suni:limestownpart "Grüningen"^^xsd:string .
+    suni:limestownpart "Grüningen"^^xsd:string ;
+    geo:hasGeometry sunid:50_geom .
 
 sunid:51 a <> ;
     suni:ID 114 ;
@@ -389,7 +438,8 @@ sunid:51 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Langsdorf"^^xsd:string ;
     suni:limestown "Lich"^^xsd:string ;
-    suni:limestownpart "Bettenhausen"^^xsd:string .
+    suni:limestownpart "Bettenhausen"^^xsd:string ;
+    geo:hasGeometry sunid:51_geom .
 
 sunid:52 a <> ;
     suni:ID 115 ;
@@ -397,7 +447,8 @@ sunid:52 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Lochberg"^^xsd:string ;
     suni:limestown "Echzell"^^xsd:string ;
-    suni:limestownpart "Bingenheim"^^xsd:string .
+    suni:limestownpart "Bingenheim"^^xsd:string ;
+    geo:hasGeometry sunid:52_geom .
 
 sunid:53 a <> ;
     suni:ID 116 ;
@@ -405,7 +456,8 @@ sunid:53 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Haselheck"^^xsd:string ;
     suni:limestown "Echzell"^^xsd:string ;
-    suni:limestownpart "Bisses"^^xsd:string .
+    suni:limestownpart "Bisses"^^xsd:string ;
+    geo:hasGeometry sunid:53_geom .
 
 sunid:54 a <> ;
     suni:ID 117 ;
@@ -413,7 +465,8 @@ sunid:54 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Inheiden 1"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
-    suni:limestownpart "Inheiden"^^xsd:string .
+    suni:limestownpart "Inheiden"^^xsd:string ;
+    geo:hasGeometry sunid:54_geom .
 
 sunid:55 a <> ;
     suni:ID 118 ;
@@ -421,7 +474,8 @@ sunid:55 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Inheiden 2"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
-    suni:limestownpart "Inheiden"^^xsd:string .
+    suni:limestownpart "Inheiden"^^xsd:string ;
+    geo:hasGeometry sunid:55_geom .
 
 sunid:56 a <> ;
     suni:ID 119 ;
@@ -429,7 +483,8 @@ sunid:56 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Unter-Widdersheim"^^xsd:string ;
     suni:limestown "Nidda"^^xsd:string ;
-    suni:limestownpart "Unter-Widdersheim"^^xsd:string .
+    suni:limestownpart "Unter-Widdersheim"^^xsd:string ;
+    geo:hasGeometry sunid:56_geom .
 
 sunid:57 a <> ;
     suni:ID 120 ;
@@ -437,7 +492,8 @@ sunid:57 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Wingertsberg"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
-    suni:limestownpart "Steinheim"^^xsd:string .
+    suni:limestownpart "Steinheim"^^xsd:string ;
+    geo:hasGeometry sunid:57_geom .
 
 sunid:58 a <> ;
     suni:ID 121 ;
@@ -445,7 +501,8 @@ sunid:58 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Staden"^^xsd:string ;
     suni:limestown "Florstadt"^^xsd:string ;
-    suni:limestownpart "Staden"^^xsd:string .
+    suni:limestownpart "Staden"^^xsd:string ;
+    geo:hasGeometry sunid:58_geom .
 
 sunid:59 a <> ;
     suni:ID 122 ;
@@ -453,7 +510,8 @@ sunid:59 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Massohl"^^xsd:string ;
     suni:limestown "Hungen"^^xsd:string ;
-    suni:limestownpart "Steinheim"^^xsd:string .
+    suni:limestownpart "Steinheim"^^xsd:string ;
+    geo:hasGeometry sunid:59_geom .
 
 sunid:6 a <> ;
     suni:ID 69 ;
@@ -461,7 +519,8 @@ sunid:6 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Maisel"^^xsd:string ;
     suni:limestown "Glashütten"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:6_geom .
 
 sunid:60 a <> ;
     suni:ID 123 ;
@@ -469,7 +528,8 @@ sunid:60 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Stammheim"^^xsd:string ;
     suni:limestown "Florstadt"^^xsd:string ;
-    suni:limestownpart "Stammheim"^^xsd:string .
+    suni:limestownpart "Stammheim"^^xsd:string ;
+    geo:hasGeometry sunid:60_geom .
 
 sunid:61 a <> ;
     suni:ID 124 ;
@@ -477,7 +537,8 @@ sunid:61 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Langendiebach"^^xsd:string ;
     suni:limestown "Erlensee"^^xsd:string ;
-    suni:limestownpart "Langendiebach"^^xsd:string .
+    suni:limestownpart "Langendiebach"^^xsd:string ;
+    geo:hasGeometry sunid:61_geom .
 
 sunid:62 a <> ;
     suni:ID 125 ;
@@ -485,7 +546,8 @@ sunid:62 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Altheimer Straße"^^xsd:string ;
     suni:limestown "Buchen"^^xsd:string ;
-    suni:limestownpart "Hettingen"^^xsd:string .
+    suni:limestownpart "Hettingen"^^xsd:string ;
+    geo:hasGeometry sunid:62_geom .
 
 sunid:63 a <> ;
     suni:ID 126 ;
@@ -493,7 +555,8 @@ sunid:63 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Holderbusch"^^xsd:string ;
     suni:limestown "Buchen"^^xsd:string ;
-    suni:limestownpart "Rinschheim"^^xsd:string .
+    suni:limestownpart "Rinschheim"^^xsd:string ;
+    geo:hasGeometry sunid:63_geom .
 
 sunid:64 a <> ;
     suni:ID 127 ;
@@ -501,7 +564,8 @@ sunid:64 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Salzberg"^^xsd:string ;
     suni:limestown "Osterburken"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:64_geom .
 
 sunid:65 a <> ;
     suni:ID 128 ;
@@ -509,7 +573,8 @@ sunid:65 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Lehnenwiesen"^^xsd:string ;
     suni:limestown "Widdern"^^xsd:string ;
-    suni:limestownpart "Unterkessach"^^xsd:string .
+    suni:limestownpart "Unterkessach"^^xsd:string ;
+    geo:hasGeometry sunid:65_geom .
 
 sunid:66 a <> ;
     suni:ID 129 ;
@@ -517,7 +582,8 @@ sunid:66 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Sindringen"^^xsd:string ;
     suni:limestown "Forchtenberg"^^xsd:string ;
-    suni:limestownpart "Sindringen"^^xsd:string .
+    suni:limestownpart "Sindringen"^^xsd:string ;
+    geo:hasGeometry sunid:66_geom .
 
 sunid:67 a <> ;
     suni:ID 130 ;
@@ -525,7 +591,8 @@ sunid:67 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Herrenwiesen"^^xsd:string ;
     suni:limestown "Mainhardt"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:67_geom .
 
 sunid:7 a <> ;
     suni:ID 70 ;
@@ -533,7 +600,8 @@ sunid:7 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Altes Jagdhaus"^^xsd:string ;
     suni:limestown "Oberursel"^^xsd:string ;
-    suni:limestownpart "Oberstedten"^^xsd:string .
+    suni:limestownpart "Oberstedten"^^xsd:string ;
+    geo:hasGeometry sunid:7_geom .
 
 sunid:8 a <> ;
     suni:ID 71 ;
@@ -541,7 +609,8 @@ sunid:8 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Heidenstock"^^xsd:string ;
     suni:limestown "Bad Homburg"^^xsd:string ;
-    suni:limestownpart "Ober-Eschbach"^^xsd:string .
+    suni:limestownpart "Ober-Eschbach"^^xsd:string ;
+    geo:hasGeometry sunid:8_geom .
 
 sunid:9 a <> ;
     suni:ID 72 ;
@@ -549,7 +618,8 @@ sunid:9 a <> ;
     suni:limescategory "Kleinkastell"^^xsd:string ;
     suni:limesobject "Saalburg 1"^^xsd:string ;
     suni:limestown "Bad Homburg"^^xsd:string ;
-    suni:limestownpart "???"^^xsd:string .
+    suni:limestownpart "???"^^xsd:string ;
+    geo:hasGeometry sunid:9_geom .
 
 suni:fid a owl:DatatypeProperty ;
     rdfs:label "fid"@en .
@@ -566,5 +636,286 @@ suni:limestown a owl:DatatypeProperty ;
 suni:limestownpart a owl:DatatypeProperty ;
     rdfs:label "limestownpart"@en .
 
+geo:asWKT a owl:DatatypeProperty .
+
+geo:hasGeometry a owl:ObjectProperty .
+
+sunid:0_geom a sf:Point ;
+    rdfs:label "Geometry of 0"@en ;
+    geo:asWKT "POINT (7.538413 50.481347)"^^geo:wktLiteral .
+
+sunid:10_geom a sf:Point ;
+    rdfs:label "Geometry of 10"@en ;
+    geo:asWKT "POINT (8.568939 50.27216)"^^geo:wktLiteral .
+
+sunid:11_geom a sf:Point ;
+    rdfs:label "Geometry of 11"@en ;
+    geo:asWKT "POINT (8.586331 50.28213)"^^geo:wktLiteral .
+
+sunid:12_geom a sf:Point ;
+    rdfs:label "Geometry of 12"@en ;
+    geo:asWKT "POINT (8.62539 50.305565)"^^geo:wktLiteral .
+
+sunid:13_geom a sf:Point ;
+    rdfs:label "Geometry of 13"@en ;
+    geo:asWKT "POINT (8.6284 50.414587)"^^geo:wktLiteral .
+
+sunid:14_geom a sf:Point ;
+    rdfs:label "Geometry of 14"@en ;
+    geo:asWKT "POINT (8.629062 50.41449)"^^geo:wktLiteral .
+
+sunid:15_geom a sf:Point ;
+    rdfs:label "Geometry of 15"@en ;
+    geo:asWKT "POINT (8.638337 50.319621)"^^geo:wktLiteral .
+
+sunid:16_geom a sf:Point ;
+    rdfs:label "Geometry of 16"@en ;
+    geo:asWKT "POINT (8.640278 50.356513)"^^geo:wktLiteral .
+
+sunid:17_geom a sf:Point ;
+    rdfs:label "Geometry of 17"@en ;
+    geo:asWKT "POINT (8.64676 50.336998)"^^geo:wktLiteral .
+
+sunid:18_geom a sf:Point ;
+    rdfs:label "Geometry of 18"@en ;
+    geo:asWKT "POINT (8.650381 50.432994)"^^geo:wktLiteral .
+
+sunid:19_geom a sf:Point ;
+    rdfs:label "Geometry of 19"@en ;
+    geo:asWKT "POINT (8.67608 50.470322)"^^geo:wktLiteral .
+
+sunid:1_geom a sf:Point ;
+    rdfs:label "Geometry of 1"@en ;
+    geo:asWKT "POINT (7.704296 50.412622)"^^geo:wktLiteral .
+
+sunid:20_geom a sf:Point ;
+    rdfs:label "Geometry of 20"@en ;
+    geo:asWKT "POINT (8.677771 50.466075)"^^geo:wktLiteral .
+
+sunid:21_geom a sf:Point ;
+    rdfs:label "Geometry of 21"@en ;
+    geo:asWKT "POINT (8.69936 50.499817)"^^geo:wktLiteral .
+
+sunid:22_geom a sf:Point ;
+    rdfs:label "Geometry of 22"@en ;
+    geo:asWKT "POINT (8.873857 50.471082)"^^geo:wktLiteral .
+
+sunid:23_geom a sf:Point ;
+    rdfs:label "Geometry of 23"@en ;
+    geo:asWKT "POINT (8.961192 50.260375)"^^geo:wktLiteral .
+
+sunid:24_geom a sf:Point ;
+    rdfs:label "Geometry of 24"@en ;
+    geo:asWKT "POINT (8.982996 50.11126)"^^geo:wktLiteral .
+
+sunid:25_geom a sf:Point ;
+    rdfs:label "Geometry of 25"@en ;
+    geo:asWKT "POINT (9.330439 49.633402)"^^geo:wktLiteral .
+
+sunid:26_geom a sf:Point ;
+    rdfs:label "Geometry of 26"@en ;
+    geo:asWKT "POINT (9.387543 49.542873)"^^geo:wktLiteral .
+
+sunid:27_geom a sf:Point ;
+    rdfs:label "Geometry of 27"@en ;
+    geo:asWKT "POINT (9.42348 49.449848)"^^geo:wktLiteral .
+
+sunid:28_geom a sf:Point ;
+    rdfs:label "Geometry of 28"@en ;
+    geo:asWKT "POINT (9.571011 49.055125)"^^geo:wktLiteral .
+
+sunid:29_geom a sf:Point ;
+    rdfs:label "Geometry of 29"@en ;
+    geo:asWKT "POINT (9.619291 48.925947)"^^geo:wktLiteral .
+
+sunid:2_geom a sf:Point ;
+    rdfs:label "Geometry of 2"@en ;
+    geo:asWKT "POINT (7.738396 50.28661)"^^geo:wktLiteral .
+
+sunid:30_geom a sf:Point ;
+    rdfs:label "Geometry of 30"@en ;
+    geo:asWKT "POINT (9.633845 48.88659)"^^geo:wktLiteral .
+
+sunid:31_geom a sf:Point ;
+    rdfs:label "Geometry of 31"@en ;
+    geo:asWKT "POINT (9.754924 48.797321)"^^geo:wktLiteral .
+
+sunid:32_geom a sf:Point ;
+    rdfs:label "Geometry of 32"@en ;
+    geo:asWKT "POINT (9.763711 48.791553)"^^geo:wktLiteral .
+
+sunid:33_geom a sf:Point ;
+    rdfs:label "Geometry of 33"@en ;
+    geo:asWKT "POINT (10.780904 49.116839)"^^geo:wktLiteral .
+
+sunid:34_geom a sf:Point ;
+    rdfs:label "Geometry of 34"@en ;
+    geo:asWKT "POINT (10.951999 49.0865)"^^geo:wktLiteral .
+
+sunid:35_geom a sf:Point ;
+    rdfs:label "Geometry of 35"@en ;
+    geo:asWKT "POINT (11.105936 49.015709)"^^geo:wktLiteral .
+
+sunid:36_geom a sf:Point ;
+    rdfs:label "Geometry of 36"@en ;
+    geo:asWKT "POINT (11.1511 48.983454)"^^geo:wktLiteral .
+
+sunid:37_geom a sf:Point ;
+    rdfs:label "Geometry of 37"@en ;
+    geo:asWKT "POINT (11.265951 48.975256)"^^geo:wktLiteral .
+
+sunid:38_geom a sf:Point ;
+    rdfs:label "Geometry of 38"@en ;
+    geo:asWKT "POINT (11.271316 48.975771)"^^geo:wktLiteral .
+
+sunid:39_geom a sf:Point ;
+    rdfs:label "Geometry of 39"@en ;
+    geo:asWKT "POINT (11.539056 48.913671)"^^geo:wktLiteral .
+
+sunid:3_geom a sf:Point ;
+    rdfs:label "Geometry of 3"@en ;
+    geo:asWKT "POINT (7.890201 50.226566)"^^geo:wktLiteral .
+
+sunid:40_geom a sf:Point ;
+    rdfs:label "Geometry of 40"@en ;
+    geo:asWKT "POINT (11.572464 48.905277)"^^geo:wktLiteral .
+
+sunid:41_geom a sf:Point ;
+    rdfs:label "Geometry of 41"@en ;
+    geo:asWKT "POINT (7.319315 50.503527)"^^geo:wktLiteral .
+
+sunid:42_geom a sf:Point ;
+    rdfs:label "Geometry of 42"@en ;
+    geo:asWKT "POINT (7.65227 50.430389)"^^geo:wktLiteral .
+
+sunid:43_geom a sf:Point ;
+    rdfs:label "Geometry of 43"@en ;
+    geo:asWKT "POINT (7.868022 50.251174)"^^geo:wktLiteral .
+
+sunid:44_geom a sf:Point ;
+    rdfs:label "Geometry of 44"@en ;
+    geo:asWKT "POINT (8.016199 50.167456)"^^geo:wktLiteral .
+
+sunid:45_geom a sf:Point ;
+    rdfs:label "Geometry of 45"@en ;
+    geo:asWKT "POINT (8.016542 50.167774)"^^geo:wktLiteral .
+
+sunid:46_geom a sf:Point ;
+    rdfs:label "Geometry of 46"@en ;
+    geo:asWKT "POINT (8.077694 50.16494)"^^geo:wktLiteral .
+
+sunid:47_geom a sf:Point ;
+    rdfs:label "Geometry of 47"@en ;
+    geo:asWKT "POINT (8.336425 50.21039)"^^geo:wktLiteral .
+
+sunid:48_geom a sf:Point ;
+    rdfs:label "Geometry of 48"@en ;
+    geo:asWKT "POINT (8.339083 50.211682)"^^geo:wktLiteral .
+
+sunid:49_geom a sf:Point ;
+    rdfs:label "Geometry of 49"@en ;
+    geo:asWKT "POINT (8.655724 50.443519)"^^geo:wktLiteral .
+
+sunid:4_geom a sf:Point ;
+    rdfs:label "Geometry of 4"@en ;
+    geo:asWKT "POINT (7.995022 50.197474)"^^geo:wktLiteral .
+
+sunid:50_geom a sf:Point ;
+    rdfs:label "Geometry of 50"@en ;
+    geo:asWKT "POINT (8.725101 50.52089)"^^geo:wktLiteral .
+
+sunid:51_geom a sf:Point ;
+    rdfs:label "Geometry of 51"@en ;
+    geo:asWKT "POINT (8.85455 50.482998)"^^geo:wktLiteral .
+
+sunid:52_geom a sf:Point ;
+    rdfs:label "Geometry of 52"@en ;
+    geo:asWKT "POINT (8.89565 50.361023)"^^geo:wktLiteral .
+
+sunid:53_geom a sf:Point ;
+    rdfs:label "Geometry of 53"@en ;
+    geo:asWKT "POINT (8.901594 50.388546)"^^geo:wktLiteral .
+
+sunid:54_geom a sf:Point ;
+    rdfs:label "Geometry of 54"@en ;
+    geo:asWKT "POINT (8.903685 50.46017)"^^geo:wktLiteral .
+
+sunid:55_geom a sf:Point ;
+    rdfs:label "Geometry of 55"@en ;
+    geo:asWKT "POINT (8.906795 50.461008)"^^geo:wktLiteral .
+
+sunid:56_geom a sf:Point ;
+    rdfs:label "Geometry of 56"@en ;
+    geo:asWKT "POINT (8.908644 50.422543)"^^geo:wktLiteral .
+
+sunid:57_geom a sf:Point ;
+    rdfs:label "Geometry of 57"@en ;
+    geo:asWKT "POINT (8.91015 50.451806)"^^geo:wktLiteral .
+
+sunid:58_geom a sf:Point ;
+    rdfs:label "Geometry of 58"@en ;
+    geo:asWKT "POINT (8.915133 50.326418)"^^geo:wktLiteral .
+
+sunid:59_geom a sf:Point ;
+    rdfs:label "Geometry of 59"@en ;
+    geo:asWKT "POINT (8.91616 50.437561)"^^geo:wktLiteral .
+
+sunid:5_geom a sf:Point ;
+    rdfs:label "Geometry of 5"@en ;
+    geo:asWKT "POINT (8.316399 50.201068)"^^geo:wktLiteral .
+
+sunid:60_geom a sf:Point ;
+    rdfs:label "Geometry of 60"@en ;
+    geo:asWKT "POINT (8.923034 50.31257)"^^geo:wktLiteral .
+
+sunid:61_geom a sf:Point ;
+    rdfs:label "Geometry of 61"@en ;
+    geo:asWKT "POINT (8.985621 50.167989)"^^geo:wktLiteral .
+
+sunid:62_geom a sf:Point ;
+    rdfs:label "Geometry of 62"@en ;
+    geo:asWKT "POINT (9.383568 49.545215)"^^geo:wktLiteral .
+
+sunid:63_geom a sf:Point ;
+    rdfs:label "Geometry of 63"@en ;
+    geo:asWKT "POINT (9.395263 49.515019)"^^geo:wktLiteral .
+
+sunid:64_geom a sf:Point ;
+    rdfs:label "Geometry of 64"@en ;
+    geo:asWKT "POINT (9.430446 49.43113)"^^geo:wktLiteral .
+
+sunid:65_geom a sf:Point ;
+    rdfs:label "Geometry of 65"@en ;
+    geo:asWKT "POINT (9.457339 49.350652)"^^geo:wktLiteral .
+
+sunid:66_geom a sf:Point ;
+    rdfs:label "Geometry of 66"@en ;
+    geo:asWKT "POINT (9.47859 49.279712)"^^geo:wktLiteral .
+
+sunid:67_geom a sf:Point ;
+    rdfs:label "Geometry of 67"@en ;
+    geo:asWKT "POINT (9.561952 49.080419)"^^geo:wktLiteral .
+
+sunid:6_geom a sf:Point ;
+    rdfs:label "Geometry of 6"@en ;
+    geo:asWKT "POINT (8.390579 50.218544)"^^geo:wktLiteral .
+
+sunid:7_geom a sf:Point ;
+    rdfs:label "Geometry of 7"@en ;
+    geo:asWKT "POINT (8.492966 50.244586)"^^geo:wktLiteral .
+
+sunid:8_geom a sf:Point ;
+    rdfs:label "Geometry of 8"@en ;
+    geo:asWKT "POINT (8.512934 50.253706)"^^geo:wktLiteral .
+
+sunid:9_geom a sf:Point ;
+    rdfs:label "Geometry of 9"@en ;
+    geo:asWKT "POINT (8.568471 50.272769)"^^geo:wktLiteral .
+
+geo:Geometry a owl:Class .
+
 <> a owl:Class .
+
+sf:Point a owl:Class ;
+    rdfs:subClassOf geo:Geometry .
 
