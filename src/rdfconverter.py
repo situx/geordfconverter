@@ -622,6 +622,7 @@ class RDFConverter:
                     subclass = res[1]
                 #print(x)
             if subclass==False:
+                print("Has NO SubClass: Add thecls "+str(thecls))
                 g.add((URIRef(curid), RDF.type, thecls))
         return g
 
