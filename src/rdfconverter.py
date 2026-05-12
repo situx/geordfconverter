@@ -603,6 +603,7 @@ class RDFConverter:
             subclass = False
             intypemap=False
             res=self.processColumns("",seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts)
+            print("ProcessColumns Res: "+str(res))
             seencols=res["seencols"]
             subclass=res["subclass"]
             counter+=1
