@@ -6,8 +6,7 @@
 @prefix sunid: <http://purl.org/suni/data/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-sunid:1 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:1 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Anhausen!"^^xsd:string,
         "Kastell"@de,
@@ -17,8 +16,7 @@ sunid:1 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:1_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:10 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:10 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Saalburg 1!"^^xsd:string,
         "Kastell"@de,
@@ -28,8 +26,7 @@ sunid:10 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:10_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:11 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:11 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Saalburg 2!"^^xsd:string,
         "Kastell"@de,
@@ -39,8 +36,7 @@ sunid:11 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:11_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:12 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Lochmühle!"^^xsd:string,
         "Kastell"@de,
@@ -50,8 +46,7 @@ sunid:12 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:12_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:13 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Rittergräber!"^^xsd:string,
         "Kastell"@de,
@@ -61,8 +56,7 @@ sunid:13 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:13_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:14 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Hunnenkirchhof 1!"^^xsd:string,
         "Kastell"@de,
@@ -72,8 +66,7 @@ sunid:14 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:14_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:15 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Hunnenkirchhof 2!"^^xsd:string,
         "Kastell"@de,
@@ -83,8 +76,7 @@ sunid:15 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:15_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:16 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Ockstädter Wald!"^^xsd:string,
         "Kastell"@de,
@@ -94,8 +86,7 @@ sunid:16 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:16_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:17 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Eichkopf!"^^xsd:string,
         "Kastell"@de,
@@ -105,8 +96,7 @@ sunid:17 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:17_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:18 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Kaisergrube!"^^xsd:string,
         "Kastell"@de,
@@ -116,8 +106,7 @@ sunid:18 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:18_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:19 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Schrenzer!"^^xsd:string,
         "Kastell"@de,
@@ -127,8 +116,7 @@ sunid:19 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:19_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:2 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Hillscheid!"^^xsd:string,
         "Kastell"@de,
@@ -138,8 +126,7 @@ sunid:2 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:2_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:20 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Dicker Wald 2!"^^xsd:string,
         "Kastell"@de,
@@ -149,8 +136,7 @@ sunid:20 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:20_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:21 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Dicker Wald 1!"^^xsd:string,
         "Kastell"@de,
@@ -160,8 +146,7 @@ sunid:21 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:21_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:22 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Holzheimer Unterwald!"^^xsd:string,
         "Kastell"@de,
@@ -171,8 +156,7 @@ sunid:22 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:22_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:23 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Feldheimer Wald!"^^xsd:string,
         "Kastell"@de,
@@ -182,8 +166,7 @@ sunid:23 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:23_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:24 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Buchkopf!"^^xsd:string,
         "Kastell"@de,
@@ -193,8 +176,7 @@ sunid:24 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:24_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:25 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Neuwirtshaus!"^^xsd:string,
         "Kastell"@de,
@@ -204,8 +186,7 @@ sunid:25 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:25_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:26 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Haselburg!"^^xsd:string,
         "Kastell"@de,
@@ -215,8 +196,7 @@ sunid:26 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:26_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:27 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Rehberg!"^^xsd:string,
         "Kastell"@de,
@@ -226,8 +206,7 @@ sunid:27 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:27_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:28 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Hintere Kalbe!"^^xsd:string,
         "Kastell"@de,
@@ -237,8 +216,7 @@ sunid:28 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:28_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:29 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Hankertsmühle!"^^xsd:string,
         "Kastell"@de,
@@ -248,8 +226,7 @@ sunid:29 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:29_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:3 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Becheln!"^^xsd:string,
         "Kastell"@de,
@@ -259,8 +236,7 @@ sunid:3 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:3_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:30 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Ebnisee!"^^xsd:string,
         "Kastell"@de,
@@ -270,8 +246,7 @@ sunid:30 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:30_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:31 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Rötelsee!"^^xsd:string,
         "Kastell"@de,
@@ -281,8 +256,7 @@ sunid:31 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:31_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:32 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Kleindeinbach!"^^xsd:string,
         "Kastell"@de,
@@ -292,8 +266,7 @@ sunid:32 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:32_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:33 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Freimühle!"^^xsd:string,
         "Kastell"@de,
@@ -303,8 +276,7 @@ sunid:33 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:33_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:34 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Hinterer Schlossberg!"^^xsd:string,
         "Kastell"@de,
@@ -314,8 +286,7 @@ sunid:34 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:34_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:35 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Gündersbach!"^^xsd:string,
         "Kastell"@de,
@@ -325,8 +296,7 @@ sunid:35 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:35_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:36 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Raitenbuch!"^^xsd:string,
         "Kastell"@de,
@@ -336,8 +306,7 @@ sunid:36 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:36_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:37 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Kaldorf!"^^xsd:string,
         "Kastell"@de,
@@ -347,8 +316,7 @@ sunid:37 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:37_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:38 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Biebig!"^^xsd:string,
         "Kastell"@de,
@@ -358,8 +326,7 @@ sunid:38 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:38_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:39 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Hegelohe!"^^xsd:string,
         "Kastell"@de,
@@ -369,8 +336,7 @@ sunid:39 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:39_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:4 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Pfarrhofen!"^^xsd:string,
         "Kastell"@de,
@@ -380,8 +346,7 @@ sunid:4 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:4_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:40 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Güssgraben!"^^xsd:string,
         "Kastell"@de,
@@ -391,8 +356,7 @@ sunid:40 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:40_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:41 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Hinterer Seeberg!"^^xsd:string,
         "Kastell"@de,
@@ -402,8 +366,7 @@ sunid:41 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:41_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:42 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Rheinbrohl!"^^xsd:string,
         "Kastell"@de,
@@ -413,8 +376,7 @@ sunid:42 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:42_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:43 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Ferbach!"^^xsd:string,
         "Kastell"@de,
@@ -424,8 +386,7 @@ sunid:43 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:43_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:44 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Pohl!"^^xsd:string,
         "Kastell"@de,
@@ -435,8 +396,7 @@ sunid:44 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:44_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:45 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Kemel 2!"^^xsd:string,
         "Kastell"@de,
@@ -446,8 +406,7 @@ sunid:45 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:45_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:46 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Kemel 1!"^^xsd:string,
         "Kastell"@de,
@@ -457,8 +416,7 @@ sunid:46 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:46_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:47 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Adolfseck!"^^xsd:string,
         "Kastell"@de,
@@ -468,8 +426,7 @@ sunid:47 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:47_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:48 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Alteburg-Heftrich 2!"^^xsd:string,
         "Kastell"@de,
@@ -479,8 +436,7 @@ sunid:48 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:48_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:49 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Alteburg-Heftrich 1!"^^xsd:string,
         "Kastell"@de,
@@ -490,8 +446,7 @@ sunid:49 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:49_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:5 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Dörsterberg!"^^xsd:string,
         "Kastell"@de,
@@ -501,8 +456,7 @@ sunid:5 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:5_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:50 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Degerfeld!"^^xsd:string,
         "Kastell"@de,
@@ -512,8 +466,7 @@ sunid:50 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:50_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:51 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Hainhaus!"^^xsd:string,
         "Kastell"@de,
@@ -523,8 +476,7 @@ sunid:51 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:51_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:52 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Langsdorf!"^^xsd:string,
         "Kastell"@de,
@@ -534,8 +486,7 @@ sunid:52 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:52_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:53 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Lochberg!"^^xsd:string,
         "Kastell"@de,
@@ -545,8 +496,7 @@ sunid:53 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:53_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:54 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Haselheck!"^^xsd:string,
         "Kastell"@de,
@@ -556,8 +506,7 @@ sunid:54 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:54_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:55 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Inheiden 1!"^^xsd:string,
         "Kastell"@de,
@@ -567,8 +516,7 @@ sunid:55 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:55_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:56 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Inheiden 2!"^^xsd:string,
         "Kastell"@de,
@@ -578,8 +526,7 @@ sunid:56 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:56_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:57 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Unter-Widdersheim!"^^xsd:string,
         "Kastell"@de,
@@ -589,8 +536,7 @@ sunid:57 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:57_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:58 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Wingertsberg!"^^xsd:string,
         "Kastell"@de,
@@ -600,8 +546,7 @@ sunid:58 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:58_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:59 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Staden!"^^xsd:string,
         "Kastell"@de,
@@ -611,8 +556,7 @@ sunid:59 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:59_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:6 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Eichelgarten!"^^xsd:string,
         "Kastell"@de,
@@ -622,8 +566,7 @@ sunid:6 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:6_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:60 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Massohl!"^^xsd:string,
         "Kastell"@de,
@@ -633,8 +576,7 @@ sunid:60 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:60_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:61 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Stammheim!"^^xsd:string,
         "Kastell"@de,
@@ -644,8 +586,7 @@ sunid:61 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:61_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:62 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Langendiebach!"^^xsd:string,
         "Kastell"@de,
@@ -655,8 +596,7 @@ sunid:62 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:62_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:63 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Altheimer Straße!"^^xsd:string,
         "Kastell"@de,
@@ -666,8 +606,7 @@ sunid:63 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:63_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:64 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Holderbusch!"^^xsd:string,
         "Kastell"@de,
@@ -677,8 +616,7 @@ sunid:64 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:64_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:65 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Salzberg!"^^xsd:string,
         "Kastell"@de,
@@ -688,8 +626,7 @@ sunid:65 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:65_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:66 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Lehnenwiesen!"^^xsd:string,
         "Kastell"@de,
@@ -699,8 +636,7 @@ sunid:66 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:66_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:67 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Sindringen!"^^xsd:string,
         "Kastell"@de,
@@ -710,8 +646,7 @@ sunid:67 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:67_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:68 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Herrenwiesen!"^^xsd:string,
         "Kastell"@de,
@@ -721,8 +656,7 @@ sunid:68 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:68_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:7 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Maisel!"^^xsd:string,
         "Kastell"@de,
@@ -732,8 +666,7 @@ sunid:7 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:7_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:8 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Altes Jagdhaus!"^^xsd:string,
         "Kastell"@de,
@@ -743,8 +676,7 @@ sunid:8 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
     geo:hasGeometry sunid:8_geom ;
     rdfs:comment "This is a generic comment"^^xsd:string .
 
-sunid:9 a <http://archaeoinformatics.link/ontology#MilitaryCamp>,
-        <http://www.wikidata.org/entity/Q88205>,
+sunid:9 a <http://www.wikidata.org/entity/Q88205>,
         <http://www.wikidata.org/entity/Q89477> ;
     rdfs:label "Kleinkastell Heidenstock!"^^xsd:string,
         "Kastell"@de,
@@ -766,6 +698,10 @@ rdfs:comment a owl:AnnotationProperty ;
 
 rdfs:label a owl:AnnotationProperty ;
     rdfs:label "label"@en .
+
+<http://archaeoinformatics.link/ontology#MilitaryCamp> a owl:Class ;
+    rdfs:label "Militärcamp"@de,
+        "Military Camp"@en .
 
 sunid:10_geom a sf:Point ;
     rdfs:label "Geometry of 10"@en ;
@@ -1060,8 +996,4 @@ sf:Point a owl:Class ;
     rdfs:label "Kleinkastell"@de,
         "castellum"@en ;
     rdfs:subClassOf <http://archaeoinformatics.link/ontology#MilitaryCamp> .
-
-<http://archaeoinformatics.link/ontology#MilitaryCamp> a owl:Class ;
-    rdfs:label "Militärcamp"@de,
-        "Military Camp"@en .
 
