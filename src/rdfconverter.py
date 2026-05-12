@@ -412,10 +412,10 @@ class RDFConverter:
     
     def processColumns(self,prefix,seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts):
         processedGeom=False
+        subclass = False
         #print("PROCCOL Graph: "+str(len(g)))
         for x in typemap["columns"]:
             # print("CConfig: "+str(x))
-            subclass = False
             intypemap = False
             if "ignore" in typemap["columns"][x] and typemap["columns"][x]["ignore"] == True:
                 seencols.add(x)
