@@ -469,7 +469,9 @@ class RDFConverter:
                 curcol = typemap["columns"][x]
                 res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
                 g = res[0]
-                subclass = res[1]
+                if res[1]:
+                    subclass=True
+                #subclass = res[1]
                 seencols.add(x)
         if prefix=="" and processedGeom==False:
             if len(geomatts)>0:
@@ -596,11 +598,12 @@ class RDFConverter:
                     if "labels" in clsmap:
                         for lab in clsmap["labels"]:
                             g.add((URIRef(curid),RDFS.label,Literal(clsmap["labels"][lab],lang=lab)))
-            for x in typemap["columns"]:
-                subclass = False
-                intypemap=False
-                res=self.processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts)
-                seencols=res["seencols"]
+            #for x in typemap["columns"]:
+            subclass = False
+            intypemap=False
+            res=self.processColumns("",seencols,x,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts)
+            seencols=res["seencols"]
+            subclass=res["subclass"]
             counter+=1
             notseencols=thecols.symmetric_difference(seencols)
             if onlyschema==False:
