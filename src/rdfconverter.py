@@ -619,10 +619,20 @@ class RDFConverter:
             if "addcolumns" in typemap:
                 for addcol in typemap["addcolumns"]:
                     curcol=typemap["addcolumns"][addcol]
-                    res = self.addPropertyToGraph(None, addcol, g, attns, curid, thecls, lang, curcol)
-                    g = res[0]
-                    if res[1]:
-                        subclass=True
+                    if "collection" in curcol and curcol["collection"]:
+                        colindid=curid+"_"+addcol
+                        if "propiri" in curcol:
+                            g.add((URIRef(curid),URIRef(curcol["propiri"]),URIRef(colindid)))
+                        else:
+                            g.add((URIRef(curid),URIRef(attns+addcol),URIRef(colindid)))
+                        if "columns" in curcol:
+                            for innercol in curcol["columns"]:
+                                res = self.addPropertyToGraph(None, innercol, g, attns, colindid, thecls, lang, curcol["columns"][innercol])
+                    else:
+                        res = self.addPropertyToGraph(None, addcol, g, attns, curid, thecls, lang, curcol)
+                        g = res[0]
+                        if res[1]:
+                            subclass=True
                 #print(x)
             if subclass==False:
                 g.add((URIRef(curid), RDF.type, thecls))
