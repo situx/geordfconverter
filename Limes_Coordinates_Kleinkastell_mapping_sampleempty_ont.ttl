@@ -6,6 +6,7 @@
 
 <http://purl.org/suni/> a ns1:Vocabulary,
         owl:Ontology ;
+    rdfs:label "http://purl.org/suni/ Vocabulary"@en ;
     vann:preferredNamespacePrefix "suni"^^xsd:anyURI ;
     vann:preferredNamespaceUri "http://purl.org/suni/"^^xsd:anyURI ;
     ns1:usageInDataset "http://purl.org/suni/data/"^^xsd:anyURI .
