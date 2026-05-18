@@ -1,5 +1,14 @@
+@prefix ns1: <http://purl.org/vocommons/voaf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://purl.org/suni/> a ns1:Vocabulary,
+        owl:Ontology ;
+    vann:preferredNamespacePrefix "suni"^^xsd:anyURI ;
+    vann:preferredNamespaceUri "http://purl.org/suni/"^^xsd:anyURI ;
+    ns1:usageInDataset "http://purl.org/suni/data/"^^xsd:anyURI .
 
 <http://purl.org/suni/ID> a owl:DatatypeProperty ;
     rdfs:label "ID"@en .
