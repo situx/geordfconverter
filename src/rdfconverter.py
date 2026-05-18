@@ -644,6 +644,9 @@ class RDFConverter:
                             g.add((URIRef(curid),URIRef(curcol["propiri"]),URIRef(colindid)))
                         else:
                             g.add((URIRef(curid),URIRef(attns+addcol),URIRef(colindid)))
+                        if "concept" in curcol:
+                            g.add((URIRef(colindid),RDF.type,URIRef(curcol["concept"])))
+                        g.add((URIRef(colindid),RDFS.label,Literal(addcol,lang="en")))
                         if "columns" in curcol:
                             for innercol in curcol["columns"]:
                                 res = self.addPropertyToGraph(None, innercol, g, attns, colindid, thecls, lang, curcol["columns"][innercol])
