@@ -16,9 +16,3 @@
 <http://purl.org/suni/limestownpart> a owl:DatatypeProperty ;
     rdfs:label "limestownpart"@en .
 
-rdfs:comment a owl:AnnotationProperty ;
-    rdfs:label "limesobject"@en .
-
-rdfs:label a owl:AnnotationProperty ;
-    rdfs:label "label"@en .
-
