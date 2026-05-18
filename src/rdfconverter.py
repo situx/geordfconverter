@@ -734,5 +734,5 @@ print("Serializing result to: "+str(path[0:path.rfind(".")].replace(str(os.sep),
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".ttl",format="turtle")
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".json",format="json-ld",auto_compact=True)
 ownvocabg.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_ont.ttl")
-with open(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_err.json","w",f):
+with open(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_err.json","w") as f:
     json.dump(miscolmappings)
