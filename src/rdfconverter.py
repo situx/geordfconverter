@@ -1,4 +1,4 @@
-from rdflib import Graph, URIRef, Literal, RDF, RDFS, OWL, XSD, DC
+from rdflib import Graph, URIRef, Literal, RDF, RDFS, OWL, XSD, DC, VOAF, VANN
 import argparse
 import bibtexparser
 import pandas as pd
@@ -536,6 +536,11 @@ class RDFConverter:
             attnsprefix = typemap["attnamespace"][typemap["attnamespace"].rfind("/") + 1:].replace("#","")
         else:
             attnsprefix="suni"
+        ownvocabg.add((URIRef(attns),RDF.type,OWL.Ontology))
+        ownvocabg.add((URIRef(attns),RDF.type,VOAF.Vocabulary))
+        ownvocabg.add((URIRef(attns),VANN.preferredNamespaceUri,Literal(attns,XSD.anyURI)))
+        ownvocabg.add((URIRef(attns),VANN.preferredNamespacePrefix,Literal(attnsprefix,XSD.anyURI)))
+        ownvocabg.add((URIRef(attns),VOAF.usageInDataset,Literal(ns,XSD.anyURI)))
         if "onlyschema" in typemap and typemap["onlyschema"]==True:
             onlyschema=True
         if "epsg" in typemap:
@@ -684,7 +689,6 @@ ownvocabg=Graph()
 subrend=None
 miscolmappings={}
 
-
 if path.endswith(".csv"):
     df = pd.read_csv(path, sep=args.sepchar[0])
 elif path.endswith(".geojson") or path.endswith(".shp") or path.endswith(".gml") or path.endswith(".kml"):
@@ -723,8 +727,7 @@ if os.path.exists(args.mapping[0]):
                 nsont="http://purl.org/suni/"
             bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,issuers,publishers,False)
             bibmap=bibres["bibmap"]
-
-ownvocabg.add((URIRef(nsont),RDF.type,OWL.Ontology))            
+         
 if not os.path.exists(args.output[0]):
     os.makedirs(args.output[0])
 with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_autotypemap.json","w") as f:
