@@ -294,23 +294,30 @@ class RDFConverter:
                 ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"]=="obj":
             concept=""
-            if "valuemapping" in curcol and thevalue in curcol["valuemapping"]:
-                if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
-                    g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue]["uri"])))
-                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, RDFS.Resource))
-                    if "labels" in curcol["valuemapping"][thevalue]:
-                        for lab in curcol["valuemapping"][thevalue]["labels"]:
-                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
-                    if "definition" in curcol["valuemapping"][thevalue]:
-                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue]["definition"],lang="en")))
-                    if "concept" in curcol:
-                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
+            if "valuemapping" in curcol:
+                if thevalue in curcol["valuemapping"]:
+                    if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
+                        g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue]["uri"])))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, RDFS.Resource))
+                        if "labels" in curcol["valuemapping"][thevalue]:
+                            for lab in curcol["valuemapping"][thevalue]["labels"]:
+                                g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
+                        if "definition" in curcol["valuemapping"][thevalue]:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue]["definition"],lang="en")))
+                        if "concept" in curcol:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
+                    else:
+                        g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, RDFS.Resource))
+                        if "concept" in curcol:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
                 else:
-                    g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
-                    g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
-                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, RDFS.Resource))
-                    if "concept" in curcol:
-                        g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
+                    if curcol not in miscolmappings:
+                        miscolmappings[curcol]={}
+                    if thevalue not in miscolmappings[curcol]:
+                        miscolmappings[curcol][thevalue]=0
+                    miscolmappings[curcol][thevalue]+=1
             elif str(thevalue).startswith("http"):
                 g.add((theiri, RDF.type, OWL.ObjectProperty))
                 g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
@@ -336,25 +343,32 @@ class RDFConverter:
                 ownvocabg.add((URIRef(theiri),RDF.type,OWL.AnnotationProperty))
                 ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"] == "subclass":
-            if "valuemapping" in curcol and thevalue in curcol["valuemapping"]:
-                if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
-                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDFS.subClassOf, thecls))
-                    g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, OWL.Class))
-                    g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue]["uri"])))
-                    if "labels" in curcol["valuemapping"][thevalue]:
-                        for lab in curcol["valuemapping"][thevalue]["labels"]:
-                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
-                    if "definition" in curcol["valuemapping"][thevalue]:
-                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue]["definition"],lang="en")))
-                    if "concept" in curcol:
-                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
+            if "valuemapping" in curcol:
+                if thevalue in curcol["valuemapping"]:
+                    if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDFS.subClassOf, thecls))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, OWL.Class))
+                        g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue]["uri"])))
+                        if "labels" in curcol["valuemapping"][thevalue]:
+                            for lab in curcol["valuemapping"][thevalue]["labels"]:
+                                g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
+                        if "definition" in curcol["valuemapping"][thevalue]:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue]["definition"],lang="en")))
+                        if "concept" in curcol:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
+                    else:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
+                        g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]), RDF.type, OWL.Class))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
+                        if "concept" in curcol:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
                 else:
-                    g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
-                    g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
-                    g.add((URIRef(curcol["valuemapping"][thevalue]), RDF.type, OWL.Class))
-                    g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
-                    if "concept" in curcol:
-                        g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
+                    if curcol not in miscolmappings:
+                        miscolmappings[curcol]={}
+                    if thevalue not in miscolmappings[curcol]:
+                        miscolmappings[curcol][thevalue]=0
+                    miscolmappings[curcol][thevalue]+=1
                 #g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
                 #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
                 #g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
@@ -668,6 +682,7 @@ for path in args.input:
 g = Graph()
 ownvocabg=Graph()
 subrend=None
+miscolmappings={}
 
 
 if path.endswith(".csv"):
@@ -719,3 +734,5 @@ print("Serializing result to: "+str(path[0:path.rfind(".")].replace(str(os.sep),
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".ttl",format="turtle")
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".json",format="json-ld",auto_compact=True)
 ownvocabg.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_ont.ttl")
+with open(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_err.json","w",f):
+    json.dump(miscolmappings)
