@@ -723,7 +723,8 @@ if os.path.exists(args.mapping[0]):
                 nsont="http://purl.org/suni/"
             bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,issuers,publishers,False)
             bibmap=bibres["bibmap"]
-            
+
+ownvocabg.add((URIRef(nsont),RDF.type,OWL.Ontology))            
 if not os.path.exists(args.output[0]):
     os.makedirs(args.output[0])
 with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_autotypemap.json","w") as f:
