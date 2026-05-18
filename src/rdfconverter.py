@@ -289,7 +289,7 @@ class RDFConverter:
                             g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string"))))
                         else:
                             g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), lang=curlang)))
-            if "propiri" not in column:
+            if "propiri" not in curcol:
                 ownvocabg.add((URIRef(theiri),RDF.type,OWL.DatatypeProperty))
                 ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"]=="obj":
@@ -326,7 +326,7 @@ class RDFConverter:
                     g.add((URIRef(thevalue),RDF.type,URIRef(curcol["concept"])))
             else:
                 g.add((URIRef(curid), theiri, Literal(thevalue,datatype=XSD.string)))
-            if "propiri" not in column:
+            if "propiri" not in curcol:
                 ownvocabg.add((URIRef(theiri),RDF.type,OWL.ObjectProperty))
                 ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"]=="anno":
@@ -339,7 +339,7 @@ class RDFConverter:
                 g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), lang=curcol["lang"])))
             else:
                 g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))
-            if "propiri" not in column:
+            if "propiri" not in curcol:
                 ownvocabg.add((URIRef(theiri),RDF.type,OWL.AnnotationProperty))
                 ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
         if curcol["prop"] == "subclass":
