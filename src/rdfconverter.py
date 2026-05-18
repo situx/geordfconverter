@@ -1,4 +1,4 @@
-from rdflib import Graph, URIRef, Literal, RDF, RDFS, OWL, XSD, DC, VOAF, VANN
+from rdflib import Graph, URIRef, Literal, RDF, RDFS, OWL, XSD, DC
 import argparse
 import bibtexparser
 import pandas as pd
@@ -537,10 +537,10 @@ class RDFConverter:
         else:
             attnsprefix="suni"
         ownvocabg.add((URIRef(attns),RDF.type,OWL.Ontology))
-        ownvocabg.add((URIRef(attns),RDF.type,VOAF.Vocabulary))
-        ownvocabg.add((URIRef(attns),VANN.preferredNamespaceUri,Literal(attns,XSD.anyURI)))
-        ownvocabg.add((URIRef(attns),VANN.preferredNamespacePrefix,Literal(attnsprefix,XSD.anyURI)))
-        ownvocabg.add((URIRef(attns),VOAF.usageInDataset,Literal(ns,XSD.anyURI)))
+        ownvocabg.add((URIRef(attns),RDF.type,URIRef("http://purl.org/vocommons/voaf#Vocabulary")))
+        ownvocabg.add((URIRef(attns),URIRef("http://purl.org/vocab/vann/preferredNamespaceUri"),Literal(attns,XSD.anyURI)))
+        ownvocabg.add((URIRef(attns),URIRef("http://purl.org/vocab/vann/preferredNamespacePrefix"),Literal(attnsprefix,XSD.anyURI)))
+        ownvocabg.add((URIRef(attns),URIRef("http://purl.org/vocommons/voaf#usageInDataset"),Literal(ns,XSD.anyURI)))
         if "onlyschema" in typemap and typemap["onlyschema"]==True:
             onlyschema=True
         if "epsg" in typemap:
