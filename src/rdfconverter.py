@@ -313,11 +313,11 @@ class RDFConverter:
                         if "concept" in curcol:
                             g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
                 else:
-                    if curcol not in miscolmappings:
-                        miscolmappings[curcol]={}
-                    if thevalue not in miscolmappings[curcol]:
-                        miscolmappings[curcol][thevalue]=0
-                    miscolmappings[curcol][thevalue]+=1
+                    if x not in miscolmappings:
+                        miscolmappings[x]={}
+                    if thevalue not in miscolmappings[x]:
+                        miscolmappings[x][thevalue]=0
+                    miscolmappings[x][thevalue]+=1
             elif str(thevalue).startswith("http"):
                 g.add((theiri, RDF.type, OWL.ObjectProperty))
                 g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
@@ -364,11 +364,11 @@ class RDFConverter:
                         if "concept" in curcol:
                             g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
                 else:
-                    if curcol not in miscolmappings:
-                        miscolmappings[curcol]={}
-                    if thevalue not in miscolmappings[curcol]:
-                        miscolmappings[curcol][thevalue]=0
-                    miscolmappings[curcol][thevalue]+=1
+                    if x not in miscolmappings:
+                        miscolmappings[x]={}
+                    if thevalue not in miscolmappings[x]:
+                        miscolmappings[x][thevalue]=0
+                    miscolmappings[x][thevalue]+=1
                 #g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
                 #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
                 #g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
