@@ -9,7 +9,7 @@ import io
 import os.path
 import json
 import requests
-import ConvertCRS from convertcrs
+import convertcrs from ConvertCRS
 
 
 def resolveWildcardPath(thepath):
