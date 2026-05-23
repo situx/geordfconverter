@@ -1,5 +1,8 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ns1: <http://www.opengis.net/ont/crs/> .
+@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sf: <http://www.opengis.net/ont/sf#> .
 @prefix suni: <http://purl.org/suni/> .
@@ -636,6 +639,10 @@ suni:limestown a owl:DatatypeProperty ;
 suni:limestownpart a owl:DatatypeProperty ;
     rdfs:label "limestownpart"@en .
 
+<http://www.opengis.net/ont/crs/cs/axis/east> a ns1:AxisDirection .
+
+<http://www.opengis.net/ont/crs/cs/axis/north> a ns1:AxisDirection .
+
 geo:asWKT a owl:DatatypeProperty .
 
 geo:hasGeometry a owl:ObjectProperty .
@@ -643,346 +650,388 @@ geo:hasGeometry a owl:ObjectProperty .
 sunid:0_geom a sf:Point ;
     rdfs:label "Geometry of 0"@en ;
     geo:asWKT "POINT (7.538413 50.481347)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:10_geom a sf:Point ;
     rdfs:label "Geometry of 10"@en ;
     geo:asWKT "POINT (8.568939 50.27216)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:11_geom a sf:Point ;
     rdfs:label "Geometry of 11"@en ;
     geo:asWKT "POINT (8.586331 50.28213)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:12_geom a sf:Point ;
     rdfs:label "Geometry of 12"@en ;
     geo:asWKT "POINT (8.62539 50.305565)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:13_geom a sf:Point ;
     rdfs:label "Geometry of 13"@en ;
     geo:asWKT "POINT (8.6284 50.414587)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:14_geom a sf:Point ;
     rdfs:label "Geometry of 14"@en ;
     geo:asWKT "POINT (8.629062 50.41449)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:15_geom a sf:Point ;
     rdfs:label "Geometry of 15"@en ;
     geo:asWKT "POINT (8.638337 50.319621)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:16_geom a sf:Point ;
     rdfs:label "Geometry of 16"@en ;
     geo:asWKT "POINT (8.640278 50.356513)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:17_geom a sf:Point ;
     rdfs:label "Geometry of 17"@en ;
     geo:asWKT "POINT (8.64676 50.336998)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:18_geom a sf:Point ;
     rdfs:label "Geometry of 18"@en ;
     geo:asWKT "POINT (8.650381 50.432994)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:19_geom a sf:Point ;
     rdfs:label "Geometry of 19"@en ;
     geo:asWKT "POINT (8.67608 50.470322)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:1_geom a sf:Point ;
     rdfs:label "Geometry of 1"@en ;
     geo:asWKT "POINT (7.704296 50.412622)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:20_geom a sf:Point ;
     rdfs:label "Geometry of 20"@en ;
     geo:asWKT "POINT (8.677771 50.466075)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:21_geom a sf:Point ;
     rdfs:label "Geometry of 21"@en ;
     geo:asWKT "POINT (8.69936 50.499817)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:22_geom a sf:Point ;
     rdfs:label "Geometry of 22"@en ;
     geo:asWKT "POINT (8.873857 50.471082)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:23_geom a sf:Point ;
     rdfs:label "Geometry of 23"@en ;
     geo:asWKT "POINT (8.961192 50.260375)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:24_geom a sf:Point ;
     rdfs:label "Geometry of 24"@en ;
     geo:asWKT "POINT (8.982996 50.11126)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:25_geom a sf:Point ;
     rdfs:label "Geometry of 25"@en ;
     geo:asWKT "POINT (9.330439 49.633402)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:26_geom a sf:Point ;
     rdfs:label "Geometry of 26"@en ;
     geo:asWKT "POINT (9.387543 49.542873)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:27_geom a sf:Point ;
     rdfs:label "Geometry of 27"@en ;
     geo:asWKT "POINT (9.42348 49.449848)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:28_geom a sf:Point ;
     rdfs:label "Geometry of 28"@en ;
     geo:asWKT "POINT (9.571011 49.055125)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:29_geom a sf:Point ;
     rdfs:label "Geometry of 29"@en ;
     geo:asWKT "POINT (9.619291 48.925947)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:2_geom a sf:Point ;
     rdfs:label "Geometry of 2"@en ;
     geo:asWKT "POINT (7.738396 50.28661)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:30_geom a sf:Point ;
     rdfs:label "Geometry of 30"@en ;
     geo:asWKT "POINT (9.633845 48.88659)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:31_geom a sf:Point ;
     rdfs:label "Geometry of 31"@en ;
     geo:asWKT "POINT (9.754924 48.797321)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:32_geom a sf:Point ;
     rdfs:label "Geometry of 32"@en ;
     geo:asWKT "POINT (9.763711 48.791553)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:33_geom a sf:Point ;
     rdfs:label "Geometry of 33"@en ;
     geo:asWKT "POINT (10.780904 49.116839)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:34_geom a sf:Point ;
     rdfs:label "Geometry of 34"@en ;
     geo:asWKT "POINT (10.951999 49.0865)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:35_geom a sf:Point ;
     rdfs:label "Geometry of 35"@en ;
     geo:asWKT "POINT (11.105936 49.015709)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:36_geom a sf:Point ;
     rdfs:label "Geometry of 36"@en ;
     geo:asWKT "POINT (11.1511 48.983454)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:37_geom a sf:Point ;
     rdfs:label "Geometry of 37"@en ;
     geo:asWKT "POINT (11.265951 48.975256)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:38_geom a sf:Point ;
     rdfs:label "Geometry of 38"@en ;
     geo:asWKT "POINT (11.271316 48.975771)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:39_geom a sf:Point ;
     rdfs:label "Geometry of 39"@en ;
     geo:asWKT "POINT (11.539056 48.913671)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:3_geom a sf:Point ;
     rdfs:label "Geometry of 3"@en ;
     geo:asWKT "POINT (7.890201 50.226566)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:40_geom a sf:Point ;
     rdfs:label "Geometry of 40"@en ;
     geo:asWKT "POINT (11.572464 48.905277)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:41_geom a sf:Point ;
     rdfs:label "Geometry of 41"@en ;
     geo:asWKT "POINT (7.319315 50.503527)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:42_geom a sf:Point ;
     rdfs:label "Geometry of 42"@en ;
     geo:asWKT "POINT (7.65227 50.430389)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:43_geom a sf:Point ;
     rdfs:label "Geometry of 43"@en ;
     geo:asWKT "POINT (7.868022 50.251174)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:44_geom a sf:Point ;
     rdfs:label "Geometry of 44"@en ;
     geo:asWKT "POINT (8.016199 50.167456)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:45_geom a sf:Point ;
     rdfs:label "Geometry of 45"@en ;
     geo:asWKT "POINT (8.016542 50.167774)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:46_geom a sf:Point ;
     rdfs:label "Geometry of 46"@en ;
     geo:asWKT "POINT (8.077694 50.16494)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:47_geom a sf:Point ;
     rdfs:label "Geometry of 47"@en ;
     geo:asWKT "POINT (8.336425 50.21039)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:48_geom a sf:Point ;
     rdfs:label "Geometry of 48"@en ;
     geo:asWKT "POINT (8.339083 50.211682)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:49_geom a sf:Point ;
     rdfs:label "Geometry of 49"@en ;
     geo:asWKT "POINT (8.655724 50.443519)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:4_geom a sf:Point ;
     rdfs:label "Geometry of 4"@en ;
     geo:asWKT "POINT (7.995022 50.197474)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:50_geom a sf:Point ;
     rdfs:label "Geometry of 50"@en ;
     geo:asWKT "POINT (8.725101 50.52089)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:51_geom a sf:Point ;
     rdfs:label "Geometry of 51"@en ;
     geo:asWKT "POINT (8.85455 50.482998)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:52_geom a sf:Point ;
     rdfs:label "Geometry of 52"@en ;
     geo:asWKT "POINT (8.89565 50.361023)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:53_geom a sf:Point ;
     rdfs:label "Geometry of 53"@en ;
     geo:asWKT "POINT (8.901594 50.388546)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:54_geom a sf:Point ;
     rdfs:label "Geometry of 54"@en ;
     geo:asWKT "POINT (8.903685 50.46017)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:55_geom a sf:Point ;
     rdfs:label "Geometry of 55"@en ;
     geo:asWKT "POINT (8.906795 50.461008)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:56_geom a sf:Point ;
     rdfs:label "Geometry of 56"@en ;
     geo:asWKT "POINT (8.908644 50.422543)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:57_geom a sf:Point ;
     rdfs:label "Geometry of 57"@en ;
     geo:asWKT "POINT (8.91015 50.451806)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:58_geom a sf:Point ;
     rdfs:label "Geometry of 58"@en ;
     geo:asWKT "POINT (8.915133 50.326418)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:59_geom a sf:Point ;
     rdfs:label "Geometry of 59"@en ;
     geo:asWKT "POINT (8.91616 50.437561)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:5_geom a sf:Point ;
     rdfs:label "Geometry of 5"@en ;
     geo:asWKT "POINT (8.316399 50.201068)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:60_geom a sf:Point ;
     rdfs:label "Geometry of 60"@en ;
     geo:asWKT "POINT (8.923034 50.31257)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:61_geom a sf:Point ;
     rdfs:label "Geometry of 61"@en ;
     geo:asWKT "POINT (8.985621 50.167989)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:62_geom a sf:Point ;
     rdfs:label "Geometry of 62"@en ;
     geo:asWKT "POINT (9.383568 49.545215)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:63_geom a sf:Point ;
     rdfs:label "Geometry of 63"@en ;
     geo:asWKT "POINT (9.395263 49.515019)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:64_geom a sf:Point ;
     rdfs:label "Geometry of 64"@en ;
     geo:asWKT "POINT (9.430446 49.43113)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:65_geom a sf:Point ;
     rdfs:label "Geometry of 65"@en ;
     geo:asWKT "POINT (9.457339 49.350652)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:66_geom a sf:Point ;
     rdfs:label "Geometry of 66"@en ;
     geo:asWKT "POINT (9.47859 49.279712)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:67_geom a sf:Point ;
     rdfs:label "Geometry of 67"@en ;
     geo:asWKT "POINT (9.561952 49.080419)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:6_geom a sf:Point ;
     rdfs:label "Geometry of 6"@en ;
     geo:asWKT "POINT (8.390579 50.218544)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:7_geom a sf:Point ;
     rdfs:label "Geometry of 7"@en ;
     geo:asWKT "POINT (8.492966 50.244586)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:8_geom a sf:Point ;
     rdfs:label "Geometry of 8"@en ;
     geo:asWKT "POINT (8.512934 50.253706)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:9_geom a sf:Point ;
     rdfs:label "Geometry of 9"@en ;
     geo:asWKT "POINT (8.568471 50.272769)"^^geo:wktLiteral ;
-    geo:inSRS <http://www.opengis.net/def/crs/OGC/1.3/CRS84> .
+    geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
+
+<http://www.opengis.net/def/crs/EPSG/0/4326_area_of_use> a ns1:AreaOfUse ;
+    rdfs:label "World."@en .
+
+<http://www.opengis.net/def/crs/EPSG/0/4326_cs> a ns1:EllipsoidalCoordinateSystem,
+        ns1:PlanarCoordinateSystem ;
+    rdfs:label "EPSG:4326 CS: ellipsoidal" ;
+    ns1:asProjJSON "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CoordinateSystem','subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}],'id':{'authority':'EPSG','code':6422}}" ;
+    ns1:asWKT "CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433,ID['EPSG',9122]]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433,ID['EPSG',9122]]]" ;
+    ns1:axis <http://www.opengis.net/ont/crs/cs/axis/Geodetic_latitude_degree_north>,
+        <http://www.opengis.net/ont/crs/cs/axis/Geodetic_longitude_degree_east> .
+
+<http://www.opengis.net/ont/crs/cs/axis/Geodetic_latitude_degree_north> a ns1:CoordinateSystemAxis ;
+    rdfs:label "Geodetic latitude (degree)"@en ;
+    ns1:abbreviation "Lat"^^xsd:string ;
+    ns1:direction ns1:north ;
+    ns1:unit om:degree ;
+    ns1:unit_auth_code "EPSG"^^xsd:string ;
+    ns1:unit_code "9122"^^xsd:string ;
+    ns1:unit_conversion_factor 1.745329e-02 .
+
+<http://www.opengis.net/ont/crs/cs/axis/Geodetic_longitude_degree_east> a ns1:CoordinateSystemAxis ;
+    rdfs:label "Geodetic longitude (degree)"@en ;
+    ns1:abbreviation "Lon"^^xsd:string ;
+    ns1:direction ns1:east ;
+    ns1:unit om:degree ;
+    ns1:unit_auth_code "EPSG"^^xsd:string ;
+    ns1:unit_code "9122"^^xsd:string ;
+    ns1:unit_conversion_factor 1.745329e-02 .
+
+<http://www.opengis.net/ont/crs/geod/1> a ns1:Geoid .
 
 geo:Geometry a owl:Class .
 
 <> a owl:Class .
+
+<http://www.opengis.net/def/crs/EPSG/0/4326> a ns1:GeographicCRS,
+        owl:NamedIndividual,
+        prov:Entity ;
+    rdfs:label "WGS 84"@en ;
+    ns1:area_of_use <http://www.opengis.net/def/crs/EPSG/0/4326_area_of_use> ;
+    ns1:coordinateSystem <http://www.opengis.net/def/crs/EPSG/0/4326_cs> ;
+    ns1:ellipsoid <http://www.opengis.net/ont/crs/geod/1> ;
+    ns1:isApplicableTo <http://www.opengis.net/ont/crs/isbody/Earth> ;
+    ns1:isBound false ;
+    ns1:scope "Horizontal component of 3D system."^^xsd:string .
 
 sf:Point a owl:Class ;
     rdfs:subClassOf geo:Geometry .
