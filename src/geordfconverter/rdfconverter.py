@@ -10,7 +10,7 @@ import os.path
 import json
 import requests
 from pyproj import CRS
-from .vocab.GEOCRS import GEOCRS
+from vocab.GEOCRS import GEOCRS
 
 
 def resolveWildcardPath(thepath):
