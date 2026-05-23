@@ -166,25 +166,25 @@ class ConvertCRS:
 		self.ttlhead += "@prefix wd: <http://www.wikidata.org/entity/> .\n"
 		self.ttlhead += "@prefix om: <http://www.ontology-of-units-of-measure.org/resource/om-2/> .\n"
 
-    @staticmethod
-    def labelFromURI(uri,prefixlist=None):
-        if not uri.startswith("http"):
-            return uri
-        if uri.endswith("#"):
-            uri=uri[0:-1]
-        if "#" in uri:
-            prefix=uri[:uri.rfind("#")+1]
-            if prefixlist is not None and prefix in prefixlist:
-                return f'{prefixlist[prefix]}:{uri[uri.rfind("#") + 1:]}'
-            return uri[uri.rfind("#") + 1:]
-        if uri.endswith("/"):
-            uri=uri[0:-1]
-        if "/" in uri:
-            prefix=uri[:uri.rfind("/")+1]
-            if prefixlist is not None and prefix in prefixlist:
-                return f'{prefixlist[prefix]}:{uri[uri.rfind("/") + 1:]}'
-            return uri[uri.rfind("/") + 1:]
-        return uri
+	@staticmethod
+	def labelFromURI(uri,prefixlist=None):
+		if not uri.startswith("http"):
+			return uri
+		if uri.endswith("#"):
+			uri=uri[0:-1]
+		if "#" in uri:
+			prefix=uri[:uri.rfind("#")+1]
+			if prefixlist is not None and prefix in prefixlist:
+				return f'{prefixlist[prefix]}:{uri[uri.rfind("#") + 1:]}'
+			return uri[uri.rfind("#") + 1:]
+		if uri.endswith("/"):
+			uri=uri[0:-1]
+		if "/" in uri:
+			prefix=uri[:uri.rfind("/")+1]
+			if prefixlist is not None and prefix in prefixlist:
+				return f'{prefixlist[prefix]}:{uri[uri.rfind("/") + 1:]}'
+			return uri[uri.rfind("/") + 1:]
+		return uri
 
 	@staticmethod
 	def addNamespaces(graph):
