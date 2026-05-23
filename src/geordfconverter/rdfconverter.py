@@ -251,7 +251,7 @@ class ConvertCRS:
 			print("EPSG: "+str(epsgcode))
 			ttl+=ConvertCRS.crsToTTL(ttl, curcrs, epsgcode, 1, None)
 		except:
-			QgsMessageLog.logMessage("Could not parse EPSG code "+str(epsgcode), MESSAGE_CATEGORY, Qgis.Info)
+			print("Could not parse EPSG code "+str(epsgcode), MESSAGE_CATEGORY, Qgis.Info)
 		return ttl
 
 	@staticmethod
@@ -259,17 +259,17 @@ class ConvertCRS:
 		if authcode!=None and "EPSG:" in authcode:
 			authcode=authcode.replace("EPSG:","")
 		try:
-			#QgsMessageLog.logMessage("WKT " + str(wkt), MESSAGE_CATEGORY, Qgis.Info)
+			#print("WKT " + str(wkt), MESSAGE_CATEGORY, Qgis.Info)
 			curcrs=CRS.from_wkt(wkt)
-			QgsMessageLog.logMessage("Parsed WKT " + str(curcrs), MESSAGE_CATEGORY, Qgis.Info)
+			print("Parsed WKT " + str(curcrs), MESSAGE_CATEGORY, Qgis.Info)
 			if authcode!=None and authcode!="":
 				res=ConvertCRS.crsToTTL(ttl, curcrs, authcode, 1, None)
 			else:
 				res=ConvertCRS.crsToTTL(ttl, curcrs, "WKT", 1, None)
-			QgsMessageLog.logMessage("Parsed WKT Res " + str(res), MESSAGE_CATEGORY, Qgis.Info)
+			print("Parsed WKT Res " + str(res), MESSAGE_CATEGORY, Qgis.Info)
 			ttl=res
 		except:
-			QgsMessageLog.logMessage("Could not parse WKT "+str(wkt), MESSAGE_CATEGORY, Qgis.Info)
+			print("Could not parse WKT "+str(wkt), MESSAGE_CATEGORY, Qgis.Info)
 		return ttl
 
 	@staticmethod
