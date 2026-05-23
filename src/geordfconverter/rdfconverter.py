@@ -875,7 +875,7 @@ class RDFConverter:
             g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
                 Literal(str(row[geometrycol]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
             g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
-                URIRef("http://www.opengis.net/def/crs/OGC/1.3/CRS84")))
+                URIRef("http://www.opengis.net/def/crs/EPSG/0/4326")))
         if "KML" in literaltypes:
             data = io.StringIO() 
             row[geometrycol].to_file(data, driver='KML')
@@ -1023,6 +1023,8 @@ class RDFConverter:
         if "epsg" in typemap:
             epsg=typemap["epsg"]
             g=ConvertCRS.convertCRSFromEPSG("EPSG:"+typemap["epsg"],g)
+        else:
+            g=ConvertCRS.convertCRSFromEPSG("EPSG:4326",g)
         if "license" in typemap:
             licensee=typemap["license"]
         else:
