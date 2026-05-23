@@ -9,7 +9,8 @@ import io
 import os.path
 import json
 import requests
-import convertcrs from ConvertCRS
+from convertcrs import ConvertCRS
+from bibtextordf import BibTexToRDF
 
 
 def resolveWildcardPath(thepath):
