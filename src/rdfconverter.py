@@ -1,4 +1,5 @@
-from rdflib import Graph, URIRef, Literal, RDF, RDFS, OWL, XSD, DC, PROV, SKOS, GEO
+from rdflib import Graph, URIRef, Literal
+from rdflib.namespace import RDF, RDFS, OWL, XSD, DC, PROV, SKOS, GEO
 import argparse
 import bibtexparser
 import pandas as pd
