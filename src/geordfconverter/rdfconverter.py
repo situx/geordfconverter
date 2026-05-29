@@ -649,9 +649,9 @@ with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace(str(os.se
     json.dump(autotypemap,f,indent=2,sort_keys=True)
 
 g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,dcaturi,True)
-if args.addfiles[0]!="":
+if args.addfiles!="":
     try:
-        g.parse(args.addfiles[0])
+        g.parse(args.addfiles)
     except:
         print("Could not parse af file")
 print("Serializing result to: "+str(path[0:path.rfind(".")].replace(str(os.sep),"_")))
