@@ -1,5 +1,5 @@
 from rdflib import Graph, URIRef, Literal
-from rdflib.namespace import RDF, RDFS, OWL, XSD, DC, PROV, SKOS, GEO
+from rdflib.namespace import RDF, RDFS, OWL, XSD, DC, PROV, SKOS, GEO, VOID
 import argparse
 import bibtexparser
 import pandas as pd
@@ -412,7 +412,7 @@ class RDFConverter:
         #print(str(curid)+" - hasSubClass "+str(subclass))
         return {"graph":g,"subclass":subclass,"seencols":seencols}
 
-    def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},geosparql=True):
+    def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},dcaturi,geosparql=True):
         #print(df)
         idcol=None
         dns=None
@@ -512,6 +512,8 @@ class RDFConverter:
                 curid=curid[0:-1]
             else:
                 curid=dns+str(row[idcol])
+            if dcaturi!="":
+                g.add((URIRef(curid),VOID.inDataset,URIRef(dcaturi)))
             if str(licensee).startswith("http"):
                 g.add((URIRef(curid),DC.license,URIRef(licensee)))
             subclass=False
@@ -575,6 +577,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--input", nargs='*', help="the input file(s) to parse [csv,shp,geojson,gml]", action="store", required=True)
 parser.add_argument("-o", "--output", nargs='*', help="the output path(s)", action="store", required=True)
 parser.add_argument("-m", "--mapping", nargs='*', help="the mapping file path(s)", action="store", required=True)
+parser.add_argument("-dcat", "--dcaturi", nargs='*', help="an uri indicating dcat metadata", action="store", default="",required=False)
+parser.add_argument("-af", "--addfiles", nargs='*', help="additional rdf files to integrate", action="store", default="",required=False)
 parser.add_argument("-s", "--sepchar", nargs='*', help="csv file separator", action="store", required=False,default=";")
 parser.add_argument("-b", "--bibtex", nargs='*', help="a bibtex refeerence library file", action="store", required=False,default="")
 args, unknown=parser.parse_known_args()
@@ -598,6 +602,7 @@ g = Graph()
 ownvocabg=Graph()
 subrend=None
 miscolmappings={}
+dcaturi=args.dcaturi[0]
 
 if path.endswith(".csv"):
     df = pd.read_csv(path, sep=args.sepchar[0])
@@ -643,7 +648,12 @@ if not os.path.exists(args.output[0]):
 with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_autotypemap.json","w") as f:
     json.dump(autotypemap,f,indent=2,sort_keys=True)
 
-g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,True)
+g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,dcaturi,True)
+if args.addfiles[0]!="":
+    try:
+        g.parse(args.addfiles[0])
+    except:
+        print("Could not parse af file")
 print("Serializing result to: "+str(path[0:path.rfind(".")].replace(str(os.sep),"_")))
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".ttl",format="turtle")
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".json",format="json-ld",auto_compact=True)
