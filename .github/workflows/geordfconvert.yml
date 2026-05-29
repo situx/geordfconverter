@@ -26,6 +26,16 @@ on:
         description: "A bibtex file to link to references"
         default: "" 
         type: string
+      dcaturi:
+        required: false
+        description: "An uri to a dcat dataset on which this data is based"
+        default: "" 
+        type: string
+      addfiles:
+        required: false
+        description: "Additional files to be included in the final export"
+        default: "" 
+        type: string
       sepchar:
         required: false
         type: string
@@ -71,7 +81,7 @@ jobs:
         - name: Mapping File Contents to RDF
           run: |
             sudo pip3 install rdflib geopandas shapely pyshp geodatasets geojson_rewind bibtexparser pyproj
-            python3 geordfconverterscript/src/geordfconverter/rdfconverter.py --input "${{inputs.input}}" --output "${{inputs.output}}" --mapping "${{inputs.mapping}}" --bibtex "${{inputs.bibtex}}" --sepchar "${{inputs.sepchar}}"  
+            python3 geordfconverterscript/src/geordfconverter/rdfconverter.py --input "${{inputs.input}}" --output "${{inputs.output}}" --dcaturi "${{inputs.dcaturi}}" --addfiles "${{inputs.addfiles}}" --mapping "${{inputs.mapping}}" --bibtex "${{inputs.bibtex}}" --sepchar "${{inputs.sepchar}}"  
         - name: Deploy 🚀
           uses: JamesIves/github-pages-deploy-action@releases/v4
           if: ${{ inputs.ghpages }}
