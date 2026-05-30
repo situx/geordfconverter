@@ -602,7 +602,7 @@ g = Graph()
 ownvocabg=Graph()
 subrend=None
 miscolmappings={}
-if args.dcaturi!=None:
+if args.dcaturi!=None and len(dcaturi)>0:
     dcaturi=args.dcaturi[0]
 
 if path.endswith(".csv"):
