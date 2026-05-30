@@ -602,7 +602,8 @@ g = Graph()
 ownvocabg=Graph()
 subrend=None
 miscolmappings={}
-dcaturi=args.dcaturi
+if args.dcaturi!=None:
+    dcaturi=args.dcaturi[0]
 
 if path.endswith(".csv"):
     df = pd.read_csv(path, sep=args.sepchar[0])
