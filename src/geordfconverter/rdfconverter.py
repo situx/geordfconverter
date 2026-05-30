@@ -602,6 +602,7 @@ g = Graph()
 ownvocabg=Graph()
 subrend=None
 miscolmappings={}
+dcaturi=""
 if args.dcaturi!=None and len(args.dcaturi)>0:
     dcaturi=args.dcaturi[0]
 
