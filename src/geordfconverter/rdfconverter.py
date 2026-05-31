@@ -651,11 +651,11 @@ with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace(str(os.se
     json.dump(autotypemap,f,indent=2,sort_keys=True)
 
 g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,dcaturi,True)
-if args.addfiles!="":
+if args.addfiles!="" and len(args.addfiles)>0:
     try:
-        g.parse(args.addfiles)
+        g.parse(args.addfiles[0])
     except:
-        print("Could not parse af file")
+        print("Could not parse af file "+str(args.addfiles))
 print("Serializing result to: "+str(path[0:path.rfind(".")].replace(str(os.sep),"_")))
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".ttl",format="turtle")
 g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".json",format="json-ld",auto_compact=True)
