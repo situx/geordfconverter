@@ -56,6 +56,8 @@ def resolveWikidataIDFromArticleName(wikipediaurl):
 class RDFConverter:
 
     latlonpairs = [["lat", "lon"], ["lat", "long"], ["latitude", "longitude"], ["LAT", "LON"], ["Lat", "Lon"], ["Lat", "Long"], ["LAT", "LONG"], ["Latitude", "Longitude"], ["LATITUDE", "LONGITUDE"]]
+
+    unitprops={"QUDT":{"hasUnit":"http://qudt.org/schema/qudt/hasUnit"},"OM":{"hasUnit":"http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"}}
     
     def detectColumnType(self,resultmap,columnname=""):
         intcount,doublecount,datecount,uricount = 0,0,0,0
