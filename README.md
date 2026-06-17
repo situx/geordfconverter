@@ -13,7 +13,7 @@ Each mappingschema definition requires the following attributes to be set:
 
 Each relational dataset maps to one or more RDF classes, out of which one class is determined the main class to focus on for the mapping conversion.
 
-```
+```json
 "class":{"uri":"http://archaeoinformatics.link/ontology#MilitaryCamp","labels":{"en":"Military Camp","de":"Militärcamp"}}
 ```
 
@@ -22,7 +22,7 @@ A definition of the class may be added using a "definition" JSON object.
 
 Further classmappings can be added using a JSON array:
 
-```
+```json
 "classmappings":[
     {"uri":"https://www.wikidata.org/entity/Q88205","labels":{"en":"Castrum","de":"Kastell"}}
 ]
@@ -32,7 +32,7 @@ Further classmappings can be added using a JSON array:
 
 A column mapping maps a column of a relational dataset to a URI describing its contents and a possible datatype and are defined as a JSON object.
 
-```
+```json
 "columns":{
        "ID":{"prop":"obj","ignore":true},
        "limesobject": {"proplabels":{"en":"label","de":"Label"},"prefix":"Kleinkastell ","suffix":"!","propiri":"http://www.w3.org/2000/01/rdf-schema#label","range": "xsd:string","prop":"anno", "order": 1},
@@ -56,7 +56,7 @@ Each column mapping consists of at least the following entries:
 
 Additional columns which are not present in the dataset can be added using an addcolumns definition:
 
-```
+```json
 "addcolumns":{
         "limesobject": {"propiri":"http://www.w3.org/2000/01/rdf-schema#comment","value":"This is a generic comment","range": "xsd:string","prop":"anno"}
 }
@@ -69,12 +69,12 @@ Columns may be grouped by defining column collections.
 
 This might be useful when a subpart of the relational table represents a (sub-)entity in RDF, which is related to the entity described by **id**.
 
-```
+```json
 "columns":{
        "ID":{"prop":"obj","ignore":true},
        "limesobject": {"proplabels":{"en":"label","de":"Label"},"prefix":"Kleinkastell ","suffix":"!","propiri":"http://www.w3.org/2000/01/rdf-schema#label","range": "xsd:string","prop":"anno", "order": 1},
        "limesaddress": {"collection":true, "columns":{
-           "limescategory":{propiri":"http://www.w3.org/2000/01/rdf-schema#subClassOf","prop":"data"},
+           "limescategory":{"propiri":"http://www.w3.org/2000/01/rdf-schema#subClassOf","prop":"data"},
            "limestown":{"prop":"obj","valuemapping":{"Bad Homburg":"https://www.wikidata.org/entity/Q4165"}
         }
    }
@@ -82,7 +82,7 @@ This might be useful when a subpart of the relational table represents a (sub-)e
 
 The result will be a new RDF instance linked to the created instance:
 
-```
+```ttl
 <http://example.org/myid> <http://example.org/myns#limesaddress> <http://example.org/myid_limesaddress> .
 <http://example.org/myid_limesaddress> <http://example.org/myns#limescategory> <http://example.org/myns#Castellum> .
 ```
@@ -96,7 +96,7 @@ The value of columns might be joined by defining join columns.
 
 Join columns are virtual columns, which include a list of other column names.
 
-```
+```json
 "join_name_proj": {"join": true, "joinchar":"---","propiri": "http://www.example.org#myjoin","prop": "data","columns":[
   "Name_mod","Date_min"
 ]},
@@ -125,6 +125,10 @@ The example in this repository showcases the exports of all of these literal for
 
 ## Automapping
 
+The geordfconverter is able to infer a limited automatic mapping with the following contents:
+* Columns as data properties with their inferred ranges
+* A best guess for the ID property
+
 An automapping based on an analysis of the dataset and its datatypes will be created by the tool for comparison.
 It is not recommended to use this mapping due to its lack of semantics, even though it will produce a valid RDF result.
 
@@ -133,6 +137,19 @@ It is not recommended to use this mapping due to its lack of semantics, even tho
 GeoRDFConverter will export a FILENAME_err.json file which will capture every error that occurred during the conversion of the dataset.
 Typically these are mapping errors from String values to RDF concepts which are missing or incorrect datatypes stated during conversion.
 
-The geordfconverter is able to infer a limited automatic mapping with the following contents:
-* Columns as data properties with their inferred ranges
-* A best guess for the ID property
+```json
+{
+  "limestown": {
+    "Neuwied": 1,
+    "Hillscheid": 1,
+    "Lahnstein": 1,
+    "Miehlen": 1,
+    "Heidenrod": 3,
+    "Idstein": 3,
+...
+}
+```
+
+The error file will highlight the values that could not be matched and the occurrence of these values in the dataset.
+With that, one can prioritize to adjust the mapping according to its impact on the general conversion.
+
