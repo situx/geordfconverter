@@ -414,7 +414,7 @@ class RDFConverter:
         #print(str(curid)+" - hasSubClass "+str(subclass))
         return {"graph":g,"subclass":subclass,"seencols":seencols}
 
-    def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},dcaturi="",geosparql=True,liferalformats=["wkt"]):
+    def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},dcaturi="",geosparql=True,literalformats=["wkt"]):
         #print(df)
         idcol=None
         dns=None
