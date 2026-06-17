@@ -119,6 +119,10 @@ class RDFConverter:
         else:
             return ""
 
+
+    ## Checks whether a set of unique strings matches a pair of boolean String representations.
+    #  @param uniquestrings The unique strings to investigate
+    #  @returns A dict of the mapping of String values to True and false or False if no mapping could be obtained
     def checkForBooleanAsString(self,uniquestrings):
         if len(uniquestrings)>2:
             return False
@@ -289,6 +293,15 @@ class RDFConverter:
                 subclass=True
         return [g,subclass]
 
+
+    ## Processes a geometry value from a given colum, and models it usign the GeoSPARQL vocabulary in a variety of given literal types.
+    #  @param g The graph to add the result to
+    #  @param row The row of the geopandas dataframe to process
+    #  @param geometrycol The name of the geometry column
+    #  @param typemap the typemap of this processing step
+    #  @param curid The id of the current RDF intance
+    #  @param literaltypes A set or list of literaltypes to add to the knowledge graph
+    #  @returns The modified graph
     def processGeometryColumn(self,g,row,geometrycol,typemap,curid,literaltypes=["WKT"]):
         g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
