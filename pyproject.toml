@@ -21,6 +21,7 @@ dependencies = [
 "rdflib>=6.2.0",
 "requests>=2.31.0",
 "shapely>=1.7.1",
+"fastkml",
 "geopandas>=1.7.1",
 "geodatasets>=1.7.1",
 "geojson_rewind>=1.7.1"
