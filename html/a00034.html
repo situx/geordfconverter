@@ -1,0 +1,1265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>GeoRDFConverter: RDFConverter Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only-darkmode-toggle.css" rel="stylesheet" type="text/css"/>
+<link href="theme-round.css" rel="stylesheet" type="text/css"/>
+<link href="theme-robot.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/situx/rdflib-geosparql" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">GeoRDFConverter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+<div id="theme-selection">
+ <label for="theme-select">Theme:</label>
+ <select id="theme-select">
+  <option value="theme-default">Default</option>
+  <option value="theme-round">Round</option>
+  <option value="theme-robot">Robot</option>
+ </select>
+</div>
+</div>
+<!-- end header part --><!-- Generated by Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('a00034.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="a00031.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">RDFConverter Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+Collaboration diagram for RDFConverter:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00032.png" border="0" usemap="#aRDFConverter_coll__map" alt="Collaboration graph"/></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a968221e384dfbbede7765c3b88ded800" id="r_a968221e384dfbbede7765c3b88ded800"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a968221e384dfbbede7765c3b88ded800">detectColumnType</a> (self, resultmap, columnname=&quot;&quot;)</td></tr>
+<tr class="separator:a968221e384dfbbede7765c3b88ded800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05944a5bf14037c8421d13a0fc12dcc9" id="r_a05944a5bf14037c8421d13a0fc12dcc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a05944a5bf14037c8421d13a0fc12dcc9">checkForBooleanAsString</a> (self, uniquestrings)</td></tr>
+<tr class="separator:a05944a5bf14037c8421d13a0fc12dcc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb691874af1571391e442164fd8f65b" id="r_a3eb691874af1571391e442164fd8f65b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a3eb691874af1571391e442164fd8f65b">addPropertyToGraph</a> (self, row, x, <a class="el" href="a00020.html#a73c18c59a39b18382081ec00bb456d43">g</a>, <a class="el" href="a00020.html#a35674854ee8c3fd5a54d553163e800a6">ns</a>, curid, thecls, lang, curcol)</td></tr>
+<tr class="separator:a3eb691874af1571391e442164fd8f65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1030fc541dcec7eb2cca1ee60613e9b" id="r_af1030fc541dcec7eb2cca1ee60613e9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#af1030fc541dcec7eb2cca1ee60613e9b">processGeometryColumn</a> (self, <a class="el" href="a00020.html#a73c18c59a39b18382081ec00bb456d43">g</a>, row, geometrycol, <a class="el" href="a00020.html#a398f80640c25046b3a62204fa4756242">typemap</a>, curid, literaltypes=[&quot;WKT&quot;])</td></tr>
+<tr class="separator:af1030fc541dcec7eb2cca1ee60613e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ea6f343b8e58d93f4432af66f62a11" id="r_ae3ea6f343b8e58d93f4432af66f62a11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#ae3ea6f343b8e58d93f4432af66f62a11">processLatLonGeometry</a> (self, <a class="el" href="a00020.html#a73c18c59a39b18382081ec00bb456d43">g</a>, lat, lon, <a class="el" href="a00020.html#a398f80640c25046b3a62204fa4756242">typemap</a>, curid)</td></tr>
+<tr class="separator:ae3ea6f343b8e58d93f4432af66f62a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7be32dcb1c4d2dad218b6b7c8d864c3" id="r_af7be32dcb1c4d2dad218b6b7c8d864c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#af7be32dcb1c4d2dad218b6b7c8d864c3">processColumns</a> (self, prefix, seencols, curid, <a class="el" href="a00020.html#a73c18c59a39b18382081ec00bb456d43">g</a>, row, idcol, attns, thecls, lang, <a class="el" href="a00020.html#a398f80640c25046b3a62204fa4756242">typemap</a>, <a class="el" href="a00020.html#a79426d83980f0f429408cb310436cc31">bibmap</a>, geomatts, literalformats)</td></tr>
+<tr class="separator:af7be32dcb1c4d2dad218b6b7c8d864c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4b7f469e811c11a6807be2a111b6d5" id="r_a9e4b7f469e811c11a6807be2a111b6d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a9e4b7f469e811c11a6807be2a111b6d5">convertToRDF</a> (self, <a class="el" href="a00020.html#ab52c96bea30646abf8170f333bbd42b9">df</a>, <a class="el" href="a00020.html#a398f80640c25046b3a62204fa4756242">typemap</a>, <a class="el" href="a00020.html#a3a6cadc74390e0c3ed9cbf98864b948a">autotypemap</a>, <a class="el" href="a00020.html#a73c18c59a39b18382081ec00bb456d43">g</a>, <a class="el" href="a00020.html#a79426d83980f0f429408cb310436cc31">bibmap</a>={}, <a class="el" href="a00020.html#a7cafc209e74d93189af6c5aa31d04116">dcaturi</a>=&quot;&quot;, geosparql=True, literalformats=[&quot;wkt&quot;])</td></tr>
+<tr class="separator:a9e4b7f469e811c11a6807be2a111b6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a62bb602804fde40cabbfad4ffc88512f" id="r_a62bb602804fde40cabbfad4ffc88512f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a62bb602804fde40cabbfad4ffc88512f">shortenURI</a> (uri, <a class="el" href="a00020.html#a35674854ee8c3fd5a54d553163e800a6">ns</a>=<a class="el" href="a00020.html#a36cde68b055f3f2ee671020af4ccf4e2">False</a>)</td></tr>
+<tr class="separator:a62bb602804fde40cabbfad4ffc88512f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a473d0a8024c3b3e74647822df7b77c82" id="r_a473d0a8024c3b3e74647822df7b77c82"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a473d0a8024c3b3e74647822df7b77c82">latlonpairs</a> = [[&quot;lat&quot;, &quot;lon&quot;], [&quot;lat&quot;, &quot;long&quot;], [&quot;latitude&quot;, &quot;longitude&quot;], [&quot;LAT&quot;, &quot;LON&quot;], [&quot;Lat&quot;, &quot;Lon&quot;], [&quot;Lat&quot;, &quot;Long&quot;], [&quot;LAT&quot;, &quot;LONG&quot;], [&quot;Latitude&quot;, &quot;Longitude&quot;], [&quot;LATITUDE&quot;, &quot;LONGITUDE&quot;]]</td></tr>
+<tr class="separator:a473d0a8024c3b3e74647822df7b77c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1a58f99e00ab23b96645af0f4ef63c" id="r_a0d1a58f99e00ab23b96645af0f4ef63c"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#a0d1a58f99e00ab23b96645af0f4ef63c">unitprops</a> = {&quot;QUDT&quot;:{&quot;hasUnit&quot;:&quot;http://qudt.org/schema/qudt/hasUnit&quot;},&quot;OM&quot;:{&quot;hasUnit&quot;:&quot;http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit&quot;}}</td></tr>
+<tr class="separator:a0d1a58f99e00ab23b96645af0f4ef63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af927dd0562e0aa6a55952087e206a1ef" id="r_af927dd0562e0aa6a55952087e206a1ef"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00034.html#af927dd0562e0aa6a55952087e206a1ef">outpath</a> = []</td></tr>
+<tr class="separator:af927dd0562e0aa6a55952087e206a1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3eb691874af1571391e442164fd8f65b" name="a3eb691874af1571391e442164fd8f65b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb691874af1571391e442164fd8f65b">&#9670;&#160;</a></span>addPropertyToGraph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">addPropertyToGraph </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>curid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>thecls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lang</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>curcol</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  132</span>    <span class="keyword">def </span>addPropertyToGraph(self,row,x,g,ns,curid,thecls,lang,curcol):</div>
+<div class="line"><span class="lineno">  133</span>        subclass=<span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  134</span>        <span class="comment">#print(&quot;THE GRAPH: &quot;+str(len(g)))</span></div>
+<div class="line"><span class="lineno">  135</span>        <span class="keywordflow">if</span> row!=<span class="keywordtype">None</span> <span class="keywordflow">and</span> x <span class="keywordflow">not</span> <span class="keywordflow">in</span> row:</div>
+<div class="line"><span class="lineno">  136</span>            <span class="keywordflow">return</span> [g,<span class="keyword">False</span>]</div>
+<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">if</span> row <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">  138</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;value&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  139</span>                thevalue=curcol[<span class="stringliteral">&quot;value&quot;</span>]</div>
+<div class="line"><span class="lineno">  140</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  141</span>                thevalue=<span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  142</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  143</span>            thevalue=row[x]</div>
+<div class="line"><span class="lineno">  144</span>        <span class="keywordflow">if</span> thevalue==<span class="stringliteral">&quot;&quot;</span> <span class="keywordflow">or</span> (curcol[<span class="stringliteral">&quot;prop&quot;</span>]!=<span class="stringliteral">&quot;data&quot;</span> <span class="keywordflow">and</span> str(thevalue)==<span class="stringliteral">&quot;nan&quot;</span>):</div>
+<div class="line"><span class="lineno">  145</span>            <span class="keywordflow">return</span> [g,subclass]</div>
+<div class="line"><span class="lineno">  146</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;propiri&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  147</span>            theiri = URIRef(curcol[<span class="stringliteral">&quot;propiri&quot;</span>])</div>
+<div class="line"><span class="lineno">  148</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  149</span>            theiri = URIRef(ns + x)</div>
+<div class="line"><span class="lineno">  150</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;proplabels&quot;</span> <span class="keywordflow">in</span> curcol <span class="keywordflow">and</span> <span class="stringliteral">&quot;en&quot;</span> <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;proplabels&quot;</span>]:</div>
+<div class="line"><span class="lineno">  151</span>            propirilabel=str(curcol[<span class="stringliteral">&quot;proplabels&quot;</span>][<span class="stringliteral">&quot;en&quot;</span>])</div>
+<div class="line"><span class="lineno">  152</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  153</span>            propirilabel=str(x)</div>
+<div class="line"><span class="lineno">  154</span>        prefix=curcol.get(<span class="stringliteral">&quot;prefix&quot;</span>,<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><span class="lineno">  155</span>        suffix=curcol.get(<span class="stringliteral">&quot;suffix&quot;</span>,<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><span class="lineno">  156</span>        <span class="keywordflow">if</span> curcol[<span class="stringliteral">&quot;prop&quot;</span>]==<span class="stringliteral">&quot;data&quot;</span>:</div>
+<div class="line"><span class="lineno">  157</span>            curlang=<span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  158</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;sepchar&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  159</span>                spl=thevalue.split(curcol[<span class="stringliteral">&quot;sepchar&quot;</span>])</div>
+<div class="line"><span class="lineno">  160</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  161</span>                spl=[thevalue]</div>
+<div class="line"><span class="lineno">  162</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;lang&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  163</span>               curlang=curcol[<span class="stringliteral">&quot;lang&quot;</span>]</div>
+<div class="line"><span class="lineno">  164</span>            unit=<span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">  165</span>            unitprop=<span class="stringliteral">&quot;http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit&quot;</span></div>
+<div class="line"><span class="lineno">  166</span>            unithasvalue = <span class="stringliteral">&quot;http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue&quot;</span></div>
+<div class="line"><span class="lineno">  167</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;unit&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  168</span>                unit=str(curcol[<span class="stringliteral">&quot;unit&quot;</span>]).replace(<span class="stringliteral">&quot;om:&quot;</span>,<span class="stringliteral">&quot;http://www.ontology-of-units-of-measure.org/resource/om-2/&quot;</span>).replace(<span class="stringliteral">&quot;qudt:&quot;</span>,<span class="stringliteral">&quot;http://qudt.org/schema/qudt#&quot;</span>)</div>
+<div class="line"><span class="lineno">  169</span>            <span class="keywordflow">for</span> sp <span class="keywordflow">in</span> spl:</div>
+<div class="line"><span class="lineno">  170</span>                <span class="keywordflow">if</span> unit!=<span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">  171</span>                    g.add((theiri, RDF.type,OWL.ObjectProperty))</div>
+<div class="line"><span class="lineno">  172</span>                    g.add((theiri, RDFS.label, Literal(propirilabel, lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  173</span>                    siri=RDFConverter.shortenURI(theiri)</div>
+<div class="line"><span class="lineno">  174</span>                    valueinstanceiri=curid+str(<span class="stringliteral">&quot;_&quot;</span>)+str(siri)+<span class="stringliteral">&quot;_value&quot;</span></div>
+<div class="line"><span class="lineno">  175</span>                    g.add((URIRef(curid), theiri, URIRef(valueinstanceiri)))</div>
+<div class="line"><span class="lineno">  176</span>                    g.add((URIRef(valueinstanceiri),RDF.type,URIRef(<span class="stringliteral">&quot;http://www.ontology-of-units-of-measure.org/resource/om-2/Measure&quot;</span>)))</div>
+<div class="line"><span class="lineno">  177</span>                    g.add((URIRef(valueinstanceiri), RDFS.label,Literal(<span class="stringliteral">&quot;Value Result of &quot;</span>+str(siri)+<span class="stringliteral">&quot; for &quot;</span>+RDFConverter.shortenURI(str(curid)),lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  178</span>                    g.add((URIRef(valueinstanceiri), URIRef(unitprop),URIRef(unit)))</div>
+<div class="line"><span class="lineno">  179</span>                    <span class="keywordflow">if</span> <span class="stringliteral">&quot;range&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  180</span>                        g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(curcol[<span class="stringliteral">&quot;range&quot;</span>].replace(<span class="stringliteral">&quot;xsd:&quot;</span>, <span class="stringliteral">&quot;http://www.w3.org/2001/XMLSchema#&quot;</span>)))))</div>
+<div class="line"><span class="lineno">  181</span>                    <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  182</span>                        g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(<span class="stringliteral">&quot;http://www.w3.org/2001/XMLSchema#string&quot;</span>))))</div>
+<div class="line"><span class="lineno">  183</span>                <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  184</span>                    g.add((theiri, RDF.type,OWL.DatatypeProperty)) </div>
+<div class="line"><span class="lineno">  185</span>                    g.add((theiri, RDFS.label, Literal(propirilabel, lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  186</span>                    <span class="keywordflow">if</span> <span class="stringliteral">&quot;range&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  187</span>                        <span class="keywordflow">if</span> curlang==<span class="stringliteral">&quot;&quot;</span>:</div>
+<div class="line"><span class="lineno">  188</span>                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(</div>
+<div class="line"><span class="lineno">  189</span>                                curcol[<span class="stringliteral">&quot;range&quot;</span>].replace(<span class="stringliteral">&quot;xsd:&quot;</span>, <span class="stringliteral">&quot;http://www.w3.org/2001/XMLSchema#&quot;</span>)))))</div>
+<div class="line"><span class="lineno">  190</span>                        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  191</span>                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), lang=curlang)))</div>
+<div class="line"><span class="lineno">  192</span>                    <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  193</span>                        <span class="keywordflow">if</span> curlang==<span class="stringliteral">&quot;&quot;</span>:</div>
+<div class="line"><span class="lineno">  194</span>                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(<span class="stringliteral">&quot;http://www.w3.org/2001/XMLSchema#string&quot;</span>))))</div>
+<div class="line"><span class="lineno">  195</span>                        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  196</span>                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), lang=curlang)))</div>
+<div class="line"><span class="lineno">  197</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;propiri&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  198</span>                ownvocabg.add((URIRef(theiri),RDF.type,OWL.DatatypeProperty))</div>
+<div class="line"><span class="lineno">  199</span>                ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  200</span>        <span class="keywordflow">if</span> curcol[<span class="stringliteral">&quot;prop&quot;</span>]==<span class="stringliteral">&quot;obj&quot;</span>:</div>
+<div class="line"><span class="lineno">  201</span>            concept=<span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  202</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;valuemapping&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  203</span>                <span class="keywordflow">if</span> thevalue <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>]:</div>
+<div class="line"><span class="lineno">  204</span>                    <span class="keywordflow">if</span> isinstance(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue],dict) <span class="keywordflow">and</span> <span class="stringliteral">&quot;uri&quot;</span> <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]:</div>
+<div class="line"><span class="lineno">  205</span>                        g.add((URIRef(curid), theiri, URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>])))</div>
+<div class="line"><span class="lineno">  206</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]), RDF.type, RDFS.Resource))</div>
+<div class="line"><span class="lineno">  207</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;labels&quot;</span> <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]:</div>
+<div class="line"><span class="lineno">  208</span>                            <span class="keywordflow">for</span> lab <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;labels&quot;</span>]:</div>
+<div class="line"><span class="lineno">  209</span>                                g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]),RDFS.label,Literal(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;labels&quot;</span>][lab],lang=lab)))</div>
+<div class="line"><span class="lineno">  210</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;definition&quot;</span> <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]:</div>
+<div class="line"><span class="lineno">  211</span>                            g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]),SKOS.definition,Literal(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;definition&quot;</span>],lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  212</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;concept&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  213</span>                            g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]),RDF.type,URIRef(curcol[<span class="stringliteral">&quot;concept&quot;</span>])))</div>
+<div class="line"><span class="lineno">  214</span>                    <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  215</span>                        g.add((URIRef(curid), theiri, URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue])))</div>
+<div class="line"><span class="lineno">  216</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]),RDFS.label,Literal(thevalue,lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  217</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]), RDF.type, RDFS.Resource))</div>
+<div class="line"><span class="lineno">  218</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;concept&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  219</span>                            g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]),RDF.type,URIRef(curcol[<span class="stringliteral">&quot;concept&quot;</span>])))</div>
+<div class="line"><span class="lineno">  220</span>                <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  221</span>                    <span class="keywordflow">if</span> x <span class="keywordflow">not</span> <span class="keywordflow">in</span> miscolmappings:</div>
+<div class="line"><span class="lineno">  222</span>                        miscolmappings[x]={}</div>
+<div class="line"><span class="lineno">  223</span>                    <span class="keywordflow">if</span> thevalue <span class="keywordflow">not</span> <span class="keywordflow">in</span> miscolmappings[x]:</div>
+<div class="line"><span class="lineno">  224</span>                        miscolmappings[x][thevalue]=0</div>
+<div class="line"><span class="lineno">  225</span>                    miscolmappings[x][thevalue]+=1</div>
+<div class="line"><span class="lineno">  226</span>            <span class="keywordflow">elif</span> str(thevalue).startswith(<span class="stringliteral">&quot;http&quot;</span>):</div>
+<div class="line"><span class="lineno">  227</span>                g.add((theiri, RDF.type, OWL.ObjectProperty))</div>
+<div class="line"><span class="lineno">  228</span>                g.add((theiri, RDFS.label, Literal(propirilabel, lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  229</span>                g.add((URIRef(curid), theiri, URIRef(thevalue)))</div>
+<div class="line"><span class="lineno">  230</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;concept&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  231</span>                    g.add((URIRef(thevalue),RDF.type,URIRef(curcol[<span class="stringliteral">&quot;concept&quot;</span>])))</div>
+<div class="line"><span class="lineno">  232</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  233</span>                g.add((URIRef(curid), theiri, Literal(thevalue,datatype=XSD.string)))</div>
+<div class="line"><span class="lineno">  234</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;propiri&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  235</span>                ownvocabg.add((URIRef(theiri),RDF.type,OWL.ObjectProperty))</div>
+<div class="line"><span class="lineno">  236</span>                ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  237</span>        <span class="keywordflow">if</span> curcol[<span class="stringliteral">&quot;prop&quot;</span>]==<span class="stringliteral">&quot;anno&quot;</span>:</div>
+<div class="line"><span class="lineno">  238</span>            thelang=<span class="stringliteral">&quot;en&quot;</span></div>
+<div class="line"><span class="lineno">  239</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;lang&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  240</span>                thelang=curcol[<span class="stringliteral">&quot;lang&quot;</span>]</div>
+<div class="line"><span class="lineno">  241</span>            g.add((theiri, RDF.type, OWL.AnnotationProperty))</div>
+<div class="line"><span class="lineno">  242</span>            g.add((theiri, RDFS.label, Literal(propirilabel, lang=thelang)))</div>
+<div class="line"><span class="lineno">  243</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;lang&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  244</span>                g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), lang=curcol[<span class="stringliteral">&quot;lang&quot;</span>])))</div>
+<div class="line"><span class="lineno">  245</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  246</span>                g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))</div>
+<div class="line"><span class="lineno">  247</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;propiri&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  248</span>                ownvocabg.add((URIRef(theiri),RDF.type,OWL.AnnotationProperty))</div>
+<div class="line"><span class="lineno">  249</span>                ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  250</span>        <span class="keywordflow">if</span> curcol[<span class="stringliteral">&quot;prop&quot;</span>] == <span class="stringliteral">&quot;subclass&quot;</span>:</div>
+<div class="line"><span class="lineno">  251</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;valuemapping&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  252</span>                <span class="keywordflow">if</span> thevalue <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>]:</div>
+<div class="line"><span class="lineno">  253</span>                    <span class="keywordflow">if</span> isinstance(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue],dict) <span class="keywordflow">and</span> <span class="stringliteral">&quot;uri&quot;</span> <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]:</div>
+<div class="line"><span class="lineno">  254</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]), RDFS.subClassOf, thecls))</div>
+<div class="line"><span class="lineno">  255</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]), RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  256</span>                        g.add((URIRef(curid), RDF.type, URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>])))</div>
+<div class="line"><span class="lineno">  257</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;labels&quot;</span> <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]:</div>
+<div class="line"><span class="lineno">  258</span>                            <span class="keywordflow">for</span> lab <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;labels&quot;</span>]:</div>
+<div class="line"><span class="lineno">  259</span>                                g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]),RDFS.label,Literal(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;labels&quot;</span>][lab],lang=lab)))</div>
+<div class="line"><span class="lineno">  260</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;definition&quot;</span> <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]:</div>
+<div class="line"><span class="lineno">  261</span>                            g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]),SKOS.definition,Literal(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;definition&quot;</span>],lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  262</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;concept&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  263</span>                            g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]),RDF.type,URIRef(curcol[<span class="stringliteral">&quot;concept&quot;</span>])))</div>
+<div class="line"><span class="lineno">  264</span>                    <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  265</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]), RDFS.subClassOf, thecls))</div>
+<div class="line"><span class="lineno">  266</span>                        g.add((URIRef(curid), RDF.type, URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue])))</div>
+<div class="line"><span class="lineno">  267</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]), RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  268</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]),RDFS.label,Literal(thevalue,lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  269</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;concept&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  270</span>                            g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]),RDF.type,URIRef(curcol[<span class="stringliteral">&quot;concept&quot;</span>])))</div>
+<div class="line"><span class="lineno">  271</span>                <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  272</span>                    <span class="keywordflow">if</span> x <span class="keywordflow">not</span> <span class="keywordflow">in</span> miscolmappings:</div>
+<div class="line"><span class="lineno">  273</span>                        miscolmappings[x]={}</div>
+<div class="line"><span class="lineno">  274</span>                    <span class="keywordflow">if</span> thevalue <span class="keywordflow">not</span> <span class="keywordflow">in</span> miscolmappings[x]:</div>
+<div class="line"><span class="lineno">  275</span>                        miscolmappings[x][thevalue]=0</div>
+<div class="line"><span class="lineno">  276</span>                    miscolmappings[x][thevalue]+=1</div>
+<div class="line"><span class="lineno">  277</span>                <span class="comment">#g.add((URIRef(curcol[&quot;valuemapping&quot;][thevalue]), RDFS.subClassOf, thecls))</span></div>
+<div class="line"><span class="lineno">  278</span>                <span class="comment">#g.add((URIRef(curcol[&quot;valuemapping&quot;][row[x]]), RDFS.subClassOf, OWL.Class))</span></div>
+<div class="line"><span class="lineno">  279</span>                <span class="comment">#g.add((URIRef(curid), RDF.type, URIRef(curcol[&quot;valuemapping&quot;][thevalue])))</span></div>
+<div class="line"><span class="lineno">  280</span>                <span class="comment">#g.add((URIRef(curcol[&quot;valuemapping&quot;][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))</span></div>
+<div class="line"><span class="lineno">  281</span>                subclass=<span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  282</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  283</span>                subclsuri=ns+thevalue.replace(<span class="stringliteral">&quot;/&quot;</span>,<span class="stringliteral">&quot;&quot;</span>).replace(<span class="stringliteral">&quot; &quot;</span>,<span class="stringliteral">&quot;_&quot;</span>)</div>
+<div class="line"><span class="lineno">  284</span>                g.add((URIRef(subclsuri), RDFS.subClassOf, thecls))</div>
+<div class="line"><span class="lineno">  285</span>                <span class="comment">#g.add((URIRef(curcol[&quot;valuemapping&quot;][row[x]]), RDFS.subClassOf, OWL.Class))</span></div>
+<div class="line"><span class="lineno">  286</span>                g.add((URIRef(curid), RDF.type, URIRef(subclsuri)))</div>
+<div class="line"><span class="lineno">  287</span>                g.add((URIRef(subclsuri),RDF.type,OWL.Class))</div>
+<div class="line"><span class="lineno">  288</span>                g.add((URIRef(subclsuri),RDFS.label,Literal(thevalue,lang=lang)))</div>
+<div class="line"><span class="lineno">  289</span>                subclass=<span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  290</span>        <span class="keywordflow">return</span> [g,subclass]</div>
+<div class="line"><span class="lineno">  291</span> </div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a00034.html#a9e4b7f469e811c11a6807be2a111b6d5">RDFConverter.convertToRDF()</a>, and <a class="el" href="a00034.html#af7be32dcb1c4d2dad218b6b7c8d864c3">RDFConverter.processColumns()</a>.</p>
+
+</div>
+</div>
+<a id="a05944a5bf14037c8421d13a0fc12dcc9" name="a05944a5bf14037c8421d13a0fc12dcc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05944a5bf14037c8421d13a0fc12dcc9">&#9670;&#160;</a></span>checkForBooleanAsString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">checkForBooleanAsString </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>uniquestrings</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  122</span>    <span class="keyword">def </span>checkForBooleanAsString(self,uniquestrings):</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">if</span> len(uniquestrings)&gt;2:</div>
+<div class="line"><span class="lineno">  124</span>            <span class="keywordflow">return</span> <span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  125</span>        pairs=[[<span class="stringliteral">&quot;yes&quot;</span>,<span class="stringliteral">&quot;no&quot;</span>],[<span class="stringliteral">&quot;true&quot;</span>,<span class="stringliteral">&quot;false&quot;</span>],[<span class="stringliteral">&quot;ja&quot;</span>,<span class="stringliteral">&quot;nein&quot;</span>],[<span class="stringliteral">&quot;oui&quot;</span>,<span class="stringliteral">&quot;non&quot;</span>],[<span class="stringliteral">&quot;on&quot;</span>,<span class="stringliteral">&quot;off&quot;</span>],[<span class="stringliteral">&quot;Y&quot;</span>,<span class="stringliteral">&quot;N&quot;</span>],[<span class="stringliteral">&quot;J&quot;</span>,<span class="stringliteral">&quot;N&quot;</span>]]</div>
+<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">for</span> pair <span class="keywordflow">in</span> pairs:</div>
+<div class="line"><span class="lineno">  127</span>            <span class="keywordflow">if</span> (pair[0] <span class="keywordflow">in</span> uniquestrings <span class="keywordflow">and</span> pair[1] <span class="keywordflow">in</span> uniquestrings) <span class="keywordflow">or</span> (pair[0].upper() <span class="keywordflow">in</span> uniquestrings <span class="keywordflow">and</span> pair[1].upper() <span class="keywordflow">in</span> uniquestrings):</div>
+<div class="line"><span class="lineno">  128</span>                <span class="keywordflow">return</span> {pair[0]:<span class="keyword">True</span>,pair[1]:<span class="keyword">False</span>}</div>
+<div class="line"><span class="lineno">  129</span>        <span class="keywordflow">return</span> <span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span> </div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a00034.html#a968221e384dfbbede7765c3b88ded800">RDFConverter.detectColumnType()</a>.</p>
+
+</div>
+</div>
+<a id="a9e4b7f469e811c11a6807be2a111b6d5" name="a9e4b7f469e811c11a6807be2a111b6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4b7f469e811c11a6807be2a111b6d5">&#9670;&#160;</a></span>convertToRDF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">convertToRDF </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>df</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>typemap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>autotypemap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>bibmap</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>dcaturi</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>geosparql</em> = <code>True</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>literalformats</em> = <code>[&quot;wkt&quot;]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  450</span>    <span class="keyword">def </span>convertToRDF(self,df,typemap,autotypemap,g,bibmap={},dcaturi=&quot;&quot;,geosparql=True,literalformats=[&quot;wkt&quot;]):</div>
+<div class="line"><span class="lineno">  451</span>        <span class="comment">#print(df)</span></div>
+<div class="line"><span class="lineno">  452</span>        idcol=<span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">  453</span>        dns=<span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">  454</span>        attns=<span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">  455</span>        onlyschema=<span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  456</span>        geomatts=[]</div>
+<div class="line"><span class="lineno">  457</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;id&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  458</span>            idcol=typemap[<span class="stringliteral">&quot;id&quot;</span>]</div>
+<div class="line"><span class="lineno">  459</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;namespace&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  460</span>            dns=typemap[<span class="stringliteral">&quot;namespace&quot;</span>]</div>
+<div class="line"><span class="lineno">  461</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  462</span>            dns=<span class="stringliteral">&quot;http://purl.org/suni/data/&quot;</span></div>
+<div class="line"><span class="lineno">  463</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;attnamespace&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  464</span>            attns=typemap[<span class="stringliteral">&quot;attnamespace&quot;</span>]</div>
+<div class="line"><span class="lineno">  465</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  466</span>            attns=<span class="stringliteral">&quot;http://purl.org/suni/&quot;</span></div>
+<div class="line"><span class="lineno">  467</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;nsprefix&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  468</span>            nsprefix=typemap[<span class="stringliteral">&quot;nsprefix&quot;</span>]</div>
+<div class="line"><span class="lineno">  469</span>        <span class="keywordflow">elif</span> <span class="stringliteral">&quot;namespace&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  470</span>            nsprefix=typemap[<span class="stringliteral">&quot;namespace&quot;</span>][typemap[<span class="stringliteral">&quot;namespace&quot;</span>].rfind(<span class="stringliteral">&quot;/&quot;</span>)+1:]</div>
+<div class="line"><span class="lineno">  471</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  472</span>            nsprefix=<span class="stringliteral">&quot;sunid&quot;</span></div>
+<div class="line"><span class="lineno">  473</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;attnamespace&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  474</span>            attnsprefix = typemap[<span class="stringliteral">&quot;attnamespace&quot;</span>][typemap[<span class="stringliteral">&quot;attnamespace&quot;</span>].rfind(<span class="stringliteral">&quot;/&quot;</span>) + 1:].replace(<span class="stringliteral">&quot;#&quot;</span>,<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><span class="lineno">  475</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  476</span>            attnsprefix=<span class="stringliteral">&quot;suni&quot;</span></div>
+<div class="line"><span class="lineno">  477</span>        ownvocabg.add((URIRef(attns),RDF.type,OWL.Ontology))</div>
+<div class="line"><span class="lineno">  478</span>        ownvocabg.add((URIRef(attns),RDF.type,URIRef(<span class="stringliteral">&quot;http://purl.org/vocommons/voaf#Vocabulary&quot;</span>)))</div>
+<div class="line"><span class="lineno">  479</span>        ownvocabg.add((URIRef(attns),RDFS.label,Literal(attns+<span class="stringliteral">&quot; Vocabulary&quot;</span>,lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  480</span>        ownvocabg.add((URIRef(attns),URIRef(<span class="stringliteral">&quot;http://purl.org/vocab/vann/preferredNamespaceUri&quot;</span>),Literal(attns,datatype=XSD.anyURI)))</div>
+<div class="line"><span class="lineno">  481</span>        ownvocabg.add((URIRef(attns),URIRef(<span class="stringliteral">&quot;http://purl.org/vocab/vann/preferredNamespacePrefix&quot;</span>),Literal(attnsprefix,datatype=XSD.anyURI)))</div>
+<div class="line"><span class="lineno">  482</span>        ownvocabg.add((URIRef(attns),URIRef(<span class="stringliteral">&quot;http://purl.org/vocommons/voaf#usageInDataset&quot;</span>),Literal(dns,datatype=XSD.anyURI)))</div>
+<div class="line"><span class="lineno">  483</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;onlyschema&quot;</span> <span class="keywordflow">in</span> typemap <span class="keywordflow">and</span> typemap[<span class="stringliteral">&quot;onlyschema&quot;</span>]==<span class="keyword">True</span>:</div>
+<div class="line"><span class="lineno">  484</span>            onlyschema=<span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  485</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;epsg&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  486</span>            epsg=typemap[<span class="stringliteral">&quot;epsg&quot;</span>]</div>
+<div class="line"><span class="lineno">  487</span>            g=ConvertCRS.convertCRSFromEPSG(<span class="stringliteral">&quot;EPSG:&quot;</span>+typemap[<span class="stringliteral">&quot;epsg&quot;</span>],g)</div>
+<div class="line"><span class="lineno">  488</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  489</span>            g=ConvertCRS.convertCRSFromEPSG(<span class="stringliteral">&quot;EPSG:4326&quot;</span>,g)</div>
+<div class="line"><span class="lineno">  490</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;license&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  491</span>            licensee=typemap[<span class="stringliteral">&quot;license&quot;</span>]</div>
+<div class="line"><span class="lineno">  492</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  493</span>            licensee=<span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  494</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;geometry&quot;</span> <span class="keywordflow">in</span> typemap <span class="keywordflow">and</span> isinstance(typemap[<span class="stringliteral">&quot;geometry&quot;</span>],list):</div>
+<div class="line"><span class="lineno">  495</span>            geomatts=typemap[<span class="stringliteral">&quot;geometry&quot;</span>]</div>
+<div class="line"><span class="lineno">  496</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;prefixes&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  497</span>            <span class="keywordflow">for</span> pref <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;prefixes&quot;</span>]:</div>
+<div class="line"><span class="lineno">  498</span>                <span class="keywordflow">if</span> str(typemap[<span class="stringliteral">&quot;prefixes&quot;</span>][pref]).startswith(<span class="stringliteral">&quot;http&quot;</span>):</div>
+<div class="line"><span class="lineno">  499</span>                    g.bind(str(pref),str(typemap[<span class="stringliteral">&quot;prefixes&quot;</span>][pref]))</div>
+<div class="line"><span class="lineno">  500</span>        g.bind(nsprefix,dns)</div>
+<div class="line"><span class="lineno">  501</span>        g.bind(attnsprefix, attns)</div>
+<div class="line"><span class="lineno">  502</span>        g.bind(<span class="stringliteral">&quot;sf&quot;</span>,<span class="stringliteral">&quot;http://www.opengis.net/ont/sf#&quot;</span>)</div>
+<div class="line"><span class="lineno">  503</span>        g.bind(<span class="stringliteral">&quot;om&quot;</span>,<span class="stringliteral">&quot;http://www.ontology-of-units-of-measure.org/resource/om-2/&quot;</span>)</div>
+<div class="line"><span class="lineno">  504</span>        g.bind(<span class="stringliteral">&quot;qudt&quot;</span>,<span class="stringliteral">&quot;http://qudt.org/schema/qudt#&quot;</span>)</div>
+<div class="line"><span class="lineno">  505</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;language&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  506</span>            lang=typemap[<span class="stringliteral">&quot;language&quot;</span>]</div>
+<div class="line"><span class="lineno">  507</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  508</span>            lang=<span class="stringliteral">&quot;en&quot;</span></div>
+<div class="line"><span class="lineno">  509</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;class&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  510</span>            cls=typemap.get(<span class="stringliteral">&quot;class&quot;</span>)</div>
+<div class="line"><span class="lineno">  511</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  512</span>            cls=<span class="stringliteral">&quot;http://www.w3.org/ns/prov#Entity&quot;</span></div>
+<div class="line"><span class="lineno">  513</span>        clsmappings=[]</div>
+<div class="line"><span class="lineno">  514</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;classmappings&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  515</span>            clsmappings=typemap[<span class="stringliteral">&quot;classmappings&quot;</span>]</div>
+<div class="line"><span class="lineno">  516</span>        <span class="keywordflow">if</span> isinstance(cls,dict):</div>
+<div class="line"><span class="lineno">  517</span>            thecls = URIRef(typemap.get(<span class="stringliteral">&quot;class&quot;</span>).get(<span class="stringliteral">&quot;uri&quot;</span>))</div>
+<div class="line"><span class="lineno">  518</span>            g.add((thecls, RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  519</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;labels&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;class&quot;</span>]:</div>
+<div class="line"><span class="lineno">  520</span>                <span class="keywordflow">for</span> lan <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;class&quot;</span>][<span class="stringliteral">&quot;labels&quot;</span>]:</div>
+<div class="line"><span class="lineno">  521</span>                    g.add((thecls, RDFS.label, Literal(typemap[<span class="stringliteral">&quot;class&quot;</span>][<span class="stringliteral">&quot;labels&quot;</span>][lan],lang=lan)))</div>
+<div class="line"><span class="lineno">  522</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  523</span>            thecls = URIRef(typemap.get(<span class="stringliteral">&quot;class&quot;</span>))</div>
+<div class="line"><span class="lineno">  524</span>            g.add((thecls, RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  525</span>        rootcls=typemap.get(<span class="stringliteral">&quot;rootclass&quot;</span>)</div>
+<div class="line"><span class="lineno">  526</span>        <span class="keywordflow">if</span> rootcls!=<span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">  527</span>            <span class="keywordflow">if</span> isinstance(rootcls, dict):</div>
+<div class="line"><span class="lineno">  528</span>                rootcls = URIRef(typemap.get(<span class="stringliteral">&quot;rootclass&quot;</span>).get(<span class="stringliteral">&quot;uri&quot;</span>))</div>
+<div class="line"><span class="lineno">  529</span>                g.add((rootcls, RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  530</span>                g.add((thecls, RDFS.subClassOf, URIRef(rootcls)))</div>
+<div class="line"><span class="lineno">  531</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;labels&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;rootclass&quot;</span>]:</div>
+<div class="line"><span class="lineno">  532</span>                    <span class="keywordflow">for</span> lan <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;rootclass&quot;</span>][<span class="stringliteral">&quot;labels&quot;</span>]:</div>
+<div class="line"><span class="lineno">  533</span>                        g.add((thecls, RDFS.label, Literal(typemap[<span class="stringliteral">&quot;rootclass&quot;</span>][<span class="stringliteral">&quot;labels&quot;</span>][lan], lang=lan)))</div>
+<div class="line"><span class="lineno">  534</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  535</span>                g.add((thecls, RDFS.subClassOf, URIRef(rootcls)))</div>
+<div class="line"><span class="lineno">  536</span>                g.add((rootcls, RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  537</span>        thecols=set(df.dtypes.to_dict().keys())</div>
+<div class="line"><span class="lineno">  538</span>        rowcount=len(df)</div>
+<div class="line"><span class="lineno">  539</span>        counter=0</div>
+<div class="line"><span class="lineno">  540</span>        <span class="keywordflow">for</span> row <span class="keywordflow">in</span> df.to_dict(orient=<span class="stringliteral">&#39;records&#39;</span>):        </div>
+<div class="line"><span class="lineno">  541</span>            <span class="keywordflow">if</span> idcol==<span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">  542</span>                curid=dns+str(counter)</div>
+<div class="line"><span class="lineno">  543</span>            <span class="keywordflow">elif</span> isinstance(idcol,list):</div>
+<div class="line"><span class="lineno">  544</span>                curid=dns</div>
+<div class="line"><span class="lineno">  545</span>                <span class="keywordflow">for</span> ic <span class="keywordflow">in</span> idcol:</div>
+<div class="line"><span class="lineno">  546</span>                    curid+=str(row[ic])+<span class="stringliteral">&quot;_&quot;</span></div>
+<div class="line"><span class="lineno">  547</span>                curid=curid[0:-1]</div>
+<div class="line"><span class="lineno">  548</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  549</span>                curid=dns+str(row[idcol])</div>
+<div class="line"><span class="lineno">  550</span>            <span class="keywordflow">if</span> dcaturi!=<span class="stringliteral">&quot;&quot;</span>:</div>
+<div class="line"><span class="lineno">  551</span>                g.add((URIRef(curid),VOID.inDataset,URIRef(dcaturi)))</div>
+<div class="line"><span class="lineno">  552</span>            <span class="keywordflow">if</span> str(licensee).startswith(<span class="stringliteral">&quot;http&quot;</span>):</div>
+<div class="line"><span class="lineno">  553</span>                g.add((URIRef(curid),DC.license,URIRef(licensee)))</div>
+<div class="line"><span class="lineno">  554</span>            subclass=<span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  555</span>            seencols=set()</div>
+<div class="line"><span class="lineno">  556</span>            <span class="keywordflow">if</span> counter%100==0:</div>
+<div class="line"><span class="lineno">  557</span>                print(<span class="stringliteral">&quot;ROW: &quot;</span>+str(counter)+<span class="stringliteral">&quot;/&quot;</span>+str(rowcount))</div>
+<div class="line"><span class="lineno">  558</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;classmappings&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  559</span>                <span class="keywordflow">for</span> clsmap <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;classmappings&quot;</span>]:</div>
+<div class="line"><span class="lineno">  560</span>                    print(clsmap)</div>
+<div class="line"><span class="lineno">  561</span>                    g.add((URIRef(curid),RDF.type,URIRef(clsmap[<span class="stringliteral">&quot;uri&quot;</span>])))</div>
+<div class="line"><span class="lineno">  562</span>                    <span class="keywordflow">if</span> <span class="stringliteral">&quot;labels&quot;</span> <span class="keywordflow">in</span> clsmap:</div>
+<div class="line"><span class="lineno">  563</span>                        <span class="keywordflow">for</span> lab <span class="keywordflow">in</span> clsmap[<span class="stringliteral">&quot;labels&quot;</span>]:</div>
+<div class="line"><span class="lineno">  564</span>                            g.add((URIRef(curid),RDFS.label,Literal(clsmap[<span class="stringliteral">&quot;labels&quot;</span>][lab],lang=lab)))</div>
+<div class="line"><span class="lineno">  565</span>            <span class="comment">#for x in typemap[&quot;columns&quot;]:</span></div>
+<div class="line"><span class="lineno">  566</span>            subclass = <span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  567</span>            intypemap=<span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  568</span>            res=self.processColumns(<span class="stringliteral">&quot;&quot;</span>,seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts,literalformats)</div>
+<div class="line"><span class="lineno">  569</span>            seencols=res[<span class="stringliteral">&quot;seencols&quot;</span>]</div>
+<div class="line"><span class="lineno">  570</span>            subclass=res[<span class="stringliteral">&quot;subclass&quot;</span>]</div>
+<div class="line"><span class="lineno">  571</span>            counter+=1</div>
+<div class="line"><span class="lineno">  572</span>            notseencols=thecols.symmetric_difference(seencols)</div>
+<div class="line"><span class="lineno">  573</span>            <span class="keywordflow">if</span> onlyschema==<span class="keyword">False</span>:</div>
+<div class="line"><span class="lineno">  574</span>                <span class="keywordflow">for</span> x <span class="keywordflow">in</span> notseencols:</div>
+<div class="line"><span class="lineno">  575</span>                    <span class="keywordflow">if</span> x <span class="keywordflow">in</span> autotypemap[<span class="stringliteral">&quot;columns&quot;</span>] <span class="keywordflow">and</span> x != idcol <span class="keywordflow">and</span> x != <span class="stringliteral">&quot;geometry&quot;</span>:</div>
+<div class="line"><span class="lineno">  576</span>                        curcol = autotypemap[<span class="stringliteral">&quot;columns&quot;</span>][x]</div>
+<div class="line"><span class="lineno">  577</span>                        res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)</div>
+<div class="line"><span class="lineno">  578</span>                        g = res[0]</div>
+<div class="line"><span class="lineno">  579</span>                        <span class="keywordflow">if</span> res[1]:</div>
+<div class="line"><span class="lineno">  580</span>                            subclass=<span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  581</span>                        <span class="comment">#subclass = res[1]</span></div>
+<div class="line"><span class="lineno">  582</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;addcolumns&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  583</span>                <span class="keywordflow">for</span> addcol <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;addcolumns&quot;</span>]:</div>
+<div class="line"><span class="lineno">  584</span>                    curcol=typemap[<span class="stringliteral">&quot;addcolumns&quot;</span>][addcol]</div>
+<div class="line"><span class="lineno">  585</span>                    <span class="keywordflow">if</span> <span class="stringliteral">&quot;collection&quot;</span> <span class="keywordflow">in</span> curcol <span class="keywordflow">and</span> curcol[<span class="stringliteral">&quot;collection&quot;</span>]:</div>
+<div class="line"><span class="lineno">  586</span>                        colindid=curid+<span class="stringliteral">&quot;_&quot;</span>+addcol</div>
+<div class="line"><span class="lineno">  587</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;propiri&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  588</span>                            g.add((URIRef(curid),URIRef(curcol[<span class="stringliteral">&quot;propiri&quot;</span>]),URIRef(colindid)))</div>
+<div class="line"><span class="lineno">  589</span>                        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  590</span>                            g.add((URIRef(curid),URIRef(attns+addcol),URIRef(colindid)))</div>
+<div class="line"><span class="lineno">  591</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;concept&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  592</span>                            g.add((URIRef(colindid),RDF.type,URIRef(curcol[<span class="stringliteral">&quot;concept&quot;</span>])))</div>
+<div class="line"><span class="lineno">  593</span>                        g.add((URIRef(colindid),RDFS.label,Literal(str(addcol)+<span class="stringliteral">&quot; for &quot;</span>+str(curid),lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  594</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;columns&quot;</span> <span class="keywordflow">in</span> curcol:</div>
+<div class="line"><span class="lineno">  595</span>                            <span class="keywordflow">for</span> innercol <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;columns&quot;</span>]:</div>
+<div class="line"><span class="lineno">  596</span>                                res = self.addPropertyToGraph(<span class="keywordtype">None</span>, innercol, g, attns, colindid, thecls, lang, curcol[<span class="stringliteral">&quot;columns&quot;</span>][innercol])</div>
+<div class="line"><span class="lineno">  597</span>                    <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  598</span>                        res = self.addPropertyToGraph(<span class="keywordtype">None</span>, addcol, g, attns, curid, thecls, lang, curcol)</div>
+<div class="line"><span class="lineno">  599</span>                        g = res[0]</div>
+<div class="line"><span class="lineno">  600</span>                        <span class="keywordflow">if</span> res[1]:</div>
+<div class="line"><span class="lineno">  601</span>                            subclass=<span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  602</span>                <span class="comment">#print(x)</span></div>
+<div class="line"><span class="lineno">  603</span>            <span class="keywordflow">if</span> subclass==<span class="keyword">False</span>:</div>
+<div class="line"><span class="lineno">  604</span>                g.add((URIRef(curid), RDF.type, thecls))</div>
+<div class="line"><span class="lineno">  605</span>        <span class="keywordflow">return</span> g</div>
+<div class="line"><span class="lineno">  606</span> </div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00034.html#a3eb691874af1571391e442164fd8f65b">RDFConverter.addPropertyToGraph()</a>, and <a class="el" href="a00034.html#af7be32dcb1c4d2dad218b6b7c8d864c3">RDFConverter.processColumns()</a>.</p>
+
+</div>
+</div>
+<a id="a968221e384dfbbede7765c3b88ded800" name="a968221e384dfbbede7765c3b88ded800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a968221e384dfbbede7765c3b88ded800">&#9670;&#160;</a></span>detectColumnType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">detectColumnType </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>resultmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>columnname</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   66</span>    <span class="keyword">def </span>detectColumnType(self,resultmap,columnname=&quot;&quot;):</div>
+<div class="line"><span class="lineno">   67</span>        intcount,doublecount,datecount,uricount = 0,0,0,0</div>
+<div class="line"><span class="lineno">   68</span>        stringcount,tokencount=0,0</div>
+<div class="line"><span class="lineno">   69</span>        uniquestrings=set()</div>
+<div class="line"><span class="lineno">   70</span>        <span class="keywordflow">for</span> res <span class="keywordflow">in</span> resultmap:</div>
+<div class="line"><span class="lineno">   71</span>            <span class="keywordflow">if</span> res <span class="keywordflow">not</span> <span class="keywordflow">in</span> resultmap <span class="keywordflow">or</span> resultmap[res] <span class="keywordflow">is</span> <span class="keywordtype">None</span> <span class="keywordflow">or</span> resultmap[res] == <span class="stringliteral">&quot;&quot;</span>:</div>
+<div class="line"><span class="lineno">   72</span>                <span class="keywordflow">continue</span></div>
+<div class="line"><span class="lineno">   73</span>            resstr=str(resultmap[res])</div>
+<div class="line"><span class="lineno">   74</span>            uniquestrings.add(resstr)</div>
+<div class="line"><span class="lineno">   75</span>            tokencount+=1</div>
+<div class="line"><span class="lineno">   76</span>            <span class="keywordflow">if</span> resstr.isdigit():</div>
+<div class="line"><span class="lineno">   77</span>                intcount += 1</div>
+<div class="line"><span class="lineno">   78</span>                <span class="keywordflow">continue</span></div>
+<div class="line"><span class="lineno">   79</span>            <span class="keywordflow">try</span>:</div>
+<div class="line"><span class="lineno">   80</span>                float(resstr)</div>
+<div class="line"><span class="lineno">   81</span>                doublecount += 1</div>
+<div class="line"><span class="lineno">   82</span>                <span class="keywordflow">continue</span></div>
+<div class="line"><span class="lineno">   83</span>            <span class="keywordflow">except</span>:</div>
+<div class="line"><span class="lineno">   84</span>                <span class="keywordflow">pass</span></div>
+<div class="line"><span class="lineno">   85</span>            <span class="keywordflow">if</span> resstr.startswith(<span class="stringliteral">&quot;http&quot;</span>):</div>
+<div class="line"><span class="lineno">   86</span>                uricount+=1</div>
+<div class="line"><span class="lineno">   87</span>                <span class="keywordflow">continue</span></div>
+<div class="line"><span class="lineno">   88</span>            stringcount+=1</div>
+<div class="line"><span class="lineno">   89</span>        bcheck=self.checkForBooleanAsString(uniquestrings)</div>
+<div class="line"><span class="lineno">   90</span>        <span class="keywordflow">if</span> bcheck!=<span class="keyword">False</span>:</div>
+<div class="line"><span class="lineno">   91</span>            <span class="keywordflow">return</span> {<span class="stringliteral">&quot;range&quot;</span>: <span class="stringliteral">&quot;xsd:boolean&quot;</span>,<span class="stringliteral">&quot;prop&quot;</span>:<span class="stringliteral">&quot;data&quot;</span>, <span class="stringliteral">&quot;valuemapping&quot;</span>:bcheck, <span class="stringliteral">&quot;unique&quot;</span>: (tokencount == len(uniquestrings)),<span class="stringliteral">&quot;category&quot;</span>:<span class="keyword">False</span>}</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">if</span> intcount == len(resultmap):</div>
+<div class="line"><span class="lineno">   93</span>            <span class="keywordflow">return</span> {<span class="stringliteral">&quot;range&quot;</span>: <span class="stringliteral">&quot;xsd:integer&quot;</span>,<span class="stringliteral">&quot;prop&quot;</span>:<span class="stringliteral">&quot;data&quot;</span>, <span class="stringliteral">&quot;unique&quot;</span>: (tokencount == len(uniquestrings)),<span class="stringliteral">&quot;category&quot;</span>:<span class="keyword">False</span>}</div>
+<div class="line"><span class="lineno">   94</span>        <span class="keywordflow">if</span> doublecount == len(resultmap):</div>
+<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">return</span> {<span class="stringliteral">&quot;range&quot;</span>: <span class="stringliteral">&quot;xsd:double&quot;</span>,<span class="stringliteral">&quot;prop&quot;</span>:<span class="stringliteral">&quot;data&quot;</span>, <span class="stringliteral">&quot;unique&quot;</span>: (tokencount == len(uniquestrings)),<span class="stringliteral">&quot;category&quot;</span>:<span class="keyword">False</span>}</div>
+<div class="line"><span class="lineno">   96</span>        <span class="keywordflow">if</span> datecount == len(resultmap):</div>
+<div class="line"><span class="lineno">   97</span>            <span class="keywordflow">return</span> {<span class="stringliteral">&quot;type&quot;</span>: <span class="stringliteral">&quot;range&quot;</span>, <span class="stringliteral">&quot;prop&quot;</span>:<span class="stringliteral">&quot;data&quot;</span>,<span class="stringliteral">&quot;xsdtype&quot;</span>: <span class="stringliteral">&quot;xsd:date&quot;</span>, <span class="stringliteral">&quot;unique&quot;</span>: (tokencount == len(uniquestrings)),<span class="stringliteral">&quot;category&quot;</span>:<span class="keyword">False</span>}</div>
+<div class="line"><span class="lineno">   98</span>        <span class="keywordflow">if</span> uricount == len(resultmap):</div>
+<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">return</span> {<span class="stringliteral">&quot;range&quot;</span>: <span class="stringliteral">&quot;xsd:anyURI&quot;</span>, <span class="stringliteral">&quot;prop&quot;</span>:<span class="stringliteral">&quot;data&quot;</span>,<span class="stringliteral">&quot;xsdtype&quot;</span>: <span class="stringliteral">&quot;xsd:anyURI&quot;</span>, <span class="stringliteral">&quot;unique&quot;</span>: (tokencount == len(uniquestrings)),<span class="stringliteral">&quot;category&quot;</span>:<span class="keyword">False</span>}</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordflow">return</span> {<span class="stringliteral">&quot;range&quot;</span>:<span class="stringliteral">&quot;xsd:string&quot;</span>,<span class="stringliteral">&quot;prop&quot;</span>:<span class="stringliteral">&quot;data&quot;</span>,<span class="stringliteral">&quot;unique&quot;</span>:(stringcount==len(uniquestrings)),<span class="stringliteral">&quot;category&quot;</span>:(stringcount &lt;= len(uniquestrings))}</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span> </div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00034.html#a05944a5bf14037c8421d13a0fc12dcc9">RDFConverter.checkForBooleanAsString()</a>.</p>
+
+</div>
+</div>
+<a id="af7be32dcb1c4d2dad218b6b7c8d864c3" name="af7be32dcb1c4d2dad218b6b7c8d864c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7be32dcb1c4d2dad218b6b7c8d864c3">&#9670;&#160;</a></span>processColumns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">processColumns </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>seencols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>curid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>idcol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>attns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>thecls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lang</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>typemap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>bibmap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>geomatts</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>literalformats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  365</span>    <span class="keyword">def </span>processColumns(self,prefix,seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts,literalformats):</div>
+<div class="line"><span class="lineno">  366</span>        processedGeom=<span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  367</span>        subclass = <span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  368</span>        <span class="comment">#print(&quot;PROCCOL Graph: &quot;+str(len(g)))</span></div>
+<div class="line"><span class="lineno">  369</span>        <span class="keywordflow">for</span> x <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>]:</div>
+<div class="line"><span class="lineno">  370</span>            <span class="comment"># print(&quot;CConfig: &quot;+str(x))</span></div>
+<div class="line"><span class="lineno">  371</span>            intypemap = <span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  372</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;ignore&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x] <span class="keywordflow">and</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x][<span class="stringliteral">&quot;ignore&quot;</span>] == <span class="keyword">True</span>:</div>
+<div class="line"><span class="lineno">  373</span>                seencols.add(x)</div>
+<div class="line"><span class="lineno">  374</span>                <span class="keywordflow">continue</span></div>
+<div class="line"><span class="lineno">  375</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;bibref&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x] <span class="keywordflow">and</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x][<span class="stringliteral">&quot;bibref&quot;</span>] == <span class="keyword">True</span>:</div>
+<div class="line"><span class="lineno">  376</span>                g=BibTexToRDF.processReference(g,bibmap,x,row,curid)</div>
+<div class="line"><span class="lineno">  377</span>                <span class="keywordflow">continue</span></div>
+<div class="line"><span class="lineno">  378</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;collection&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x] <span class="keywordflow">and</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x][<span class="stringliteral">&quot;collection&quot;</span>] == <span class="keyword">True</span> <span class="keywordflow">and</span> <span class="stringliteral">&quot;columns&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x]:</div>
+<div class="line"><span class="lineno">  379</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;propiri&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x]:</div>
+<div class="line"><span class="lineno">  380</span>                    theiri = URIRef(typemap[<span class="stringliteral">&quot;columns&quot;</span>][x][<span class="stringliteral">&quot;propiri&quot;</span>])</div>
+<div class="line"><span class="lineno">  381</span>                <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  382</span>                    theiri = URIRef(attns + x)</div>
+<div class="line"><span class="lineno">  383</span>                <span class="keywordflow">if</span> prefix!=<span class="stringliteral">&quot;&quot;</span>:</div>
+<div class="line"><span class="lineno">  384</span>                    res = self.processColumns(str(prefix) + <span class="stringliteral">&quot;.&quot;</span> + str(x), seencols, str(curid)+<span class="stringliteral">&quot;_&quot;</span>+str(x), g, row, idcol,attns, thecls, lang, typemap[<span class="stringliteral">&quot;columns&quot;</span>][x],bibmap,geomatts,literalformats)</div>
+<div class="line"><span class="lineno">  385</span>                    g.add((URIRef(curid),URIRef(theiri),URIRef(str(curid)+<span class="stringliteral">&quot;_&quot;</span>+str(x))))</div>
+<div class="line"><span class="lineno">  386</span>                    g.add((URIRef(str(curid) + <span class="stringliteral">&quot;_&quot;</span> + str(x)),RDFS.label,Literal(str(curid)+<span class="stringliteral">&quot;_&quot;</span>+str(x))))</div>
+<div class="line"><span class="lineno">  387</span>                    <span class="keywordflow">if</span> <span class="stringliteral">&quot;concept&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x]:</div>
+<div class="line"><span class="lineno">  388</span>                        g.add((URIRef(str(curid) + <span class="stringliteral">&quot;_&quot;</span> + str(x)),RDF.type,URIRef(typemap[<span class="stringliteral">&quot;columns&quot;</span>][x][<span class="stringliteral">&quot;concept&quot;</span>])))</div>
+<div class="line"><span class="lineno">  389</span>                <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  390</span>                    res=self.processColumns(str(x),seencols,str(curid)+<span class="stringliteral">&quot;_&quot;</span>+str(x),g,row,idcol,attns,thecls,lang,typemap[<span class="stringliteral">&quot;columns&quot;</span>][x],bibmap,geomatts,literalformats)</div>
+<div class="line"><span class="lineno">  391</span>                    g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid)+<span class="stringliteral">&quot;_&quot;</span>+str(x))))</div>
+<div class="line"><span class="lineno">  392</span>                    g.add((URIRef(str(curid) + <span class="stringliteral">&quot;_&quot;</span> + str(x)),RDFS.label,Literal(str(curid)+<span class="stringliteral">&quot;_&quot;</span>+str(x))))</div>
+<div class="line"><span class="lineno">  393</span>                    <span class="keywordflow">if</span> <span class="stringliteral">&quot;concept&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x]:</div>
+<div class="line"><span class="lineno">  394</span>                        g.add((URIRef(str(curid) + <span class="stringliteral">&quot;_&quot;</span> + str(x)),RDF.type,URIRef(typemap[<span class="stringliteral">&quot;columns&quot;</span>][x][<span class="stringliteral">&quot;concept&quot;</span>])))</div>
+<div class="line"><span class="lineno">  395</span>                g=res[<span class="stringliteral">&quot;graph&quot;</span>]</div>
+<div class="line"><span class="lineno">  396</span>                seencols=res[<span class="stringliteral">&quot;seencols&quot;</span>]</div>
+<div class="line"><span class="lineno">  397</span>            <span class="keywordflow">elif</span> <span class="stringliteral">&quot;join&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x] <span class="keywordflow">and</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x][<span class="stringliteral">&quot;join&quot;</span>]==<span class="keyword">True</span> <span class="keywordflow">and</span> <span class="stringliteral">&quot;columns&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x]:</div>
+<div class="line"><span class="lineno">  398</span>                thejoincol=typemap[<span class="stringliteral">&quot;columns&quot;</span>][x]</div>
+<div class="line"><span class="lineno">  399</span>                joinchar=<span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  400</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;joinchar&quot;</span> <span class="keywordflow">in</span> thejoincol:</div>
+<div class="line"><span class="lineno">  401</span>                    joinchar=thejoincol[<span class="stringliteral">&quot;joinchar&quot;</span>]</div>
+<div class="line"><span class="lineno">  402</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;propiri&quot;</span> <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>][x]:</div>
+<div class="line"><span class="lineno">  403</span>                    theiri = URIRef(typemap[<span class="stringliteral">&quot;columns&quot;</span>][x][<span class="stringliteral">&quot;propiri&quot;</span>])</div>
+<div class="line"><span class="lineno">  404</span>                <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  405</span>                    theiri = URIRef(attns + x)</div>
+<div class="line"><span class="lineno">  406</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;proplabels&quot;</span> <span class="keywordflow">in</span> curcol <span class="keywordflow">and</span> <span class="stringliteral">&quot;en&quot;</span> <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;proplabels&quot;</span>]:</div>
+<div class="line"><span class="lineno">  407</span>                    propirilabel = str(curcol[<span class="stringliteral">&quot;proplabels&quot;</span>][<span class="stringliteral">&quot;en&quot;</span>])</div>
+<div class="line"><span class="lineno">  408</span>                <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  409</span>                    propirilabel = str(x)</div>
+<div class="line"><span class="lineno">  410</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;definition&quot;</span> <span class="keywordflow">in</span> curcol <span class="keywordflow">and</span> <span class="stringliteral">&quot;en&quot;</span> <span class="keywordflow">in</span> curcol[<span class="stringliteral">&quot;definition&quot;</span>]:</div>
+<div class="line"><span class="lineno">  411</span>                    g.add((theiri, SKOS.definition, Literal(curcol[<span class="stringliteral">&quot;definition&quot;</span>][<span class="stringliteral">&quot;en&quot;</span>], lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  412</span>                aggval=<span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  413</span>                <span class="keywordflow">for</span> col <span class="keywordflow">in</span> thejoincol[<span class="stringliteral">&quot;columns&quot;</span>]:</div>
+<div class="line"><span class="lineno">  414</span>                    aggval+=str(row[col])+str(joinchar)</div>
+<div class="line"><span class="lineno">  415</span>                aggval=aggval[0:-len(joinchar)]</div>
+<div class="line"><span class="lineno">  416</span>                g.add((theiri, RDF.type, OWL.DatatypeProperty))</div>
+<div class="line"><span class="lineno">  417</span>                g.add((theiri, RDFS.label, Literal(propirilabel, lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  418</span>                g.add((URIRef(curid), theiri, Literal(str(aggval), datatype=<span class="stringliteral">&quot;http://www.w3.org/2001/XMLSchema#string&quot;</span>)))</div>
+<div class="line"><span class="lineno">  419</span>            <span class="keywordflow">elif</span> x <span class="keywordflow">in</span> typemap[<span class="stringliteral">&quot;columns&quot;</span>] <span class="keywordflow">and</span> x != <span class="stringliteral">&quot;geometry&quot;</span>: <span class="comment">#and x != idcol</span></div>
+<div class="line"><span class="lineno">  420</span>                intypemap = <span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  421</span>                curcol = typemap[<span class="stringliteral">&quot;columns&quot;</span>][x]</div>
+<div class="line"><span class="lineno">  422</span>                res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)</div>
+<div class="line"><span class="lineno">  423</span>                g = res[0]</div>
+<div class="line"><span class="lineno">  424</span>                <span class="keywordflow">if</span> res[1]:</div>
+<div class="line"><span class="lineno">  425</span>                    subclass=<span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  426</span>                <span class="comment">#subclass = res[1]</span></div>
+<div class="line"><span class="lineno">  427</span>                seencols.add(x)</div>
+<div class="line"><span class="lineno">  428</span>        <span class="keywordflow">if</span> prefix==<span class="stringliteral">&quot;&quot;</span> <span class="keywordflow">and</span> processedGeom==<span class="keyword">False</span>:</div>
+<div class="line"><span class="lineno">  429</span>            <span class="keywordflow">if</span> len(geomatts)&gt;0:</div>
+<div class="line"><span class="lineno">  430</span>                allin=<span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  431</span>                <span class="keywordflow">for</span> att <span class="keywordflow">in</span> geomatts:</div>
+<div class="line"><span class="lineno">  432</span>                    <span class="keywordflow">if</span> att <span class="keywordflow">not</span> <span class="keywordflow">in</span> row:</div>
+<div class="line"><span class="lineno">  433</span>                        allin=<span class="keyword">False</span></div>
+<div class="line"><span class="lineno">  434</span>                <span class="keywordflow">if</span> len(geomatts)&gt;1:</div>
+<div class="line"><span class="lineno">  435</span>                    self.processLatLonGeometry(g, row[geomatts[0]], row[geomatts[1]], typemap, curid)</div>
+<div class="line"><span class="lineno">  436</span>                    processedGeom = <span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  437</span>                <span class="keywordflow">elif</span> len(geomatts)==1:</div>
+<div class="line"><span class="lineno">  438</span>                    self.processGeometryColumn(g,row,geomatts[0],typemap,curid,set([x.upper() <span class="keywordflow">for</span> x <span class="keywordflow">in</span> literalformats]))</div>
+<div class="line"><span class="lineno">  439</span>            <span class="keywordflow">elif</span> <span class="stringliteral">&quot;geometry&quot;</span> <span class="keywordflow">in</span> row:</div>
+<div class="line"><span class="lineno">  440</span>                self.processGeometryColumn(g,row,<span class="stringliteral">&quot;geometry&quot;</span>,typemap,curid,set([x.upper() <span class="keywordflow">for</span> x <span class="keywordflow">in</span> literalformats]))</div>
+<div class="line"><span class="lineno">  441</span>                processedGeom=<span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  442</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  443</span>                <span class="keywordflow">for</span> pair <span class="keywordflow">in</span> self.latlonpairs:</div>
+<div class="line"><span class="lineno">  444</span>                    <span class="keywordflow">if</span> pair[0] <span class="keywordflow">in</span> row <span class="keywordflow">and</span> pair[1] <span class="keywordflow">in</span> row:</div>
+<div class="line"><span class="lineno">  445</span>                        self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)</div>
+<div class="line"><span class="lineno">  446</span>                        processedGeom = <span class="keyword">True</span></div>
+<div class="line"><span class="lineno">  447</span>        <span class="comment">#print(str(curid)+&quot; - hasSubClass &quot;+str(subclass))</span></div>
+<div class="line"><span class="lineno">  448</span>        <span class="keywordflow">return</span> {<span class="stringliteral">&quot;graph&quot;</span>:g,<span class="stringliteral">&quot;subclass&quot;</span>:subclass,<span class="stringliteral">&quot;seencols&quot;</span>:seencols}</div>
+<div class="line"><span class="lineno">  449</span> </div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="a00034.html#a3eb691874af1571391e442164fd8f65b">RDFConverter.addPropertyToGraph()</a>, <a class="el" href="a00034.html#a473d0a8024c3b3e74647822df7b77c82">RDFConverter.latlonpairs</a>, <a class="el" href="a00034.html#af7be32dcb1c4d2dad218b6b7c8d864c3">RDFConverter.processColumns()</a>, <a class="el" href="a00034.html#af1030fc541dcec7eb2cca1ee60613e9b">RDFConverter.processGeometryColumn()</a>, and <a class="el" href="a00034.html#ae3ea6f343b8e58d93f4432af66f62a11">RDFConverter.processLatLonGeometry()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="a00034.html#a9e4b7f469e811c11a6807be2a111b6d5">RDFConverter.convertToRDF()</a>, and <a class="el" href="a00034.html#af7be32dcb1c4d2dad218b6b7c8d864c3">RDFConverter.processColumns()</a>.</p>
+
+</div>
+</div>
+<a id="af1030fc541dcec7eb2cca1ee60613e9b" name="af1030fc541dcec7eb2cca1ee60613e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1030fc541dcec7eb2cca1ee60613e9b">&#9670;&#160;</a></span>processGeometryColumn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">processGeometryColumn </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>geometrycol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>typemap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>curid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>literaltypes</em> = <code>[&quot;WKT&quot;]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  292</span>    <span class="keyword">def </span>processGeometryColumn(self,g,row,geometrycol,typemap,curid,literaltypes=[&quot;WKT&quot;]):</div>
+<div class="line"><span class="lineno">  293</span>        g.add((URIRef(curid), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#hasGeometry&quot;</span>), URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>)))</div>
+<div class="line"><span class="lineno">  294</span>        g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#hasGeometry&quot;</span>), RDF.type, OWL.ObjectProperty))</div>
+<div class="line"><span class="lineno">  295</span>        g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), RDF.type, URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/sf#&quot;</span> + str(row[geometrycol].geom_type))))</div>
+<div class="line"><span class="lineno">  296</span>        g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/sf#&quot;</span> + str(row[geometrycol].geom_type)), RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  297</span>        g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/sf#&quot;</span> + str(row[geometrycol].geom_type)), RDFS.subClassOf,URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#Geometry&quot;</span>)))</div>
+<div class="line"><span class="lineno">  298</span>        g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#Geometry&quot;</span>), RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  299</span>        g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), RDFS.label, Literal(<span class="stringliteral">&quot;Geometry of &quot;</span> + str(curid[str(curid).rfind(<span class="stringliteral">&quot;/&quot;</span>)+1:]), lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  300</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;WKT&quot;</span> <span class="keywordflow">in</span> literaltypes:</div>
+<div class="line"><span class="lineno">  301</span>            g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asWKT&quot;</span>), RDF.type, OWL.DatatypeProperty))</div>
+<div class="line"><span class="lineno">  302</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;epsg&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  303</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asWKT&quot;</span>),</div>
+<div class="line"><span class="lineno">  304</span>                    Literal(<span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/&quot;</span> + str(typemap[<span class="stringliteral">&quot;epsg&quot;</span>]) + <span class="stringliteral">&quot;&gt; &quot;</span> + str(row[geometrycol]),</div>
+<div class="line"><span class="lineno">  305</span>                            datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#wktLiteral&quot;</span>)))</div>
+<div class="line"><span class="lineno">  306</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#inSRS&quot;</span>),</div>
+<div class="line"><span class="lineno">  307</span>                    URIRef(<span class="stringliteral">&quot;http://www.opengis.net/def/crs/EPSG/0/&quot;</span> + str(typemap[<span class="stringliteral">&quot;epsg&quot;</span>]))))</div>
+<div class="line"><span class="lineno">  308</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  309</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asWKT&quot;</span>),</div>
+<div class="line"><span class="lineno">  310</span>                    Literal(str(row[geometrycol]), datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#wktLiteral&quot;</span>)))</div>
+<div class="line"><span class="lineno">  311</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#inSRS&quot;</span>),</div>
+<div class="line"><span class="lineno">  312</span>                    URIRef(<span class="stringliteral">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span>)))</div>
+<div class="line"><span class="lineno">  313</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;GEOJSON&quot;</span> <span class="keywordflow">in</span> literaltypes:</div>
+<div class="line"><span class="lineno">  314</span>            g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asGeoJSON&quot;</span>), RDF.type, OWL.DatatypeProperty))</div>
+<div class="line"><span class="lineno">  315</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;epsg&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  316</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asGeoJSON&quot;</span>),</div>
+<div class="line"><span class="lineno">  317</span>                    Literal(str(shapely.to_geojson(shapely.from_wkt(str(row[geometrycol])))),</div>
+<div class="line"><span class="lineno">  318</span>                            datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#geoJSONLiteral&quot;</span>)))</div>
+<div class="line"><span class="lineno">  319</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#inSRS&quot;</span>),</div>
+<div class="line"><span class="lineno">  320</span>                    URIRef(<span class="stringliteral">&quot;http://www.opengis.net/def/crs/EPSG/0/&quot;</span> + str(typemap[<span class="stringliteral">&quot;epsg&quot;</span>]))))</div>
+<div class="line"><span class="lineno">  321</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  322</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asGeoJSON&quot;</span>),</div>
+<div class="line"><span class="lineno">  323</span>                    Literal(str(shapely.to_geojson(shapely.from_wkt(str(row[geometrycol])))), datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#geoJSONLiteral&quot;</span>)))</div>
+<div class="line"><span class="lineno">  324</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#inSRS&quot;</span>),</div>
+<div class="line"><span class="lineno">  325</span>                    URIRef(<span class="stringliteral">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span>)))</div>
+<div class="line"><span class="lineno">  326</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;WKB&quot;</span> <span class="keywordflow">in</span> literaltypes:</div>
+<div class="line"><span class="lineno">  327</span>            g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asWKB&quot;</span>), RDF.type, OWL.DatatypeProperty))</div>
+<div class="line"><span class="lineno">  328</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;epsg&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  329</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asWKB&quot;</span>),</div>
+<div class="line"><span class="lineno">  330</span>                    Literal(<span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/&quot;</span> + str(typemap[<span class="stringliteral">&quot;epsg&quot;</span>]) + <span class="stringliteral">&quot;&gt; &quot;</span> + str(shapely.to_wkb(shapely.from_wkt(str(row[geometrycol])))),</div>
+<div class="line"><span class="lineno">  331</span>                            datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#wkbLiteral&quot;</span>)))</div>
+<div class="line"><span class="lineno">  332</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#inSRS&quot;</span>),</div>
+<div class="line"><span class="lineno">  333</span>                    URIRef(<span class="stringliteral">&quot;http://www.opengis.net/def/crs/EPSG/0/&quot;</span> + str(typemap[<span class="stringliteral">&quot;epsg&quot;</span>]))))</div>
+<div class="line"><span class="lineno">  334</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  335</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asWKB&quot;</span>),</div>
+<div class="line"><span class="lineno">  336</span>                    Literal(str(shapely.to_wkb(shapely.from_wkt(str(row[geometrycol])))), datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#wkbLiteral&quot;</span>)))</div>
+<div class="line"><span class="lineno">  337</span>                g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#inSRS&quot;</span>),</div>
+<div class="line"><span class="lineno">  338</span>                    URIRef(<span class="stringliteral">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span>)))</div>
+<div class="line"><span class="lineno">  339</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;KML&quot;</span> <span class="keywordflow">in</span> literaltypes:</div>
+<div class="line"><span class="lineno">  340</span>            g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asKML&quot;</span>), RDF.type, OWL.DatatypeProperty))</div>
+<div class="line"><span class="lineno">  341</span>            g.add((URIRef(curid+<span class="stringliteral">&quot;_geom&quot;</span>),URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asKML&quot;</span>),Literal( <span class="stringliteral">&quot;&lt;kml xmlns=\&quot;http://www.opengis.net/kml/2.2\&quot;&gt;&lt;Placemark&gt;&quot;</span> + str(fastkml.geometry.create_kml_geometry(shapely.from_wkt(str(row[geometrycol])))) + <span class="stringliteral">&quot;&lt;/Placemark&gt;&lt;/kml&gt;&quot;</span>, datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#kmlLiteral&quot;</span>)))</div>
+<div class="line"><span class="lineno">  342</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;GML&quot;</span> <span class="keywordflow">in</span> literaltypes:</div>
+<div class="line"><span class="lineno">  343</span>            g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asGML&quot;</span>), RDF.type, OWL.DatatypeProperty))</div>
+<div class="line"><span class="lineno">  344</span>            g.add((URIRef(curid+<span class="stringliteral">&quot;_geom&quot;</span>),URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asGML&quot;</span>),Literal(etree.tostring(encode_v32(json.loads(shapely.to_geojson(shapely.from_wkt(str(row[geometrycol])))), <span class="stringliteral">&quot;ID&quot;</span>),encoding=<span class="stringliteral">&quot;unicode&quot;</span>), datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#kmlLiteral&quot;</span>)))          </div>
+<div class="line"><span class="lineno">  345</span>        <span class="keywordflow">return</span> g</div>
+<div class="line"><span class="lineno">  346</span> </div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a00034.html#af7be32dcb1c4d2dad218b6b7c8d864c3">RDFConverter.processColumns()</a>.</p>
+
+</div>
+</div>
+<a id="ae3ea6f343b8e58d93f4432af66f62a11" name="ae3ea6f343b8e58d93f4432af66f62a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3ea6f343b8e58d93f4432af66f62a11">&#9670;&#160;</a></span>processLatLonGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">processLatLonGeometry </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>lon</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>typemap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>curid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  347</span>    <span class="keyword">def </span>processLatLonGeometry(self,g,lat,lon,typemap,curid):</div>
+<div class="line"><span class="lineno">  348</span>        g.add((URIRef(curid), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#hasGeometry&quot;</span>), URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>)))</div>
+<div class="line"><span class="lineno">  349</span>        g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#hasGeometry&quot;</span>), RDF.type, OWL.ObjectProperty))</div>
+<div class="line"><span class="lineno">  350</span>        g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), RDF.type, URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/sf#Point&quot;</span>)))</div>
+<div class="line"><span class="lineno">  351</span>        g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/sf#Point&quot;</span>), RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  352</span>        g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/sf#Point&quot;</span>), RDFS.subClassOf,URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#Geometry&quot;</span>)))</div>
+<div class="line"><span class="lineno">  353</span>        g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#Geometry&quot;</span>), RDF.type, OWL.Class))</div>
+<div class="line"><span class="lineno">  354</span>        g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), RDFS.label, Literal(<span class="stringliteral">&quot;Geometry of &quot;</span> + str(curid[str(curid).rfind(<span class="stringliteral">&quot;/&quot;</span>)+1:]), lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
+<div class="line"><span class="lineno">  355</span>        g.add((URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asWKT&quot;</span>), RDF.type, OWL.DatatypeProperty))</div>
+<div class="line"><span class="lineno">  356</span>        <span class="keywordflow">if</span> <span class="stringliteral">&quot;epsg&quot;</span> <span class="keywordflow">in</span> typemap:</div>
+<div class="line"><span class="lineno">  357</span>            g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asWKT&quot;</span>),</div>
+<div class="line"><span class="lineno">  358</span>                Literal(<span class="stringliteral">&quot;&lt;http://www.opengis.net/def/crs/EPSG/0/&quot;</span> + str(typemap[<span class="stringliteral">&quot;epsg&quot;</span>]) + <span class="stringliteral">&quot;&gt; POINT(&quot;</span>+str(lon)+<span class="stringliteral">&quot; &quot;</span>+str(lat)+<span class="stringliteral">&quot;)&quot;</span>,</div>
+<div class="line"><span class="lineno">  359</span>                        datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#wktLiteral&quot;</span>)))</div>
+<div class="line"><span class="lineno">  360</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  361</span>            g.add((URIRef(curid + <span class="stringliteral">&quot;_geom&quot;</span>), URIRef(<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#asWKT&quot;</span>),</div>
+<div class="line"><span class="lineno">  362</span>                Literal(<span class="stringliteral">&quot;POINT(&quot;</span>+str(lon)+<span class="stringliteral">&quot; &quot;</span>+str(lat)+<span class="stringliteral">&quot;)&quot;</span>, datatype=<span class="stringliteral">&quot;http://www.opengis.net/ont/geosparql#wktLiteral&quot;</span>)))</div>
+<div class="line"><span class="lineno">  363</span>        <span class="keywordflow">return</span> g</div>
+<div class="line"><span class="lineno">  364</span>    </div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="a00034.html#af7be32dcb1c4d2dad218b6b7c8d864c3">RDFConverter.processColumns()</a>.</p>
+
+</div>
+</div>
+<a id="a62bb602804fde40cabbfad4ffc88512f" name="a62bb602804fde40cabbfad4ffc88512f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62bb602804fde40cabbfad4ffc88512f">&#9670;&#160;</a></span>shortenURI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shortenURI </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>uri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>ns</em> = <code><a class="el" href="a00020.html#a36cde68b055f3f2ee671020af4ccf4e2">False</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  104</span>    <span class="keyword">def </span>shortenURI(uri,ns=False):</div>
+<div class="line"><span class="lineno">  105</span>        <span class="keywordflow">if</span> uri <span class="keywordflow">is</span> <span class="keywordflow">not</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">  106</span>            <span class="keywordflow">if</span> ns:</div>
+<div class="line"><span class="lineno">  107</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;#&quot;</span> <span class="keywordflow">in</span> uri:</div>
+<div class="line"><span class="lineno">  108</span>                    <span class="keywordflow">return</span> uri[0:uri.rfind(<span class="stringliteral">&#39;#&#39;</span>)+1]</div>
+<div class="line"><span class="lineno">  109</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;/&quot;</span> <span class="keywordflow">in</span> uri:</div>
+<div class="line"><span class="lineno">  110</span>                    <span class="keywordflow">return</span> uri[0:uri.rfind(<span class="stringliteral">&#39;/&#39;</span>)+1]</div>
+<div class="line"><span class="lineno">  111</span>            <span class="keywordflow">if</span> uri.endswith(<span class="stringliteral">&quot;/&quot;</span>):</div>
+<div class="line"><span class="lineno">  112</span>                uri = uri[0:-1]</div>
+<div class="line"><span class="lineno">  113</span>            <span class="keywordflow">if</span> <span class="keywordflow">not</span> ns:</div>
+<div class="line"><span class="lineno">  114</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;#&quot;</span> <span class="keywordflow">in</span> uri:</div>
+<div class="line"><span class="lineno">  115</span>                    <span class="keywordflow">return</span> uri[uri.rfind(<span class="stringliteral">&#39;#&#39;</span>) + 1:]</div>
+<div class="line"><span class="lineno">  116</span>                <span class="keywordflow">if</span> <span class="stringliteral">&quot;/&quot;</span> <span class="keywordflow">in</span> uri:</div>
+<div class="line"><span class="lineno">  117</span>                    <span class="keywordflow">return</span> uri[uri.rfind(<span class="stringliteral">&#39;/&#39;</span>) + 1:]</div>
+<div class="line"><span class="lineno">  118</span>            <span class="keywordflow">return</span> uri</div>
+<div class="line"><span class="lineno">  119</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  120</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span></div>
+<div class="line"><span class="lineno">  121</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a473d0a8024c3b3e74647822df7b77c82" name="a473d0a8024c3b3e74647822df7b77c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473d0a8024c3b3e74647822df7b77c82">&#9670;&#160;</a></span>latlonpairs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list latlonpairs = [[&quot;lat&quot;, &quot;lon&quot;], [&quot;lat&quot;, &quot;long&quot;], [&quot;latitude&quot;, &quot;longitude&quot;], [&quot;LAT&quot;, &quot;LON&quot;], [&quot;Lat&quot;, &quot;Lon&quot;], [&quot;Lat&quot;, &quot;Long&quot;], [&quot;LAT&quot;, &quot;LONG&quot;], [&quot;Latitude&quot;, &quot;Longitude&quot;], [&quot;LATITUDE&quot;, &quot;LONGITUDE&quot;]]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="a00034.html#af7be32dcb1c4d2dad218b6b7c8d864c3">RDFConverter.processColumns()</a>.</p>
+
+</div>
+</div>
+<a id="af927dd0562e0aa6a55952087e206a1ef" name="af927dd0562e0aa6a55952087e206a1ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af927dd0562e0aa6a55952087e206a1ef">&#9670;&#160;</a></span>outpath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">list outpath = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d1a58f99e00ab23b96645af0f4ef63c" name="a0d1a58f99e00ab23b96645af0f4ef63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1a58f99e00ab23b96645af0f4ef63c">&#9670;&#160;</a></span>unitprops</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dict unitprops = {&quot;QUDT&quot;:{&quot;hasUnit&quot;:&quot;http://qudt.org/schema/qudt/hasUnit&quot;},&quot;OM&quot;:{&quot;hasUnit&quot;:&quot;http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit&quot;}}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- HTML footer for doxygen 1.8.13-->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="a00017.html">geordfconverter</a></li><li class="navelem"><a class="el" href="a00020.html">rdfconverter</a></li><li class="navelem"><a class="el" href="a00034.html">RDFConverter</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

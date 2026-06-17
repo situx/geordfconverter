@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['cadastremap_0',['CadastreMap',['../a00038.html#a8a565dc0362b7296f27184165ef39e95',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['cartesiancoordinatesystem_1',['CartesianCoordinateSystem',['../a00038.html#a3945a6ae491c5871414a7a55316de33b',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['cassiniprojection_2',['CassiniProjection',['../a00038.html#ac191c1776976ffd5f355d5038dc3cc42',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['checkforbooleanasstring_3',['checkForBooleanAsString',['../a00034.html#a05944a5bf14037c8421d13a0fc12dcc9',1,'geordfconverter::rdfconverter::RDFConverter']]],
+  ['coastalhydrography_4',['CoastalHydrography',['../a00038.html#a926b8b116717fb1df61ab529da1923c0',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['collignonprojection_5',['CollignonProjection',['../a00038.html#ab7c9162cd364cb380cbe75b5ecc94eb6',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['colombiaurbanprojection_6',['ColombiaUrbanProjection',['../a00038.html#a8cc41ddaf2f54a5840b6cc76ef0b4e54',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['compoundcrs_7',['CompoundCRS',['../a00038.html#a8f4033d87cc037fbfb3766cd3d854811',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['conv_8',['conv',['../a00020.html#a03b176bca2d4d335da2e24301c7652ab',1,'geordfconverter::rdfconverter']]],
+  ['convertcrs_9',['ConvertCRS',['../a00030.html',1,'geordfconverter::convertcrs']]],
+  ['convertcrs_2epy_10',['convertcrs.py',['../a00014.html',1,'']]],
+  ['convertcrsfromepsg_11',['convertCRSFromEPSG',['../a00030.html#a6c18a6074662423fe9619f149fd0e258',1,'geordfconverter::convertcrs::ConvertCRS']]],
+  ['convertcrsfromwktstring_12',['convertCRSFromWKTString',['../a00030.html#a8033853b0ad60c09d293aed73cddc23d',1,'geordfconverter::convertcrs::ConvertCRS']]],
+  ['convertcrsfromwktstringset_13',['convertCRSFromWKTStringSet',['../a00030.html#af06d5ce5791ece24bf2204313f6da214',1,'geordfconverter::convertcrs::ConvertCRS']]],
+  ['converttordf_14',['convertToRDF',['../a00034.html#a9e4b7f469e811c11a6807be2a111b6d5',1,'geordfconverter::rdfconverter::RDFConverter']]],
+  ['coordinateconcatenatedoperation_15',['CoordinateConcatenatedOperation',['../a00038.html#a11ec75e934bb640591dfdc37c367377b',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['coordinateconversionoperation_16',['CoordinateConversionOperation',['../a00038.html#a8adaf37bc63217824494ef167f6d567c',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['coordinateoperation_17',['coordinateoperation',['../a00038.html#a79c1e5f07b40e634cb2367afbb9585f5',1,'geordfconverter.vocab.GEOCRS.GEOCRS.CoordinateOperation'],['../a00038.html#adb1f5d0ea5fbac4d429057b3202b9872',1,'geordfconverter.vocab.GEOCRS.GEOCRS.coordinateOperation']]],
+  ['coordinatesystem_18',['coordinatesystem',['../a00038.html#a72b076b052ac7ea417990792c02efded',1,'geordfconverter.vocab.GEOCRS.GEOCRS.coordinateSystem'],['../a00019.html#ae484d0f7bee7eed2ee2d34980b670df5',1,'geordfconverter.convertcrs.coordinatesystem']]],
+  ['coordinatesystemaxis_19',['CoordinateSystemAxis',['../a00038.html#a6aa3992cf77f0e706d0419935d19ba2f',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['coordinatetransformationoperation_20',['CoordinateTransformationOperation',['../a00038.html#a3da5d5f1162cddde19efe3e5fce60685',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['crs_21',['CRS',['../a00038.html#ad9e690400cb88729445d865fb33698e8',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['crstottl_22',['crsToTTL',['../a00030.html#aa0397a62108af567c90e6b5d342e05c8',1,'geordfconverter::convertcrs::ConvertCRS']]],
+  ['cylindricalequalarea_23',['CylindricalEqualArea',['../a00038.html#ae5bf0364553b448767a37ad80d08e98b',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['cylindricalprojection_24',['CylindricalProjection',['../a00038.html#a45722bfcd394d9024600df1153abe6e4',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]]
+];

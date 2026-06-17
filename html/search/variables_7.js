@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['g_0',['g',['../a00020.html#a73c18c59a39b18382081ec00bb456d43',1,'geordfconverter::rdfconverter']]],
+  ['geocentric_1',['Geocentric',['../a00038.html#aefa4d687841f206612825bde1756cf51',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['geocentriccrs_2',['GeocentricCRS',['../a00038.html#a97bbf1f39594db400ebc8c3e90ddfde2',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['geocrsaou_3',['GEOCRSAOU',['../a00019.html#a7ddad257095ba12eb5c37f0443411366',1,'geordfconverter::convertcrs']]],
+  ['geocrsaxis_4',['GEOCRSAXIS',['../a00019.html#acf4cc12b3ddaa60a9fa2fe4982ea1a2a',1,'geordfconverter::convertcrs']]],
+  ['geocrsdatum_5',['GEOCRSDATUM',['../a00019.html#a6c4b562d392c0f937e0e406fcb0e0cec',1,'geordfconverter::convertcrs']]],
+  ['geocrsgeod_6',['GEOCRSGEOD',['../a00019.html#a11b91490f2127fecfdd88d7480c61193',1,'geordfconverter::convertcrs']]],
+  ['geocrsgrid_7',['GEOCRSGRID',['../a00019.html#a94af8adb73b48582efa5afcb2f303da8',1,'geordfconverter::convertcrs']]],
+  ['geocrsisbody_8',['GEOCRSISBODY',['../a00019.html#a391fd00fe3e7ed6405d1955498aae173',1,'geordfconverter::convertcrs']]],
+  ['geocrsmeridian_9',['GEOCRSMERIDIAN',['../a00019.html#ad5bcd1e8718458550624e132b5ff68f2',1,'geordfconverter::convertcrs']]],
+  ['geocrsoperation_10',['GEOCRSOPERATION',['../a00019.html#a9eba5b864a8e802cbca8be6d648445c4',1,'geordfconverter::convertcrs']]],
+  ['geodesy_11',['Geodesy',['../a00038.html#aa5d3a9160998c0d55775656eb4224a6d',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['geodeticreferenceframe_12',['GeodeticReferenceFrame',['../a00038.html#af09d36dd313befaaffe7c26b2a9fd2e6',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['geoepsg_13',['GEOEPSG',['../a00019.html#a4eaf2cfa2255031011a0af70e07ce4bd',1,'geordfconverter::convertcrs']]],
+  ['geographiccrs_14',['GeographicCRS',['../a00038.html#a0c0b0b8f09eba19ab6ad9bca91f56253',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['geoid_15',['Geoid',['../a00038.html#ab906f642dbeceee53ad6919768a116f1',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['gnomonicprojection_16',['GnomonicProjection',['../a00038.html#a34c39f7eb6f87de296e3d94690138ee5',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['grid_17',['grid',['../a00038.html#ae030902a551e4fb4024f762d8fbe7b78',1,'geordfconverter.vocab.GEOCRS.GEOCRS.grid'],['../a00038.html#ae122b0eb3b1fa1f87778d95d1877cc3a',1,'geordfconverter.vocab.GEOCRS.GEOCRS.Grid']]]
+];

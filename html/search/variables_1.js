@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['abbreviation_0',['abbreviation',['../a00038.html#a9cbf178001843d1ce8fd7cfcf14202c2',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['accuracy_1',['accuracy',['../a00038.html#a79ab7fbb418268b5fc39373e0e73509a',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['action_2',['action',['../a00020.html#a2f4ab7bf743142dae2e459aa18f9f1d4',1,'geordfconverter::rdfconverter']]],
+  ['aitoffprojection_3',['AitoffProjection',['../a00038.html#a90f1cd361b73f2bbf069d0365d6b82de',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['albersequalareaprojection_4',['AlbersEqualAreaProjection',['../a00038.html#af56dafb6938b57b713f54c1555614638',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['americanpolyconicprojection_5',['AmericanPolyconicProjection',['../a00038.html#a98ed81b291bf15baf5252deb51caf351',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['approximates_6',['approximates',['../a00038.html#a7adf060abd48d7f12aef4aebb5640974',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['area_5fof_5fuse_7',['area_of_use',['../a00038.html#a5158c46bc97d69287f999a605468f8c3',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['areaofuse_8',['AreaOfUse',['../a00038.html#a4e277b9470d52fa20094ae140795f209',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['args_9',['args',['../a00020.html#a8187411843a6284ffb964ef3fb9fcab3',1,'geordfconverter::rdfconverter']]],
+  ['asproj4_10',['asProj4',['../a00038.html#aa65de9813022bca8bf31059a8513c4f4',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['asprojjson_11',['asProjJSON',['../a00038.html#a6433e0bbccca6d23a582c179b8ceb9c0',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['aswkt_12',['asWKT',['../a00038.html#a4a62ea57e6f4763f2fb87f9e164da58d',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['auto_5fcompact_13',['auto_compact',['../a00020.html#a70050f77a612c412c2fc636b781b29b8',1,'geordfconverter::rdfconverter']]],
+  ['autotypemap_14',['autotypemap',['../a00020.html#a3a6cadc74390e0c3ed9cbf98864b948a',1,'geordfconverter::rdfconverter']]],
+  ['axis_15',['axis',['../a00038.html#a5a5f04d2404b3ff55ffc6d77aa9c1ad0',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['axisdirection_16',['AxisDirection',['../a00038.html#a9f2a5a7db406ba158082bafbe4fe93bc',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]]
+];

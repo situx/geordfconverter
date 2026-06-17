@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['cadastremap_0',['CadastreMap',['../a00038.html#a8a565dc0362b7296f27184165ef39e95',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['cartesiancoordinatesystem_1',['CartesianCoordinateSystem',['../a00038.html#a3945a6ae491c5871414a7a55316de33b',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['cassiniprojection_2',['CassiniProjection',['../a00038.html#ac191c1776976ffd5f355d5038dc3cc42',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['coastalhydrography_3',['CoastalHydrography',['../a00038.html#a926b8b116717fb1df61ab529da1923c0',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['collignonprojection_4',['CollignonProjection',['../a00038.html#ab7c9162cd364cb380cbe75b5ecc94eb6',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['colombiaurbanprojection_5',['ColombiaUrbanProjection',['../a00038.html#a8cc41ddaf2f54a5840b6cc76ef0b4e54',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['compoundcrs_6',['CompoundCRS',['../a00038.html#a8f4033d87cc037fbfb3766cd3d854811',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['conv_7',['conv',['../a00020.html#a03b176bca2d4d335da2e24301c7652ab',1,'geordfconverter::rdfconverter']]],
+  ['coordinateconcatenatedoperation_8',['CoordinateConcatenatedOperation',['../a00038.html#a11ec75e934bb640591dfdc37c367377b',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['coordinateconversionoperation_9',['CoordinateConversionOperation',['../a00038.html#a8adaf37bc63217824494ef167f6d567c',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['coordinateoperation_10',['coordinateoperation',['../a00038.html#a79c1e5f07b40e634cb2367afbb9585f5',1,'geordfconverter.vocab.GEOCRS.GEOCRS.CoordinateOperation'],['../a00038.html#adb1f5d0ea5fbac4d429057b3202b9872',1,'geordfconverter.vocab.GEOCRS.GEOCRS.coordinateOperation']]],
+  ['coordinatesystem_11',['coordinatesystem',['../a00038.html#a72b076b052ac7ea417990792c02efded',1,'geordfconverter.vocab.GEOCRS.GEOCRS.coordinateSystem'],['../a00019.html#ae484d0f7bee7eed2ee2d34980b670df5',1,'geordfconverter.convertcrs.coordinatesystem']]],
+  ['coordinatesystemaxis_12',['CoordinateSystemAxis',['../a00038.html#a6aa3992cf77f0e706d0419935d19ba2f',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['coordinatetransformationoperation_13',['CoordinateTransformationOperation',['../a00038.html#a3da5d5f1162cddde19efe3e5fce60685',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['crs_14',['CRS',['../a00038.html#ad9e690400cb88729445d865fb33698e8',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['cylindricalequalarea_15',['CylindricalEqualArea',['../a00038.html#ae5bf0364553b448767a37ad80d08e98b',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
+  ['cylindricalprojection_16',['CylindricalProjection',['../a00038.html#a45722bfcd394d9024600df1153abe6e4',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]]
+];
