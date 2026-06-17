@@ -293,20 +293,21 @@ class RDFConverter:
         g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].geom_type)), RDFS.subClassOf,URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
         g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
         g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid[str(curid).rfind("/")+1:]), lang="en")))
-        g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
-        if "epsg" in typemap:
-            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
-                Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(row[geometrycol]),
-                        datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
-            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
-                URIRef("http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]))))
-        else:
-            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
-                Literal(str(row[geometrycol]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
-            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
-                URIRef("http://www.opengis.net/def/crs/EPSG/0/4326")))
+        if "WKT" in literaltypes:
+            g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
+            if "epsg" in typemap:
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                    Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(row[geometrycol]),
+                            datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
+                    URIRef("http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]))))
+            else:
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                    Literal(str(row[geometrycol]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
+                    URIRef("http://www.opengis.net/def/crs/EPSG/0/4326")))
         if "KML" in literaltypes:
-            row[geometrycol].to_file("temp.kml", driver='KML')
+            row.to_file("temp.kml", driver='KML')
             with open("temp.kml","r") as f:
                 g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asKML"),Literal(f.read(), datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))
         return g
