@@ -306,9 +306,9 @@ class RDFConverter:
             g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
                 URIRef("http://www.opengis.net/def/crs/EPSG/0/4326")))
         if "KML" in literaltypes:
-            data = io.StringIO() 
-            row[geometrycol].to_file(data, driver='KML')
-            g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asKML"),Literal(str(data.getvalue()), datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))
+            row[geometrycol].to_file("temp.kml", driver='KML')
+            with open("temp.kml","r") as f:
+                g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asKML"),Literal(f.read(), datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))
         return g
 
     def processLatLonGeometry(self,g,lat,lon,typemap,curid):
