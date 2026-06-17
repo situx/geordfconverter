@@ -37,13 +37,13 @@
   },
   "@graph": [
     {
-      "@id": "sunid:66",
+      "@id": "sunid:21",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:66_geom"
+        "@id": "sunid:21_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -55,1694 +55,13 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Lehnenwiesen!"
-      ],
-      "suni:limestownpart": "Unterkessach"
-    },
-    {
-      "@id": "sunid:16",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:16_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Ockstädter Wald!"
-      ],
-      "suni:limestownpart": "Ockstadt"
-    },
-    {
-      "@id": "sunid:14",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:14_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hunnenkirchhof 1!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q569680"
-      },
-      "suni:limestownpart": "Nieder-Weisel"
-    },
-    {
-      "@id": "sunid:61",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:61_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Stammheim!"
-      ],
-      "suni:limestownpart": "Stammheim"
-    },
-    {
-      "@id": "sunid:41",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:41_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hinterer Seeberg!"
-      ],
-      "suni:limestownpart": "Steinsdorf (i), Schambach"
-    },
-    {
-      "@id": "sunid:37",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:37_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Kaldorf!"
-      ],
-      "suni:limestownpart": "Kaldorf"
-    },
-    {
-      "@id": "sunid:63",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:63_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Altheimer Straße!"
-      ],
-      "suni:limestownpart": "Hettingen"
-    },
-    {
-      "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_longitude_degree_east",
-      "@type": "ns1:CoordinateSystemAxis",
-      "ns1:abbreviation": "Lon",
-      "ns1:direction": {
-        "@id": "ns1:east"
-      },
-      "ns1:unit": {
-        "@id": "om:degree"
-      },
-      "ns1:unit_auth_code": "EPSG",
-      "ns1:unit_code": "9122",
-      "ns1:unit_conversion_factor": 0.017453292519943295,
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geodetic longitude (degree)"
-      }
-    },
-    {
-      "@id": "sunid:8_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.492966 50.244586)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 8"
-      }
-    },
-    {
-      "@id": "sunid:5_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.995022 50.197474)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 5"
-      }
-    },
-    {
-      "@id": "sf:Point",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "geo:Geometry"
-      }
-    },
-    {
-      "@id": "sunid:26_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.330439 49.633402)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 26"
-      }
-    },
-    {
-      "@id": "sunid:13_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.62539 50.305565)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 13"
-      }
-    },
-    {
-      "@id": "sunid:39",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:39_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hegelohe!"
-      ],
-      "suni:limestownpart": "Altdorf"
-    },
-    {
-      "@id": "sunid:28",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:28_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hintere Kalbe!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "http://www.wikidata.org/entity/Q602629",
-      "@type": "rdfs:Resource",
-      "rdfs:label": [
-        {
-          "@language": "de",
-          "@value": "Hungen"
-        },
-        {
-          "@language": "en",
-          "@value": "Hungen"
-        }
-      ]
-    },
-    {
-      "@id": "sunid:9",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:9_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Heidenstock!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q4165"
-      },
-      "suni:limestownpart": "Ober-Eschbach"
-    },
-    {
-      "@id": "sunid:41_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.572464 48.905277)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 41"
-      }
-    },
-    {
-      "@id": "sunid:34_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (10.780904 49.116839)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 34"
-      }
-    },
-    {
-      "@id": "sunid:13",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:13_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Rittergräber!"
-      ],
-      "suni:limestownpart": "Nieder-Rosbach"
-    },
-    {
-      "@id": "sunid:51_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.725101 50.52089)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 51"
-      }
-    },
-    {
-      "@id": "sunid:6_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.316399 50.201068)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 6"
-      }
-    },
-    {
-      "@id": "sunid:9_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.512934 50.253706)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 9"
-      }
-    },
-    {
-      "@id": "sunid:66_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.457339 49.350652)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 66"
-      }
-    },
-    {
-      "@id": "sunid:48_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.336425 50.21039)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 48"
-      }
-    },
-    {
-      "@id": "sunid:10",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:10_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Saalburg 1!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q4165"
-      },
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:4",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:4_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Pfarrhofen!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:35_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (10.951999 49.0865)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 35"
-      }
-    },
-    {
-      "@id": "sunid:57",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:57_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Unter-Widdersheim!"
-      ],
-      "suni:limestownpart": "Unter-Widdersheim"
-    },
-    {
-      "@id": "sunid:35",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:35_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Gündersbach!"
-      ],
-      "suni:limestownpart": "Sankt Veit, (Gündersbach)"
-    },
-    {
-      "@id": "sunid:63_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.383568 49.545215)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 63"
-      }
-    },
-    {
-      "@id": "sunid:15",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:15_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hunnenkirchhof 2!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q569680"
-      },
-      "suni:limestownpart": "Nieder-Weisel"
-    },
-    {
-      "@id": "sunid:42_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.319315 50.503527)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 42"
-      }
-    },
-    {
-      "@id": "sunid:33_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.763711 48.791553)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 33"
-      }
-    },
-    {
-      "@id": "sunid:18",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:18_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Kaisergrube!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:57_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.908644 50.422543)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 57"
-      }
-    },
-    {
-      "@id": "sunid:12_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.586331 50.28213)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 12"
-      }
-    },
-    {
-      "@id": "sunid:17_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.640278 50.356513)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 17"
-      }
-    },
-    {
-      "@id": "sunid:49",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:49_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Alteburg-Heftrich 1!"
-      ],
-      "suni:limestownpart": "Heftrich"
-    },
-    {
-      "@id": "sunid:60",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:60_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Massohl!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q602629"
-      },
-      "suni:limestownpart": "Steinheim"
-    },
-    {
-      "@id": "sunid:7_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.390579 50.218544)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 7"
-      }
-    },
-    {
-      "@id": "sunid:19",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:19_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Schrenzer!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q569680"
-      },
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "geo:hasGeometry",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "sunid:30_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.619291 48.925947)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 30"
-      }
-    },
-    {
-      "@id": "sunid:54",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:54_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Haselheck!"
-      ],
-      "suni:limestownpart": "Bisses"
-    },
-    {
-      "@id": "sunid:25_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.982996 50.11126)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 25"
-      }
-    },
-    {
-      "@id": "sunid:28_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.42348 49.449848)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 28"
-      }
-    },
-    {
-      "@id": "sunid:1_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.538413 50.481347)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 1"
-      }
-    },
-    {
-      "@id": "http://www.wikidata.org/entity/Q4165",
-      "@type": "rdfs:Resource",
-      "rdfs:label": [
-        {
-          "@language": "de",
-          "@value": "Bad Homburg"
-        },
-        {
-          "@language": "en",
-          "@value": "Bad Homburg"
-        }
-      ]
-    },
-    {
-      "@id": "sunid:36",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:36_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Raitenbuch!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:17",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:17_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Eichkopf!"
-      ],
-      "suni:limestownpart": "Langenhain-Ziegenberg"
-    },
-    {
-      "@id": "sunid:22",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:22_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Holzheimer Unterwald!"
-      ],
-      "suni:limestownpart": "Holzheim"
-    },
-    {
-      "@id": "sunid:3",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:3_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Becheln!"
-      ],
-      "suni:limestownpart": "Oberlahnstein/Becheln"
-    },
-    {
-      "@id": "sunid:65",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:65_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Salzberg!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:4_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.890201 50.226566)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 4"
-      }
-    },
-    {
-      "@id": "sunid:64_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.395263 49.515019)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 64"
-      }
-    },
-    {
-      "@id": "sunid:11_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.568939 50.27216)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 11"
-      }
-    },
-    {
-      "@id": "sunid:36_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.105936 49.015709)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 36"
-      }
-    },
-    {
-      "@id": "sunid:46",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:46_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Kemel 1!"
-      ],
-      "suni:limestownpart": "Kemel"
-    },
-    {
-      "@id": "sunid:38",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:38_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Biebig!"
-      ],
-      "suni:limestownpart": "Altdorf"
-    },
-    {
-      "@id": "sunid:56",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:56_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Inheiden 2!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q602629"
-      },
-      "suni:limestownpart": "Inheiden"
-    },
-    {
-      "@id": "sunid:30",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:30_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Ebnisee!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:47",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:47_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Adolfseck!"
-      ],
-      "suni:limestownpart": "Adolfseck"
-    },
-    {
-      "@id": "sunid:1",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:1_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Anhausen!"
-      ],
-      "suni:limestownpart": "Heimbach-Weis"
-    },
-    {
-      "@id": "sunid:64",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:64_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Holderbusch!"
-      ],
-      "suni:limestownpart": "Rinschheim"
-    },
-    {
-      "@id": "sunid:8",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:8_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Altes Jagdhaus!"
-      ],
-      "suni:limestownpart": "Oberstedten"
-    },
-    {
-      "@id": "http://www.opengis.net/ont/crs/cs/axis/north",
-      "@type": "ns1:AxisDirection"
-    },
-    {
-      "@id": "sunid:48",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:48_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Alteburg-Heftrich 2!"
-      ],
-      "suni:limestownpart": "Heftrich"
-    },
-    {
-      "@id": "sunid:50_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.655724 50.443519)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 50"
-      }
-    },
-    {
-      "@id": "sunid:15_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.629062 50.41449)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 15"
-      }
-    },
-    {
-      "@id": "rdfs:comment",
-      "@type": "owl:AnnotationProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "limesobject"
-      }
-    },
-    {
-      "@id": "sunid:33",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:33_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Freimühle!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "geo:Geometry",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "http://www.opengis.net/ont/crs/cs/axis/east",
-      "@type": "ns1:AxisDirection"
-    },
-    {
-      "@id": "sunid:47_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.077694 50.16494)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 47"
-      }
-    },
-    {
-      "@id": "sunid:25",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:25_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Neuwirtshaus!"
-      ],
-      "suni:limestownpart": "Wolfgang"
-    },
-    {
-      "@id": "sunid:53_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.89565 50.361023)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 53"
-      }
-    },
-    {
-      "@id": "sunid:32_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.754924 48.797321)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 32"
-      }
-    },
-    {
-      "@id": "sunid:29",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:29_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hankertsmühle!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:20",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:20_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Dicker Wald 2!"
+        "Kleinkastell Dicker Wald 1!"
       ],
       "suni:limestownpart": "Gambach"
     },
     {
-      "@id": "sunid:38_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.265951 48.975256)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 38"
-      }
-    },
-    {
-      "@id": "sunid:27_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.387543 49.542873)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 27"
-      }
-    },
-    {
-      "@id": "sunid:11",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:11_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Saalburg 2!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q4165"
-      },
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:44",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:44_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Pohl!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:59_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.915133 50.326418)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 59"
-      }
-    },
-    {
-      "@id": "sunid:31",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:31_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Rötelsee!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:65_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.430446 49.43113)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 65"
-      }
-    },
-    {
-      "@id": "sunid:56_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.906795 50.461008)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 56"
-      }
-    },
-    {
-      "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_area_of_use",
-      "@type": "ns1:AreaOfUse",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "World."
-      }
-    },
-    {
-      "@id": "http://www.wikidata.org/entity/Q569680",
-      "@type": "rdfs:Resource",
-      "rdfs:label": [
-        {
-          "@language": "de",
-          "@value": "Butzbach"
-        },
-        {
-          "@language": "en",
-          "@value": "Butzbach"
-        }
-      ]
-    },
-    {
-      "@id": "sunid:34",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:34_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Hinterer Schlossberg!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_latitude_degree_north",
-      "@type": "ns1:CoordinateSystemAxis",
-      "ns1:abbreviation": "Lat",
-      "ns1:direction": {
-        "@id": "ns1:north"
-      },
-      "ns1:unit": {
-        "@id": "om:degree"
-      },
-      "ns1:unit_auth_code": "EPSG",
-      "ns1:unit_code": "9122",
-      "ns1:unit_conversion_factor": 0.017453292519943295,
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geodetic latitude (degree)"
-      }
-    },
-    {
-      "@id": "sunid:27",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:27_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Rehberg!"
-      ],
-      "suni:limestownpart": "Hettingen"
+      "@id": "http://www.opengis.net/ont/crs/cs/axis/north",
+      "@type": "ns1:AxisDirection"
     },
     {
       "@id": "sunid:23",
@@ -1771,6 +90,512 @@
       "suni:limestownpart": "Inheiden"
     },
     {
+      "@id": "sunid:4_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.890201 50.226566)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 4"
+      }
+    },
+    {
+      "@id": "sunid:44",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:44_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Pohl!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:64",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:64_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Holderbusch!"
+      ],
+      "suni:limestownpart": "Rinschheim"
+    },
+    {
+      "@id": "sunid:63",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:63_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Altheimer Straße!"
+      ],
+      "suni:limestownpart": "Hettingen"
+    },
+    {
+      "@id": "sunid:24_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.961192 50.260375)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 24"
+      }
+    },
+    {
+      "@id": "sunid:65",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:65_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Salzberg!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:23_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.873857 50.471082)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 23"
+      }
+    },
+    {
+      "@id": "sunid:36",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:36_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Raitenbuch!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:67_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.47859 49.279712)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 67"
+      }
+    },
+    {
+      "@id": "sunid:40",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:40_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Güssgraben!"
+      ],
+      "suni:limestownpart": "Schambach"
+    },
+    {
+      "@id": "sunid:3",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:3_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Becheln!"
+      ],
+      "suni:limestownpart": "Oberlahnstein/Becheln"
+    },
+    {
+      "@id": "rdfs:label",
+      "@type": "owl:AnnotationProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "label"
+      }
+    },
+    {
+      "@id": "sunid:66",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:66_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Lehnenwiesen!"
+      ],
+      "suni:limestownpart": "Unterkessach"
+    },
+    {
+      "@id": "sunid:46",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:46_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Kemel 1!"
+      ],
+      "suni:limestownpart": "Kemel"
+    },
+    {
+      "@id": "sunid:43",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:43_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Ferbach!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:17_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.640278 50.356513)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 17"
+      }
+    },
+    {
+      "@id": "sunid:28",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:28_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hintere Kalbe!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:56_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.906795 50.461008)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 56"
+      }
+    },
+    {
+      "@id": "sunid:1",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:1_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Anhausen!"
+      ],
+      "suni:limestownpart": "Heimbach-Weis"
+    },
+    {
+      "@id": "sunid:46_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.016542 50.167774)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 46"
+      }
+    },
+    {
+      "@id": "sunid:56",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:56_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Inheiden 2!"
+      ],
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q602629"
+      },
+      "suni:limestownpart": "Inheiden"
+    },
+    {
+      "@id": "sunid:12_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.586331 50.28213)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 12"
+      }
+    },
+    {
+      "@id": "sunid:13_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.62539 50.305565)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 13"
+      }
+    },
+    {
+      "@id": "sunid:35_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (10.951999 49.0865)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 35"
+      }
+    },
+    {
+      "@id": "sunid:22",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:22_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Holzheimer Unterwald!"
+      ],
+      "suni:limestownpart": "Holzheim"
+    },
+    {
+      "@id": "sunid:48",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:48_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Alteburg-Heftrich 2!"
+      ],
+      "suni:limestownpart": "Heftrich"
+    },
+    {
       "@id": "sunid:43_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
@@ -1786,13 +611,43 @@
       }
     },
     {
-      "@id": "sunid:59",
+      "@id": "sunid:53_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.89565 50.361023)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 53"
+      }
+    },
+    {
+      "@id": "sunid:22_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.69936 50.499817)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 22"
+      }
+    },
+    {
+      "@id": "sunid:53",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:59_geom"
+        "@id": "sunid:53_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -1804,23 +659,220 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Staden!"
+        "Kleinkastell Lochberg!"
       ],
-      "suni:limestownpart": "Staden"
+      "suni:limestownpart": "Bingenheim"
     },
     {
-      "@id": "sunid:16_geom",
+      "@id": "sunid:29",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:29_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hankertsmühle!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:36_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.638337 50.319621)"
+        "@value": "POINT (11.105936 49.015709)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 16"
+        "@value": "Geometry of 36"
+      }
+    },
+    {
+      "@id": "geo:hasGeometry",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "sunid:39_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.271316 48.975771)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 39"
+      }
+    },
+    {
+      "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_area_of_use",
+      "@type": "ns1:AreaOfUse",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "World."
+      }
+    },
+    {
+      "@id": "sunid:27_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.387543 49.542873)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 27"
+      }
+    },
+    {
+      "@id": "sunid:5_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.995022 50.197474)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 5"
+      }
+    },
+    {
+      "@id": "sunid:42_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.319315 50.503527)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 42"
+      }
+    },
+    {
+      "@id": "sunid:14_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.6284 50.414587)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 14"
+      }
+    },
+    {
+      "@id": "sunid:2_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.704296 50.412622)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 2"
+      }
+    },
+    {
+      "@id": "http://www.opengis.net/ont/crs/geod/1",
+      "@type": "ns1:Geoid"
+    },
+    {
+      "@id": "sunid:8",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:8_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Altes Jagdhaus!"
+      ],
+      "suni:limestownpart": "Oberstedten"
+    },
+    {
+      "@id": "sunid:11_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.568939 50.27216)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 11"
+      }
+    },
+    {
+      "@id": "sunid:18_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.64676 50.336998)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 18"
+      }
+    },
+    {
+      "@id": "sunid:21_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.677771 50.466075)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 21"
       }
     },
     {
@@ -1839,106 +891,23 @@
       }
     },
     {
-      "@id": "sunid:45_geom",
+      "@id": "sunid:58_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.016199 50.167456)"
+        "@value": "POINT (8.91015 50.451806)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 45"
+        "@value": "Geometry of 58"
       }
     },
     {
-      "@id": "http://www.opengis.net/ont/crs/geod/1",
-      "@type": "ns1:Geoid"
-    },
-    {
-      "@id": "sunid:61_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.923034 50.31257)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 61"
-      }
-    },
-    {
-      "@id": "sunid:68_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.561952 49.080419)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 68"
-      }
-    },
-    {
-      "@id": "sunid:49_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.339083 50.211682)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 49"
-      }
-    },
-    {
-      "@id": "sunid:68",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:68_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Herrenwiesen!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:31_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.633845 48.88659)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 31"
-      }
+      "@id": "http://www.opengis.net/ont/crs/cs/axis/east",
+      "@type": "ns1:AxisDirection"
     },
     {
       "@id": "sunid:51",
@@ -1964,219 +933,45 @@
       "suni:limestownpart": "Grüningen"
     },
     {
-      "@id": "sunid:29_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.571011 49.055125)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 29"
-      }
-    },
-    {
-      "@id": "sunid:7",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:7_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Maisel!"
-      ],
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:58",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:58_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Wingertsberg!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q602629"
-      },
-      "suni:limestownpart": "Steinheim"
-    },
-    {
-      "@id": "sunid:12",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:12_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Lochmühle!"
-      ],
-      "suni:limestownpart": "Köppern"
-    },
-    {
-      "@id": "sunid:14_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.6284 50.414587)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 14"
-      }
-    },
-    {
-      "@id": "sunid:18_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.64676 50.336998)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 18"
-      }
-    },
-    {
-      "@id": "sunid:22_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.69936 50.499817)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 22"
-      }
-    },
-    {
-      "@id": "sunid:2_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.704296 50.412622)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 2"
-      }
-    },
-    {
-      "@id": "sunid:62_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.985621 50.167989)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 62"
-      }
-    },
-    {
-      "@id": "sunid:23_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.873857 50.471082)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 23"
-      }
-    },
-    {
-      "@id": "sunid:60_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.91616 50.437561)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 60"
-      }
-    },
-    {
-      "@id": "http://archaeoinformatics.link/ontology#MilitaryCamp",
+      "@id": "http://www.wikidata.org/entity/Q89477",
       "@type": "owl:Class",
       "rdfs:label": [
         {
           "@language": "en",
-          "@value": "Military Camp"
+          "@value": "castellum"
         },
         {
           "@language": "de",
-          "@value": "Militärcamp"
+          "@value": "Kleinkastell"
         }
-      ]
+      ],
+      "rdfs:subClassOf": {
+        "@id": "http://archaeoinformatics.link/ontology#MilitaryCamp"
+      }
     },
     {
-      "@id": "sunid:67",
+      "@id": "sunid:16_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.638337 50.319621)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 16"
+      }
+    },
+    {
+      "@id": "sunid:47",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:67_geom"
+        "@id": "sunid:47_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2188,48 +983,18 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Sindringen!"
+        "Kleinkastell Adolfseck!"
       ],
-      "suni:limestownpart": "Sindringen"
+      "suni:limestownpart": "Adolfseck"
     },
     {
-      "@id": "sunid:52_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.85455 50.482998)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 52"
-      }
-    },
-    {
-      "@id": "sunid:55_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.903685 50.46017)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 55"
-      }
-    },
-    {
-      "@id": "sunid:26",
+      "@id": "sunid:68",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:26_geom"
+        "@id": "sunid:68_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2241,224 +1006,23 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Haselburg!"
+        "Kleinkastell Herrenwiesen!"
       ],
-      "suni:limestownpart": "Reinhardsachsen"
-    },
-    {
-      "@id": "sunid:44_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.868022 50.251174)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 44"
-      }
-    },
-    {
-      "@id": "sunid:45",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:45_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Kemel 2!"
-      ],
-      "suni:limestownpart": "Kemel"
-    },
-    {
-      "@id": "sunid:19_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.650381 50.432994)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 19"
-      }
-    },
-    {
-      "@id": "sunid:24",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:24_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Buchkopf!"
-      ],
-      "suni:limestownpart": "Höchst"
-    },
-    {
-      "@id": "sunid:40_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.539056 48.913671)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 40"
-      }
-    },
-    {
-      "@id": "sunid:50",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:50_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Degerfeld!"
-      ],
-      "suni:limestown": {
-        "@id": "http://www.wikidata.org/entity/Q569680"
-      },
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:6",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:6_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Eichelgarten!"
-      ],
-      "suni:limestownpart": "Lenzhahn/Dasbach"
-    },
-    {
-      "@id": "sunid:21_geom",
+      "@id": "sunid:61_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.677771 50.466075)"
+        "@value": "POINT (8.923034 50.31257)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 21"
-      }
-    },
-    {
-      "@id": "sunid:52",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:52_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Langsdorf!"
-      ],
-      "suni:limestownpart": "Bettenhausen"
-    },
-    {
-      "@id": "sunid:62",
-      "@type": [
-        "http://www.wikidata.org/entity/Q88205",
-        "http://www.wikidata.org/entity/Q89477"
-      ],
-      "geo:hasGeometry": {
-        "@id": "sunid:62_geom"
-      },
-      "rdfs:comment": "This is a generic comment",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "Castrum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kastell"
-        },
-        "Kleinkastell Langendiebach!"
-      ],
-      "suni:limestownpart": "Langendiebach"
-    },
-    {
-      "@id": "sunid:10_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.568471 50.272769)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 10"
+        "@value": "Geometry of 61"
       }
     },
     {
@@ -2488,38 +1052,28 @@
       }
     },
     {
-      "@id": "http://www.wikidata.org/entity/Q89477",
-      "@type": "owl:Class",
-      "rdfs:label": [
-        {
-          "@language": "en",
-          "@value": "castellum"
-        },
-        {
-          "@language": "de",
-          "@value": "Kleinkastell"
-        }
-      ],
-      "rdfs:subClassOf": {
-        "@id": "http://archaeoinformatics.link/ontology#MilitaryCamp"
-      }
-    },
-    {
-      "@id": "suni:limestownpart",
-      "@type": "owl:DatatypeProperty",
+      "@id": "sunid:52_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.85455 50.482998)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
       "rdfs:label": {
         "@language": "en",
-        "@value": "limestownpart"
+        "@value": "Geometry of 52"
       }
     },
     {
-      "@id": "sunid:42",
+      "@id": "sunid:60",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:42_geom"
+        "@id": "sunid:60_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2531,7 +1085,304 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Rheinbrohl!"
+        "Kleinkastell Massohl!"
+      ],
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q602629"
+      },
+      "suni:limestownpart": "Steinheim"
+    },
+    {
+      "@id": "sunid:2",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:2_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hillscheid!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:1_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.538413 50.481347)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 1"
+      }
+    },
+    {
+      "@id": "sunid:20_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.67608 50.470322)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 20"
+      }
+    },
+    {
+      "@id": "suni:limestownpart",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "limestownpart"
+      }
+    },
+    {
+      "@id": "sunid:51_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.725101 50.52089)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 51"
+      }
+    },
+    {
+      "@id": "sunid:17",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:17_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Eichkopf!"
+      ],
+      "suni:limestownpart": "Langenhain-Ziegenberg"
+    },
+    {
+      "@id": "sunid:15_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.629062 50.41449)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 15"
+      }
+    },
+    {
+      "@id": "sunid:14",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:14_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hunnenkirchhof 1!"
+      ],
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q569680"
+      },
+      "suni:limestownpart": "Nieder-Weisel"
+    },
+    {
+      "@id": "sunid:19",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:19_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Schrenzer!"
+      ],
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q569680"
+      },
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_cs",
+      "@type": [
+        "ns1:EllipsoidalCoordinateSystem",
+        "ns1:PlanarCoordinateSystem"
+      ],
+      "ns1:asProjJSON": "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CoordinateSystem','subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}],'id':{'authority':'EPSG','code':6422}}",
+      "ns1:asWKT": "CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433,ID['EPSG',9122]]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433,ID['EPSG',9122]]]",
+      "ns1:axis": [
+        {
+          "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_latitude_degree_north"
+        },
+        {
+          "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_longitude_degree_east"
+        }
+      ],
+      "rdfs:label": "EPSG:4326 CS: ellipsoidal"
+    },
+    {
+      "@id": "sunid:26_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.330439 49.633402)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 26"
+      }
+    },
+    {
+      "@id": "sunid:10",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:10_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Saalburg 1!"
+      ],
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q4165"
+      },
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:52",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:52_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Langsdorf!"
+      ],
+      "suni:limestownpart": "Bettenhausen"
+    },
+    {
+      "@id": "sunid:67",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:67_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Sindringen!"
+      ],
+      "suni:limestownpart": "Sindringen"
+    },
+    {
+      "@id": "sunid:33",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:33_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Freimühle!"
       ],
       "suni:limestownpart": "???"
     },
@@ -2559,43 +1410,13 @@
       "suni:limestownpart": "Großdeinbach"
     },
     {
-      "@id": "sunid:3_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.738396 50.28661)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 3"
-      }
-    },
-    {
-      "@id": "sunid:54_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.901594 50.388546)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 54"
-      }
-    },
-    {
-      "@id": "sunid:2",
+      "@id": "sunid:30",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:2_geom"
+        "@id": "sunid:30_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2607,9 +1428,446 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Hillscheid!"
+        "Kleinkastell Ebnisee!"
       ],
       "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:62",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:62_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Langendiebach!"
+      ],
+      "suni:limestownpart": "Langendiebach"
+    },
+    {
+      "@id": "sunid:54",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:54_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Haselheck!"
+      ],
+      "suni:limestownpart": "Bisses"
+    },
+    {
+      "@id": "sunid:30_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.619291 48.925947)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 30"
+      }
+    },
+    {
+      "@id": "sunid:66_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.457339 49.350652)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 66"
+      }
+    },
+    {
+      "@id": "sunid:58",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:58_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Wingertsberg!"
+      ],
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q602629"
+      },
+      "suni:limestownpart": "Steinheim"
+    },
+    {
+      "@id": "sunid:38_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.265951 48.975256)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 38"
+      }
+    },
+    {
+      "@id": "sunid:28_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.42348 49.449848)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 28"
+      }
+    },
+    {
+      "@id": "sunid:59",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:59_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Staden!"
+      ],
+      "suni:limestownpart": "Staden"
+    },
+    {
+      "@id": "sunid:55_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.903685 50.46017)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 55"
+      }
+    },
+    {
+      "@id": "sunid:39",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:39_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hegelohe!"
+      ],
+      "suni:limestownpart": "Altdorf"
+    },
+    {
+      "@id": "sunid:49",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:49_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Alteburg-Heftrich 1!"
+      ],
+      "suni:limestownpart": "Heftrich"
+    },
+    {
+      "@id": "sunid:45",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:45_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Kemel 2!"
+      ],
+      "suni:limestownpart": "Kemel"
+    },
+    {
+      "@id": "sunid:26",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:26_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Haselburg!"
+      ],
+      "suni:limestownpart": "Reinhardsachsen"
+    },
+    {
+      "@id": "sunid:31",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:31_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Rötelsee!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:4",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:4_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Pfarrhofen!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:64_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.395263 49.515019)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 64"
+      }
+    },
+    {
+      "@id": "sunid:50_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.655724 50.443519)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 50"
+      }
+    },
+    {
+      "@id": "sunid:20",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:20_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Dicker Wald 2!"
+      ],
+      "suni:limestownpart": "Gambach"
+    },
+    {
+      "@id": "sunid:33_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.763711 48.791553)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 33"
+      }
+    },
+    {
+      "@id": "sunid:41_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.572464 48.905277)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 41"
+      }
+    },
+    {
+      "@id": "sunid:34",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:34_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hinterer Schlossberg!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:16",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:16_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Ockstädter Wald!"
+      ],
+      "suni:limestownpart": "Ockstadt"
     },
     {
       "@id": "sunid:5",
@@ -2635,13 +1893,46 @@
       "suni:limestownpart": "Laufenselden"
     },
     {
-      "@id": "sunid:21",
+      "@id": "sunid:44_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.868022 50.251174)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 44"
+      }
+    },
+    {
+      "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_latitude_degree_north",
+      "@type": "ns1:CoordinateSystemAxis",
+      "ns1:abbreviation": "Lat",
+      "ns1:direction": {
+        "@id": "ns1:north"
+      },
+      "ns1:unit": {
+        "@id": "om:degree"
+      },
+      "ns1:unit_auth_code": "EPSG",
+      "ns1:unit_code": "9122",
+      "ns1:unit_conversion_factor": 0.017453292519943295,
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geodetic latitude (degree)"
+      }
+    },
+    {
+      "@id": "sunid:24",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:21_geom"
+        "@id": "sunid:24_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2653,66 +1944,18 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Dicker Wald 1!"
+        "Kleinkastell Buchkopf!"
       ],
-      "suni:limestownpart": "Gambach"
+      "suni:limestownpart": "Höchst"
     },
     {
-      "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_cs",
-      "@type": [
-        "ns1:EllipsoidalCoordinateSystem",
-        "ns1:PlanarCoordinateSystem"
-      ],
-      "ns1:asProjJSON": "{'$schema':'https://proj.org/schemas/v0.7/projjson.schema.json','type':'CoordinateSystem','subtype':'ellipsoidal','axis':[{'name':'Geodetic latitude','abbreviation':'Lat','direction':'north','unit':'degree'},{'name':'Geodetic longitude','abbreviation':'Lon','direction':'east','unit':'degree'}],'id':{'authority':'EPSG','code':6422}}",
-      "ns1:asWKT": "CS[ellipsoidal,2],AXIS['geodetic latitude (Lat)',north,ORDER[1],ANGLEUNIT['degree',0.0174532925199433,ID['EPSG',9122]]],AXIS['geodetic longitude (Lon)',east,ORDER[2],ANGLEUNIT['degree',0.0174532925199433,ID['EPSG',9122]]]",
-      "ns1:axis": [
-        {
-          "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_latitude_degree_north"
-        },
-        {
-          "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_longitude_degree_east"
-        }
-      ],
-      "rdfs:label": "EPSG:4326 CS: ellipsoidal"
-    },
-    {
-      "@id": "sunid:24_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.961192 50.260375)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 24"
-      }
-    },
-    {
-      "@id": "sunid:46_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.016542 50.167774)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 46"
-      }
-    },
-    {
-      "@id": "sunid:43",
+      "@id": "sunid:18",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:43_geom"
+        "@id": "sunid:18_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2724,9 +1967,219 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Ferbach!"
+        "Kleinkastell Kaisergrube!"
       ],
       "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:45_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.016199 50.167456)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 45"
+      }
+    },
+    {
+      "@id": "sunid:35",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:35_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Gündersbach!"
+      ],
+      "suni:limestownpart": "Sankt Veit, (Gündersbach)"
+    },
+    {
+      "@id": "sunid:6_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.316399 50.201068)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 6"
+      }
+    },
+    {
+      "@id": "sunid:13",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:13_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Rittergräber!"
+      ],
+      "suni:limestownpart": "Nieder-Rosbach"
+    },
+    {
+      "@id": "sunid:49_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.339083 50.211682)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 49"
+      }
+    },
+    {
+      "@id": "http://www.wikidata.org/entity/Q569680",
+      "@type": "rdfs:Resource",
+      "rdfs:label": [
+        {
+          "@language": "de",
+          "@value": "Butzbach"
+        },
+        {
+          "@language": "en",
+          "@value": "Butzbach"
+        }
+      ]
+    },
+    {
+      "@id": "sunid:27",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:27_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Rehberg!"
+      ],
+      "suni:limestownpart": "Hettingen"
+    },
+    {
+      "@id": "http://www.wikidata.org/entity/Q4165",
+      "@type": "rdfs:Resource",
+      "rdfs:label": [
+        {
+          "@language": "de",
+          "@value": "Bad Homburg"
+        },
+        {
+          "@language": "en",
+          "@value": "Bad Homburg"
+        }
+      ]
+    },
+    {
+      "@id": "sunid:12",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:12_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Lochmühle!"
+      ],
+      "suni:limestownpart": "Köppern"
+    },
+    {
+      "@id": "sunid:40_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.539056 48.913671)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 40"
+      }
+    },
+    {
+      "@id": "sunid:29_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.571011 49.055125)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 29"
+      }
+    },
+    {
+      "@id": "sunid:47_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.077694 50.16494)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 47"
+      }
     },
     {
       "@id": "sunid:55",
@@ -2755,13 +2208,58 @@
       "suni:limestownpart": "Inheiden"
     },
     {
-      "@id": "sunid:40",
+      "@id": "sunid:9_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.512934 50.253706)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 9"
+      }
+    },
+    {
+      "@id": "sunid:25_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.982996 50.11126)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 25"
+      }
+    },
+    {
+      "@id": "sunid:32_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.754924 48.797321)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 32"
+      }
+    },
+    {
+      "@id": "sunid:37",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:40_geom"
+        "@id": "sunid:37_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2773,46 +2271,479 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Güssgraben!"
+        "Kleinkastell Kaldorf!"
       ],
-      "suni:limestownpart": "Schambach"
+      "suni:limestownpart": "Kaldorf"
     },
     {
-      "@id": "sunid:39_geom",
+      "@id": "sunid:15",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:15_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hunnenkirchhof 2!"
+      ],
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q569680"
+      },
+      "suni:limestownpart": "Nieder-Weisel"
+    },
+    {
+      "@id": "sunid:11",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:11_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Saalburg 2!"
+      ],
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q4165"
+      },
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:61",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:61_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Stammheim!"
+      ],
+      "suni:limestownpart": "Stammheim"
+    },
+    {
+      "@id": "sunid:60_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (11.271316 48.975771)"
+        "@value": "POINT (8.91616 50.437561)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 39"
+        "@value": "Geometry of 60"
       }
     },
     {
-      "@id": "sunid:20_geom",
+      "@id": "sunid:57",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:57_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Unter-Widdersheim!"
+      ],
+      "suni:limestownpart": "Unter-Widdersheim"
+    },
+    {
+      "@id": "sunid:34_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.67608 50.470322)"
+        "@value": "POINT (10.780904 49.116839)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 20"
+        "@value": "Geometry of 34"
       }
     },
     {
-      "@id": "rdfs:label",
+      "@id": "sunid:10_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.568471 50.272769)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 10"
+      }
+    },
+    {
+      "@id": "sunid:54_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.901594 50.388546)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 54"
+      }
+    },
+    {
+      "@id": "sunid:59_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.915133 50.326418)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 59"
+      }
+    },
+    {
+      "@id": "sunid:50",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:50_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Degerfeld!"
+      ],
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q569680"
+      },
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "http://archaeoinformatics.link/ontology#MilitaryCamp",
+      "@type": "owl:Class",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Military Camp"
+        },
+        {
+          "@language": "de",
+          "@value": "Militärcamp"
+        }
+      ]
+    },
+    {
+      "@id": "sunid:7_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.390579 50.218544)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 7"
+      }
+    },
+    {
+      "@id": "sf:Point",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "geo:Geometry"
+      }
+    },
+    {
+      "@id": "sunid:6",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:6_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Eichelgarten!"
+      ],
+      "suni:limestownpart": "Lenzhahn/Dasbach"
+    },
+    {
+      "@id": "sunid:48_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.336425 50.21039)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 48"
+      }
+    },
+    {
+      "@id": "sunid:62_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.985621 50.167989)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 62"
+      }
+    },
+    {
+      "@id": "sunid:7",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:7_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Maisel!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:42",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:42_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Rheinbrohl!"
+      ],
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "rdfs:comment",
       "@type": "owl:AnnotationProperty",
       "rdfs:label": {
         "@language": "en",
-        "@value": "label"
+        "@value": "limesobject"
+      }
+    },
+    {
+      "@id": "sunid:57_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.908644 50.422543)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 57"
+      }
+    },
+    {
+      "@id": "sunid:63_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.383568 49.545215)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 63"
+      }
+    },
+    {
+      "@id": "sunid:38",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:38_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Biebig!"
+      ],
+      "suni:limestownpart": "Altdorf"
+    },
+    {
+      "@id": "sunid:65_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.430446 49.43113)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 65"
+      }
+    },
+    {
+      "@id": "sunid:41",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:41_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Hinterer Seeberg!"
+      ],
+      "suni:limestownpart": "Steinsdorf (i), Schambach"
+    },
+    {
+      "@id": "sunid:25",
+      "@type": [
+        "http://www.wikidata.org/entity/Q88205",
+        "http://www.wikidata.org/entity/Q89477"
+      ],
+      "geo:hasGeometry": {
+        "@id": "sunid:25_geom"
+      },
+      "rdfs:comment": "This is a generic comment",
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Castrum"
+        },
+        {
+          "@language": "de",
+          "@value": "Kastell"
+        },
+        "Kleinkastell Neuwirtshaus!"
+      ],
+      "suni:limestownpart": "Wolfgang"
+    },
+    {
+      "@id": "sunid:19_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.650381 50.432994)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 19"
       }
     },
     {
@@ -2820,13 +2751,95 @@
       "@type": "owl:DatatypeProperty"
     },
     {
-      "@id": "sunid:53",
+      "@id": "sunid:68_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.561952 49.080419)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 68"
+      }
+    },
+    {
+      "@id": "sunid:8_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.492966 50.244586)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 8"
+      }
+    },
+    {
+      "@id": "geo:Geometry",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "sunid:3_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.738396 50.28661)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 3"
+      }
+    },
+    {
+      "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_longitude_degree_east",
+      "@type": "ns1:CoordinateSystemAxis",
+      "ns1:abbreviation": "Lon",
+      "ns1:direction": {
+        "@id": "ns1:east"
+      },
+      "ns1:unit": {
+        "@id": "om:degree"
+      },
+      "ns1:unit_auth_code": "EPSG",
+      "ns1:unit_code": "9122",
+      "ns1:unit_conversion_factor": 0.017453292519943295,
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geodetic longitude (degree)"
+      }
+    },
+    {
+      "@id": "sunid:31_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.633845 48.88659)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 31"
+      }
+    },
+    {
+      "@id": "sunid:9",
       "@type": [
         "http://www.wikidata.org/entity/Q88205",
         "http://www.wikidata.org/entity/Q89477"
       ],
       "geo:hasGeometry": {
-        "@id": "sunid:53_geom"
+        "@id": "sunid:9_geom"
       },
       "rdfs:comment": "This is a generic comment",
       "rdfs:label": [
@@ -2838,39 +2851,26 @@
           "@language": "de",
           "@value": "Kastell"
         },
-        "Kleinkastell Lochberg!"
+        "Kleinkastell Heidenstock!"
       ],
-      "suni:limestownpart": "Bingenheim"
+      "suni:limestown": {
+        "@id": "http://www.wikidata.org/entity/Q4165"
+      },
+      "suni:limestownpart": "Ober-Eschbach"
     },
     {
-      "@id": "sunid:67_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.47859 49.279712)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 67"
-      }
-    },
-    {
-      "@id": "sunid:58_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.91015 50.451806)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 58"
-      }
+      "@id": "http://www.wikidata.org/entity/Q602629",
+      "@type": "rdfs:Resource",
+      "rdfs:label": [
+        {
+          "@language": "de",
+          "@value": "Hungen"
+        },
+        {
+          "@language": "en",
+          "@value": "Hungen"
+        }
+      ]
     }
   ]
 }
