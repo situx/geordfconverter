@@ -640,6 +640,10 @@ suni:limestownpart a owl:DatatypeProperty ;
 
 <http://www.opengis.net/ont/crs/cs/axis/north> a ns1:AxisDirection .
 
+geo:asGeoJSON a owl:DatatypeProperty .
+
+geo:asWKB a owl:DatatypeProperty .
+
 geo:asWKT a owl:DatatypeProperty .
 
 geo:hasGeometry a owl:ObjectProperty .
@@ -656,341 +660,477 @@ rdfs:label a owl:AnnotationProperty ;
 
 sunid:10_geom a sf:Point ;
     rdfs:label "Geometry of 10"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.568471,50.272769]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xe7r\\x83\\xa1\\x0e#!@j.7\\x18\\xea\"I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.568471 50.272769)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:11_geom a sf:Point ;
     rdfs:label "Geometry of 11"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.568939,50.27216]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x80\\xd6\\xfc\\xf8K#!@\\xc2\\xa3\\x8d#\\xd6\"I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.568939 50.27216)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:12_geom a sf:Point ;
     rdfs:label "Geometry of 12"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.586331,50.28213]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x0fC\\xab\\x933,!@9\\x9c\\xf9\\xd5\\x1c$I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.586331 50.28213)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:13_geom a sf:Point ;
     rdfs:label "Geometry of 13"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.62539,50.305565]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b\"\\x01\\x01\\x00\\x00\\x00\\xaa}:\\x1e3@!@\\xb0\\xe6\\x00\\xc1\\x1c'I@\""^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.62539 50.305565)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:14_geom a sf:Point ;
     rdfs:label "Geometry of 14"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.6284,50.414587]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xe0\\x9c\\x11\\xa5\\xbdA!@b,\\xd3/\\x115I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.6284 50.414587)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:15_geom a sf:Point ;
     rdfs:label "Geometry of 15"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.629062,50.41449]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\rP\\x1aj\\x14B!@pB!\\x02\\x0e5I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.629062 50.41449)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:16_geom a sf:Point ;
     rdfs:label "Geometry of 16"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.638337,50.319621]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00L\\xa7u\\x1b\\xd4F!@\\xb2\\x0eGW\\xe9(I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.638337 50.319621)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:17_geom a sf:Point ;
     rdfs:label "Geometry of 17"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.640278,50.356513]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00S\\xb2\\x9c\\x84\\xd2G!@\\xa7\\xcc\\xcd7\\xa2-I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.640278 50.356513)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:18_geom a sf:Point ;
     rdfs:label "Geometry of 18"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.64676,50.336998]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xd0\\xb8p $K!@\\xa1h\\x1e\\xc0\"+I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.64676 50.336998)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:19_geom a sf:Point ;
     rdfs:label "Geometry of 19"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.650381,50.432994]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00*\\xe1\\t\\xbd\\xfeL!@\\x9f\\xae\\xeeXl7I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.650381 50.432994)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:1_geom a sf:Point ;
     rdfs:label "Geometry of 1"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[7.538413,50.481347]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b\"\\x01\\x01\\x00\\x00\\x00\\n\\xf7\\xca\\xbcU'\\x1e@\\x8c\\x83K\\xc7\\x9c=I@\""^^geo:wkbLiteral ;
     geo:asWKT "POINT (7.538413 50.481347)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:20_geom a sf:Point ;
     rdfs:label "Geometry of 20"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.67608,50.470322]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b\"\\x01\\x01\\x00\\x00\\x00\\x99\\xf5b('Z!@oK\\xe4\\x823<I@\""^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.67608 50.470322)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:21_geom a sf:Point ;
     rdfs:label "Geometry of 21"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.677771,50.466075]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xbcZ\\xee\\xcc\\x04[!@\\xd9=yX\\xa8;I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.677771 50.466075)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:22_geom a sf:Point ;
     rdfs:label "Geometry of 22"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.69936,50.499817]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xd9B\\x90\\x83\\x12f!@\\x0f~\\xe2\\x00\\xfa?I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.69936 50.499817)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:23_geom a sf:Point ;
     rdfs:label "Geometry of 23"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.873857,50.471082]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xe7\\xc2H/j\\xbf!@\\xfd\\xdd;jL<I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.873857 50.471082)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:24_geom a sf:Point ;
     rdfs:label "Geometry of 24"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.961192,50.260375]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x8aZ\\x9a[!\\xec!@\\x17\\xd9\\xce\\xf7S!I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.961192 50.260375)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:25_geom a sf:Point ;
     rdfs:label "Geometry of 25"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.982996,50.11126]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x982p@K\\xf7!@.\\xad\\x86\\xc4=\\x0eI@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.982996 50.11126)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:26_geom a sf:Point ;
     rdfs:label "Geometry of 26"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.330439,49.633402]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00Y\\xa5\\xf4L/\\xa9\"@I\\x9c\\x15Q\\x13\\xd1H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.330439 49.633402)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:27_geom a sf:Point ;
     rdfs:label "Geometry of 27"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.387543,49.542873]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00d\\x96=\\tl\\xc6\"@\\xd2p\\xca\\xdc|\\xc5H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.387543 49.542873)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:28_geom a sf:Point ;
     rdfs:label "Geometry of 28"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.42348,49.449848]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00)\\x05\\xdd^\\xd2\\xd8\"@\\xe4\\x15\\x88\\x9e\\x94\\xb9H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.42348 49.449848)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:29_geom a sf:Point ;
     rdfs:label "Geometry of 29"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.571011,49.055125]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x01P\\xc5\\x8d[$#@\\x93\\x18\\x04V\\x0e\\x87H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.571011 49.055125)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:2_geom a sf:Point ;
     rdfs:label "Geometry of 2"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[7.704296,50.412622]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x81\\xd0z\\xf82\\xd1\\x1e@\\x18\\xce5\\xcc\\xd04I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (7.704296 50.412622)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:30_geom a sf:Point ;
     rdfs:label "Geometry of 30"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.619291,48.925947]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b\"\\x01\\x01\\x00\\x00\\x00\\x0ej\\xbf\\xb5\\x13=#@'jin\\x85vH@\""^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.619291 48.925947)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:31_geom a sf:Point ;
     rdfs:label "Geometry of 31"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.633845,48.88659]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\\\w\\xf3T\\x87D#@\\xf6z\\xf7\\xc7{qH@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.633845 48.88659)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:32_geom a sf:Point ;
     rdfs:label "Geometry of 32"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.754924,48.797321]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00W\\xee\\x05f\\x85\\x82#@\\xfe\\xb4Q\\x9d\\x0efH@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.754924 48.797321)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:33_geom a sf:Point ;
     rdfs:label "Geometry of 33"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.763711,48.791553]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xe00\\xd1 \\x05\\x87#@}\\x06\\xd4\\x9bQeH@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.763711 48.791553)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:34_geom a sf:Point ;
     rdfs:label "Geometry of 34"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[10.780904,49.116839]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x94\\xa1*\\xa6\\xd2\\x8f%@\\xdc\\xf2\\x91\\x94\\xf4\\x8eH@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (10.780904 49.116839)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:35_geom a sf:Point ;
     rdfs:label "Geometry of 35"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[10.951999,49.0865]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00@\\xa6\\xb5il\\xe7%@P\\x8d\\x97n\\x12\\x8bH@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (10.951999 49.0865)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:36_geom a sf:Point ;
     rdfs:label "Geometry of 36"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[11.105936,49.015709]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00(\\xf0N>=6&@^\\xa0\\xa4\\xc0\\x02\\x82H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (11.105936 49.015709)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:37_geom a sf:Point ;
     rdfs:label "Geometry of 37"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[11.1511,48.983454]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xe8\\xd9\\xac\\xfa\\\\M&@i\\x8f\\x17\\xd2\\xe1}H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (11.1511 48.983454)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:38_geom a sf:Point ;
     rdfs:label "Geometry of 38"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[11.265951,48.975256]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00O\\xad\\xbe\\xba*\\x88&@(\\x9dH0\\xd5|H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (11.265951 48.975256)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:39_geom a sf:Point ;
     rdfs:label "Geometry of 39"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[11.271316,48.975771]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00Y\\xc3E\\xee\\xe9\\x8a&@O\\xb1j\\x10\\xe6|H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (11.271316 48.975771)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:3_geom a sf:Point ;
     rdfs:label "Geometry of 3"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[7.738396,50.28661]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00&\\xfd\\xbd\\x14\\x1e\\xf4\\x1e@qZ\\xf0\\xa2\\xaf$I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (7.738396 50.28661)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:40_geom a sf:Point ;
     rdfs:label "Geometry of 40"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[11.539056,48.913671]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b\"\\x01\\x01\\x00\\x00\\x00\\xd7l\\xe5%\\xff\\x13'@\\xdd&\\xdc+\\xf3tH@\""^^geo:wkbLiteral ;
     geo:asWKT "POINT (11.539056 48.913671)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:41_geom a sf:Point ;
     rdfs:label "Geometry of 41"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[11.572464,48.905277]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b\"\\x01\\x01\\x00\\x00\\x00RF\\\\\\x00\\x1a%'@\\x16i\\xe2\\x1d\\xe0sH@\""^^geo:wkbLiteral ;
     geo:asWKT "POINT (11.572464 48.905277)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:42_geom a sf:Point ;
     rdfs:label "Geometry of 42"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[7.319315,50.503527]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00,}\\xe8\\x82\\xfaF\\x1d@\\x95\\xd3\\x9e\\x92s@I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (7.319315 50.503527)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:43_geom a sf:Point ;
     rdfs:label "Geometry of 43"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[7.65227,50.430389]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xce\\xa5\\xb8\\xaa\\xec\\x9b\\x1e@q\\xc7\\x9b\\xfc\\x167I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (7.65227 50.430389)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:44_geom a sf:Point ;
     rdfs:label "Geometry of 44"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[7.868022,50.251174]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x84\\xd5X\\xc2\\xdax\\x1f@\\x81\\xcd9x& I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (7.868022 50.251174)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:45_geom a sf:Point ;
     rdfs:label "Geometry of 45"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.016199,50.167456]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xb0t><K\\x08 @n\\xc2\\xbd2o\\x15I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.016199 50.167456)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:46_geom a sf:Point ;
     rdfs:label "Geometry of 46"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.016542,50.167774]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00W\\x05j1x\\x08 @?\\x8fQ\\x9ey\\x15I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.016542 50.167774)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:47_geom a sf:Point ;
     rdfs:label "Geometry of 47"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.077694,50.16494]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b\"\\x01\\x01\\x00\\x00\\x00\\xdb0\\n\\x82\\xc7' @\\xb0\\xe6\\x00\\xc1\\x1c\\x15I@\""^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.077694 50.16494)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:48_geom a sf:Point ;
     rdfs:label "Geometry of 48"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.336425,50.21039]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x15\\x1d\\xc9\\xe5?\\xac @\\xe5\\xb3<\\x0f\\xee\\x1aI@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.336425 50.21039)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:49_geom a sf:Point ;
     rdfs:label "Geometry of 49"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.339083,50.211682]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00WBwI\\x9c\\xad @q\\x93Qe\\x18\\x1bI@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.339083 50.211682)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:4_geom a sf:Point ;
     rdfs:label "Geometry of 4"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[7.890201,50.226566]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00Kw\\xd7\\xd9\\x90\\x8f\\x1f@Y1\\\\\\x1d\\x00\\x1dI@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (7.890201 50.226566)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:50_geom a sf:Point ;
     rdfs:label "Geometry of 50"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.655724,50.443519]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x94g^\\x0e\\xbbO!@\\xcb\\x13\\x08;\\xc58I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.655724 50.443519)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:51_geom a sf:Point ;
     rdfs:label "Geometry of 51"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.725101,50.52089]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x03\\x982p@s!@\\x1fh\\x05\\x86\\xacBI@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.725101 50.52089)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:52_geom a sf:Point ;
     rdfs:label "Geometry of 52"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.85455,50.482998]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xf6\\x97\\xdd\\x93\\x87\\xb5!@G\\x04\\xe3\\xe0\\xd2=I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.85455 50.482998)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:53_geom a sf:Point ;
     rdfs:label "Geometry of 53"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.89565,50.361023]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00&S\\x05\\xa3\\x92\\xca!@J\\rm\\x006.I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.89565 50.361023)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:54_geom a sf:Point ;
     rdfs:label "Geometry of 54"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.901594,50.388546]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00&\\x8a\\x90\\xba\\x9d\\xcd!@\\xed~\\x15\\xe0\\xbb1I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.901594 50.388546)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:55_geom a sf:Point ;
     rdfs:label "Geometry of 55"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.903685,50.46017]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x82\\xc5\\xe1\\xcc\\xaf\\xce!@\\xd7L\\xbe\\xd9\\xe6:I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.903685 50.46017)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:56_geom a sf:Point ;
     rdfs:label "Geometry of 56"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.906795,50.461008]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00GZ*oG\\xd0!@\\xe1\\x98eO\\x02;I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.906795 50.461008)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:57_geom a sf:Point ;
     rdfs:label "Geometry of 57"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.908644,50.422543]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xcbiO\\xc99\\xd1!@\\xad\\x13\\x97\\xe3\\x156I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.908644 50.422543)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:58_geom a sf:Point ;
     rdfs:label "Geometry of 58"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.91015,50.451806]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xa7\\xe8H.\\xff\\xd1!@{\\x11m\\xc7\\xd49I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.91015 50.451806)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:59_geom a sf:Point ;
     rdfs:label "Geometry of 59"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.915133,50.326418]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x12\\xfb\\x04P\\x8c\\xd4!@\\xb1i\\xa5\\x10\\xc8)I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.915133 50.326418)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:5_geom a sf:Point ;
     rdfs:label "Geometry of 5"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[7.995022,50.197474]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xb93\\x13\\x0c\\xe7\\xfa\\x1f@\\xb8\\xe7\\xf9\\xd3F\\x19I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (7.995022 50.197474)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:60_geom a sf:Point ;
     rdfs:label "Geometry of 60"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.91616,50.437561]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x85\\xcek\\xec\\x12\\xd5!@\\xa6\\x80\\xb4\\xff\\x018I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.91616 50.437561)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:61_geom a sf:Point ;
     rdfs:label "Geometry of 61"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.923034,50.31257]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00/1\\x96\\xe9\\x97\\xd8!@\\xf9\\xda3K\\x02(I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.923034 50.31257)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:62_geom a sf:Point ;
     rdfs:label "Geometry of 62"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.985621,50.167989]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00k\\x80\\xd2P\\xa3\\xf8!@;\\x8b\\xde\\xa9\\x80\\x15I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.985621 50.167989)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:63_geom a sf:Point ;
     rdfs:label "Geometry of 63"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.383568,49.545215]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\x92\\x95_\\x06c\\xc4\"@\\xf2$\\xe9\\x9a\\xc9\\xc5H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.383568 49.545215)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:64_geom a sf:Point ;
     rdfs:label "Geometry of 64"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.395263,49.515019]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00@\\xa3t\\xe9_\\xca\"@\\xc9\\xe8\\x80$\\xec\\xc1H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.395263 49.515019)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:65_geom a sf:Point ;
     rdfs:label "Geometry of 65"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.430446,49.43113]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00Vc\\tkc\\xdc\"@\\x89)\\x91D/\\xb7H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.430446 49.43113)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:66_geom a sf:Point ;
     rdfs:label "Geometry of 66"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.457339,49.350652]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xe5^`V(\\xea\"@t#,*\\xe2\\xacH@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.457339 49.350652)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:67_geom a sf:Point ;
     rdfs:label "Geometry of 67"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.47859,49.279712]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xa2b\\x9c\\xbf\\t\\xf5\"@>&R\\x9a\\xcd\\xa3H@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.47859 49.279712)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:68_geom a sf:Point ;
     rdfs:label "Geometry of 68"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[9.561952,49.080419]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00\\xf5\\xd7+,\\xb8\\x1f#@\\x0f}w+K\\x8aH@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (9.561952 49.080419)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:6_geom a sf:Point ;
     rdfs:label "Geometry of 6"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.316399,50.201068]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00f\\xf9\\xba\\x0c\\xff\\xa1 @\\xd5\"\\xa2\\x98\\xbc\\x19I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.316399 50.201068)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:7_geom a sf:Point ;
     rdfs:label "Geometry of 7"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.390579,50.218544]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00?\\x02\\x7f\\xf8\\xf9\\xc7 @W^\\xf2?\\xf9\\x1bI@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.390579 50.218544)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:8_geom a sf:Point ;
     rdfs:label "Geometry of 8"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.492966,50.244586]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00r\\x14 \\nf\\xfc @\\x9c\\x87\\x13\\x98N\\x1fI@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.492966 50.244586)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
 sunid:9_geom a sf:Point ;
     rdfs:label "Geometry of 9"@en ;
+    geo:asGeoJSON "{\"type\":\"Point\",\"coordinates\":[8.512934,50.253706]}"^^geo:geoJSONLiteral ;
+    geo:asWKB "b'\\x01\\x01\\x00\\x00\\x00O\\x03\\x06I\\x9f\\x06!@Ef.py I@'"^^geo:wkbLiteral ;
     geo:asWKT "POINT (8.512934 50.253706)"^^geo:wktLiteral ;
     geo:inSRS <http://www.opengis.net/def/crs/EPSG/0/4326> .
 
