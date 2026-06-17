@@ -15,6 +15,7 @@ jobs:
          sudo pip3 install rdflib geopandas fastkml pygml lxml shapely pyshp geodatasets geojson_rewind bibtexparser
          cd docs
          doxygen Doxyfile
+         ls -l
          cd ..
          mv docs/html/ /result/
          python3 src/geordfconverter/rdfconverter.py --input Limes_Coordinates_Kleinkastell.geojson --output result/ --mapping mapping/sampleempty.json
