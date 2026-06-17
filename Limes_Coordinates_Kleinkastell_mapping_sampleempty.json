@@ -41,60 +41,45 @@
       "@type": "owl:Class"
     },
     {
-      "@id": "sunid:7",
+      "@id": "sunid:5",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:7_geom"
+        "@id": "sunid:5_geom"
       },
-      "suni:ID": 70,
-      "suni:fid": 8,
+      "suni:ID": 68,
+      "suni:fid": 6,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Altes Jagdhaus",
-      "suni:limestown": "Oberursel",
-      "suni:limestownpart": "Oberstedten"
+      "suni:limesobject": "Eichelgarten",
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Lenzhahn/Dasbach"
     },
     {
-      "@id": "sunid:35",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:35_geom"
-      },
-      "suni:ID": 98,
-      "suni:fid": 36,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Raitenbuch",
-      "suni:limestown": "Raitenbuch",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:12_geom",
+      "@id": "sunid:1_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.62539 50.305565)"
+        "@value": "POINT (7.704296 50.412622)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 12"
+        "@value": "Geometry of 1"
       }
     },
     {
-      "@id": "sunid:5_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.316399 50.201068)"
+      "@id": "sunid:11",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:11_geom"
       },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 5"
-      }
+      "suni:ID": 74,
+      "suni:fid": 12,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Lochmühle",
+      "suni:limestown": "Friedrichsdorf",
+      "suni:limestownpart": "Köppern"
     },
     {
       "@id": "sunid:40",
@@ -110,18 +95,222 @@
       "suni:limestownpart": "Steinsdorf (i), Schambach"
     },
     {
-      "@id": "sunid:2_geom",
+      "@id": "sunid:39",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:39_geom"
+      },
+      "suni:ID": 102,
+      "suni:fid": 40,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Güssgraben",
+      "suni:limestown": "Altmannstein",
+      "suni:limestownpart": "Schambach"
+    },
+    {
+      "@id": "suni:fid",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "fid"
+      }
+    },
+    {
+      "@id": "geo:hasGeometry",
+      "@type": "owl:ObjectProperty"
+    },
+    {
+      "@id": "sunid:48",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:48_geom"
+      },
+      "suni:ID": 111,
+      "suni:fid": 49,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Alteburg-Heftrich 1",
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Heftrich"
+    },
+    {
+      "@id": "sunid:51_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (7.738396 50.28661)"
+        "@value": "POINT (8.85455 50.482998)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 2"
+        "@value": "Geometry of 51"
+      }
+    },
+    {
+      "@id": "sunid:31",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:31_geom"
+      },
+      "suni:ID": 94,
+      "suni:fid": 32,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kleindeinbach",
+      "suni:limestown": "Schwäbisch Gmünd",
+      "suni:limestownpart": "Großdeinbach"
+    },
+    {
+      "@id": "sunid:43_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.868022 50.251174)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 43"
+      }
+    },
+    {
+      "@id": "sunid:14_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.629062 50.41449)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 14"
+      }
+    },
+    {
+      "@id": "sunid:47",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:47_geom"
+      },
+      "suni:ID": 110,
+      "suni:fid": 48,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Alteburg-Heftrich 2",
+      "suni:limestown": "Idstein",
+      "suni:limestownpart": "Heftrich"
+    },
+    {
+      "@id": "sunid:14",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:14_geom"
+      },
+      "suni:ID": 77,
+      "suni:fid": 15,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hunnenkirchhof 2",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "Nieder-Weisel"
+    },
+    {
+      "@id": "sunid:60_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.923034 50.31257)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 60"
+      }
+    },
+    {
+      "@id": "sunid:45_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.016542 50.167774)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 45"
+      }
+    },
+    {
+      "@id": "sunid:9",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:9_geom"
+      },
+      "suni:ID": 72,
+      "suni:fid": 10,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Saalburg 1",
+      "suni:limestown": "Bad Homburg",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:19",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:19_geom"
+      },
+      "suni:ID": 82,
+      "suni:fid": 20,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Dicker Wald 2",
+      "suni:limestown": "Münzenberg",
+      "suni:limestownpart": "Gambach"
+    },
+    {
+      "@id": "sunid:30",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:30_geom"
+      },
+      "suni:ID": 93,
+      "suni:fid": 31,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rötelsee",
+      "suni:limestown": "Welzheim",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:18",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:18_geom"
+      },
+      "suni:ID": 81,
+      "suni:fid": 19,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Schrenzer",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:21_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.69936 50.499817)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 21"
       }
     },
     {
@@ -140,177 +329,74 @@
       }
     },
     {
-      "@id": "sunid:39",
+      "@id": "sunid:21",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:39_geom"
+        "@id": "sunid:21_geom"
       },
-      "suni:ID": 102,
-      "suni:fid": 40,
+      "suni:ID": 84,
+      "suni:fid": 22,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Güssgraben",
-      "suni:limestown": "Altmannstein",
-      "suni:limestownpart": "Schambach"
+      "suni:limesobject": "Holzheimer Unterwald",
+      "suni:limestown": "Pohlheim",
+      "suni:limestownpart": "Holzheim"
     },
     {
-      "@id": "sunid:9_geom",
+      "@id": "sunid:29_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.568471 50.272769)"
+        "@value": "POINT (9.619291 48.925947)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 9"
+        "@value": "Geometry of 29"
       }
     },
     {
-      "@id": "sunid:36",
+      "@id": "sunid:7",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:36_geom"
+        "@id": "sunid:7_geom"
       },
-      "suni:ID": 99,
-      "suni:fid": 37,
+      "suni:ID": 70,
+      "suni:fid": 8,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Kaldorf",
-      "suni:limestown": "Titting",
-      "suni:limestownpart": "Kaldorf"
+      "suni:limesobject": "Altes Jagdhaus",
+      "suni:limestown": "Oberursel",
+      "suni:limestownpart": "Oberstedten"
     },
     {
-      "@id": "sunid:49_geom",
+      "@id": "sunid:67_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.655724 50.443519)"
+        "@value": "POINT (9.561952 49.080419)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 49"
+        "@value": "Geometry of 67"
       }
     },
     {
-      "@id": "http://www.opengis.net/def/crs/EPSG/0/4326",
-      "@type": [
-        "ns1:GeographicCRS",
-        "prov:Entity",
-        "owl:NamedIndividual"
-      ],
-      "ns1:area_of_use": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_area_of_use"
-      },
-      "ns1:coordinateSystem": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_cs"
-      },
-      "ns1:ellipsoid": {
-        "@id": "http://www.opengis.net/ont/crs/geod/1"
-      },
-      "ns1:isApplicableTo": {
-        "@id": "http://www.opengis.net/ont/crs/isbody/Earth"
-      },
-      "ns1:isBound": false,
-      "ns1:scope": "Horizontal component of 3D system.",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "WGS 84"
-      }
-    },
-    {
-      "@id": "sunid:54_geom",
+      "@id": "sunid:11_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.903685 50.46017)"
+        "@value": "POINT (8.586331 50.28213)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 54"
-      }
-    },
-    {
-      "@id": "sunid:64_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.430446 49.43113)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 64"
-      }
-    },
-    {
-      "@id": "sunid:59",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:59_geom"
-      },
-      "suni:ID": 122,
-      "suni:fid": 60,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Massohl",
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Steinheim"
-    },
-    {
-      "@id": "sunid:14_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.629062 50.41449)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 14"
-      }
-    },
-    {
-      "@id": "sunid:33_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (10.780904 49.116839)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 33"
-      }
-    },
-    {
-      "@id": "geo:hasGeometry",
-      "@type": "owl:ObjectProperty"
-    },
-    {
-      "@id": "sunid:34_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (10.951999 49.0865)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 34"
+        "@value": "Geometry of 11"
       }
     },
     {
@@ -327,47 +413,19 @@
       "suni:limestownpart": "Grüningen"
     },
     {
-      "@id": "sunid:57_geom",
+      "@id": "sunid:3_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.91015 50.451806)"
+        "@value": "POINT (7.890201 50.226566)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 57"
+        "@value": "Geometry of 3"
       }
-    },
-    {
-      "@id": "sunid:27_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.42348 49.449848)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 27"
-      }
-    },
-    {
-      "@id": "sunid:14",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:14_geom"
-      },
-      "suni:ID": 77,
-      "suni:fid": 15,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hunnenkirchhof 2",
-      "suni:limestown": "Butzbach",
-      "suni:limestownpart": "Nieder-Weisel"
     },
     {
       "@id": "sunid:55_geom",
@@ -385,58 +443,90 @@
       }
     },
     {
-      "@id": "sunid:50_geom",
+      "@id": "sunid:56",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:56_geom"
+      },
+      "suni:ID": 119,
+      "suni:fid": 57,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Unter-Widdersheim",
+      "suni:limestown": "Nidda",
+      "suni:limestownpart": "Unter-Widdersheim"
+    },
+    {
+      "@id": "sunid:8_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.725101 50.52089)"
+        "@value": "POINT (8.512934 50.253706)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 50"
+        "@value": "Geometry of 8"
       }
     },
     {
-      "@id": "sunid:5",
+      "@id": "sunid:63",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:5_geom"
+        "@id": "sunid:63_geom"
       },
-      "suni:ID": 68,
-      "suni:fid": 6,
+      "suni:ID": 126,
+      "suni:fid": 64,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Eichelgarten",
-      "suni:limestown": "Idstein",
-      "suni:limestownpart": "Lenzhahn/Dasbach"
+      "suni:limesobject": "Holderbusch",
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Rinschheim"
     },
     {
-      "@id": "sunid:19",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:19_geom"
-      },
-      "suni:ID": 82,
-      "suni:fid": 20,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Dicker Wald 2",
-      "suni:limestown": "Münzenberg",
-      "suni:limestownpart": "Gambach"
+      "@id": "geo:Geometry",
+      "@type": "owl:Class"
     },
     {
-      "@id": "sunid:54",
+      "@id": "sunid:47_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.336425 50.21039)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 47"
+      }
+    },
+    {
+      "@id": "sunid:27",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:54_geom"
+        "@id": "sunid:27_geom"
       },
-      "suni:ID": 117,
-      "suni:fid": 55,
+      "suni:ID": 90,
+      "suni:fid": 28,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Inheiden 1",
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Inheiden"
+      "suni:limesobject": "Hintere Kalbe",
+      "suni:limestown": "Osterburken",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:0",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:0_geom"
+      },
+      "suni:ID": 63,
+      "suni:fid": 1,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Anhausen",
+      "suni:limestown": "Neuwied",
+      "suni:limestownpart": "Heimbach-Weis"
     },
     {
       "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_latitude_degree_north",
@@ -457,60 +547,6 @@
       }
     },
     {
-      "@id": "sunid:57",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:57_geom"
-      },
-      "suni:ID": 120,
-      "suni:fid": 58,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Wingertsberg",
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Steinheim"
-    },
-    {
-      "@id": "sunid:23",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:23_geom"
-      },
-      "suni:ID": 86,
-      "suni:fid": 24,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Buchkopf",
-      "suni:limestown": "Altenstadt",
-      "suni:limestownpart": "Höchst"
-    },
-    {
-      "@id": "sunid:23_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.961192 50.260375)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 23"
-      }
-    },
-    {
-      "@id": "sunid:58",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:58_geom"
-      },
-      "suni:ID": 121,
-      "suni:fid": 59,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Staden",
-      "suni:limestown": "Florstadt",
-      "suni:limestownpart": "Staden"
-    },
-    {
       "@id": "sunid:38",
       "@type": "",
       "geo:hasGeometry": {
@@ -522,6 +558,118 @@
       "suni:limesobject": "Hegelohe",
       "suni:limestown": "Titting",
       "suni:limestownpart": "Altdorf"
+    },
+    {
+      "@id": "sunid:16",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:16_geom"
+      },
+      "suni:ID": 79,
+      "suni:fid": 17,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Eichkopf",
+      "suni:limestown": "Ober-Mörlen",
+      "suni:limestownpart": "Langenhain-Ziegenberg"
+    },
+    {
+      "@id": "sunid:20",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:20_geom"
+      },
+      "suni:ID": 83,
+      "suni:fid": 21,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Dicker Wald 1",
+      "suni:limestown": "Münzenberg",
+      "suni:limestownpart": "Gambach"
+    },
+    {
+      "@id": "sunid:66_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.47859 49.279712)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 66"
+      }
+    },
+    {
+      "@id": "sunid:17",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:17_geom"
+      },
+      "suni:ID": 80,
+      "suni:fid": 18,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kaisergrube",
+      "suni:limestown": "Ober-Mörlen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:40_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.572464 48.905277)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 40"
+      }
+    },
+    {
+      "@id": "sunid:2_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.738396 50.28661)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 2"
+      }
+    },
+    {
+      "@id": "sunid:46_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.077694 50.16494)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 46"
+      }
+    },
+    {
+      "@id": "sunid:62",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:62_geom"
+      },
+      "suni:ID": 125,
+      "suni:fid": 63,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Altheimer Straße",
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Hettingen"
     },
     {
       "@id": "sunid:2",
@@ -537,60 +685,63 @@
       "suni:limestownpart": "Oberlahnstein/Becheln"
     },
     {
-      "@id": "sunid:8",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:8_geom"
+      "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_longitude_degree_east",
+      "@type": "ns1:CoordinateSystemAxis",
+      "ns1:abbreviation": "Lon",
+      "ns1:direction": {
+        "@id": "ns1:east"
       },
-      "suni:ID": 71,
-      "suni:fid": 9,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Heidenstock",
-      "suni:limestown": "Bad Homburg",
-      "suni:limestownpart": "Ober-Eschbach"
+      "ns1:unit": {
+        "@id": "om:degree"
+      },
+      "ns1:unit_auth_code": "EPSG",
+      "ns1:unit_code": "9122",
+      "ns1:unit_conversion_factor": 0.017453292519943295,
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geodetic longitude (degree)"
+      }
     },
     {
-      "@id": "sunid:21_geom",
+      "@id": "sunid:54",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:54_geom"
+      },
+      "suni:ID": 117,
+      "suni:fid": 55,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Inheiden 1",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
+    },
+    {
+      "@id": "sunid:10_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.69936 50.499817)"
+        "@value": "POINT (8.568939 50.27216)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 21"
+        "@value": "Geometry of 10"
       }
     },
     {
-      "@id": "sunid:13_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.6284 50.414587)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 13"
-      }
-    },
-    {
-      "@id": "sunid:24",
+      "@id": "sunid:52",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:24_geom"
+        "@id": "sunid:52_geom"
       },
-      "suni:ID": 87,
-      "suni:fid": 25,
+      "suni:ID": 115,
+      "suni:fid": 53,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Neuwirtshaus",
-      "suni:limestown": "Hanau",
-      "suni:limestownpart": "Wolfgang"
+      "suni:limesobject": "Lochberg",
+      "suni:limestown": "Echzell",
+      "suni:limestownpart": "Bingenheim"
     },
     {
       "@id": "sunid:26_geom",
@@ -608,103 +759,278 @@
       }
     },
     {
-      "@id": "sunid:0",
+      "@id": "sunid:25",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:0_geom"
+        "@id": "sunid:25_geom"
       },
-      "suni:ID": 63,
-      "suni:fid": 1,
+      "suni:ID": 88,
+      "suni:fid": 26,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Anhausen",
-      "suni:limestown": "Neuwied",
-      "suni:limestownpart": "Heimbach-Weis"
+      "suni:limesobject": "Haselburg",
+      "suni:limestown": "Walldürn",
+      "suni:limestownpart": "Reinhardsachsen"
     },
     {
-      "@id": "sunid:29_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.619291 48.925947)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 29"
-      }
-    },
-    {
-      "@id": "sunid:45",
+      "@id": "sunid:22",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:45_geom"
+        "@id": "sunid:22_geom"
       },
-      "suni:ID": 108,
-      "suni:fid": 46,
+      "suni:ID": 85,
+      "suni:fid": 23,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Kemel 1",
-      "suni:limestown": "Heidenrod",
-      "suni:limestownpart": "Kemel"
+      "suni:limesobject": "Feldheimer Wald",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
     },
     {
-      "@id": "sunid:28_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.571011 49.055125)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 28"
-      }
-    },
-    {
-      "@id": "sunid:56",
+      "@id": "sunid:1",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:56_geom"
+        "@id": "sunid:1_geom"
       },
-      "suni:ID": 119,
-      "suni:fid": 57,
+      "suni:ID": 64,
+      "suni:fid": 2,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Unter-Widdersheim",
-      "suni:limestown": "Nidda",
-      "suni:limestownpart": "Unter-Widdersheim"
-    },
-    {
-      "@id": "http://www.opengis.net/ont/crs/geod/1",
-      "@type": "ns1:Geoid"
-    },
-    {
-      "@id": "sunid:18",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:18_geom"
-      },
-      "suni:ID": 81,
-      "suni:fid": 19,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Schrenzer",
-      "suni:limestown": "Butzbach",
+      "suni:limesobject": "Hillscheid",
+      "suni:limestown": "Hillscheid",
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:52",
+      "@id": "sunid:35_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.105936 49.015709)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 35"
+      }
+    },
+    {
+      "@id": "sunid:32",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:52_geom"
+        "@id": "sunid:32_geom"
       },
-      "suni:ID": 115,
-      "suni:fid": 53,
+      "suni:ID": 95,
+      "suni:fid": 33,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Lochberg",
-      "suni:limestown": "Echzell",
-      "suni:limestownpart": "Bingenheim"
+      "suni:limesobject": "Freimühle",
+      "suni:limestown": "Schwäbisch Gmünd",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:46",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:46_geom"
+      },
+      "suni:ID": 109,
+      "suni:fid": 47,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Adolfseck",
+      "suni:limestown": "Bad Schwalbach",
+      "suni:limestownpart": "Adolfseck"
+    },
+    {
+      "@id": "sunid:61",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:61_geom"
+      },
+      "suni:ID": 124,
+      "suni:fid": 62,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Langendiebach",
+      "suni:limestown": "Erlensee",
+      "suni:limestownpart": "Langendiebach"
+    },
+    {
+      "@id": "sunid:13_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.6284 50.414587)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 13"
+      }
+    },
+    {
+      "@id": "sunid:12",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:12_geom"
+      },
+      "suni:ID": 75,
+      "suni:fid": 13,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rittergräber",
+      "suni:limestown": "Rosbach",
+      "suni:limestownpart": "Nieder-Rosbach"
+    },
+    {
+      "@id": "sf:Point",
+      "@type": "owl:Class",
+      "rdfs:subClassOf": {
+        "@id": "geo:Geometry"
+      }
+    },
+    {
+      "@id": "sunid:12_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.62539 50.305565)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 12"
+      }
+    },
+    {
+      "@id": "sunid:49_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.655724 50.443519)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 49"
+      }
+    },
+    {
+      "@id": "sunid:0_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (7.538413 50.481347)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 0"
+      }
+    },
+    {
+      "@id": "sunid:61_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.985621 50.167989)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 61"
+      }
+    },
+    {
+      "@id": "sunid:53_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.901594 50.388546)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 53"
+      }
+    },
+    {
+      "@id": "sunid:57_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.91015 50.451806)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 57"
+      }
+    },
+    {
+      "@id": "sunid:24_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.982996 50.11126)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 24"
+      }
+    },
+    {
+      "@id": "sunid:23_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.961192 50.260375)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 23"
+      }
+    },
+    {
+      "@id": "sunid:3",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:3_geom"
+      },
+      "suni:ID": 66,
+      "suni:fid": 4,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Pfarrhofen",
+      "suni:limestown": "Miehlen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:44",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:44_geom"
+      },
+      "suni:ID": 107,
+      "suni:fid": 45,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kemel 2",
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Kemel"
     },
     {
       "@id": "sunid:15",
@@ -720,32 +1046,128 @@
       "suni:limestownpart": "Ockstadt"
     },
     {
-      "@id": "sunid:22_geom",
+      "@id": "suni:limescategory",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "limescategory"
+      }
+    },
+    {
+      "@id": "sunid:58",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:58_geom"
+      },
+      "suni:ID": 121,
+      "suni:fid": 59,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Staden",
+      "suni:limestown": "Florstadt",
+      "suni:limestownpart": "Staden"
+    },
+    {
+      "@id": "sunid:38_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.873857 50.471082)"
+        "@value": "POINT (11.271316 48.975771)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 22"
+        "@value": "Geometry of 38"
       }
     },
     {
-      "@id": "sunid:42",
+      "@id": "sunid:64_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.430446 49.43113)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 64"
+      }
+    },
+    {
+      "@id": "sunid:33",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:42_geom"
+        "@id": "sunid:33_geom"
       },
-      "suni:ID": 105,
-      "suni:fid": 43,
+      "suni:ID": 96,
+      "suni:fid": 34,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Ferbach",
-      "suni:limestown": "Weitersburg / Höhr-Grenzhausen",
+      "suni:limesobject": "Hinterer Schlossberg",
+      "suni:limestown": "Gunzenhausen",
       "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:51",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:51_geom"
+      },
+      "suni:ID": 114,
+      "suni:fid": 52,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Langsdorf",
+      "suni:limestown": "Lich",
+      "suni:limestownpart": "Bettenhausen"
+    },
+    {
+      "@id": "sunid:7_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.492966 50.244586)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 7"
+      }
+    },
+    {
+      "@id": "sunid:64",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:64_geom"
+      },
+      "suni:ID": 127,
+      "suni:fid": 65,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Salzberg",
+      "suni:limestown": "Osterburken",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "http://www.opengis.net/ont/crs/cs/axis/east",
+      "@type": "ns1:AxisDirection"
+    },
+    {
+      "@id": "sunid:32_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.763711 48.791553)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 32"
+      }
     },
     {
       "@id": "sunid:31_geom",
@@ -778,50 +1200,18 @@
       }
     },
     {
-      "@id": "sunid:12",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:12_geom"
+      "@id": "sunid:54_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.903685 50.46017)"
       },
-      "suni:ID": 75,
-      "suni:fid": 13,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Rittergräber",
-      "suni:limestown": "Rosbach",
-      "suni:limestownpart": "Nieder-Rosbach"
-    },
-    {
-      "@id": "sunid:26",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:26_geom"
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
-      "suni:ID": 89,
-      "suni:fid": 27,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Rehberg",
-      "suni:limestown": "Buchen",
-      "suni:limestownpart": "Hettingen"
-    },
-    {
-      "@id": "sunid:60",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:60_geom"
-      },
-      "suni:ID": 123,
-      "suni:fid": 61,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Stammheim",
-      "suni:limestown": "Florstadt",
-      "suni:limestownpart": "Stammheim"
-    },
-    {
-      "@id": "suni:limestownpart",
-      "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
-        "@value": "limestownpart"
+        "@value": "Geometry of 54"
       }
     },
     {
@@ -836,436 +1226,6 @@
       "suni:limesobject": "Rheinbrohl",
       "suni:limestown": "Rheinbrohl",
       "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:20",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:20_geom"
-      },
-      "suni:ID": 83,
-      "suni:fid": 21,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Dicker Wald 1",
-      "suni:limestown": "Münzenberg",
-      "suni:limestownpart": "Gambach"
-    },
-    {
-      "@id": "sunid:16_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.640278 50.356513)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 16"
-      }
-    },
-    {
-      "@id": "sunid:36_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.1511 48.983454)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 36"
-      }
-    },
-    {
-      "@id": "suni:fid",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "fid"
-      }
-    },
-    {
-      "@id": "sunid:29",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:29_geom"
-      },
-      "suni:ID": 92,
-      "suni:fid": 30,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Ebnisee",
-      "suni:limestown": "Kaisersbach",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "suni:limestown",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "limestown"
-      }
-    },
-    {
-      "@id": "sunid:34",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:34_geom"
-      },
-      "suni:ID": 97,
-      "suni:fid": 35,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Gündersbach",
-      "suni:limestown": "Pfofeld",
-      "suni:limestownpart": "Sankt Veit, (Gündersbach)"
-    },
-    {
-      "@id": "sunid:1_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.704296 50.412622)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 1"
-      }
-    },
-    {
-      "@id": "sunid:62",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:62_geom"
-      },
-      "suni:ID": 125,
-      "suni:fid": 63,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Altheimer Straße",
-      "suni:limestown": "Buchen",
-      "suni:limestownpart": "Hettingen"
-    },
-    {
-      "@id": "sunid:11_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.586331 50.28213)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 11"
-      }
-    },
-    {
-      "@id": "sunid:9",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:9_geom"
-      },
-      "suni:ID": 72,
-      "suni:fid": 10,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Saalburg 1",
-      "suni:limestown": "Bad Homburg",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:37",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:37_geom"
-      },
-      "suni:ID": 100,
-      "suni:fid": 38,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Biebig",
-      "suni:limestown": "Titting",
-      "suni:limestownpart": "Altdorf"
-    },
-    {
-      "@id": "http://www.opengis.net/ont/crs/cs/axis/Geodetic_longitude_degree_east",
-      "@type": "ns1:CoordinateSystemAxis",
-      "ns1:abbreviation": "Lon",
-      "ns1:direction": {
-        "@id": "ns1:east"
-      },
-      "ns1:unit": {
-        "@id": "om:degree"
-      },
-      "ns1:unit_auth_code": "EPSG",
-      "ns1:unit_code": "9122",
-      "ns1:unit_conversion_factor": 0.017453292519943295,
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geodetic longitude (degree)"
-      }
-    },
-    {
-      "@id": "sunid:8_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.512934 50.253706)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 8"
-      }
-    },
-    {
-      "@id": "sunid:6",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:6_geom"
-      },
-      "suni:ID": 69,
-      "suni:fid": 7,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Maisel",
-      "suni:limestown": "Glashütten",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:11",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:11_geom"
-      },
-      "suni:ID": 74,
-      "suni:fid": 12,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Lochmühle",
-      "suni:limestown": "Friedrichsdorf",
-      "suni:limestownpart": "Köppern"
-    },
-    {
-      "@id": "sunid:61_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.985621 50.167989)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 61"
-      }
-    },
-    {
-      "@id": "sunid:33",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:33_geom"
-      },
-      "suni:ID": 96,
-      "suni:fid": 34,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hinterer Schlossberg",
-      "suni:limestown": "Gunzenhausen",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:51_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.85455 50.482998)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 51"
-      }
-    },
-    {
-      "@id": "sunid:61",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:61_geom"
-      },
-      "suni:ID": 124,
-      "suni:fid": 62,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Langendiebach",
-      "suni:limestown": "Erlensee",
-      "suni:limestownpart": "Langendiebach"
-    },
-    {
-      "@id": "sunid:38_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.271316 48.975771)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 38"
-      }
-    },
-    {
-      "@id": "sunid:43_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.868022 50.251174)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 43"
-      }
-    },
-    {
-      "@id": "sunid:15_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.638337 50.319621)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 15"
-      }
-    },
-    {
-      "@id": "sunid:43",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:43_geom"
-      },
-      "suni:ID": 106,
-      "suni:fid": 44,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Pohl",
-      "suni:limestown": "Pohl",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:65",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:65_geom"
-      },
-      "suni:ID": 128,
-      "suni:fid": 66,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Lehnenwiesen",
-      "suni:limestown": "Widdern",
-      "suni:limestownpart": "Unterkessach"
-    },
-    {
-      "@id": "http://www.opengis.net/ont/crs/cs/axis/east",
-      "@type": "ns1:AxisDirection"
-    },
-    {
-      "@id": "sunid:7_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.492966 50.244586)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 7"
-      }
-    },
-    {
-      "@id": "sunid:64",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:64_geom"
-      },
-      "suni:ID": 127,
-      "suni:fid": 65,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Salzberg",
-      "suni:limestown": "Osterburken",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:6_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.390579 50.218544)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 6"
-      }
-    },
-    {
-      "@id": "sunid:1",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:1_geom"
-      },
-      "suni:ID": 64,
-      "suni:fid": 2,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hillscheid",
-      "suni:limestown": "Hillscheid",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:10_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.568939 50.27216)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 10"
-      }
-    },
-    {
-      "@id": "sunid:18_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.650381 50.432994)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 18"
-      }
     },
     {
       "@id": "sunid:41_geom",
@@ -1283,165 +1243,43 @@
       }
     },
     {
-      "@id": "geo:asWKT",
-      "@type": "owl:DatatypeProperty"
-    },
-    {
-      "@id": "sunid:62_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.383568 49.545215)"
+      "@id": "http://www.opengis.net/def/crs/EPSG/0/4326",
+      "@type": [
+        "ns1:GeographicCRS",
+        "prov:Entity",
+        "owl:NamedIndividual"
+      ],
+      "ns1:area_of_use": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_area_of_use"
       },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      "ns1:coordinateSystem": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_cs"
       },
+      "ns1:ellipsoid": {
+        "@id": "http://www.opengis.net/ont/crs/geod/1"
+      },
+      "ns1:isApplicableTo": {
+        "@id": "http://www.opengis.net/ont/crs/isbody/Earth"
+      },
+      "ns1:isBound": false,
+      "ns1:scope": "Horizontal component of 3D system.",
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 62"
+        "@value": "WGS 84"
       }
     },
     {
-      "@id": "sunid:32_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.763711 48.791553)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 32"
-      }
-    },
-    {
-      "@id": "sunid:20_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.677771 50.466075)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 20"
-      }
-    },
-    {
-      "@id": "sunid:25",
+      "@id": "sunid:59",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:25_geom"
+        "@id": "sunid:59_geom"
       },
-      "suni:ID": 88,
-      "suni:fid": 26,
+      "suni:ID": 122,
+      "suni:fid": 60,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Haselburg",
-      "suni:limestown": "Walldürn",
-      "suni:limestownpart": "Reinhardsachsen"
-    },
-    {
-      "@id": "sunid:56_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.908644 50.422543)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 56"
-      }
-    },
-    {
-      "@id": "sunid:22",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:22_geom"
-      },
-      "suni:ID": 85,
-      "suni:fid": 23,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Feldheimer Wald",
+      "suni:limesobject": "Massohl",
       "suni:limestown": "Hungen",
-      "suni:limestownpart": "Inheiden"
-    },
-    {
-      "@id": "sunid:30",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:30_geom"
-      },
-      "suni:ID": 93,
-      "suni:fid": 31,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Rötelsee",
-      "suni:limestown": "Welzheim",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:46_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.077694 50.16494)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 46"
-      }
-    },
-    {
-      "@id": "sunid:30_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.633845 48.88659)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 30"
-      }
-    },
-    {
-      "@id": "sunid:13",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:13_geom"
-      },
-      "suni:ID": 76,
-      "suni:fid": 14,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hunnenkirchhof 1",
-      "suni:limestown": "Butzbach",
-      "suni:limestownpart": "Nieder-Weisel"
-    },
-    {
-      "@id": "sunid:19_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.67608 50.470322)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 19"
-      }
+      "suni:limestownpart": "Steinheim"
     },
     {
       "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_cs",
@@ -1462,200 +1300,26 @@
       "rdfs:label": "EPSG:4326 CS: ellipsoidal"
     },
     {
-      "@id": "sunid:16",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:16_geom"
-      },
-      "suni:ID": 79,
-      "suni:fid": 17,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Eichkopf",
-      "suni:limestown": "Ober-Mörlen",
-      "suni:limestownpart": "Langenhain-Ziegenberg"
-    },
-    {
-      "@id": "sunid:55",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:55_geom"
-      },
-      "suni:ID": 118,
-      "suni:fid": 56,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Inheiden 2",
-      "suni:limestown": "Hungen",
-      "suni:limestownpart": "Inheiden"
-    },
-    {
-      "@id": "sunid:63",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:63_geom"
-      },
-      "suni:ID": 126,
-      "suni:fid": 64,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Holderbusch",
-      "suni:limestown": "Buchen",
-      "suni:limestownpart": "Rinschheim"
-    },
-    {
-      "@id": "sunid:40_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (11.572464 48.905277)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 40"
-      }
-    },
-    {
-      "@id": "sunid:17",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:17_geom"
-      },
-      "suni:ID": 80,
-      "suni:fid": 18,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Kaisergrube",
-      "suni:limestown": "Ober-Mörlen",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "geo:Geometry",
-      "@type": "owl:Class"
-    },
-    {
-      "@id": "sunid:28",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:28_geom"
-      },
-      "suni:ID": 91,
-      "suni:fid": 29,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hankertsmühle",
-      "suni:limestown": "Mainhardt",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:48_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.339083 50.211682)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 48"
-      }
-    },
-    {
-      "@id": "sunid:45_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.016542 50.167774)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 45"
-      }
-    },
-    {
-      "@id": "sunid:60_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.923034 50.31257)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 60"
-      }
-    },
-    {
-      "@id": "sunid:42_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.65227 50.430389)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 42"
-      }
-    },
-    {
-      "@id": "suni:ID",
+      "@id": "suni:limesobject",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
-        "@value": "ID"
+        "@value": "limesobject"
       }
     },
     {
-      "@id": "http://www.opengis.net/ont/crs/cs/axis/north",
-      "@type": "ns1:AxisDirection"
-    },
-    {
-      "@id": "sunid:53",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:53_geom"
-      },
-      "suni:ID": 116,
-      "suni:fid": 54,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Haselheck",
-      "suni:limestown": "Echzell",
-      "suni:limestownpart": "Bisses"
-    },
-    {
-      "@id": "sunid:67",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:67_geom"
-      },
-      "suni:ID": 130,
-      "suni:fid": 68,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Herrenwiesen",
-      "suni:limestown": "Mainhardt",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:4_geom",
+      "@id": "sunid:5_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (7.995022 50.197474)"
+        "@value": "POINT (8.316399 50.201068)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 4"
+        "@value": "Geometry of 5"
       }
     },
     {
@@ -1674,84 +1338,303 @@
       }
     },
     {
-      "@id": "sunid:67_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.561952 49.080419)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 67"
-      }
-    },
-    {
-      "@id": "sunid:66_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.47859 49.279712)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 66"
-      }
-    },
-    {
-      "@id": "sunid:10",
+      "@id": "sunid:53",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:10_geom"
+        "@id": "sunid:53_geom"
       },
-      "suni:ID": 73,
-      "suni:fid": 11,
+      "suni:ID": 116,
+      "suni:fid": 54,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Saalburg 2",
+      "suni:limesobject": "Haselheck",
+      "suni:limestown": "Echzell",
+      "suni:limestownpart": "Bisses"
+    },
+    {
+      "@id": "sunid:6_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.390579 50.218544)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 6"
+      }
+    },
+    {
+      "@id": "sunid:45",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:45_geom"
+      },
+      "suni:ID": 108,
+      "suni:fid": 46,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kemel 1",
+      "suni:limestown": "Heidenrod",
+      "suni:limestownpart": "Kemel"
+    },
+    {
+      "@id": "sunid:39_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (11.539056 48.913671)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 39"
+      }
+    },
+    {
+      "@id": "sunid:19_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.67608 50.470322)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 19"
+      }
+    },
+    {
+      "@id": "sunid:8",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:8_geom"
+      },
+      "suni:ID": 71,
+      "suni:fid": 9,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Heidenstock",
       "suni:limestown": "Bad Homburg",
+      "suni:limestownpart": "Ober-Eschbach"
+    },
+    {
+      "@id": "sunid:49",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:49_geom"
+      },
+      "suni:ID": 112,
+      "suni:fid": 50,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Degerfeld",
+      "suni:limestown": "Butzbach",
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:35_geom",
+      "@id": "sunid:60",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:60_geom"
+      },
+      "suni:ID": 123,
+      "suni:fid": 61,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Stammheim",
+      "suni:limestown": "Florstadt",
+      "suni:limestownpart": "Stammheim"
+    },
+    {
+      "@id": "sunid:65",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:65_geom"
+      },
+      "suni:ID": 128,
+      "suni:fid": 66,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Lehnenwiesen",
+      "suni:limestown": "Widdern",
+      "suni:limestownpart": "Unterkessach"
+    },
+    {
+      "@id": "sunid:42_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (11.105936 49.015709)"
+        "@value": "POINT (7.65227 50.430389)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 35"
+        "@value": "Geometry of 42"
       }
     },
     {
-      "@id": "sunid:17_geom",
+      "@id": "sunid:6",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:6_geom"
+      },
+      "suni:ID": 69,
+      "suni:fid": 7,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Maisel",
+      "suni:limestown": "Glashütten",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:36_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.64676 50.336998)"
+        "@value": "POINT (11.1511 48.983454)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 17"
+        "@value": "Geometry of 36"
       }
     },
     {
-      "@id": "suni:limesobject",
+      "@id": "sunid:16_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.640278 50.356513)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 16"
+      }
+    },
+    {
+      "@id": "http://www.opengis.net/ont/crs/geod/1",
+      "@type": "ns1:Geoid"
+    },
+    {
+      "@id": "sunid:20_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.677771 50.466075)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 20"
+      }
+    },
+    {
+      "@id": "sunid:66",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:66_geom"
+      },
+      "suni:ID": 129,
+      "suni:fid": 67,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Sindringen",
+      "suni:limestown": "Forchtenberg",
+      "suni:limestownpart": "Sindringen"
+    },
+    {
+      "@id": "sunid:23",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:23_geom"
+      },
+      "suni:ID": 86,
+      "suni:fid": 24,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Buchkopf",
+      "suni:limestown": "Altenstadt",
+      "suni:limestownpart": "Höchst"
+    },
+    {
+      "@id": "sunid:34",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:34_geom"
+      },
+      "suni:ID": 97,
+      "suni:fid": 35,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Gündersbach",
+      "suni:limestown": "Pfofeld",
+      "suni:limestownpart": "Sankt Veit, (Gündersbach)"
+    },
+    {
+      "@id": "suni:limestownpart",
       "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
-        "@value": "limesobject"
+        "@value": "limestownpart"
+      }
+    },
+    {
+      "@id": "suni:ID",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "ID"
+      }
+    },
+    {
+      "@id": "sunid:62_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.383568 49.545215)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 62"
+      }
+    },
+    {
+      "@id": "sunid:28_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.571011 49.055125)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 28"
+      }
+    },
+    {
+      "@id": "sunid:59_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.91616 50.437561)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 59"
       }
     },
     {
@@ -1770,246 +1653,124 @@
       }
     },
     {
-      "@id": "sunid:63_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (9.395263 49.515019)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
+      "@id": "suni:limestown",
+      "@type": "owl:DatatypeProperty",
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 63"
+        "@value": "limestown"
       }
     },
     {
-      "@id": "sunid:24_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.982996 50.11126)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 24"
-      }
-    },
-    {
-      "@id": "sunid:53_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.901594 50.388546)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 53"
-      }
-    },
-    {
-      "@id": "sunid:48",
+      "@id": "sunid:28",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:48_geom"
+        "@id": "sunid:28_geom"
       },
-      "suni:ID": 111,
-      "suni:fid": 49,
+      "suni:ID": 91,
+      "suni:fid": 29,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Alteburg-Heftrich 1",
-      "suni:limestown": "Idstein",
-      "suni:limestownpart": "Heftrich"
-    },
-    {
-      "@id": "sunid:66",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:66_geom"
-      },
-      "suni:ID": 129,
-      "suni:fid": 67,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Sindringen",
-      "suni:limestown": "Forchtenberg",
-      "suni:limestownpart": "Sindringen"
-    },
-    {
-      "@id": "sunid:0_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (7.538413 50.481347)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 0"
-      }
-    },
-    {
-      "@id": "sunid:52_geom",
-      "@type": "sf:Point",
-      "geo:asWKT": {
-        "@type": "geo:wktLiteral",
-        "@value": "POINT (8.89565 50.361023)"
-      },
-      "geo:inSRS": {
-        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
-      },
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "Geometry of 52"
-      }
-    },
-    {
-      "@id": "sunid:21",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:21_geom"
-      },
-      "suni:ID": 84,
-      "suni:fid": 22,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Holzheimer Unterwald",
-      "suni:limestown": "Pohlheim",
-      "suni:limestownpart": "Holzheim"
-    },
-    {
-      "@id": "sunid:27",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:27_geom"
-      },
-      "suni:ID": 90,
-      "suni:fid": 28,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Hintere Kalbe",
-      "suni:limestown": "Osterburken",
+      "suni:limesobject": "Hankertsmühle",
+      "suni:limestown": "Mainhardt",
       "suni:limestownpart": "???"
     },
     {
-      "@id": "sunid:51",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:51_geom"
-      },
-      "suni:ID": 114,
-      "suni:fid": 52,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Langsdorf",
-      "suni:limestown": "Lich",
-      "suni:limestownpart": "Bettenhausen"
+      "@id": "geo:asWKT",
+      "@type": "owl:DatatypeProperty"
     },
     {
-      "@id": "sunid:46",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:46_geom"
-      },
-      "suni:ID": 109,
-      "suni:fid": 47,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Adolfseck",
-      "suni:limestown": "Bad Schwalbach",
-      "suni:limestownpart": "Adolfseck"
-    },
-    {
-      "@id": "sunid:31",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:31_geom"
-      },
-      "suni:ID": 94,
-      "suni:fid": 32,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Kleindeinbach",
-      "suni:limestown": "Schwäbisch Gmünd",
-      "suni:limestownpart": "Großdeinbach"
-    },
-    {
-      "@id": "sunid:39_geom",
+      "@id": "sunid:9_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (11.539056 48.913671)"
+        "@value": "POINT (8.568471 50.272769)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 39"
+        "@value": "Geometry of 9"
       }
     },
     {
-      "@id": "sf:Point",
-      "@type": "owl:Class",
-      "rdfs:subClassOf": {
-        "@id": "geo:Geometry"
-      }
-    },
-    {
-      "@id": "sunid:3",
+      "@id": "sunid:55",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:3_geom"
+        "@id": "sunid:55_geom"
       },
-      "suni:ID": 66,
-      "suni:fid": 4,
+      "suni:ID": 118,
+      "suni:fid": 56,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Pfarrhofen",
-      "suni:limestown": "Miehlen",
-      "suni:limestownpart": "???"
+      "suni:limesobject": "Inheiden 2",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Inheiden"
     },
     {
-      "@id": "sunid:44",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:44_geom"
-      },
-      "suni:ID": 107,
-      "suni:fid": 45,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Kemel 2",
-      "suni:limestown": "Heidenrod",
-      "suni:limestownpart": "Kemel"
-    },
-    {
-      "@id": "sunid:32",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:32_geom"
-      },
-      "suni:ID": 95,
-      "suni:fid": 33,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Freimühle",
-      "suni:limestown": "Schwäbisch Gmünd",
-      "suni:limestownpart": "???"
-    },
-    {
-      "@id": "sunid:3_geom",
+      "@id": "sunid:18_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (7.890201 50.226566)"
+        "@value": "POINT (8.650381 50.432994)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 3"
+        "@value": "Geometry of 18"
       }
+    },
+    {
+      "@id": "sunid:36",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:36_geom"
+      },
+      "suni:ID": 99,
+      "suni:fid": 37,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Kaldorf",
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Kaldorf"
+    },
+    {
+      "@id": "sunid:35",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:35_geom"
+      },
+      "suni:ID": 98,
+      "suni:fid": 36,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Raitenbuch",
+      "suni:limestown": "Raitenbuch",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:67",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:67_geom"
+      },
+      "suni:ID": 130,
+      "suni:fid": 68,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Herrenwiesen",
+      "suni:limestown": "Mainhardt",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:24",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:24_geom"
+      },
+      "suni:ID": 87,
+      "suni:fid": 25,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Neuwirtshaus",
+      "suni:limestown": "Hanau",
+      "suni:limestownpart": "Wolfgang"
     },
     {
       "@id": "sunid:58_geom",
@@ -2027,30 +1788,32 @@
       }
     },
     {
-      "@id": "sunid:49",
+      "@id": "sunid:37",
       "@type": "",
       "geo:hasGeometry": {
-        "@id": "sunid:49_geom"
+        "@id": "sunid:37_geom"
       },
-      "suni:ID": 112,
-      "suni:fid": 50,
+      "suni:ID": 100,
+      "suni:fid": 38,
       "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Degerfeld",
-      "suni:limestown": "Butzbach",
-      "suni:limestownpart": "???"
+      "suni:limesobject": "Biebig",
+      "suni:limestown": "Titting",
+      "suni:limestownpart": "Altdorf"
     },
     {
-      "@id": "sunid:47",
-      "@type": "",
-      "geo:hasGeometry": {
-        "@id": "sunid:47_geom"
+      "@id": "sunid:63_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.395263 49.515019)"
       },
-      "suni:ID": 110,
-      "suni:fid": 48,
-      "suni:limescategory": "Kleinkastell",
-      "suni:limesobject": "Alteburg-Heftrich 2",
-      "suni:limestown": "Idstein",
-      "suni:limestownpart": "Heftrich"
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 63"
+      }
     },
     {
       "@id": "http://www.opengis.net/def/crs/EPSG/0/4326_area_of_use",
@@ -2058,6 +1821,197 @@
       "rdfs:label": {
         "@language": "en",
         "@value": "World."
+      }
+    },
+    {
+      "@id": "sunid:15_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.638337 50.319621)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 15"
+      }
+    },
+    {
+      "@id": "sunid:22_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.873857 50.471082)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 22"
+      }
+    },
+    {
+      "@id": "sunid:27_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.42348 49.449848)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 27"
+      }
+    },
+    {
+      "@id": "sunid:13",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:13_geom"
+      },
+      "suni:ID": 76,
+      "suni:fid": 14,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Hunnenkirchhof 1",
+      "suni:limestown": "Butzbach",
+      "suni:limestownpart": "Nieder-Weisel"
+    },
+    {
+      "@id": "sunid:50_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.725101 50.52089)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 50"
+      }
+    },
+    {
+      "@id": "sunid:17_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.64676 50.336998)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 17"
+      }
+    },
+    {
+      "@id": "sunid:30_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (9.633845 48.88659)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 30"
+      }
+    },
+    {
+      "@id": "sunid:48_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.339083 50.211682)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 48"
+      }
+    },
+    {
+      "@id": "http://www.opengis.net/ont/crs/cs/axis/north",
+      "@type": "ns1:AxisDirection"
+    },
+    {
+      "@id": "sunid:10",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:10_geom"
+      },
+      "suni:ID": 73,
+      "suni:fid": 11,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Saalburg 2",
+      "suni:limestown": "Bad Homburg",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:43",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:43_geom"
+      },
+      "suni:ID": 106,
+      "suni:fid": 44,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Pohl",
+      "suni:limestown": "Pohl",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:42",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:42_geom"
+      },
+      "suni:ID": 105,
+      "suni:fid": 43,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Ferbach",
+      "suni:limestown": "Weitersburg / Höhr-Grenzhausen",
+      "suni:limestownpart": "???"
+    },
+    {
+      "@id": "sunid:52_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (8.89565 50.361023)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 52"
+      }
+    },
+    {
+      "@id": "sunid:34_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (10.951999 49.0865)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 34"
       }
     },
     {
@@ -2074,42 +2028,88 @@
       "suni:limestownpart": "Laufenselden"
     },
     {
-      "@id": "sunid:59_geom",
+      "@id": "sunid:56_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.91616 50.437561)"
+        "@value": "POINT (8.908644 50.422543)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 59"
+        "@value": "Geometry of 56"
       }
     },
     {
-      "@id": "suni:limescategory",
-      "@type": "owl:DatatypeProperty",
-      "rdfs:label": {
-        "@language": "en",
-        "@value": "limescategory"
-      }
+      "@id": "sunid:26",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:26_geom"
+      },
+      "suni:ID": 89,
+      "suni:fid": 27,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Rehberg",
+      "suni:limestown": "Buchen",
+      "suni:limestownpart": "Hettingen"
     },
     {
-      "@id": "sunid:47_geom",
+      "@id": "sunid:4_geom",
       "@type": "sf:Point",
       "geo:asWKT": {
         "@type": "geo:wktLiteral",
-        "@value": "POINT (8.336425 50.21039)"
+        "@value": "POINT (7.995022 50.197474)"
       },
       "geo:inSRS": {
         "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
       },
       "rdfs:label": {
         "@language": "en",
-        "@value": "Geometry of 47"
+        "@value": "Geometry of 4"
       }
+    },
+    {
+      "@id": "sunid:57",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:57_geom"
+      },
+      "suni:ID": 120,
+      "suni:fid": 58,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Wingertsberg",
+      "suni:limestown": "Hungen",
+      "suni:limestownpart": "Steinheim"
+    },
+    {
+      "@id": "sunid:33_geom",
+      "@type": "sf:Point",
+      "geo:asWKT": {
+        "@type": "geo:wktLiteral",
+        "@value": "POINT (10.780904 49.116839)"
+      },
+      "geo:inSRS": {
+        "@id": "http://www.opengis.net/def/crs/EPSG/0/4326"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geometry of 33"
+      }
+    },
+    {
+      "@id": "sunid:29",
+      "@type": "",
+      "geo:hasGeometry": {
+        "@id": "sunid:29_geom"
+      },
+      "suni:ID": 92,
+      "suni:fid": 30,
+      "suni:limescategory": "Kleinkastell",
+      "suni:limesobject": "Ebnisee",
+      "suni:limestown": "Kaisersbach",
+      "suni:limestownpart": "???"
     }
   ]
 }
