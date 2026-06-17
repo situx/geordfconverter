@@ -341,7 +341,7 @@ class RDFConverter:
             g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asKML"),Literal( "<kml xmlns=\"http://www.opengis.net/kml/2.2\"><Placemark>" + str(fastkml.geometry.create_kml_geometry(shapely.from_wkt(str(row[geometrycol])))) + "</Placemark></kml>", datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))
         if "GML" in literaltypes:
             g.add((URIRef("http://www.opengis.net/ont/geosparql#asGML"), RDF.type, OWL.DatatypeProperty))
-            g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asGML"),Literal(etree.tostring(encode_v32(json.loads(to_geojson(geom)), "ID"),encoding="unicode"), datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))          
+            g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asGML"),Literal(etree.tostring(encode_v32(json.loads(shapely.to_geojson(geom)), "ID"),encoding="unicode"), datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))          
         return g
 
     def processLatLonGeometry(self,g,lat,lon,typemap,curid):
