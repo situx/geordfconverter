@@ -16,7 +16,7 @@ jobs:
          cd docs
          doxygen Doxyfile
          cd ..
-         cp -R docs/html/* /result/
+         cp -R docs/html/* result/
          python3 src/geordfconverter/rdfconverter.py --input Limes_Coordinates_Kleinkastell.geojson --output result/ --mapping mapping/sampleempty.json
          python3 src/geordfconverter/rdfconverter.py --input Limes_Coordinates_Kleinkastell.geojson --output result/ --mapping mapping/limes.json --literalformats wkt geojson gml kml wkb
          cp mapping/limes.json result/
