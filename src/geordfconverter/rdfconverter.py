@@ -402,9 +402,9 @@ class RDFConverter:
                     self.processLatLonGeometry(g, row[geomatts[0]], row[geomatts[1]], typemap, curid)
                     processedGeom = True
                 elif len(geomatts)==1:
-                    self.processGeometryColumn(g,row,geomatts[0],typemap,curid,set(literalformats))
+                    self.processGeometryColumn(g,row,geomatts[0],typemap,curid,set([x.upper() for x in literalformats]))
             elif "geometry" in row:
-                self.processGeometryColumn(g,row,"geometry",typemap,curid,set(literalformats))
+                self.processGeometryColumn(g,row,"geometry",typemap,curid,set([x.upper() for x in literalformats]))
                 processedGeom=True
             else:
                 for pair in self.latlonpairs:
