@@ -132,6 +132,16 @@ The geordfconverter is able to infer a limited automatic mapping with the follow
 An automapping based on an analysis of the dataset and its datatypes will be created by the tool for comparison.
 It is not recommended to use this mapping due to its lack of semantics, even though it will produce a valid RDF result.
 
+## Missing Vocabulary Definitions
+
+GeoRDFConverter will export a file with unknown URI definitions of vocabularies.
+This file can be the basis for the definition of a vocabulary file but cannot provide the following elements:
+
+- Definition of the URIs
+- The vocabulary name and prefix
+- The thematic description of the vocabulary
+- Statistics about the vocabulary usage and links to other vocabularies
+
 ## Error Handling
 
 GeoRDFConverter will export a FILENAME_err.json file which will capture every error that occurred during the conversion of the dataset.
