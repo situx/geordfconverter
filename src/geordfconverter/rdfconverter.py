@@ -3,6 +3,7 @@ from rdflib.namespace import RDF, RDFS, OWL, XSD, DC, PROV, SKOS, GEO, VOID
 import argparse
 import bibtexparser
 import fastkml.geometry
+from pygml.v32 import encode_v32
 import pandas as pd
 import geopandas as gpd
 import shapely
@@ -335,7 +336,11 @@ class RDFConverter:
                 g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
                     URIRef("http://www.opengis.net/def/crs/EPSG/0/4326")))
         if "KML" in literaltypes:
+            g.add((URIRef("http://www.opengis.net/ont/geosparql#asKML"), RDF.type, OWL.DatatypeProperty))
             g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asKML"),Literal( "<kml xmlns=\"http://www.opengis.net/kml/2.2\"><Placemark>" + str(fastkml.geometry.create_kml_geometry(shapely.from_wkt(str(row[geometrycol])))) + "</Placemark></kml>", datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))
+        if "GML" in literaltypes:
+            g.add((URIRef("http://www.opengis.net/ont/geosparql#asGML"), RDF.type, OWL.DatatypeProperty))
+            g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asGML"),Literal(etree.tostring(encode_v32(json.loads(to_geojson(geom)), "ID"),encoding="unicode"), datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))          
         return g
 
     def processLatLonGeometry(self,g,lat,lon,typemap,curid):
