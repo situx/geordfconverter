@@ -329,7 +329,7 @@ class RDFConverter:
                 Literal("POINT("+str(lon)+" "+str(lat)+")", datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
         return g
     
-    def processColumns(self,prefix,seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts):
+    def processColumns(self,prefix,seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts,literalformats):
         processedGeom=False
         subclass = False
         #print("PROCCOL Graph: "+str(len(g)))
@@ -348,13 +348,13 @@ class RDFConverter:
                 else:
                     theiri = URIRef(attns + x)
                 if prefix!="":
-                    res = self.processColumns(str(prefix) + "." + str(x), seencols, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x],bibmap,geomatts)
+                    res = self.processColumns(str(prefix) + "." + str(x), seencols, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x],bibmap,geomatts,literalformats)
                     g.add((URIRef(curid),URIRef(theiri),URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                     if "concept" in typemap["columns"][x]:
                         g.add((URIRef(str(curid) + "_" + str(x)),RDF.type,URIRef(typemap["columns"][x]["concept"])))
                 else:
-                    res=self.processColumns(str(x),seencols,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x],bibmap,geomatts)
+                    res=self.processColumns(str(x),seencols,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x],bibmap,geomatts,literalformats)
                     g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid)+"_"+str(x))))
                     g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
                     if "concept" in typemap["columns"][x]:
@@ -402,9 +402,9 @@ class RDFConverter:
                     self.processLatLonGeometry(g, row[geomatts[0]], row[geomatts[1]], typemap, curid)
                     processedGeom = True
                 elif len(geomatts)==1:
-                    self.processGeometryColumn(g,row,geomatts[0],typemap,curid)
+                    self.processGeometryColumn(g,row,geomatts[0],typemap,curid,set(literalformats))
             elif "geometry" in row:
-                self.processGeometryColumn(g,row,"geometry",typemap,curid)
+                self.processGeometryColumn(g,row,"geometry",typemap,curid,set(literalformats))
                 processedGeom=True
             else:
                 for pair in self.latlonpairs:
@@ -414,7 +414,7 @@ class RDFConverter:
         #print(str(curid)+" - hasSubClass "+str(subclass))
         return {"graph":g,"subclass":subclass,"seencols":seencols}
 
-    def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},dcaturi="",geosparql=True):
+    def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},dcaturi="",geosparql=True,liferalformats=["wkt"]):
         #print(df)
         idcol=None
         dns=None
@@ -532,7 +532,7 @@ class RDFConverter:
             #for x in typemap["columns"]:
             subclass = False
             intypemap=False
-            res=self.processColumns("",seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts)
+            res=self.processColumns("",seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts,literalformats)
             seencols=res["seencols"]
             subclass=res["subclass"]
             counter+=1
@@ -653,7 +653,7 @@ if not os.path.exists(args.output[0]):
 with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_autotypemap.json","w") as f:
     json.dump(autotypemap,f,indent=2,sort_keys=True)
 
-g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,dcaturi,True)
+g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,dcaturi,True,args.literalformats)
 if args.addfiles!="" and len(args.addfiles)>0:
     try:
         g.parse(args.addfiles[0])
