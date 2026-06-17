@@ -2,6 +2,7 @@ from rdflib import Graph, URIRef, Literal
 from rdflib.namespace import RDF, RDFS, OWL, XSD, DC, PROV, SKOS, GEO, VOID
 import argparse
 import bibtexparser
+from lxml import etree
 import fastkml.geometry
 from pygml.v32 import encode_v32
 import pandas as pd

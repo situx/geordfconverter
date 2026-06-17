@@ -23,6 +23,7 @@ dependencies = [
 "shapely>=1.7.1",
 "fastkml",
 "pygml",
+"lxml",
 "geopandas>=1.7.1",
 "geodatasets>=1.7.1",
 "geojson_rewind>=1.7.1"
