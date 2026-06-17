@@ -110,7 +110,28 @@ In this example, values would be separated by the joincharacter "---".
 
 **Remark**: Joining of columns only works on a String leval, numbers, for instance will not be added together.
 
+## Geometry Literals for export
+
+GeoRDFConverter can produce a variety of GeoSPARQL-standardized and further String literals to store geometries in an RDF knowledge graph.
+The following literal formats are supported:
+
+- Well-Known Text (default)
+- Well-Known Binary
+- GeoJSON
+- GML
+- KML
+
+The example in this repository showcases the exports of all of these literal formats in a sample conversion file
+
 ## Automapping
+
+An automapping based on an analysis of the dataset and its datatypes will be created by the tool for comparison.
+It is not recommended to use this mapping due to its lack of semantics, even though it will produce a valid RDF result.
+
+## Error Handling
+
+GeoRDFConverter will export a FILENAME_err.json file which will capture every error that occurred during the conversion of the dataset.
+Typically these are mapping errors from String values to RDF concepts which are missing or incorrect datatypes stated during conversion.
 
 The geordfconverter is able to infer a limited automatic mapping with the following contents:
 * Columns as data properties with their inferred ranges
