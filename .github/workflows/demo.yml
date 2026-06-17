@@ -11,8 +11,12 @@ jobs:
     - uses: actions/checkout@v1
     - name: Converting dataset to RDF 🔧
       run: |
-         sudo apt-get install python3 python3-setuptools python3-pip python3-dev  -y
+         sudo apt-get install python3 python3-setuptools python3-pip python3-dev doxygen -y
          sudo pip3 install rdflib geopandas fastkml pygml lxml shapely pyshp geodatasets geojson_rewind bibtexparser
+         cd docs
+         doxygen Doxyfile
+         cd ..
+         mv docs/html/ /result/
          python3 src/geordfconverter/rdfconverter.py --input Limes_Coordinates_Kleinkastell.geojson --output result/ --mapping mapping/sampleempty.json
          python3 src/geordfconverter/rdfconverter.py --input Limes_Coordinates_Kleinkastell.geojson --output result/ --mapping mapping/limes.json --literalformats wkt geojson gml kml wkb
          cp mapping/limes.json result/
