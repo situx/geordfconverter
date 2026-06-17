@@ -578,6 +578,7 @@ filestoprocess = []
 parser = argparse.ArgumentParser()
 parser.add_argument("-i", "--input", nargs='*', help="the input file(s) to parse [csv,shp,geojson,gml]", action="store", required=True)
 parser.add_argument("-o", "--output", nargs='*', help="the output path(s)", action="store", required=True)
+parser.add_argument("-lf", "--literalformats", nargs='*', help="the literal formats to generate for the knowledge graph", action="store", required=False, default=["wkt"])
 parser.add_argument("-m", "--mapping", nargs='*', help="the mapping file path(s)", action="store", required=True)
 parser.add_argument("-dcat", "--dcaturi", nargs='*', help="an uri indicating dcat metadata", action="store", default="",required=False)
 parser.add_argument("-af", "--addfiles", nargs='*', help="additional rdf files to integrate", action="store", default="",required=False)
