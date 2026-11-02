@@ -4,7 +4,7 @@ var searchData=
   ['obliquestereographicprojection_1',['ObliqueStereographicProjection',['../a00038.html#adf56cfe77ca36c2e6b7ef8b9788637fa',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
   ['offshoreengineering_2',['OffshoreEngineering',['../a00038.html#a207152a3e7229dec662afff9795f5f23',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
   ['oilandgasexploration_3',['OilAndGasExploration',['../a00038.html#a6e562a2fb5a32ccc05c1617066a97f0a',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
-  ['om_4',['OM',['../a00019.html#a603bc6c925a0677c777412812f3fb709',1,'geordfconverter::convertcrs']]],
+  ['om_4',['om',['../a00019.html#a603bc6c925a0677c777412812f3fb709',1,'geordfconverter.convertcrs.OM'],['../a00020.html#a823b555efa179ffa233bad0d72e59ce3',1,'geordfconverter.rdfconverter.OM']]],
   ['open_5flicense_5',['open_license',['../a00038.html#a691049955d676951e3d141174beb3760',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
   ['operation_6',['operation',['../a00038.html#a0490f3d8853743a14d9f7afc984ecaed',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],
   ['orthographicprojection_7',['OrthographicProjection',['../a00038.html#ad4bbcdc4de507116f461a055dd82e9c6',1,'geordfconverter::vocab::GEOCRS::GEOCRS']]],

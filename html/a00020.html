@@ -152,6 +152,18 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:aeec252296f7396f2af3303f8594e686b" id="r_aeec252296f7396f2af3303f8594e686b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#aeec252296f7396f2af3303f8594e686b">GEOSPARQL</a> = Namespace(&quot;http://www.opengis.net/ont/geosparql#&quot;)</td></tr>
+<tr class="separator:aeec252296f7396f2af3303f8594e686b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a80f847c6adfd9a737b20ec3fdb803a" id="r_a8a80f847c6adfd9a737b20ec3fdb803a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a8a80f847c6adfd9a737b20ec3fdb803a">SF</a> = Namespace(&quot;http://www.opengis.net/ont/sf#&quot;)</td></tr>
+<tr class="separator:a8a80f847c6adfd9a737b20ec3fdb803a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a4e6624e72d394b7585efd15ab52c9" id="r_a17a4e6624e72d394b7585efd15ab52c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a17a4e6624e72d394b7585efd15ab52c9">EPSG</a> = Namespace(&quot;http://www.opengis.net/def/crs/EPSG/0/&quot;)</td></tr>
+<tr class="separator:a17a4e6624e72d394b7585efd15ab52c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823b555efa179ffa233bad0d72e59ce3" id="r_a823b555efa179ffa233bad0d72e59ce3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a823b555efa179ffa233bad0d72e59ce3">OM</a> = Namespace(&quot;http://www.ontology-of-units-of-measure.org/resource/om-2/&quot;)</td></tr>
+<tr class="separator:a823b555efa179ffa233bad0d72e59ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfe1492422d4bae110f0f4dbc8a3a776" id="r_adfe1492422d4bae110f0f4dbc8a3a776"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#adfe1492422d4bae110f0f4dbc8a3a776">VOAF</a> = Namespace(&quot;http://purl.org/vocommons/voaf#&quot;)</td></tr>
+<tr class="separator:adfe1492422d4bae110f0f4dbc8a3a776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51be4893d90b47176dbfcac18f96eb9" id="r_ab51be4893d90b47176dbfcac18f96eb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ab51be4893d90b47176dbfcac18f96eb9">VANN</a> = Namespace(&quot;http://purl.org/vocab/vann/&quot;)</td></tr>
+<tr class="separator:ab51be4893d90b47176dbfcac18f96eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b051267830d5e674ca02086923a6163" id="r_a8b051267830d5e674ca02086923a6163"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a8b051267830d5e674ca02086923a6163">filestoprocess</a> = []</td></tr>
 <tr class="separator:a8b051267830d5e674ca02086923a6163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90eee7a4677ca8b1ed116364a24367f9" id="r_a90eee7a4677ca8b1ed116364a24367f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a90eee7a4677ca8b1ed116364a24367f9">parser</a> = argparse.ArgumentParser()</td></tr>
@@ -235,31 +247,31 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   35</span><span class="keyword">def </span>resolveWikidataIDFromArticleName(wikipediaurl):</div>
-<div class="line"><span class="lineno">   36</span>    pagename=wikipediaurl[wikipediaurl.rfind(<span class="stringliteral">&quot;wiki/&quot;</span>)+5:]</div>
-<div class="line"><span class="lineno">   37</span>    lang=wikipediaurl[0:wikipediaurl.find(<span class="stringliteral">&quot;.&quot;</span>)].replace(<span class="stringliteral">&quot;https://&quot;</span>,<span class="stringliteral">&quot;&quot;</span>).replace(<span class="stringliteral">&quot;http://&quot;</span>,<span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><span class="lineno">   38</span>    resturl=wikipediaurl[0:wikipediaurl.rfind(<span class="stringliteral">&quot;/wiki/&quot;</span>)]</div>
-<div class="line"><span class="lineno">   39</span>    resolveurl=f<span class="stringliteral">&quot;{resturl}/w/api.php?action=query&amp;prop=pageprops&amp;ppprop=wikibase_item&amp;redirects=1&amp;format=json&amp;titles={pagename}&quot;</span></div>
-<div class="line"><span class="lineno">   40</span>    qid=<span class="keywordtype">None</span></div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">try</span>:</div>
-<div class="line"><span class="lineno">   42</span>        res=requests.get(resolveurl)</div>
-<div class="line"><span class="lineno">   43</span>        resjson=json.loads(res.text)</div>
-<div class="line"><span class="lineno">   44</span>        pagesres=resjson[<span class="stringliteral">&quot;query&quot;</span>][<span class="stringliteral">&quot;pages&quot;</span>]</div>
-<div class="line"><span class="lineno">   45</span>        print(pagesres)</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">for</span> pres <span class="keywordflow">in</span> pagesres:</div>
-<div class="line"><span class="lineno">   48</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;pageprops&quot;</span> <span class="keywordflow">in</span> pagesres[pres]:</div>
-<div class="line"><span class="lineno">   49</span>                qid=pagesres[pres][<span class="stringliteral">&quot;pageprops&quot;</span>][<span class="stringliteral">&quot;wikibase_item&quot;</span>]</div>
-<div class="line"><span class="lineno">   50</span>            <span class="keywordflow">break</span></div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">except</span>:</div>
-<div class="line"><span class="lineno">   52</span>        print(<span class="stringliteral">&quot;error&quot;</span>)</div>
-<div class="line"><span class="lineno">   53</span>    print(qid)</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> qid!=<span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> {<span class="stringliteral">&quot;qid&quot;</span>:f<span class="stringliteral">&quot;http://www.wikidata.org/entity/{qid}&quot;</span>,<span class="stringliteral">&quot;label&quot;</span>:pagename.replace(<span class="stringliteral">&quot;_&quot;</span>,<span class="stringliteral">&quot; &quot;</span>),<span class="stringliteral">&quot;lang&quot;</span>:lang}</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> qid</div>
-<div class="line"><span class="lineno">   57</span> </div>
-<div class="line"><span class="lineno">   58</span> </div>
-<div class="line"><span class="lineno">   59</span> </div>
+<div class="fragment"><div class="line"><span class="lineno">   42</span><span class="keyword">def </span>resolveWikidataIDFromArticleName(wikipediaurl):</div>
+<div class="line"><span class="lineno">   43</span>    pagename=wikipediaurl[wikipediaurl.rfind(<span class="stringliteral">&quot;wiki/&quot;</span>)+5:]</div>
+<div class="line"><span class="lineno">   44</span>    lang=wikipediaurl[0:wikipediaurl.find(<span class="stringliteral">&quot;.&quot;</span>)].replace(<span class="stringliteral">&quot;https://&quot;</span>,<span class="stringliteral">&quot;&quot;</span>).replace(<span class="stringliteral">&quot;http://&quot;</span>,<span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><span class="lineno">   45</span>    resturl=wikipediaurl[0:wikipediaurl.rfind(<span class="stringliteral">&quot;/wiki/&quot;</span>)]</div>
+<div class="line"><span class="lineno">   46</span>    resolveurl=f<span class="stringliteral">&quot;{resturl}/w/api.php?action=query&amp;prop=pageprops&amp;ppprop=wikibase_item&amp;redirects=1&amp;format=json&amp;titles={pagename}&quot;</span></div>
+<div class="line"><span class="lineno">   47</span>    qid=<span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">try</span>:</div>
+<div class="line"><span class="lineno">   49</span>        res=requests.get(resolveurl)</div>
+<div class="line"><span class="lineno">   50</span>        resjson=json.loads(res.text)</div>
+<div class="line"><span class="lineno">   51</span>        pagesres=resjson[<span class="stringliteral">&quot;query&quot;</span>][<span class="stringliteral">&quot;pages&quot;</span>]</div>
+<div class="line"><span class="lineno">   52</span>        print(pagesres)</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">for</span> pres <span class="keywordflow">in</span> pagesres:</div>
+<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">if</span> <span class="stringliteral">&quot;pageprops&quot;</span> <span class="keywordflow">in</span> pagesres[pres]:</div>
+<div class="line"><span class="lineno">   56</span>                qid=pagesres[pres][<span class="stringliteral">&quot;pageprops&quot;</span>][<span class="stringliteral">&quot;wikibase_item&quot;</span>]</div>
+<div class="line"><span class="lineno">   57</span>            <span class="keywordflow">break</span></div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">except</span>:</div>
+<div class="line"><span class="lineno">   59</span>        print(<span class="stringliteral">&quot;error&quot;</span>)</div>
+<div class="line"><span class="lineno">   60</span>    print(qid)</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">if</span> qid!=<span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">return</span> {<span class="stringliteral">&quot;qid&quot;</span>:f<span class="stringliteral">&quot;http://www.wikidata.org/entity/{qid}&quot;</span>,<span class="stringliteral">&quot;label&quot;</span>:pagename.replace(<span class="stringliteral">&quot;_&quot;</span>,<span class="stringliteral">&quot; &quot;</span>),<span class="stringliteral">&quot;lang&quot;</span>:lang}</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">return</span> qid</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -278,21 +290,21 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><span class="lineno">   20</span><span class="keyword">def </span>resolveWildcardPath(thepath):</div>
-<div class="line"><span class="lineno">   21</span>    result = []</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">if</span> <span class="stringliteral">&quot;/*&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> thepath:</div>
-<div class="line"><span class="lineno">   23</span>        result.append(thepath)</div>
-<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">return</span> result</div>
-<div class="line"><span class="lineno">   25</span>    print(thepath)</div>
-<div class="line"><span class="lineno">   26</span>    normpath = thepath.replace(<span class="stringliteral">&quot;*&quot;</span>, <span class="stringliteral">&quot;&quot;</span>)</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">if</span> os.path.exists(normpath):</div>
-<div class="line"><span class="lineno">   28</span>        files = os.listdir(normpath)</div>
-<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">for</span> file <span class="keywordflow">in</span> files:</div>
-<div class="line"><span class="lineno">   30</span>            print(file)</div>
-<div class="line"><span class="lineno">   31</span>            <span class="keywordflow">if</span> file.endswith(<span class="stringliteral">&quot;.ttl&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.owl&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.ttl&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.n3&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.nt&quot;</span>):</div>
-<div class="line"><span class="lineno">   32</span>                result.append(f<span class="stringliteral">&quot;{normpath}{file}&quot;</span>)</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> result</div>
-<div class="line"><span class="lineno">   34</span> </div>
+<div class="fragment"><div class="line"><span class="lineno">   27</span><span class="keyword">def </span>resolveWildcardPath(thepath):</div>
+<div class="line"><span class="lineno">   28</span>    result = []</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> <span class="stringliteral">&quot;/*&quot;</span> <span class="keywordflow">not</span> <span class="keywordflow">in</span> thepath:</div>
+<div class="line"><span class="lineno">   30</span>        result.append(thepath)</div>
+<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">return</span> result</div>
+<div class="line"><span class="lineno">   32</span>    print(thepath)</div>
+<div class="line"><span class="lineno">   33</span>    normpath = thepath.replace(<span class="stringliteral">&quot;*&quot;</span>, <span class="stringliteral">&quot;&quot;</span>)</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">if</span> os.path.exists(normpath):</div>
+<div class="line"><span class="lineno">   35</span>        files = os.listdir(normpath)</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">for</span> file <span class="keywordflow">in</span> files:</div>
+<div class="line"><span class="lineno">   37</span>            print(file)</div>
+<div class="line"><span class="lineno">   38</span>            <span class="keywordflow">if</span> file.endswith(<span class="stringliteral">&quot;.ttl&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.owl&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.ttl&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.n3&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.nt&quot;</span>):</div>
+<div class="line"><span class="lineno">   39</span>                result.append(f<span class="stringliteral">&quot;{normpath}{file}&quot;</span>)</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keywordflow">return</span> result</div>
+<div class="line"><span class="lineno">   41</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -479,6 +491,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a17a4e6624e72d394b7585efd15ab52c9" name="a17a4e6624e72d394b7585efd15ab52c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a4e6624e72d394b7585efd15ab52c9">&#9670;&#160;</a></span>EPSG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EPSG = Namespace(&quot;http://www.opengis.net/def/crs/EPSG/0/&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a633de4b0c14ca52ea2432a3c8a5c4c31" name="a633de4b0c14ca52ea2432a3c8a5c4c31"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a633de4b0c14ca52ea2432a3c8a5c4c31">&#9670;&#160;</a></span>f</h2>
 
@@ -543,6 +569,20 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">g = Graph()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeec252296f7396f2af3303f8594e686b" name="aeec252296f7396f2af3303f8594e686b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeec252296f7396f2af3303f8594e686b">&#9670;&#160;</a></span>GEOSPARQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GEOSPARQL = Namespace(&quot;http://www.opengis.net/ont/geosparql#&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -647,6 +687,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a823b555efa179ffa233bad0d72e59ce3" name="a823b555efa179ffa233bad0d72e59ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a823b555efa179ffa233bad0d72e59ce3">&#9670;&#160;</a></span>OM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OM = Namespace(&quot;http://www.ontology-of-units-of-measure.org/resource/om-2/&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af58ddf878949a0de6c63ee928f07c71e" name="af58ddf878949a0de6c63ee928f07c71e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af58ddf878949a0de6c63ee928f07c71e">&#9670;&#160;</a></span>ownvocabg</h2>
 
@@ -703,6 +757,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a8a80f847c6adfd9a737b20ec3fdb803a" name="a8a80f847c6adfd9a737b20ec3fdb803a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a80f847c6adfd9a737b20ec3fdb803a">&#9670;&#160;</a></span>SF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SF = Namespace(&quot;http://www.opengis.net/ont/sf#&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a36bb54e5ac7884da695062ef35a50f93" name="a36bb54e5ac7884da695062ef35a50f93"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a36bb54e5ac7884da695062ef35a50f93">&#9670;&#160;</a></span>sort_keys</h2>
 
@@ -753,6 +821,34 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">unknown</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab51be4893d90b47176dbfcac18f96eb9" name="ab51be4893d90b47176dbfcac18f96eb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab51be4893d90b47176dbfcac18f96eb9">&#9670;&#160;</a></span>VANN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VANN = Namespace(&quot;http://purl.org/vocab/vann/&quot;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfe1492422d4bae110f0f4dbc8a3a776" name="adfe1492422d4bae110f0f4dbc8a3a776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfe1492422d4bae110f0f4dbc8a3a776">&#9670;&#160;</a></span>VOAF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOAF = Namespace(&quot;http://purl.org/vocommons/voaf#&quot;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
