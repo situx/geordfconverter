@@ -9,44 +9,45 @@ class BibTexToRDF:
         bibmap={}
         dsuri=None
         for entry in entries:
-            bibmap[str(entry["ID"])[0:str(entry["ID"]).rfind("_")].replace("_"," ").strip()]=ns+"bib_"+str(entry["ID"])
-            g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(str(typeToURI[entry["ENTRYTYPE"]]))))
+            biburi = f'{ns}bib_{entry["ID"]}'
+            bibmap[str(entry["ID"])[0:str(entry["ID"]).rfind("_")].replace("_"," ").strip()]=biburi
+            g.add((URIRef(biburi), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"),URIRef(str(typeToURI[entry["ENTRYTYPE"]]))))
             if creatormode!=None:
-               g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://www.w3.org/ns/dcat#Dataset")))
-               dsuri=ns+"bib_"+str(entry["ID"])
+               g.add((URIRef(biburi), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://www.w3.org/ns/dcat#Dataset")))
+               dsuri=biburi
             else:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef(str(typeToURI[entry["ENTRYTYPE"]]))))
-            g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/elements/1.1/title"), Literal(str(entry["title"]).replace("\"","'"),lang="en"))) 
+                g.add((URIRef(biburi), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef(str(typeToURI[entry["ENTRYTYPE"]]))))
+            g.add((URIRef(biburi), URIRef("http://purl.org/dc/elements/1.1/title"), Literal(str(entry["title"]).replace("\"","'"),lang="en")))
             if "issn" in entry:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/issn"), Literal(str(entry["issn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))
+                g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/issn"), Literal(str(entry["issn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))
             if "eissn" in entry:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"]), URIRef("http://purl.org/ontology/bibo/eissn"), Literal(str(entry["eissn"]),datatype="http://www.w3.org/2001/XMLSchema#string"))))
+                g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/eissn"), Literal(str(entry["eissn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))
             if "isbn" in entry:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/isbn"), Literal(str(entry["isbn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))              
+                g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/isbn"), Literal(str(entry["isbn"]),datatype="http://www.w3.org/2001/XMLSchema#string")))
             if "number" in entry:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/number"), Literal(str(entry["number"]),datatype="http://www.w3.org/2001/XMLSchema#integer")))
+                g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/number"), Literal(str(entry["number"]),datatype="http://www.w3.org/2001/XMLSchema#integer")))
             if "volume" in entry:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/volume"), Literal(str(entry["volume"]),datatype="http://www.w3.org/2001/XMLSchema#string")))
+                g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/volume"), Literal(str(entry["volume"]),datatype="http://www.w3.org/2001/XMLSchema#string")))
             if "publisher" in entry:
                 if str(entry["publisher"]) in publishers:
-                    g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/terms/publisher"), URIRef(publishers[str(entry["publisher"])])))
+                    g.add((URIRef(biburi), URIRef("http://purl.org/dc/terms/publisher"), URIRef(publishers[str(entry["publisher"])])))
                     g.add((URIRef(publishers[str(entry["publisher"])]), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://xmlns.com/foaf/0.1/Organization")))
                     g.add((URIRef(publishers[str(entry["publisher"])]), URIRef("http://www.w3.org/2000/01/rdf-schema#label"), Literal(str(entry["publisher"]),lang="en")))
                 else:
-                    g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/terms/publisher"), Literal(str(entry["publisher"]))))
+                    g.add((URIRef(biburi), URIRef("http://purl.org/dc/terms/publisher"), Literal(str(entry["publisher"]))))
             if "journal" in entry:
                 if entry["journal"] in issuers:
-                    g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/issuer"), URIRef(issuers[str(entry["journal"])])))
+                    g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/issuer"), URIRef(issuers[str(entry["journal"])])))
                     g.add((URIRef(issuers[str(entry["journal"])]), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://purl.org/ontology/bibo/Journal")))
                     g.add((URIRef(issuers[str(entry["journal"])]),URIRef("http://www.w3.org/2000/01/rdf-schema#label"), Literal(str(entry["journal"]),lang="en")))
                 else:
-                    g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/issuer"), Literal(str(entry["journal"]))))
+                    g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/issuer"), Literal(str(entry["journal"]))))
             if "pages" in entry:
                 if "--" in entry["pages"]:
                     pagestart=entry["pages"][0:entry["pages"].rfind("--")]
                     pageend=entry["pages"][entry["pages"].rfind("--")+2:]
-                    g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/pageStart"), Literal(str(pagestart),datatype="http://www.w3.org/2001/XMLSchema#integer")))
-                    g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/pageEnd"), Literal(str(pageend),datatype="http://www.w3.org/2001/XMLSchema#integer")))
+                    g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/pageStart"), Literal(str(pagestart),datatype="http://www.w3.org/2001/XMLSchema#integer")))
+                    g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/pageEnd"), Literal(str(pageend),datatype="http://www.w3.org/2001/XMLSchema#integer")))
             if "and" in entry["author"]:
                 for author in entry["author"].split("and"):
                     if "," in author:
@@ -54,24 +55,26 @@ class BibTexToRDF:
                         authoruri=authoruri.replace(" ","_")
                         authoruri=authoruri.replace("__","_")
                         authoruri=authoruri.strip()
-                        g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://xmlns.com/foaf/0.1/Person")))
-                        g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://www.w3.org/2000/01/rdf-schema#label"), Literal(str(author).strip(),lang="en")))
-                        g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://xmlns.com/foaf/0.1/family_Name"), Literal(str(author)[0:str(author).rfind(',')].strip(),lang="en")))
-                        g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://xmlns.com/foaf/0.1/firstName"), Literal(str(author)[str(author).rfind(',')+1:].strip(),lang="en")))
-                        g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/elements/1.1/creator"), URIRef(ns+"author_"+str(authoruri))))
+                        authoriri = f"{ns}author_{authoruri}"
+                        g.add((URIRef(authoriri), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://xmlns.com/foaf/0.1/Person")))
+                        g.add((URIRef(authoriri), URIRef("http://www.w3.org/2000/01/rdf-schema#label"), Literal(str(author).strip(),lang="en")))
+                        g.add((URIRef(authoriri), URIRef("http://xmlns.com/foaf/0.1/family_Name"), Literal(str(author)[0:str(author).rfind(',')].strip(),lang="en")))
+                        g.add((URIRef(authoriri), URIRef("http://xmlns.com/foaf/0.1/firstName"), Literal(str(author)[str(author).rfind(',')+1:].strip(),lang="en")))
+                        g.add((URIRef(biburi), URIRef("http://purl.org/dc/elements/1.1/creator"), URIRef(authoriri)))
             else:
                 authoruri=str(entry["author"]).replace(","," ").strip()
                 authoruri=authoruri.replace(" ","_")
                 authoruri=authoruri.replace("__","_")
                 authoruri=authoruri.strip()
-                g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://xmlns.com/foaf/0.1/Person")))
-                g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://www.w3.org/2000/01/rdf-schema#label"), Literal(str(entry["author"]).strip(),lang="en")))
-                g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://xmlns.com/foaf/0.1/family_Name"), Literal(str(entry["author"])[0:str(entry["author"]).rfind(',')].strip(),lang="en")))
-                g.add((URIRef(ns+"author_"+str(authoruri)), URIRef("http://xmlns.com/foaf/0.1/firstName"), Literal(str(entry["author"])[str(entry["author"]).rfind(',')+1:].strip(),lang="en")))
-                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/elements/1.1/creator"), URIRef(ns+"author_"+str(authoruri))))
-            g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/dc/elements/1.1/created"), Literal(str(entry["year"]), datatype="http://www.w3.org/2001/XMLSchema#gYear")))
+                authoriri = f"{ns}author_{authoruri}"
+                g.add((URIRef(authoriri), URIRef("http://www.w3.org/1999/02/22-rdf-syntax-ns#type"), URIRef("http://xmlns.com/foaf/0.1/Person")))
+                g.add((URIRef(authoriri), URIRef("http://www.w3.org/2000/01/rdf-schema#label"), Literal(str(entry["author"]).strip(),lang="en")))
+                g.add((URIRef(authoriri), URIRef("http://xmlns.com/foaf/0.1/family_Name"), Literal(str(entry["author"])[0:str(entry["author"]).rfind(',')].strip(),lang="en")))
+                g.add((URIRef(authoriri), URIRef("http://xmlns.com/foaf/0.1/firstName"), Literal(str(entry["author"])[str(entry["author"]).rfind(',')+1:].strip(),lang="en")))
+                g.add((URIRef(biburi), URIRef("http://purl.org/dc/elements/1.1/creator"), URIRef(authoriri)))
+            g.add((URIRef(biburi), URIRef("http://purl.org/dc/elements/1.1/created"), Literal(str(entry["year"]), datatype="http://www.w3.org/2001/XMLSchema#gYear")))
             if "doi" in entry:
-                g.add((URIRef(ns+"bib_"+str(entry["ID"])), URIRef("http://purl.org/ontology/bibo/doi"), Literal(str(entry["doi"]).replace("\\_","_"),datatype="http://www.w3.org/2001/XMLSchema#string")))
+                g.add((URIRef(biburi), URIRef("http://purl.org/ontology/bibo/doi"), Literal(str(entry["doi"]).replace("\\_","_"),datatype="http://www.w3.org/2001/XMLSchema#string")))
     
         return {"triples":g,"bibmap":bibmap,"dsuri":dsuri}
 
