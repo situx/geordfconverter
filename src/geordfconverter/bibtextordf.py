@@ -1,3 +1,5 @@
+from rdflib import URIRef, Literal
+
 class BibTexToRDF:
 
     refnotfound=[]
