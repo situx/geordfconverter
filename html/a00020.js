@@ -16,7 +16,6 @@ var a00020 =
     [ "ddf", "a00020.html#a9d51c3e2c3b198efac56ebc315788f82", null ],
     [ "default", "a00020.html#affb1327b18bf08a379d19eef89cf1ed1", null ],
     [ "df", "a00020.html#ab52c96bea30646abf8170f333bbd42b9", null ],
-    [ "encoding", "a00020.html#ab1000d1f2ea9878f60bc119650013894", null ],
     [ "f", "a00020.html#a633de4b0c14ca52ea2432a3c8a5c4c31", null ],
     [ "False", "a00020.html#a36cde68b055f3f2ee671020af4ccf4e2", null ],
     [ "filestoprocess", "a00020.html#a8b051267830d5e674ca02086923a6163", null ],

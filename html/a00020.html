@@ -200,15 +200,13 @@ Variables</h2></td></tr>
 <tr class="separator:a07fb4aa68f2cccb6c2270a677e717767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a819f758c5a41224b61ecc8f80ece4fe8" id="r_a819f758c5a41224b61ecc8f80ece4fe8"><td class="memItemLeft" align="right" valign="top">dict&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a819f758c5a41224b61ecc8f80ece4fe8">publishers</a> = {}</td></tr>
 <tr class="separator:a819f758c5a41224b61ecc8f80ece4fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1000d1f2ea9878f60bc119650013894" id="r_ab1000d1f2ea9878f60bc119650013894"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ab1000d1f2ea9878f60bc119650013894">encoding</a></td></tr>
-<tr class="separator:ab1000d1f2ea9878f60bc119650013894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a332321cf8ac0eee864af80ba757e41b0" id="r_a332321cf8ac0eee864af80ba757e41b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a332321cf8ac0eee864af80ba757e41b0">bib_database</a> = bibtexparser.load(bibtex_file)</td></tr>
+<tr class="memitem:a332321cf8ac0eee864af80ba757e41b0" id="r_a332321cf8ac0eee864af80ba757e41b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a332321cf8ac0eee864af80ba757e41b0">bib_database</a> = bibtexparser.parse_file(args.bibtex[0])</td></tr>
 <tr class="separator:a332321cf8ac0eee864af80ba757e41b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35674854ee8c3fd5a54d553163e800a6" id="r_a35674854ee8c3fd5a54d553163e800a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a35674854ee8c3fd5a54d553163e800a6">ns</a> = <a class="el" href="a00020.html#a398f80640c25046b3a62204fa4756242">typemap</a>[&quot;namespace&quot;]</td></tr>
 <tr class="separator:a35674854ee8c3fd5a54d553163e800a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2cb5b2b05d398f5e6035995dbbd78cb" id="r_ae2cb5b2b05d398f5e6035995dbbd78cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#ae2cb5b2b05d398f5e6035995dbbd78cb">nsont</a> = <a class="el" href="a00020.html#a398f80640c25046b3a62204fa4756242">typemap</a>[&quot;attnamespace&quot;]</td></tr>
 <tr class="separator:ae2cb5b2b05d398f5e6035995dbbd78cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9278e780f557416c9d1fae5f283478f3" id="r_a9278e780f557416c9d1fae5f283478f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a9278e780f557416c9d1fae5f283478f3">bibres</a> = <a class="el" href="a00026.html#ab481397e1cc49d160820026804c30fac">BibTexToRDF.bibtexToRDF</a>(<a class="el" href="a00020.html#a73c18c59a39b18382081ec00bb456d43">g</a>,bib_database.entries,<a class="el" href="a00020.html#a35674854ee8c3fd5a54d553163e800a6">ns</a>,<a class="el" href="a00020.html#ae2cb5b2b05d398f5e6035995dbbd78cb">nsont</a>,<a class="el" href="a00020.html#a07fb4aa68f2cccb6c2270a677e717767">issuers</a>,<a class="el" href="a00020.html#a819f758c5a41224b61ecc8f80ece4fe8">publishers</a>,<a class="el" href="a00020.html#a36cde68b055f3f2ee671020af4ccf4e2">False</a>)</td></tr>
+<tr class="memitem:a9278e780f557416c9d1fae5f283478f3" id="r_a9278e780f557416c9d1fae5f283478f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a9278e780f557416c9d1fae5f283478f3">bibres</a> = <a class="el" href="a00026.html#ab481397e1cc49d160820026804c30fac">BibTexToRDF.bibtexToRDF</a>(<a class="el" href="a00020.html#a73c18c59a39b18382081ec00bb456d43">g</a>, bib_database.entries, <a class="el" href="a00020.html#a35674854ee8c3fd5a54d553163e800a6">ns</a>, <a class="el" href="a00020.html#ae2cb5b2b05d398f5e6035995dbbd78cb">nsont</a>, <a class="el" href="a00020.html#a07fb4aa68f2cccb6c2270a677e717767">issuers</a>, <a class="el" href="a00020.html#a819f758c5a41224b61ecc8f80ece4fe8">publishers</a>, <a class="el" href="a00020.html#a36cde68b055f3f2ee671020af4ccf4e2">False</a>)</td></tr>
 <tr class="separator:a9278e780f557416c9d1fae5f283478f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a633de4b0c14ca52ea2432a3c8a5c4c31" id="r_a633de4b0c14ca52ea2432a3c8a5c4c31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html#a633de4b0c14ca52ea2432a3c8a5c4c31">f</a></td></tr>
 <tr class="separator:a633de4b0c14ca52ea2432a3c8a5c4c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,7 +239,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   36</span>    pagename=wikipediaurl[wikipediaurl.rfind(<span class="stringliteral">&quot;wiki/&quot;</span>)+5:]</div>
 <div class="line"><span class="lineno">   37</span>    lang=wikipediaurl[0:wikipediaurl.find(<span class="stringliteral">&quot;.&quot;</span>)].replace(<span class="stringliteral">&quot;https://&quot;</span>,<span class="stringliteral">&quot;&quot;</span>).replace(<span class="stringliteral">&quot;http://&quot;</span>,<span class="stringliteral">&quot;&quot;</span>)</div>
 <div class="line"><span class="lineno">   38</span>    resturl=wikipediaurl[0:wikipediaurl.rfind(<span class="stringliteral">&quot;/wiki/&quot;</span>)]</div>
-<div class="line"><span class="lineno">   39</span>    resolveurl=resturl+<span class="stringliteral">&quot;/w/api.php?action=query&amp;prop=pageprops&amp;ppprop=wikibase_item&amp;redirects=1&amp;format=json&amp;titles=&quot;</span>+pagename</div>
+<div class="line"><span class="lineno">   39</span>    resolveurl=f<span class="stringliteral">&quot;{resturl}/w/api.php?action=query&amp;prop=pageprops&amp;ppprop=wikibase_item&amp;redirects=1&amp;format=json&amp;titles={pagename}&quot;</span></div>
 <div class="line"><span class="lineno">   40</span>    qid=<span class="keywordtype">None</span></div>
 <div class="line"><span class="lineno">   41</span>    <span class="keywordflow">try</span>:</div>
 <div class="line"><span class="lineno">   42</span>        res=requests.get(resolveurl)</div>
@@ -257,7 +255,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   52</span>        print(<span class="stringliteral">&quot;error&quot;</span>)</div>
 <div class="line"><span class="lineno">   53</span>    print(qid)</div>
 <div class="line"><span class="lineno">   54</span>    <span class="keywordflow">if</span> qid!=<span class="keywordtype">None</span>:</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> {<span class="stringliteral">&quot;qid&quot;</span>:<span class="stringliteral">&quot;http://www.wikidata.org/entity/&quot;</span>+qid,<span class="stringliteral">&quot;label&quot;</span>:pagename.replace(<span class="stringliteral">&quot;_&quot;</span>,<span class="stringliteral">&quot; &quot;</span>),<span class="stringliteral">&quot;lang&quot;</span>:lang}</div>
+<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> {<span class="stringliteral">&quot;qid&quot;</span>:f<span class="stringliteral">&quot;http://www.wikidata.org/entity/{qid}&quot;</span>,<span class="stringliteral">&quot;label&quot;</span>:pagename.replace(<span class="stringliteral">&quot;_&quot;</span>,<span class="stringliteral">&quot; &quot;</span>),<span class="stringliteral">&quot;lang&quot;</span>:lang}</div>
 <div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> qid</div>
 <div class="line"><span class="lineno">   57</span> </div>
 <div class="line"><span class="lineno">   58</span> </div>
@@ -292,7 +290,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">   29</span>        <span class="keywordflow">for</span> file <span class="keywordflow">in</span> files:</div>
 <div class="line"><span class="lineno">   30</span>            print(file)</div>
 <div class="line"><span class="lineno">   31</span>            <span class="keywordflow">if</span> file.endswith(<span class="stringliteral">&quot;.ttl&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.owl&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.ttl&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.n3&quot;</span>) <span class="keywordflow">or</span> file.endswith(<span class="stringliteral">&quot;.nt&quot;</span>):</div>
-<div class="line"><span class="lineno">   32</span>                result.append(normpath + file)</div>
+<div class="line"><span class="lineno">   32</span>                result.append(f<span class="stringliteral">&quot;{normpath}{file}&quot;</span>)</div>
 <div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> result</div>
 <div class="line"><span class="lineno">   34</span> </div>
 </div><!-- fragment -->
@@ -362,7 +360,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bib_database = bibtexparser.load(bibtex_file)</td>
+          <td class="memname">bib_database = bibtexparser.parse_file(args.bibtex[0])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -390,7 +388,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bibres = <a class="el" href="a00026.html#ab481397e1cc49d160820026804c30fac">BibTexToRDF.bibtexToRDF</a>(<a class="el" href="a00020.html#a73c18c59a39b18382081ec00bb456d43">g</a>,bib_database.entries,<a class="el" href="a00020.html#a35674854ee8c3fd5a54d553163e800a6">ns</a>,<a class="el" href="a00020.html#ae2cb5b2b05d398f5e6035995dbbd78cb">nsont</a>,<a class="el" href="a00020.html#a07fb4aa68f2cccb6c2270a677e717767">issuers</a>,<a class="el" href="a00020.html#a819f758c5a41224b61ecc8f80ece4fe8">publishers</a>,<a class="el" href="a00020.html#a36cde68b055f3f2ee671020af4ccf4e2">False</a>)</td>
+          <td class="memname">bibres = <a class="el" href="a00026.html#ab481397e1cc49d160820026804c30fac">BibTexToRDF.bibtexToRDF</a>(<a class="el" href="a00020.html#a73c18c59a39b18382081ec00bb456d43">g</a>, bib_database.entries, <a class="el" href="a00020.html#a35674854ee8c3fd5a54d553163e800a6">ns</a>, <a class="el" href="a00020.html#ae2cb5b2b05d398f5e6035995dbbd78cb">nsont</a>, <a class="el" href="a00020.html#a07fb4aa68f2cccb6c2270a677e717767">issuers</a>, <a class="el" href="a00020.html#a819f758c5a41224b61ecc8f80ece4fe8">publishers</a>, <a class="el" href="a00020.html#a36cde68b055f3f2ee671020af4ccf4e2">False</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -475,20 +473,6 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">df = pd.read_csv(path, sep=args.sepchar[0])</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab1000d1f2ea9878f60bc119650013894" name="ab1000d1f2ea9878f60bc119650013894"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1000d1f2ea9878f60bc119650013894">&#9670;&#160;</a></span>encoding</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">encoding</td>
         </tr>
       </table>
 </div><div class="memdoc">
