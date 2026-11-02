@@ -334,7 +334,7 @@ Static Public Attributes</h2></td></tr>
 <div class="line"><span class="lineno">  229</span>                    <span class="keywordflow">else</span>:</div>
 <div class="line"><span class="lineno">  230</span>                        g.add((curterm, theiri, URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue])))</div>
 <div class="line"><span class="lineno">  231</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]),RDFS.label,Literal(thevalue,lang=<span class="stringliteral">&quot;en&quot;</span>)))</div>
-<div class="line"><span class="lineno">  232</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue][<span class="stringliteral">&quot;uri&quot;</span>]), RDF.type, RDFS.Resource))</div>
+<div class="line"><span class="lineno">  232</span>                        g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]), RDF.type, RDFS.Resource))</div>
 <div class="line"><span class="lineno">  233</span>                        <span class="keywordflow">if</span> <span class="stringliteral">&quot;concept&quot;</span> <span class="keywordflow">in</span> curcol:</div>
 <div class="line"><span class="lineno">  234</span>                            g.add((URIRef(curcol[<span class="stringliteral">&quot;valuemapping&quot;</span>][thevalue]),RDF.type,URIRef(curcol[<span class="stringliteral">&quot;concept&quot;</span>])))</div>
 <div class="line"><span class="lineno">  235</span>                <span class="keywordflow">else</span>:</div>
