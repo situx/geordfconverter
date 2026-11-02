@@ -1,0 +1,713 @@
+from rdflib import Graph, URIRef, Literal
+from rdflib.namespace import RDF, RDFS, OWL, XSD, DC, PROV, SKOS, GEO, VOID
+import argparse
+import bibtexparser
+from lxml import etree
+import fastkml.geometry
+from pygml.v32 import encode_v32
+import pandas as pd
+import geopandas as gpd
+import shapely
+import os
+import io
+import os.path
+import json
+import requests
+from convertcrs import ConvertCRS
+from bibtextordf import BibTexToRDF
+
+
+def resolveWildcardPath(thepath):
+    result = []
+    if "/*" not in thepath:
+        result.append(thepath)
+        return result
+    print(thepath)
+    normpath = thepath.replace("*", "")
+    if os.path.exists(normpath):
+        files = os.listdir(normpath)
+        for file in files:
+            print(file)
+            if file.endswith(".ttl") or file.endswith(".owl") or file.endswith(".ttl") or file.endswith(".n3") or file.endswith(".nt"):
+                result.append(normpath + file)
+    return result
+
+def resolveWikidataIDFromArticleName(wikipediaurl):
+    pagename=wikipediaurl[wikipediaurl.rfind("wiki/")+5:]
+    lang=wikipediaurl[0:wikipediaurl.find(".")].replace("https://","").replace("http://","")
+    resturl=wikipediaurl[0:wikipediaurl.rfind("/wiki/")]
+    resolveurl=resturl+"/w/api.php?action=query&prop=pageprops&ppprop=wikibase_item&redirects=1&format=json&titles="+pagename
+    qid=None
+    try:
+        res=requests.get(resolveurl)
+        resjson=json.loads(res.text)
+        pagesres=resjson["query"]["pages"]
+        print(pagesres)
+
+        for pres in pagesres:
+            if "pageprops" in pagesres[pres]:
+                qid=pagesres[pres]["pageprops"]["wikibase_item"]
+            break
+    except:
+        print("error")
+    print(qid)
+    if qid!=None:
+        return {"qid":"http://www.wikidata.org/entity/"+qid,"label":pagename.replace("_"," "),"lang":lang}
+    return qid
+
+
+
+class RDFConverter:
+
+    latlonpairs = [["lat", "lon"], ["lat", "long"], ["latitude", "longitude"], ["LAT", "LON"], ["Lat", "Lon"], ["Lat", "Long"], ["LAT", "LONG"], ["Latitude", "Longitude"], ["LATITUDE", "LONGITUDE"]]
+
+    unitprops={"QUDT":{"hasUnit":"http://qudt.org/schema/qudt/hasUnit"},"OM":{"hasUnit":"http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"}}
+    
+    def detectColumnType(self,resultmap,columnname=""):
+        intcount,doublecount,datecount,uricount = 0,0,0,0
+        stringcount,tokencount=0,0
+        uniquestrings=set()
+        for res in resultmap:
+            if res not in resultmap or resultmap[res] is None or resultmap[res] == "":
+                continue
+            resstr=str(resultmap[res])
+            uniquestrings.add(resstr)
+            tokencount+=1
+            if resstr.isdigit():
+                intcount += 1
+                continue
+            try:
+                float(resstr)
+                doublecount += 1
+                continue
+            except:
+                pass
+            if resstr.startswith("http"):
+                uricount+=1
+                continue
+            stringcount+=1
+        bcheck=self.checkForBooleanAsString(uniquestrings)
+        if bcheck!=False:
+            return {"range": "xsd:boolean","prop":"data", "valuemapping":bcheck, "unique": (tokencount == len(uniquestrings)),"category":False}
+        if intcount == len(resultmap):
+            return {"range": "xsd:integer","prop":"data", "unique": (tokencount == len(uniquestrings)),"category":False}
+        if doublecount == len(resultmap):
+            return {"range": "xsd:double","prop":"data", "unique": (tokencount == len(uniquestrings)),"category":False}
+        if datecount == len(resultmap):
+            return {"type": "range", "prop":"data","xsdtype": "xsd:date", "unique": (tokencount == len(uniquestrings)),"category":False}
+        if uricount == len(resultmap):
+            return {"range": "xsd:anyURI", "prop":"data","xsdtype": "xsd:anyURI", "unique": (tokencount == len(uniquestrings)),"category":False}
+        return {"range":"xsd:string","prop":"data","unique":(stringcount==len(uniquestrings)),"category":(stringcount <= len(uniquestrings))}
+
+
+    @staticmethod
+    def shortenURI(uri,ns=False):
+        if uri is not None:
+            if ns:
+                if "#" in uri:
+                    return uri[0:uri.rfind('#')+1]
+                if "/" in uri:
+                    return uri[0:uri.rfind('/')+1]
+            if uri.endswith("/"):
+                uri = uri[0:-1]
+            if not ns:
+                if "#" in uri:
+                    return uri[uri.rfind('#') + 1:]
+                if "/" in uri:
+                    return uri[uri.rfind('/') + 1:]
+            return uri
+        else:
+            return ""
+
+
+    ## Checks whether a set of unique strings matches a pair of boolean String representations.
+    #  @param uniquestrings The unique strings to investigate
+    #  @returns A dict of the mapping of String values to True and false or False if no mapping could be obtained
+    def checkForBooleanAsString(self,uniquestrings):
+        if len(uniquestrings)>2:
+            return False
+        pairs=[["yes","no"],["true","false"],["ja","nein"],["oui","non"],["on","off"],["Y","N"],["J","N"]]
+        for pair in pairs:
+            if (pair[0] in uniquestrings and pair[1] in uniquestrings) or (pair[0].upper() in uniquestrings and pair[1].upper() in uniquestrings):
+                return {pair[0]:True,pair[1]:False}
+        return False
+
+
+    def addPropertyToGraph(self,row,x,g,ns,curid,thecls,lang,curcol):
+        subclass=False
+        #print("THE GRAPH: "+str(len(g)))
+        if row!=None and x not in row:
+            return [g,False]
+        if row is None:
+            if "value" in curcol:
+                thevalue=curcol["value"]
+            else:
+                thevalue=""
+        else:
+            thevalue=row[x]
+        if thevalue=="" or (curcol["prop"]!="data" and str(thevalue)=="nan"):
+            return [g,subclass]
+        if "propiri" in curcol:
+            theiri = URIRef(curcol["propiri"])
+        else:
+            theiri = URIRef(ns + x)
+        if "proplabels" in curcol and "en" in curcol["proplabels"]:
+            propirilabel=str(curcol["proplabels"]["en"])
+        else:
+            propirilabel=str(x)
+        prefix=curcol.get("prefix","")
+        suffix=curcol.get("suffix","")
+        if curcol["prop"]=="data":
+            curlang=""
+            if "sepchar" in curcol:
+                spl=thevalue.split(curcol["sepchar"])
+            else:
+                spl=[thevalue]
+            if "lang" in curcol:
+               curlang=curcol["lang"]
+            unit=None
+            unitprop="http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit"
+            unithasvalue = "http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"
+            if "unit" in curcol:
+                unit=str(curcol["unit"]).replace("om:","http://www.ontology-of-units-of-measure.org/resource/om-2/").replace("qudt:","http://qudt.org/schema/qudt#")
+            for sp in spl:
+                if unit!=None:
+                    g.add((theiri, RDF.type,OWL.ObjectProperty))
+                    g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
+                    siri=RDFConverter.shortenURI(theiri)
+                    valueinstanceiri=curid+str("_")+str(siri)+"_value"
+                    g.add((URIRef(curid), theiri, URIRef(valueinstanceiri)))
+                    g.add((URIRef(valueinstanceiri),RDF.type,URIRef("http://www.ontology-of-units-of-measure.org/resource/om-2/Measure")))
+                    g.add((URIRef(valueinstanceiri), RDFS.label,Literal("Value Result of "+str(siri)+" for "+RDFConverter.shortenURI(str(curid)),lang="en")))
+                    g.add((URIRef(valueinstanceiri), URIRef(unitprop),URIRef(unit)))
+                    if "range" in curcol:
+                        g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
+                    else:
+                        g.add((URIRef(valueinstanceiri), URIRef(unithasvalue), Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string"))))
+                else:
+                    g.add((theiri, RDF.type,OWL.DatatypeProperty)) 
+                    g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
+                    if "range" in curcol:
+                        if curlang=="":
+                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef(
+                                curcol["range"].replace("xsd:", "http://www.w3.org/2001/XMLSchema#")))))
+                        else:
+                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), lang=curlang)))
+                    else:
+                        if curlang=="":
+                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), datatype=URIRef("http://www.w3.org/2001/XMLSchema#string"))))
+                        else:
+                            g.add((URIRef(curid), theiri, Literal(str(prefix)+str(sp)+str(suffix), lang=curlang)))
+            if "propiri" not in curcol:
+                ownvocabg.add((URIRef(theiri),RDF.type,OWL.DatatypeProperty))
+                ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
+        if curcol["prop"]=="obj":
+            concept=""
+            if "valuemapping" in curcol:
+                if thevalue in curcol["valuemapping"]:
+                    if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
+                        g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue]["uri"])))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, RDFS.Resource))
+                        if "labels" in curcol["valuemapping"][thevalue]:
+                            for lab in curcol["valuemapping"][thevalue]["labels"]:
+                                g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
+                        if "definition" in curcol["valuemapping"][thevalue]:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue]["definition"],lang="en")))
+                        if "concept" in curcol:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
+                    else:
+                        g.add((URIRef(curid), theiri, URIRef(curcol["valuemapping"][thevalue])))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, RDFS.Resource))
+                        if "concept" in curcol:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
+                else:
+                    if x not in miscolmappings:
+                        miscolmappings[x]={}
+                    if thevalue not in miscolmappings[x]:
+                        miscolmappings[x][thevalue]=0
+                    miscolmappings[x][thevalue]+=1
+            elif str(thevalue).startswith("http"):
+                g.add((theiri, RDF.type, OWL.ObjectProperty))
+                g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
+                g.add((URIRef(curid), theiri, URIRef(thevalue)))
+                if "concept" in curcol:
+                    g.add((URIRef(thevalue),RDF.type,URIRef(curcol["concept"])))
+            else:
+                g.add((URIRef(curid), theiri, Literal(thevalue,datatype=XSD.string)))
+            if "propiri" not in curcol:
+                ownvocabg.add((URIRef(theiri),RDF.type,OWL.ObjectProperty))
+                ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
+        if curcol["prop"]=="anno":
+            thelang="en"
+            if "lang" in curcol:
+                thelang=curcol["lang"]
+            g.add((theiri, RDF.type, OWL.AnnotationProperty))
+            g.add((theiri, RDFS.label, Literal(propirilabel, lang=thelang)))
+            if "lang" in curcol:
+                g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), lang=curcol["lang"])))
+            else:
+                g.add((URIRef(curid),theiri, Literal(str(prefix)+str(thevalue)+str(suffix), datatype=XSD.string)))
+            if "propiri" not in curcol:
+                ownvocabg.add((URIRef(theiri),RDF.type,OWL.AnnotationProperty))
+                ownvocabg.add((URIRef(theiri),RDFS.label,Literal(propirilabel,lang="en")))
+        if curcol["prop"] == "subclass":
+            if "valuemapping" in curcol:
+                if thevalue in curcol["valuemapping"]:
+                    if isinstance(curcol["valuemapping"][thevalue],dict) and "uri" in curcol["valuemapping"][thevalue]:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDFS.subClassOf, thecls))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]), RDF.type, OWL.Class))
+                        g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue]["uri"])))
+                        if "labels" in curcol["valuemapping"][thevalue]:
+                            for lab in curcol["valuemapping"][thevalue]["labels"]:
+                                g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDFS.label,Literal(curcol["valuemapping"][thevalue]["labels"][lab],lang=lab)))
+                        if "definition" in curcol["valuemapping"][thevalue]:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),SKOS.definition,Literal(curcol["valuemapping"][thevalue]["definition"],lang="en")))
+                        if "concept" in curcol:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]["uri"]),RDF.type,URIRef(curcol["concept"])))
+                    else:
+                        g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
+                        g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]), RDF.type, OWL.Class))
+                        g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang="en")))
+                        if "concept" in curcol:
+                            g.add((URIRef(curcol["valuemapping"][thevalue]),RDF.type,URIRef(curcol["concept"])))
+                else:
+                    if x not in miscolmappings:
+                        miscolmappings[x]={}
+                    if thevalue not in miscolmappings[x]:
+                        miscolmappings[x][thevalue]=0
+                    miscolmappings[x][thevalue]+=1
+                #g.add((URIRef(curcol["valuemapping"][thevalue]), RDFS.subClassOf, thecls))
+                #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
+                #g.add((URIRef(curid), RDF.type, URIRef(curcol["valuemapping"][thevalue])))
+                #g.add((URIRef(curcol["valuemapping"][thevalue]),RDFS.label,Literal(thevalue,lang=lang)))
+                subclass=True
+            else:
+                subclsuri=ns+thevalue.replace("/","").replace(" ","_")
+                g.add((URIRef(subclsuri), RDFS.subClassOf, thecls))
+                #g.add((URIRef(curcol["valuemapping"][row[x]]), RDFS.subClassOf, OWL.Class))
+                g.add((URIRef(curid), RDF.type, URIRef(subclsuri)))
+                g.add((URIRef(subclsuri),RDF.type,OWL.Class))
+                g.add((URIRef(subclsuri),RDFS.label,Literal(thevalue,lang=lang)))
+                subclass=True
+        return [g,subclass]
+
+
+    ## Processes a geometry value from a given colum, and models it usign the GeoSPARQL vocabulary in a variety of given literal types.
+    #  @param g The graph to add the result to
+    #  @param row The row of the geopandas dataframe to process
+    #  @param geometrycol The name of the geometry column
+    #  @param typemap the typemap of this processing step
+    #  @param curid The id of the current RDF intance
+    #  @param literaltypes A set or list of literaltypes to add to the knowledge graph
+    #  @returns The modified graph
+    def processGeometryColumn(self,g,row,geometrycol,typemap,curid,literaltypes=["WKT"]):
+        g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
+        g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].geom_type))))
+        g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].geom_type)), RDF.type, OWL.Class))
+        g.add((URIRef("http://www.opengis.net/ont/sf#" + str(row[geometrycol].geom_type)), RDFS.subClassOf,URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
+        g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid[str(curid).rfind("/")+1:]), lang="en")))
+        if "WKT" in literaltypes:
+            g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
+            if "epsg" in typemap:
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                    Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(row[geometrycol]),
+                            datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
+                    URIRef("http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]))))
+            else:
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                    Literal(str(row[geometrycol]), datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
+                    URIRef("http://www.opengis.net/def/crs/EPSG/0/4326")))
+        if "GEOJSON" in literaltypes:
+            g.add((URIRef("http://www.opengis.net/ont/geosparql#asGeoJSON"), RDF.type, OWL.DatatypeProperty))
+            if "epsg" in typemap:
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asGeoJSON"),
+                    Literal(str(shapely.to_geojson(shapely.from_wkt(str(row[geometrycol])))),
+                            datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral")))
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
+                    URIRef("http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]))))
+            else:
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asGeoJSON"),
+                    Literal(str(shapely.to_geojson(shapely.from_wkt(str(row[geometrycol])))), datatype="http://www.opengis.net/ont/geosparql#geoJSONLiteral")))
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
+                    URIRef("http://www.opengis.net/def/crs/EPSG/0/4326")))
+        if "WKB" in literaltypes:
+            g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKB"), RDF.type, OWL.DatatypeProperty))
+            if "epsg" in typemap:
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKB"),
+                    Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> " + str(shapely.to_wkb(shapely.from_wkt(str(row[geometrycol])))),
+                            datatype="http://www.opengis.net/ont/geosparql#wkbLiteral")))
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
+                    URIRef("http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]))))
+            else:
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKB"),
+                    Literal(str(shapely.to_wkb(shapely.from_wkt(str(row[geometrycol])))), datatype="http://www.opengis.net/ont/geosparql#wkbLiteral")))
+                g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#inSRS"),
+                    URIRef("http://www.opengis.net/def/crs/EPSG/0/4326")))
+        if "KML" in literaltypes:
+            g.add((URIRef("http://www.opengis.net/ont/geosparql#asKML"), RDF.type, OWL.DatatypeProperty))
+            g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asKML"),Literal( "<kml xmlns=\"http://www.opengis.net/kml/2.2\"><Placemark>" + str(fastkml.geometry.create_kml_geometry(shapely.from_wkt(str(row[geometrycol])))) + "</Placemark></kml>", datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))
+        if "GML" in literaltypes:
+            g.add((URIRef("http://www.opengis.net/ont/geosparql#asGML"), RDF.type, OWL.DatatypeProperty))
+            g.add((URIRef(curid+"_geom"),URIRef("http://www.opengis.net/ont/geosparql#asGML"),Literal(etree.tostring(encode_v32(json.loads(shapely.to_geojson(shapely.from_wkt(str(row[geometrycol])))), "ID"),encoding="unicode"), datatype="http://www.opengis.net/ont/geosparql#kmlLiteral")))          
+        return g
+
+    def processLatLonGeometry(self,g,lat,lon,typemap,curid):
+        g.add((URIRef(curid), URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), URIRef(curid + "_geom")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#hasGeometry"), RDF.type, OWL.ObjectProperty))
+        g.add((URIRef(curid + "_geom"), RDF.type, URIRef("http://www.opengis.net/ont/sf#Point")))
+        g.add((URIRef("http://www.opengis.net/ont/sf#Point"), RDF.type, OWL.Class))
+        g.add((URIRef("http://www.opengis.net/ont/sf#Point"), RDFS.subClassOf,URIRef("http://www.opengis.net/ont/geosparql#Geometry")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#Geometry"), RDF.type, OWL.Class))
+        g.add((URIRef(curid + "_geom"), RDFS.label, Literal("Geometry of " + str(curid[str(curid).rfind("/")+1:]), lang="en")))
+        g.add((URIRef("http://www.opengis.net/ont/geosparql#asWKT"), RDF.type, OWL.DatatypeProperty))
+        if "epsg" in typemap:
+            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                Literal("<http://www.opengis.net/def/crs/EPSG/0/" + str(typemap["epsg"]) + "> POINT("+str(lon)+" "+str(lat)+")",
+                        datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+        else:
+            g.add((URIRef(curid + "_geom"), URIRef("http://www.opengis.net/ont/geosparql#asWKT"),
+                Literal("POINT("+str(lon)+" "+str(lat)+")", datatype="http://www.opengis.net/ont/geosparql#wktLiteral")))
+        return g
+    
+    def processColumns(self,prefix,seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts,literalformats):
+        processedGeom=False
+        subclass = False
+        #print("PROCCOL Graph: "+str(len(g)))
+        for x in typemap["columns"]:
+            # print("CConfig: "+str(x))
+            intypemap = False
+            if "ignore" in typemap["columns"][x] and typemap["columns"][x]["ignore"] == True:
+                seencols.add(x)
+                continue
+            if "bibref" in typemap["columns"][x] and typemap["columns"][x]["bibref"] == True:
+                g=BibTexToRDF.processReference(g,bibmap,x,row,curid)
+                continue
+            if "collection" in typemap["columns"][x] and typemap["columns"][x]["collection"] == True and "columns" in typemap["columns"][x]:
+                if "propiri" in typemap["columns"][x]:
+                    theiri = URIRef(typemap["columns"][x]["propiri"])
+                else:
+                    theiri = URIRef(attns + x)
+                if prefix!="":
+                    res = self.processColumns(str(prefix) + "." + str(x), seencols, str(curid)+"_"+str(x), g, row, idcol,attns, thecls, lang, typemap["columns"][x],bibmap,geomatts,literalformats)
+                    g.add((URIRef(curid),URIRef(theiri),URIRef(str(curid)+"_"+str(x))))
+                    g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
+                    if "concept" in typemap["columns"][x]:
+                        g.add((URIRef(str(curid) + "_" + str(x)),RDF.type,URIRef(typemap["columns"][x]["concept"])))
+                else:
+                    res=self.processColumns(str(x),seencols,str(curid)+"_"+str(x),g,row,idcol,attns,thecls,lang,typemap["columns"][x],bibmap,geomatts,literalformats)
+                    g.add((URIRef(curid), URIRef(theiri), URIRef(str(curid)+"_"+str(x))))
+                    g.add((URIRef(str(curid) + "_" + str(x)),RDFS.label,Literal(str(curid)+"_"+str(x))))
+                    if "concept" in typemap["columns"][x]:
+                        g.add((URIRef(str(curid) + "_" + str(x)),RDF.type,URIRef(typemap["columns"][x]["concept"])))
+                g=res["graph"]
+                seencols=res["seencols"]
+            elif "join" in typemap["columns"][x] and typemap["columns"][x]["join"]==True and "columns" in typemap["columns"][x]:
+                thejoincol=typemap["columns"][x]
+                joinchar=""
+                if "joinchar" in thejoincol:
+                    joinchar=thejoincol["joinchar"]
+                if "propiri" in typemap["columns"][x]:
+                    theiri = URIRef(typemap["columns"][x]["propiri"])
+                else:
+                    theiri = URIRef(attns + x)
+                if "proplabels" in curcol and "en" in curcol["proplabels"]:
+                    propirilabel = str(curcol["proplabels"]["en"])
+                else:
+                    propirilabel = str(x)
+                if "definition" in curcol and "en" in curcol["definition"]:
+                    g.add((theiri, SKOS.definition, Literal(curcol["definition"]["en"], lang="en")))
+                aggval=""
+                for col in thejoincol["columns"]:
+                    aggval+=str(row[col])+str(joinchar)
+                aggval=aggval[0:-len(joinchar)]
+                g.add((theiri, RDF.type, OWL.DatatypeProperty))
+                g.add((theiri, RDFS.label, Literal(propirilabel, lang="en")))
+                g.add((URIRef(curid), theiri, Literal(str(aggval), datatype="http://www.w3.org/2001/XMLSchema#string")))
+            elif x in typemap["columns"] and x != "geometry": #and x != idcol
+                intypemap = True
+                curcol = typemap["columns"][x]
+                res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
+                g = res[0]
+                if res[1]:
+                    subclass=True
+                #subclass = res[1]
+                seencols.add(x)
+        if prefix=="" and processedGeom==False:
+            if len(geomatts)>0:
+                allin=True
+                for att in geomatts:
+                    if att not in row:
+                        allin=False
+                if len(geomatts)>1:
+                    self.processLatLonGeometry(g, row[geomatts[0]], row[geomatts[1]], typemap, curid)
+                    processedGeom = True
+                elif len(geomatts)==1:
+                    self.processGeometryColumn(g,row,geomatts[0],typemap,curid,set([x.upper() for x in literalformats]))
+            elif "geometry" in row:
+                self.processGeometryColumn(g,row,"geometry",typemap,curid,set([x.upper() for x in literalformats]))
+                processedGeom=True
+            else:
+                for pair in self.latlonpairs:
+                    if pair[0] in row and pair[1] in row:
+                        self.processLatLonGeometry(g, row[pair[0]], row[pair[1]], typemap, curid)
+                        processedGeom = True
+        #print(str(curid)+" - hasSubClass "+str(subclass))
+        return {"graph":g,"subclass":subclass,"seencols":seencols}
+
+    def convertToRDF(self,df,typemap,autotypemap,g,bibmap={},dcaturi="",geosparql=True,literalformats=["wkt"]):
+        #print(df)
+        idcol=None
+        dns=None
+        attns=None
+        onlyschema=False
+        geomatts=[]
+        if "id" in typemap:
+            idcol=typemap["id"]
+        if "namespace" in typemap:
+            dns=typemap["namespace"]
+        else:
+            dns="http://purl.org/suni/data/"
+        if "attnamespace" in typemap:
+            attns=typemap["attnamespace"]
+        else:
+            attns="http://purl.org/suni/"
+        if "nsprefix" in typemap:
+            nsprefix=typemap["nsprefix"]
+        elif "namespace" in typemap:
+            nsprefix=typemap["namespace"][typemap["namespace"].rfind("/")+1:]
+        else:
+            nsprefix="sunid"
+        if "attnamespace" in typemap:
+            attnsprefix = typemap["attnamespace"][typemap["attnamespace"].rfind("/") + 1:].replace("#","")
+        else:
+            attnsprefix="suni"
+        ownvocabg.add((URIRef(attns),RDF.type,OWL.Ontology))
+        ownvocabg.add((URIRef(attns),RDF.type,URIRef("http://purl.org/vocommons/voaf#Vocabulary")))
+        ownvocabg.add((URIRef(attns),RDFS.label,Literal(attns+" Vocabulary",lang="en")))
+        ownvocabg.add((URIRef(attns),URIRef("http://purl.org/vocab/vann/preferredNamespaceUri"),Literal(attns,datatype=XSD.anyURI)))
+        ownvocabg.add((URIRef(attns),URIRef("http://purl.org/vocab/vann/preferredNamespacePrefix"),Literal(attnsprefix,datatype=XSD.anyURI)))
+        ownvocabg.add((URIRef(attns),URIRef("http://purl.org/vocommons/voaf#usageInDataset"),Literal(dns,datatype=XSD.anyURI)))
+        if "onlyschema" in typemap and typemap["onlyschema"]==True:
+            onlyschema=True
+        if "epsg" in typemap:
+            epsg=typemap["epsg"]
+            g=ConvertCRS.convertCRSFromEPSG("EPSG:"+typemap["epsg"],g)
+        else:
+            g=ConvertCRS.convertCRSFromEPSG("EPSG:4326",g)
+        if "license" in typemap:
+            licensee=typemap["license"]
+        else:
+            licensee=""
+        if "geometry" in typemap and isinstance(typemap["geometry"],list):
+            geomatts=typemap["geometry"]
+        if "prefixes" in typemap:
+            for pref in typemap["prefixes"]:
+                if str(typemap["prefixes"][pref]).startswith("http"):
+                    g.bind(str(pref),str(typemap["prefixes"][pref]))
+        g.bind(nsprefix,dns)
+        g.bind(attnsprefix, attns)
+        g.bind("sf","http://www.opengis.net/ont/sf#")
+        g.bind("om","http://www.ontology-of-units-of-measure.org/resource/om-2/")
+        g.bind("qudt","http://qudt.org/schema/qudt#")
+        if "language" in typemap:
+            lang=typemap["language"]
+        else:
+            lang="en"
+        if "class" in typemap:
+            cls=typemap.get("class")
+        else:
+            cls="http://www.w3.org/ns/prov#Entity"
+        clsmappings=[]
+        if "classmappings" in typemap:
+            clsmappings=typemap["classmappings"]
+        if isinstance(cls,dict):
+            thecls = URIRef(typemap.get("class").get("uri"))
+            g.add((thecls, RDF.type, OWL.Class))
+            if "labels" in typemap["class"]:
+                for lan in typemap["class"]["labels"]:
+                    g.add((thecls, RDFS.label, Literal(typemap["class"]["labels"][lan],lang=lan)))
+        else:
+            thecls = URIRef(typemap.get("class"))
+            g.add((thecls, RDF.type, OWL.Class))
+        rootcls=typemap.get("rootclass")
+        if rootcls!=None:
+            if isinstance(rootcls, dict):
+                rootcls = URIRef(typemap.get("rootclass").get("uri"))
+                g.add((rootcls, RDF.type, OWL.Class))
+                g.add((thecls, RDFS.subClassOf, URIRef(rootcls)))
+                if "labels" in typemap["rootclass"]:
+                    for lan in typemap["rootclass"]["labels"]:
+                        g.add((thecls, RDFS.label, Literal(typemap["rootclass"]["labels"][lan], lang=lan)))
+            else:
+                g.add((thecls, RDFS.subClassOf, URIRef(rootcls)))
+                g.add((rootcls, RDF.type, OWL.Class))
+        thecols=set(df.dtypes.to_dict().keys())
+        rowcount=len(df)
+        counter=0
+        for row in df.to_dict(orient='records'):        
+            if idcol==None:
+                curid=dns+str(counter)
+            elif isinstance(idcol,list):
+                curid=dns
+                for ic in idcol:
+                    curid+=str(row[ic])+"_"
+                curid=curid[0:-1]
+            else:
+                curid=dns+str(row[idcol])
+            if dcaturi!="":
+                g.add((URIRef(curid),VOID.inDataset,URIRef(dcaturi)))
+            if str(licensee).startswith("http"):
+                g.add((URIRef(curid),DC.license,URIRef(licensee)))
+            subclass=False
+            seencols=set()
+            if counter%100==0:
+                print("ROW: "+str(counter)+"/"+str(rowcount))
+            if "classmappings" in typemap:
+                for clsmap in typemap["classmappings"]:
+                    print(clsmap)
+                    g.add((URIRef(curid),RDF.type,URIRef(clsmap["uri"])))
+                    if "labels" in clsmap:
+                        for lab in clsmap["labels"]:
+                            g.add((URIRef(curid),RDFS.label,Literal(clsmap["labels"][lab],lang=lab)))
+            #for x in typemap["columns"]:
+            subclass = False
+            intypemap=False
+            res=self.processColumns("",seencols,curid,g,row,idcol,attns,thecls,lang,typemap,bibmap,geomatts,literalformats)
+            seencols=res["seencols"]
+            subclass=res["subclass"]
+            counter+=1
+            notseencols=thecols.symmetric_difference(seencols)
+            if onlyschema==False:
+                for x in notseencols:
+                    if x in autotypemap["columns"] and x != idcol and x != "geometry":
+                        curcol = autotypemap["columns"][x]
+                        res = self.addPropertyToGraph(row, x, g, attns, curid, thecls, lang, curcol)
+                        g = res[0]
+                        if res[1]:
+                            subclass=True
+                        #subclass = res[1]
+            if "addcolumns" in typemap:
+                for addcol in typemap["addcolumns"]:
+                    curcol=typemap["addcolumns"][addcol]
+                    if "collection" in curcol and curcol["collection"]:
+                        colindid=curid+"_"+addcol
+                        if "propiri" in curcol:
+                            g.add((URIRef(curid),URIRef(curcol["propiri"]),URIRef(colindid)))
+                        else:
+                            g.add((URIRef(curid),URIRef(attns+addcol),URIRef(colindid)))
+                        if "concept" in curcol:
+                            g.add((URIRef(colindid),RDF.type,URIRef(curcol["concept"])))
+                        g.add((URIRef(colindid),RDFS.label,Literal(str(addcol)+" for "+str(curid),lang="en")))
+                        if "columns" in curcol:
+                            for innercol in curcol["columns"]:
+                                res = self.addPropertyToGraph(None, innercol, g, attns, colindid, thecls, lang, curcol["columns"][innercol])
+                    else:
+                        res = self.addPropertyToGraph(None, addcol, g, attns, curid, thecls, lang, curcol)
+                        g = res[0]
+                        if res[1]:
+                            subclass=True
+                #print(x)
+            if subclass==False:
+                g.add((URIRef(curid), RDF.type, thecls))
+        return g
+
+outpath=[]
+dataexports=[]
+filestoprocess = []
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-i", "--input", nargs='*', help="the input file(s) to parse [csv,shp,geojson,gml]", action="store", required=True)
+parser.add_argument("-o", "--output", nargs='*', help="the output path(s)", action="store", required=True)
+parser.add_argument("-lf", "--literalformats", nargs='*', help="the literal formats to generate for the knowledge graph", action="store", required=False, default=["wkt"])
+parser.add_argument("-m", "--mapping", nargs='*', help="the mapping file path(s)", action="store", required=True)
+parser.add_argument("-dcat", "--dcaturi", nargs='*', help="an uri indicating dcat metadata", action="store", default="",required=False)
+parser.add_argument("-af", "--addfiles", nargs='*', help="additional rdf files to integrate", action="store", default="",required=False)
+parser.add_argument("-s", "--sepchar", nargs='*', help="csv file separator", action="store", required=False,default=";")
+parser.add_argument("-b", "--bibtex", nargs='*', help="a bibtex refeerence library file", action="store", required=False,default="")
+args, unknown=parser.parse_known_args()
+print(args)
+print("The following arguments were not recognized: " + str(unknown))
+if args.input == None or args.input[0] == "None" or args.input == "":
+    print("No input files specified... trying to find files in the script folder")
+    exit()
+if args.output == None or args.output[0] == "None" or args.input == "":
+    print("No output paths specified...")
+    exit()
+for path in args.input:
+    if " " in path:
+        for itemm in path.split(" "):
+            filestoprocess+=resolveWildcardPath(itemm)
+    else:
+        filestoprocess+=resolveWildcardPath(path)
+
+
+g = Graph()
+ownvocabg=Graph()
+subrend=None
+miscolmappings={}
+dcaturi=""
+if args.dcaturi!=None and len(args.dcaturi)>0:
+    dcaturi=args.dcaturi[0]
+
+if path.endswith(".csv"):
+    df = pd.read_csv(path, sep=args.sepchar[0])
+elif path.endswith(".geojson") or path.endswith(".shp") or path.endswith(".gml") or path.endswith(".kml"):
+    df=gpd.read_file(path)
+
+ddf=df.to_dict(orient='records')
+conv=RDFConverter()
+autotypemap = {"columns":{}}
+for column in df:
+    autotypemap["columns"][column] = conv.detectColumnType(df[column].to_dict())
+
+bibmap={}
+if os.path.exists(args.mapping[0]):
+    with open(args.mapping[0],"r") as f:
+        typemap=json.load(f)
+    brdf=None
+    issuers={}
+    publishers={}
+    if len(args.bibtex)>0 and args.bibtex[0]!="":
+        for col in typemap["columns"]:
+            if "bibref" in column and column["bibref"]==True:
+                if "issuers" in column:
+                    issuers=column["issuers"]
+                if "publishers" in column:
+                    publishers=column["publishers"]
+        with open(args.bibtex[0],encoding="utf-8") as bibtex_file:
+            bib_database = bibtexparser.load(bibtex_file)
+            #print(bib_database.entries)
+            if "namespace" in typemap:
+                ns=typemap["namespace"]
+            else:
+                ns="http://purl.org/suni/data/"
+            if "attnamespace" in typemap:
+                nsont=typemap["attnamespace"]  
+            else:
+                nsont="http://purl.org/suni/"
+            bibres=BibTexToRDF.bibtexToRDF(g,bib_database.entries,ns,nsont,issuers,publishers,False)
+            bibmap=bibres["bibmap"]
+         
+if not os.path.exists(args.output[0]):
+    os.makedirs(args.output[0])
+with open(str(args.output[0])+"/"+str(path[0:path.rfind(".")]).replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_autotypemap.json","w") as f:
+    json.dump(autotypemap,f,indent=2,sort_keys=True)
+
+g=conv.convertToRDF(df,typemap,autotypemap,g,bibmap,dcaturi,True,args.literalformats)
+if args.addfiles!="" and len(args.addfiles)>0:
+    try:
+        g.parse(args.addfiles[0])
+    except:
+        print("Could not parse af file "+str(args.addfiles))
+print("Serializing result to: "+str(path[0:path.rfind(".")].replace(str(os.sep),"_")))
+g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".ttl",format="turtle")
+g.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+".json",format="json-ld",auto_compact=True)
+ownvocabg.serialize(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_ont.ttl")
+with open(str(args.output[0])+"/"+path[0:path.rfind(".")].replace(str(os.sep),"_")+"_"+str(args.mapping[0][0:args.mapping[0].rfind(".")]).replace(str(os.sep),"_")+"_err.json","w") as f:
+    json.dump(miscolmappings,f,indent=2)

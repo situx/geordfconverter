@@ -60,8 +60,8 @@ runs:
           path: geordfconverterscript    
       - name: Generate Ontology Documentation
         run: |
-          sudo pip3 install rdflib geopandas shapely pyshp geodatasets geojson_rewind
-          python3 geordfconverterscript/src/rdfconverter.py --input "${{inputs.rdffilepath}}" --output "${{inputs.docpath}}" --mapping "${{inputs.mapping}}"  
+          sudo pip3 install rdflib geopandas shapely pyshp pygml fastkml lxml geodatasets geojson_rewind
+          python3 geordfconverterscript/src/geordfconverter/rdfconverter.py --input "${{inputs.rdffilepath}}" --output "${{inputs.docpath}}" --mapping "${{inputs.mapping}}"  
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v4
         if: ${{ inputs.ghpages }}
